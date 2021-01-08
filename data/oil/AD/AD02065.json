@@ -1,68 +1,65 @@
 {
+    "oil_id": "AD02065",
     "_id": "AD02065",
     "metadata": {
-        "API": 23.9,
-        "location": "BRUNEI",
-        "model_completeness": 15,
         "name": "CHAMPION EXPORT (1999)",
-        "product_type": "Crude Oil NOS",
+        "source_id": "AD02065",
+        "location": "BRUNEI",
         "reference": {
-            "reference": "Jokuty, P., Whiticar, S., Wang, Z., Fingas, M., Fieldhouse, B., Lambert, P., Mullen, J. 1999. Properties of Crude Oils and Oil Products.  Manuscript Report EE-165, Environmental Protection Service, Environment Canada, Ottawa, Ontario.",
-            "year": 1999
+            "year": 1999,
+            "reference": "Jokuty, P., Whiticar, S., Wang, Z., Fingas, M., Fieldhouse, B., Lambert, P., Mullen, J. 1999. Properties of Crude Oils and Oil Products.  Manuscript Report EE-165, Environmental Protection Service, Environment Canada, Ottawa, Ontario."
         },
-        "source_id": "AD02065"
+        "product_type": "Crude Oil NOS",
+        "API": 23.9,
+        "model_completeness": 15
     },
-    "oil_id": "AD02065",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
-            "bulk_composition": [
-                {
-                    "measurement": {
-                        "unit": "fraction",
-                        "unit_type": "massfraction",
-                        "value": 0.0012
-                    },
-                    "name": "sulfur"
+            "metadata": {
+                "name": "Fresh Oil Sample",
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
                 }
-            ],
+            },
+            "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": 237.0,
+                        "unit": "K",
+                        "unit_type": "temperature"
+                    }
+                },
+                "kinematic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 2.1e-05,
+                            "unit": "m^2/s",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 283.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
+            },
             "distillation_data": {
                 "type": "mass fraction"
             },
-            "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
-                "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
-            },
-            "physical_properties": {
-                "kinematic_viscosities": [
-                    {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 283.0
-                        },
-                        "viscosity": {
-                            "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 2.1e-05
-                        }
-                    }
-                ],
-                "pour_point": {
+            "bulk_composition": [
+                {
+                    "name": "sulfur",
                     "measurement": {
-                        "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 237.0
+                        "value": 0.0012,
+                        "unit": "fraction",
+                        "unit_type": "massfraction"
                     }
                 }
-            }
+            ]
         }
     ]
 }

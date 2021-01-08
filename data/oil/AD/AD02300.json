@@ -1,147 +1,144 @@
 {
+    "oil_id": "AD02300",
     "_id": "AD02300",
     "metadata": {
-        "API": 11.2,
-        "location": "CALIFORNIA, USA",
-        "model_completeness": 19,
         "name": "PLATFORM IRENE",
-        "product_type": "Crude Oil NOS",
+        "source_id": "AD02300",
+        "location": "CALIFORNIA, USA",
         "reference": {
-            "reference": "Jokuty, P., Whiticar, S., Wang, Z., Fingas, M., Fieldhouse, B., Lambert, P., Mullen, J. 1999. Properties of Crude Oils and Oil Products.  Manuscript Report EE-165, Environmental Protection Service, Environment Canada, Ottawa, Ontario.",
-            "year": 1999
+            "year": 1999,
+            "reference": "Jokuty, P., Whiticar, S., Wang, Z., Fingas, M., Fieldhouse, B., Lambert, P., Mullen, J. 1999. Properties of Crude Oils and Oil Products.  Manuscript Report EE-165, Environmental Protection Service, Environment Canada, Ottawa, Ontario."
         },
-        "source_id": "AD02300"
+        "product_type": "Crude Oil NOS",
+        "API": 11.2,
+        "model_completeness": 19
     },
-    "oil_id": "AD02300",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
-            "SARA": {
-                "aromatics": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.29
-                },
-                "asphaltenes": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.22
-                },
-                "resins": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.22
-                },
-                "saturates": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.26
-                }
-            },
-            "bulk_composition": [
-                {
-                    "measurement": {
-                        "unit": "fraction",
-                        "unit_type": "massfraction",
-                        "value": 0.02
-                    },
-                    "name": "wax_content"
-                },
-                {
-                    "measurement": {
-                        "unit": "fraction",
-                        "unit_type": "massfraction",
-                        "value": 0.014
-                    },
-                    "name": "sulfur"
-                },
-                {
-                    "measurement": {
-                        "unit": "ppm",
-                        "unit_type": "massfraction",
-                        "value": 61
-                    },
-                    "name": "nickel"
-                },
-                {
-                    "measurement": {
-                        "unit": "ppm",
-                        "unit_type": "massfraction",
-                        "value": 238
-                    },
-                    "name": "vanadium"
-                }
-            ],
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": 285.0,
+                        "unit": "K",
+                        "unit_type": "temperature"
+                    }
+                },
+                "flash_point": {
+                    "measurement": {
+                        "value": 271.0,
+                        "unit": "K",
+                        "unit_type": "temperature"
+                    }
+                },
                 "densities": [
                     {
                         "density": {
+                            "value": 997.0,
                             "unit": "kg/m^3",
-                            "unit_type": "density",
-                            "value": 997.0
+                            "unit_type": "density"
                         },
                         "ref_temp": {
+                            "value": 273.0,
                             "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 273.0
+                            "unit_type": "temperature"
                         }
                     },
                     {
                         "density": {
+                            "value": 991.0,
                             "unit": "kg/m^3",
-                            "unit_type": "density",
-                            "value": 991.0
+                            "unit_type": "density"
                         },
                         "ref_temp": {
+                            "value": 288.0,
                             "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 288.0
+                            "unit_type": "temperature"
                         }
                     }
                 ],
                 "dynamic_viscosities": [
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 288.0
-                        },
                         "viscosity": {
+                            "value": 76.0,
                             "unit": "kg/(m s)",
-                            "unit_type": "dynamicviscosity",
-                            "value": 76.0
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 288.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     }
-                ],
-                "flash_point": {
+                ]
+            },
+            "SARA": {
+                "saturates": {
+                    "value": 0.26,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                },
+                "aromatics": {
+                    "value": 0.29,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                },
+                "resins": {
+                    "value": 0.22,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                },
+                "asphaltenes": {
+                    "value": 0.22,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
+            },
+            "distillation_data": {
+                "type": "mass fraction"
+            },
+            "bulk_composition": [
+                {
+                    "name": "wax_content",
                     "measurement": {
-                        "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 271.0
+                        "value": 0.02,
+                        "unit": "fraction",
+                        "unit_type": "massfraction"
                     }
                 },
-                "pour_point": {
+                {
+                    "name": "sulfur",
                     "measurement": {
-                        "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 285.0
+                        "value": 0.014,
+                        "unit": "fraction",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "nickel",
+                    "measurement": {
+                        "value": 61,
+                        "unit": "ppm",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "vanadium",
+                    "measurement": {
+                        "value": 238,
+                        "unit": "ppm",
+                        "unit_type": "massfraction"
                     }
                 }
-            }
+            ]
         }
     ]
 }

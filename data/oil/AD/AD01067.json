@@ -1,68 +1,65 @@
 {
+    "oil_id": "AD01067",
     "_id": "AD01067",
     "metadata": {
-        "API": 44.3,
-        "location": "MALAYSIA",
-        "model_completeness": 15,
         "name": "TAPIS, OIL & GAS",
-        "product_type": "Crude Oil NOS",
+        "source_id": "AD01067",
+        "location": "MALAYSIA",
         "reference": {
-            "reference": "Aalund, L. 1983.  Guide to export crudes for the '80s.  Oil and Gas Journal, December 12, 1983.",
-            "year": 1983
+            "year": 1983,
+            "reference": "Aalund, L. 1983.  Guide to export crudes for the '80s.  Oil and Gas Journal, December 12, 1983."
         },
-        "source_id": "AD01067"
+        "product_type": "Crude Oil NOS",
+        "API": 44.3,
+        "model_completeness": 15
     },
-    "oil_id": "AD01067",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
-            "bulk_composition": [
-                {
-                    "measurement": {
-                        "unit": "fraction",
-                        "unit_type": "massfraction",
-                        "value": 0.0575
-                    },
-                    "name": "wax_content"
+            "metadata": {
+                "name": "Fresh Oil Sample",
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
                 }
-            ],
+            },
+            "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": 277.0,
+                        "unit": "K",
+                        "unit_type": "temperature"
+                    }
+                },
+                "kinematic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 2.69e-06,
+                            "unit": "m^2/s",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 294.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
+            },
             "distillation_data": {
                 "type": "mass fraction"
             },
-            "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
-                "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
-            },
-            "physical_properties": {
-                "kinematic_viscosities": [
-                    {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 294.0
-                        },
-                        "viscosity": {
-                            "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 2.69e-06
-                        }
-                    }
-                ],
-                "pour_point": {
+            "bulk_composition": [
+                {
+                    "name": "wax_content",
                     "measurement": {
-                        "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 277.0
+                        "value": 0.0575,
+                        "unit": "fraction",
+                        "unit_type": "massfraction"
                     }
                 }
-            }
+            ]
         }
     ]
 }

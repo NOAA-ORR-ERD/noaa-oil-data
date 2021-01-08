@@ -1,24 +1,208 @@
 {
+    "oil_id": "EC00501",
     "_id": "EC00501",
     "metadata": {
-        "API": 28.7,
-        "comments": "Petrobras SSA",
-        "model_completeness": 14,
         "name": "158 RGN Mistura",
-        "product_type": "Crude Oil NOS",
+        "source_id": "501",
         "reference": {
-            "reference": "Personal communication from Fatemeh Mirnaghi (ESTS), date: April 21, 2020.",
-            "year": 2020
+            "year": 2020,
+            "reference": "Personal communication from Fatemeh Mirnaghi (ESTS), date: April 21, 2020."
         },
         "sample_date": "2004-09-20",
-        "source_id": "501"
+        "product_type": "Crude Oil NOS",
+        "API": 28.7,
+        "comments": "Petrobras SSA",
+        "model_completeness": 14
     },
-    "oil_id": "EC00501",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
+            "metadata": {
+                "name": "Fresh Oil Sample",
+                "short_name": "Fresh Oil",
+                "sample_id": "501",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
+            },
+            "physical_properties": {
+                "densities": [
+                    {
+                        "density": {
+                            "value": 0.8928,
+                            "unit": "g/mL",
+                            "standard_deviation": 5.7735e-05,
+                            "replicates": 3,
+                            "unit_type": "density"
+                        },
+                        "ref_temp": {
+                            "value": 0.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "method": "ASTM D5002"
+                    },
+                    {
+                        "density": {
+                            "value": 0.87867,
+                            "unit": "g/mL",
+                            "standard_deviation": 5.7735e-05,
+                            "replicates": 3,
+                            "unit_type": "density"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "method": "ASTM D5002"
+                    }
+                ]
+            },
+            "environmental_behavior": {
+                "emulsions": [
+                    {
+                        "age": {
+                            "value": 0,
+                            "unit": "day",
+                            "unit_type": "time"
+                        },
+                        "water_content": {
+                            "unit": "%",
+                            "unit_type": "massfraction"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "complex_modulus": {
+                            "unit": "Pa",
+                            "unit_type": "pressure"
+                        },
+                        "storage_modulus": {
+                            "unit": "Pa",
+                            "unit_type": "pressure"
+                        },
+                        "loss_modulus": {
+                            "unit": "Pa",
+                            "unit_type": "pressure"
+                        },
+                        "tan_delta_v_e": {
+                            "unit_type": "unitless"
+                        },
+                        "complex_viscosity": {
+                            "unit": "Pa.s",
+                            "unit_type": "dynamicviscosity"
+                        }
+                    },
+                    {
+                        "age": {
+                            "value": 7,
+                            "unit": "day",
+                            "unit_type": "time"
+                        },
+                        "water_content": {
+                            "unit": "%",
+                            "unit_type": "massfraction"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "complex_modulus": {
+                            "unit": "Pa",
+                            "unit_type": "pressure"
+                        },
+                        "storage_modulus": {
+                            "unit": "Pa",
+                            "unit_type": "pressure"
+                        },
+                        "loss_modulus": {
+                            "unit": "Pa",
+                            "unit_type": "pressure"
+                        },
+                        "tan_delta_v_e": {
+                            "unit_type": "unitless"
+                        },
+                        "complex_viscosity": {
+                            "unit": "Pa.s",
+                            "unit_type": "dynamicviscosity"
+                        }
+                    }
+                ]
+            },
+            "SARA": {
+                "saturates": {
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                },
+                "aromatics": {
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                },
+                "resins": {
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                },
+                "asphaltenes": {
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                }
+            },
+            "distillation_data": {
+                "type": "mass fraction",
+                "end_point": {
+                    "unit": "C",
+                    "unit_type": "temperature"
+                }
+            },
+            "bulk_composition": [
+                {
+                    "name": "Wax Content",
+                    "measurement": {
+                        "unit": "%",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Water Content",
+                    "measurement": {
+                        "unit": "%",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Sulfur Content",
+                    "measurement": {
+                        "unit": "%",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "GC-TPH",
+                    "measurement": {
+                        "unit": "mg/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "GC-TSH",
+                    "measurement": {
+                        "unit": "mg/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "GC-TAH",
+                    "measurement": {
+                        "unit": "mg/g",
+                        "unit_type": "massfraction"
+                    }
+                }
+            ],
             "CCME": {
                 "F1": {
                     "unit": "mg/g",
@@ -43,193 +227,6 @@
             },
             "ESTS_hydrocarbon_fractions": {
                 "method": "Hollebone, Bruce (2020) Personal communication"
-            },
-            "SARA": {
-                "aromatics": {
-                    "unit": "%",
-                    "unit_type": "massfraction"
-                },
-                "asphaltenes": {
-                    "unit": "%",
-                    "unit_type": "massfraction"
-                },
-                "resins": {
-                    "unit": "%",
-                    "unit_type": "massfraction"
-                },
-                "saturates": {
-                    "unit": "%",
-                    "unit_type": "massfraction"
-                }
-            },
-            "bulk_composition": [
-                {
-                    "measurement": {
-                        "unit": "%",
-                        "unit_type": "massfraction"
-                    },
-                    "name": "Wax Content"
-                },
-                {
-                    "measurement": {
-                        "unit": "%",
-                        "unit_type": "massfraction"
-                    },
-                    "name": "Water Content"
-                },
-                {
-                    "measurement": {
-                        "unit": "%",
-                        "unit_type": "massfraction"
-                    },
-                    "name": "Sulfur Content"
-                },
-                {
-                    "measurement": {
-                        "unit": "mg/g",
-                        "unit_type": "massfraction"
-                    },
-                    "name": "GC-TPH"
-                },
-                {
-                    "measurement": {
-                        "unit": "mg/g",
-                        "unit_type": "massfraction"
-                    },
-                    "name": "GC-TSH"
-                },
-                {
-                    "measurement": {
-                        "unit": "mg/g",
-                        "unit_type": "massfraction"
-                    },
-                    "name": "GC-TAH"
-                }
-            ],
-            "distillation_data": {
-                "end_point": {
-                    "unit": "C",
-                    "unit_type": "temperature"
-                },
-                "type": "mass fraction"
-            },
-            "environmental_behavior": {
-                "emulsions": [
-                    {
-                        "age": {
-                            "unit": "day",
-                            "unit_type": "time",
-                            "value": 0
-                        },
-                        "complex_modulus": {
-                            "unit": "Pa",
-                            "unit_type": "pressure"
-                        },
-                        "complex_viscosity": {
-                            "unit": "Pa.s",
-                            "unit_type": "dynamicviscosity"
-                        },
-                        "loss_modulus": {
-                            "unit": "Pa",
-                            "unit_type": "pressure"
-                        },
-                        "ref_temp": {
-                            "unit": "C",
-                            "unit_type": "temperature",
-                            "value": 15.0
-                        },
-                        "storage_modulus": {
-                            "unit": "Pa",
-                            "unit_type": "pressure"
-                        },
-                        "tan_delta_v_e": {
-                            "unit_type": "unitless"
-                        },
-                        "water_content": {
-                            "unit": "%",
-                            "unit_type": "massfraction"
-                        }
-                    },
-                    {
-                        "age": {
-                            "unit": "day",
-                            "unit_type": "time",
-                            "value": 7
-                        },
-                        "complex_modulus": {
-                            "unit": "Pa",
-                            "unit_type": "pressure"
-                        },
-                        "complex_viscosity": {
-                            "unit": "Pa.s",
-                            "unit_type": "dynamicviscosity"
-                        },
-                        "loss_modulus": {
-                            "unit": "Pa",
-                            "unit_type": "pressure"
-                        },
-                        "ref_temp": {
-                            "unit": "C",
-                            "unit_type": "temperature",
-                            "value": 15.0
-                        },
-                        "storage_modulus": {
-                            "unit": "Pa",
-                            "unit_type": "pressure"
-                        },
-                        "tan_delta_v_e": {
-                            "unit_type": "unitless"
-                        },
-                        "water_content": {
-                            "unit": "%",
-                            "unit_type": "massfraction"
-                        }
-                    }
-                ]
-            },
-            "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
-                "name": "Fresh Oil Sample",
-                "sample_id": "501",
-                "short_name": "Fresh Oil"
-            },
-            "physical_properties": {
-                "densities": [
-                    {
-                        "density": {
-                            "replicates": 3,
-                            "standard_deviation": 5.7735e-05,
-                            "unit": "g/mL",
-                            "unit_type": "density",
-                            "value": 0.8928
-                        },
-                        "method": "ASTM D5002",
-                        "ref_temp": {
-                            "unit": "C",
-                            "unit_type": "temperature",
-                            "value": 0.0
-                        }
-                    },
-                    {
-                        "density": {
-                            "replicates": 3,
-                            "standard_deviation": 5.7735e-05,
-                            "unit": "g/mL",
-                            "unit_type": "density",
-                            "value": 0.87867
-                        },
-                        "method": "ASTM D5002",
-                        "ref_temp": {
-                            "unit": "C",
-                            "unit_type": "temperature",
-                            "value": 15.0
-                        }
-                    }
-                ]
             }
         }
     ]

@@ -1,90 +1,87 @@
 {
+    "oil_id": "AD02476",
     "_id": "AD02476",
     "metadata": {
-        "API": 10.2,
-        "location": "JACKSONVILLE, FL",
-        "model_completeness": 15,
         "name": "BUNKER C, JEA",
-        "product_type": "Refined Product NOS",
+        "source_id": "AD02476",
+        "location": "JACKSONVILLE, FL",
         "reference": {
-            "reference": "Communication from Brad Beggio, NOAA, January 30, 2004.",
-            "year": 2004
+            "year": 2004,
+            "reference": "Communication from Brad Beggio, NOAA, January 30, 2004."
         },
-        "source_id": "AD02476"
+        "product_type": "Refined Product NOS",
+        "API": 10.2,
+        "model_completeness": 15
     },
-    "oil_id": "AD02476",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
-            "SARA": {
-                "asphaltenes": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.08
-                }
-            },
-            "bulk_composition": [
-                {
-                    "measurement": {
-                        "unit": "fraction",
-                        "unit_type": "massfraction",
-                        "value": 0.018
-                    },
-                    "name": "sulfur"
-                },
-                {
-                    "measurement": {
-                        "unit": "ppm",
-                        "unit_type": "massfraction",
-                        "value": 200
-                    },
-                    "name": "vanadium"
-                }
-            ],
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": 311.0,
+                        "unit": "K",
+                        "unit_type": "temperature"
+                    }
+                },
                 "flash_point": {
                     "measurement": {
+                        "value": 339.0,
                         "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 339.0
+                        "unit_type": "temperature"
                     }
                 },
                 "kinematic_viscosities": [
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 323.0
-                        },
                         "viscosity": {
+                            "value": 2.02e-05,
                             "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 2.02e-05
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 323.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     }
-                ],
-                "pour_point": {
+                ]
+            },
+            "SARA": {
+                "asphaltenes": {
+                    "value": 0.08,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
+            },
+            "distillation_data": {
+                "type": "mass fraction"
+            },
+            "bulk_composition": [
+                {
+                    "name": "sulfur",
                     "measurement": {
-                        "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 311.0
+                        "value": 0.018,
+                        "unit": "fraction",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "vanadium",
+                    "measurement": {
+                        "value": 200,
+                        "unit": "ppm",
+                        "unit_type": "massfraction"
                     }
                 }
-            }
+            ]
         }
     ]
 }

@@ -1,123 +1,120 @@
 {
+    "oil_id": "AD00472",
     "_id": "AD00472",
     "metadata": {
+        "name": "GASOLINE: BLENDING STOCKS (ALKYLATES)",
+        "source_id": "AD00472",
+        "reference": {
+            "year": 1996,
+            "reference": "Jokuty, P., Whiticar, S., Wang, Z., Fingas, M., Lambert, P., Fieldhouse, B., Mullen, J. 1996. A Catalogue of Crude Oil and Oil Product Properties (1996 Edition). Prepared for Environment Canada, EE-157, Ottawa, Ontario."
+        },
+        "product_type": "Refined Product NOS",
         "API": 62.5,
         "comments": "WARNING: Benzene content of product is only an estimate and not a measured value.",
-        "model_completeness": 25,
-        "name": "GASOLINE: BLENDING STOCKS (ALKYLATES)",
-        "product_type": "Refined Product NOS",
-        "reference": {
-            "reference": "Jokuty, P., Whiticar, S., Wang, Z., Fingas, M., Lambert, P., Fieldhouse, B., Mullen, J. 1996. A Catalogue of Crude Oil and Oil Product Properties (1996 Edition). Prepared for Environment Canada, EE-157, Ottawa, Ontario.",
-            "year": 1996
-        },
-        "source_id": "AD00472"
+        "model_completeness": 25
     },
-    "oil_id": "AD00472",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
-            "compounds": [
-                {
-                    "measurement": {
-                        "unit": "fraction",
-                        "unit_type": "massfraction",
-                        "value": 0.05
-                    },
-                    "name": "benzene"
-                }
-            ],
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
-                "densities": [
-                    {
-                        "density": {
-                            "unit": "kg/m^3",
-                            "unit_type": "density",
-                            "value": 709.0
-                        },
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 288.0
-                        }
-                    },
-                    {
-                        "density": {
-                            "unit": "kg/m^3",
-                            "unit_type": "density",
-                            "value": 689.0
-                        },
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 311.0
-                        }
-                    }
-                ],
-                "dynamic_viscosities": [
-                    {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 288.0
-                        },
-                        "viscosity": {
-                            "unit": "kg/(m s)",
-                            "unit_type": "dynamicviscosity",
-                            "value": 0.0005
-                        }
-                    }
-                ],
                 "flash_point": {
                     "measurement": {
-                        "max_value": 295.0,
-                        "min_value": 255.0,
                         "unit": "K",
+                        "min_value": 255.0,
+                        "max_value": 295.0,
                         "unit_type": "temperature"
                     }
                 },
-                "interfacial_tension_water": [
+                "densities": [
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 293.0
+                        "density": {
+                            "value": 709.0,
+                            "unit": "kg/m^3",
+                            "unit_type": "density"
                         },
-                        "tension": {
-                            "unit": "N/m",
-                            "unit_type": "interfacialtension",
-                            "value": 0.05
+                        "ref_temp": {
+                            "value": 288.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "density": {
+                            "value": 689.0,
+                            "unit": "kg/m^3",
+                            "unit_type": "density"
+                        },
+                        "ref_temp": {
+                            "value": 311.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     }
                 ],
                 "kinematic_viscosities": [
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 424.0
-                        },
                         "viscosity": {
+                            "value": 6.2e-07,
                             "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 6.2e-07
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 424.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
+                "dynamic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 0.0005,
+                            "unit": "kg/(m s)",
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 288.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
+                "interfacial_tension_water": [
+                    {
+                        "tension": {
+                            "value": 0.05,
+                            "unit": "N/m",
+                            "unit_type": "interfacialtension"
+                        },
+                        "ref_temp": {
+                            "value": 293.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     }
                 ]
-            }
+            },
+            "distillation_data": {
+                "type": "mass fraction"
+            },
+            "compounds": [
+                {
+                    "name": "benzene",
+                    "measurement": {
+                        "value": 0.05,
+                        "unit": "fraction",
+                        "unit_type": "massfraction"
+                    }
+                }
+            ]
         }
     ]
 }

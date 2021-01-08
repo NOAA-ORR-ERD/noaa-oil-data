@@ -1,75 +1,72 @@
 {
+    "oil_id": "AD01261",
     "_id": "AD01261",
     "metadata": {
-        "API": 36.3,
-        "location": "MALAYSIA",
-        "model_completeness": 15,
         "name": "MIRI LIGHT, OIL & GAS",
-        "product_type": "Crude Oil NOS",
+        "source_id": "AD01261",
+        "location": "MALAYSIA",
         "reference": {
-            "reference": "McNamara, J. (ed.), 1995. Oil & Gas Journal Data Book. Tulsa, OK: Pennwell Books. 411 pp.",
-            "year": 1995
+            "year": 1995,
+            "reference": "McNamara, J. (ed.), 1995. Oil & Gas Journal Data Book. Tulsa, OK: Pennwell Books. 411 pp."
         },
-        "source_id": "AD01261"
+        "product_type": "Crude Oil NOS",
+        "API": 36.3,
+        "model_completeness": 15
     },
-    "oil_id": "AD01261",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
-            "SARA": {
-                "asphaltenes": {
+            "metadata": {
+                "name": "Fresh Oil Sample",
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
                     "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.00258
+                    "unit_type": "massfraction"
                 }
             },
-            "bulk_composition": [
-                {
+            "physical_properties": {
+                "pour_point": {
                     "measurement": {
-                        "unit": "fraction",
-                        "unit_type": "massfraction",
-                        "value": 0.0283
-                    },
-                    "name": "wax_content"
+                        "value": 274.0,
+                        "unit": "K",
+                        "unit_type": "temperature"
+                    }
+                },
+                "kinematic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 3.65e-06,
+                            "unit": "m^2/s",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 294.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
+            },
+            "SARA": {
+                "asphaltenes": {
+                    "value": 0.00258,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
                 }
-            ],
+            },
             "distillation_data": {
                 "type": "mass fraction"
             },
-            "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
-                "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
-            },
-            "physical_properties": {
-                "kinematic_viscosities": [
-                    {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 294.0
-                        },
-                        "viscosity": {
-                            "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 3.65e-06
-                        }
-                    }
-                ],
-                "pour_point": {
+            "bulk_composition": [
+                {
+                    "name": "wax_content",
                     "measurement": {
-                        "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 274.0
+                        "value": 0.0283,
+                        "unit": "fraction",
+                        "unit_type": "massfraction"
                     }
                 }
-            }
+            ]
         }
     ]
 }

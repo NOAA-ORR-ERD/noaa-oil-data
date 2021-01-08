@@ -1,86 +1,86 @@
 {
+    "oil_id": "AD00404",
     "_id": "AD00404",
     "metadata": {
-        "API": 39.0,
-        "model_completeness": 39,
         "name": "FUEL OIL NO.1 (DIESEL/HEATING FUEL), PETRO STAR",
-        "product_type": "Refined Product NOS",
+        "source_id": "AD00404",
         "reference": {
-            "reference": "Petro Star Valdez Refinery., Letter to Glen Watabayashi, NOAA, Febuary 22, 1993.",
-            "year": 1993
+            "year": 1993,
+            "reference": "Petro Star Valdez Refinery., Letter to Glen Watabayashi, NOAA, Febuary 22, 1993."
         },
-        "source_id": "AD00404"
+        "product_type": "Refined Product NOS",
+        "API": 39.0,
+        "model_completeness": 39
     },
-    "oil_id": "AD00404",
     "sub_samples": [
         {
-            "distillation_data": {
-                "cuts": [
-                    {
-                        "fraction": {
-                            "unit": "fraction",
-                            "unit_type": "massfraction",
-                            "value": 0.1
-                        },
-                        "vapor_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 478.0
-                        }
-                    },
-                    {
-                        "fraction": {
-                            "unit": "fraction",
-                            "unit_type": "massfraction",
-                            "value": 0.9
-                        },
-                        "vapor_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 561.0
-                        }
-                    }
-                ],
-                "type": "volume fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": 222.0,
+                        "unit": "K",
+                        "unit_type": "temperature"
+                    }
+                },
                 "flash_point": {
                     "measurement": {
+                        "value": 311.0,
                         "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 311.0
+                        "unit_type": "temperature"
                     }
                 },
                 "kinematic_viscosities": [
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 311.0
-                        },
                         "viscosity": {
+                            "value": 1.3e-06,
                             "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 1.3e-06
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 311.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     }
-                ],
-                "pour_point": {
-                    "measurement": {
-                        "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 222.0
+                ]
+            },
+            "distillation_data": {
+                "type": "volume fraction",
+                "cuts": [
+                    {
+                        "fraction": {
+                            "value": 0.1,
+                            "unit": "fraction",
+                            "unit_type": "massfraction"
+                        },
+                        "vapor_temp": {
+                            "value": 478.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 0.9,
+                            "unit": "fraction",
+                            "unit_type": "massfraction"
+                        },
+                        "vapor_temp": {
+                            "value": 561.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
+                        }
                     }
-                }
+                ]
             }
         }
     ]

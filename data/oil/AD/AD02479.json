@@ -1,58 +1,55 @@
 {
+    "oil_id": "AD02479",
     "_id": "AD02479",
     "metadata": {
-        "API": 38.3,
-        "location": "ALPINE MODULE AT KUPARUK CPF-2, AK",
-        "model_completeness": 15,
         "name": "ALPINE SALES OIL",
-        "product_type": "Crude Oil NOS",
+        "source_id": "AD02479",
+        "location": "ALPINE MODULE AT KUPARUK CPF-2, AK",
         "reference": {
-            "reference": "Alaska Clean Seas, Personal Communication to John Whitney, NOAA, May 21, 2004.",
-            "year": 2004
+            "year": 2004,
+            "reference": "Alaska Clean Seas, Personal Communication to John Whitney, NOAA, May 21, 2004."
         },
-        "source_id": "AD02479"
+        "product_type": "Crude Oil NOS",
+        "API": 38.3,
+        "model_completeness": 15
     },
-    "oil_id": "AD02479",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
                 "flash_point": {
                     "measurement": {
-                        "max_value": 305.0,
-                        "min_value": 266.0,
                         "unit": "K",
+                        "min_value": 266.0,
+                        "max_value": 305.0,
                         "unit_type": "temperature"
                     }
                 },
                 "kinematic_viscosities": [
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 311.0
-                        },
                         "viscosity": {
+                            "value": 3.28e-06,
                             "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 3.28e-06
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 311.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "type": "mass fraction"
             }
         }
     ]

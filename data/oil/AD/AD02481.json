@@ -1,64 +1,61 @@
 {
+    "oil_id": "AD02481",
     "_id": "AD02481",
     "metadata": {
-        "API": 17.0,
-        "location": "KUPARUK",
-        "model_completeness": 15,
         "name": "WEST SAK",
-        "product_type": "Crude Oil NOS",
+        "source_id": "AD02481",
+        "location": "KUPARUK",
         "reference": {
-            "reference": "Alaska Clean Seas, Personal Communication to John Whitney, NOAA, May 25, 2004.",
-            "year": 2004
+            "year": 2004,
+            "reference": "Alaska Clean Seas, Personal Communication to John Whitney, NOAA, May 25, 2004."
         },
-        "source_id": "AD02481"
+        "product_type": "Crude Oil NOS",
+        "API": 17.0,
+        "model_completeness": 15
     },
-    "oil_id": "AD02481",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
                 "densities": [
                     {
                         "density": {
+                            "value": 953.0,
                             "unit": "kg/m^3",
-                            "unit_type": "density",
-                            "value": 953.0
+                            "unit_type": "density"
                         },
                         "ref_temp": {
+                            "value": 289.0,
                             "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 289.0
+                            "unit_type": "temperature"
                         }
                     }
                 ],
                 "kinematic_viscosities": [
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 294.0
-                        },
                         "viscosity": {
+                            "value": 0.0003,
                             "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 0.0003
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 294.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "type": "mass fraction"
             }
         }
     ]

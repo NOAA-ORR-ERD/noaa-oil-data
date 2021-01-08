@@ -1,50 +1,47 @@
 {
+    "oil_id": "AD01551",
     "_id": "AD01551",
     "metadata": {
-        "API": 41.7,
-        "location": "QATAR",
-        "model_completeness": 15,
         "name": "DUKHAN, OIL & GAS",
-        "product_type": "Crude Oil NOS",
+        "source_id": "AD01551",
+        "location": "QATAR",
         "reference": {
-            "reference": "McNamara, J. (ed.), 1996. Oil & Gas Journal Data Book. Tulsa, OK: Pennwell Books. 398 pp.",
-            "year": 1996
+            "year": 1996,
+            "reference": "McNamara, J. (ed.), 1996. Oil & Gas Journal Data Book. Tulsa, OK: Pennwell Books. 398 pp."
         },
-        "source_id": "AD01551"
+        "product_type": "Crude Oil NOS",
+        "API": 41.7,
+        "model_completeness": 15
     },
-    "oil_id": "AD01551",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
                 "kinematic_viscosities": [
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 300.0
-                        },
                         "viscosity": {
+                            "value": 5.36e-06,
                             "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 5.36e-06
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 300.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "type": "mass fraction"
             }
         }
     ]

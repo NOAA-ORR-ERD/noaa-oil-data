@@ -1,68 +1,65 @@
 {
+    "oil_id": "AD01915",
     "_id": "AD01915",
     "metadata": {
-        "API": 12.1,
-        "location": "VENEZUELA",
-        "model_completeness": 15,
         "name": "TIA JUANA HEAVY, OIL & GAS",
-        "product_type": "Crude Oil NOS",
+        "source_id": "AD01915",
+        "location": "VENEZUELA",
         "reference": {
-            "reference": "McNamara, J. (ed.), Patterson, M. (ed.),1998. Oil & Gas Journal Data Book. Tulsa, OK: Pennwell Books. 402 pp.",
-            "year": 1998
+            "year": 1998,
+            "reference": "McNamara, J. (ed.), Patterson, M. (ed.),1998. Oil & Gas Journal Data Book. Tulsa, OK: Pennwell Books. 402 pp."
         },
-        "source_id": "AD01915"
+        "product_type": "Crude Oil NOS",
+        "API": 12.1,
+        "model_completeness": 15
     },
-    "oil_id": "AD01915",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
-            "bulk_composition": [
-                {
-                    "measurement": {
-                        "unit": "fraction",
-                        "unit_type": "massfraction",
-                        "value": 0.027
-                    },
-                    "name": "sulfur"
+            "metadata": {
+                "name": "Fresh Oil Sample",
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
                 }
-            ],
+            },
+            "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": 272.0,
+                        "unit": "K",
+                        "unit_type": "temperature"
+                    }
+                },
+                "kinematic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 0.00298,
+                            "unit": "m^2/s",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 323.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
+            },
             "distillation_data": {
                 "type": "mass fraction"
             },
-            "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
-                "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
-            },
-            "physical_properties": {
-                "kinematic_viscosities": [
-                    {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 323.0
-                        },
-                        "viscosity": {
-                            "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 0.00298
-                        }
-                    }
-                ],
-                "pour_point": {
+            "bulk_composition": [
+                {
+                    "name": "sulfur",
                     "measurement": {
-                        "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 272.0
+                        "value": 0.027,
+                        "unit": "fraction",
+                        "unit_type": "massfraction"
                     }
                 }
-            }
+            ]
         }
     ]
 }

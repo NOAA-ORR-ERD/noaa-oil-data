@@ -1,89 +1,85 @@
 {
+    "oil_id": "AD00249",
     "_id": "AD00249",
     "metadata": {
-        "model_completeness": 16,
         "name": "CLARIFIED OIL",
-        "product_type": "Refined Product NOS",
+        "source_id": "AD00249",
         "reference": {
-            "reference": "Whiticar, S. Bobra, M., Fingas, M., Jokuty, P., Liuzzo, P., Callaghan, S., Ackerman, F., and Coa, J. 1992. A Catalogue of Crude Oil and Oil Product Properties (1992 Edition). Prepared for Environment Canada, EE-144, Ottawa, Ontario. 643pp.",
-            "year": 1992
+            "year": 1992,
+            "reference": "Whiticar, S. Bobra, M., Fingas, M., Jokuty, P., Liuzzo, P., Callaghan, S., Ackerman, F., and Coa, J. 1992. A Catalogue of Crude Oil and Oil Product Properties (1992 Edition). Prepared for Environment Canada, EE-144, Ottawa, Ontario. 643pp."
         },
-        "source_id": "AD00249"
+        "product_type": "Refined Product NOS",
+        "model_completeness": 16
     },
-    "oil_id": "AD00249",
-    "status": [
-        "W007: No distillation data provided",
-        "W004: No api value provided"
-    ],
     "sub_samples": [
         {
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
                 "densities": [
                     {
                         "density": {
+                            "value": 848.0,
                             "unit": "kg/m^3",
-                            "unit_type": "density",
-                            "value": 848.0
+                            "unit_type": "density"
                         },
                         "ref_temp": {
+                            "value": 293.0,
                             "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 293.0
-                        }
-                    }
-                ],
-                "dynamic_viscosities": [
-                    {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 288.0
-                        },
-                        "viscosity": {
-                            "unit": "kg/(m s)",
-                            "unit_type": "dynamicviscosity",
-                            "value": 0.00712
-                        }
-                    },
-                    {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 293.0
-                        },
-                        "viscosity": {
-                            "unit": "kg/(m s)",
-                            "unit_type": "dynamicviscosity",
-                            "value": 0.00577
+                            "unit_type": "temperature"
                         }
                     }
                 ],
                 "kinematic_viscosities": [
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 293.0
-                        },
                         "viscosity": {
+                            "value": 6.8e-06,
                             "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 6.8e-06
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 293.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
+                "dynamic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 0.00712,
+                            "unit": "kg/(m s)",
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 288.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "viscosity": {
+                            "value": 0.00577,
+                            "unit": "kg/(m s)",
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 293.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "type": "mass fraction"
             }
         }
     ]

@@ -1,49 +1,46 @@
 {
+    "oil_id": "AD01981",
     "_id": "AD01981",
     "metadata": {
-        "API": 31.5,
-        "location": "GULF OF MEXICO",
-        "model_completeness": 15,
         "name": "POSIDEN, EQUILON",
-        "product_type": "Crude Oil NOS",
+        "source_id": "AD01981",
+        "location": "GULF OF MEXICO",
         "reference": {
             "year": 2017
         },
-        "source_id": "AD01981"
+        "product_type": "Crude Oil NOS",
+        "API": 31.5,
+        "model_completeness": 15
     },
-    "oil_id": "AD01981",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
                 "kinematic_viscosities": [
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 289.0
-                        },
                         "viscosity": {
+                            "value": 1.8e-05,
                             "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 1.8e-05
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 289.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "type": "mass fraction"
             }
         }
     ]

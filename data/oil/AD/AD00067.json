@@ -1,58 +1,55 @@
 {
+    "oil_id": "AD00067",
     "_id": "AD00067",
     "metadata": {
+        "name": "ARABIAN MEDIUM, API",
+        "source_id": "AD00067",
+        "location": "SAUDIA ARABIA",
+        "reference": {
+            "year": 1986,
+            "reference": "API. 1986. \"\"U.S. Crude and Products Import 1985\"\". Prepared by John Yeager and Associates. Houston, Texas (1986)."
+        },
+        "product_type": "Crude Oil NOS",
         "API": 30.8,
         "comments": "A fairly persistent medium weight oil.",
-        "location": "SAUDIA ARABIA",
-        "model_completeness": 15,
-        "name": "ARABIAN MEDIUM, API",
-        "product_type": "Crude Oil NOS",
-        "reference": {
-            "reference": "API. 1986. \"\"U.S. Crude and Products Import 1985\"\". Prepared by John Yeager and Associates. Houston, Texas (1986).",
-            "year": 1986
-        },
-        "source_id": "AD00067"
+        "model_completeness": 15
     },
-    "oil_id": "AD00067",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
-                "kinematic_viscosities": [
-                    {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 311.0
-                        },
-                        "viscosity": {
-                            "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 1e-05
-                        }
-                    }
-                ],
                 "pour_point": {
                     "measurement": {
+                        "value": 258.0,
                         "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 258.0
+                        "unit_type": "temperature"
                     }
-                }
+                },
+                "kinematic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 1e-05,
+                            "unit": "m^2/s",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 311.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
+            },
+            "distillation_data": {
+                "type": "mass fraction"
             }
         }
     ]

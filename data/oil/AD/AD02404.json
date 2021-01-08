@@ -1,63 +1,59 @@
 {
+    "oil_id": "AD02404",
     "_id": "AD02404",
     "metadata": {
-        "model_completeness": 15,
         "name": "CANOLA OIL",
-        "product_type": "Crude Oil NOS",
+        "source_id": "AD02404",
         "reference": {
-            "reference": "Simecek-Beatty, D., and Lankford, J., Personal communication April 4, 1999.",
-            "year": 1999
+            "year": 1999,
+            "reference": "Simecek-Beatty, D., and Lankford, J., Personal communication April 4, 1999."
         },
-        "source_id": "AD02404"
+        "product_type": "Crude Oil NOS",
+        "model_completeness": 15
     },
-    "oil_id": "AD02404",
-    "status": [
-        "W007: No distillation data provided",
-        "W004: No api value provided"
-    ],
     "sub_samples": [
         {
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
                 "densities": [
                     {
                         "density": {
+                            "value": 915.0,
                             "unit": "kg/m^3",
-                            "unit_type": "density",
-                            "value": 915.0
+                            "unit_type": "density"
                         },
                         "ref_temp": {
+                            "value": 292.0,
                             "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 292.0
+                            "unit_type": "temperature"
                         }
                     }
                 ],
                 "kinematic_viscosities": [
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 292.0
-                        },
                         "viscosity": {
+                            "value": 8.25e-05,
                             "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 8.25e-05
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 292.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "type": "mass fraction"
             }
         }
     ]

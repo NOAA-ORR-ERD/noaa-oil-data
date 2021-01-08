@@ -1,103 +1,100 @@
 {
+    "oil_id": "AD00791",
     "_id": "AD00791",
     "metadata": {
+        "name": "MURCHISON",
+        "source_id": "AD00791",
+        "location": "U.K.,  NORWAY, NORTH SEA",
+        "reference": {
+            "year": 1996,
+            "reference": "Jokuty, P., Whiticar, S., Wang, Z., Fingas, M., Lambert, P., Fieldhouse, B., Mullen, J. 1996. A Catalogue of Crude Oil and Oil Product Properties (1996 Edition). Prepared for Environment Canada, EE-157, Ottawa, Ontario."
+        },
+        "product_type": "Crude Oil NOS",
         "API": 38.0,
         "comments": "Product from the Bent system at Sullom Voe, Shetland Islands.",
-        "location": "U.K.,  NORWAY, NORTH SEA",
-        "model_completeness": 15,
-        "name": "MURCHISON",
-        "product_type": "Crude Oil NOS",
-        "reference": {
-            "reference": "Jokuty, P., Whiticar, S., Wang, Z., Fingas, M., Lambert, P., Fieldhouse, B., Mullen, J. 1996. A Catalogue of Crude Oil and Oil Product Properties (1996 Edition). Prepared for Environment Canada, EE-157, Ottawa, Ontario.",
-            "year": 1996
-        },
-        "source_id": "AD00791"
+        "model_completeness": 15
     },
-    "oil_id": "AD00791",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
-            "bulk_composition": [
-                {
-                    "measurement": {
-                        "unit": "fraction",
-                        "unit_type": "massfraction",
-                        "value": 0.047
-                    },
-                    "name": "wax_content"
-                },
-                {
-                    "measurement": {
-                        "unit": "fraction",
-                        "unit_type": "massfraction",
-                        "value": 0.0027
-                    },
-                    "name": "sulfur"
-                },
-                {
-                    "measurement": {
-                        "unit": "ppm",
-                        "unit_type": "massfraction",
-                        "value": 0.7
-                    },
-                    "name": "nickel"
-                },
-                {
-                    "measurement": {
-                        "unit": "ppm",
-                        "unit_type": "massfraction",
-                        "value": 2.5
-                    },
-                    "name": "vanadium"
+            "metadata": {
+                "name": "Fresh Oil Sample",
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
                 }
-            ],
+            },
+            "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": 280.0,
+                        "unit": "K",
+                        "unit_type": "temperature"
+                    }
+                },
+                "kinematic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 4e-06,
+                            "unit": "m^2/s",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 311.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
+            },
             "distillation_data": {
                 "type": "mass fraction"
             },
-            "industry_properties": [
+            "bulk_composition": [
                 {
+                    "name": "wax_content",
                     "measurement": {
-                        "unit": "bar",
-                        "unit_type": "massfraction",
-                        "value": 0.62
-                    },
-                    "name": "Reid Vapor Pressure"
+                        "value": 0.047,
+                        "unit": "fraction",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "sulfur",
+                    "measurement": {
+                        "value": 0.0027,
+                        "unit": "fraction",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "nickel",
+                    "measurement": {
+                        "value": 0.7,
+                        "unit": "ppm",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "vanadium",
+                    "measurement": {
+                        "value": 2.5,
+                        "unit": "ppm",
+                        "unit_type": "massfraction"
+                    }
                 }
             ],
-            "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
-                "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
-            },
-            "physical_properties": {
-                "kinematic_viscosities": [
-                    {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 311.0
-                        },
-                        "viscosity": {
-                            "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 4e-06
-                        }
-                    }
-                ],
-                "pour_point": {
+            "industry_properties": [
+                {
+                    "name": "Reid Vapor Pressure",
                     "measurement": {
-                        "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 280.0
+                        "value": 0.62,
+                        "unit": "bar",
+                        "unit_type": "massfraction"
                     }
                 }
-            }
+            ]
         }
     ]
 }

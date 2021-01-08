@@ -1,68 +1,65 @@
 {
+    "oil_id": "AD01930",
     "_id": "AD01930",
     "metadata": {
-        "API": 45.5,
-        "location": "ALGERIA",
-        "model_completeness": 15,
         "name": "SAHARAN BLEND, OIL & GAS",
-        "product_type": "Crude Oil NOS",
+        "source_id": "AD01930",
+        "location": "ALGERIA",
         "reference": {
-            "reference": "McNamara, J. (ed.), Patterson, M. (ed.),1998. Oil & Gas Journal Data Book. Tulsa, OK: Pennwell Books. 402 pp.",
-            "year": 1998
+            "year": 1998,
+            "reference": "McNamara, J. (ed.), Patterson, M. (ed.),1998. Oil & Gas Journal Data Book. Tulsa, OK: Pennwell Books. 402 pp."
         },
-        "source_id": "AD01930"
+        "product_type": "Crude Oil NOS",
+        "API": 45.5,
+        "model_completeness": 15
     },
-    "oil_id": "AD01930",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
-            "bulk_composition": [
-                {
-                    "measurement": {
-                        "unit": "fraction",
-                        "unit_type": "massfraction",
-                        "value": 0.00053
-                    },
-                    "name": "sulfur"
+            "metadata": {
+                "name": "Fresh Oil Sample",
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
                 }
-            ],
+            },
+            "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": 244.0,
+                        "unit": "K",
+                        "unit_type": "temperature"
+                    }
+                },
+                "kinematic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 3.37e-06,
+                            "unit": "m^2/s",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 294.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
+            },
             "distillation_data": {
                 "type": "mass fraction"
             },
-            "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
-                "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
-            },
-            "physical_properties": {
-                "kinematic_viscosities": [
-                    {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 294.0
-                        },
-                        "viscosity": {
-                            "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 3.37e-06
-                        }
-                    }
-                ],
-                "pour_point": {
+            "bulk_composition": [
+                {
+                    "name": "sulfur",
                     "measurement": {
-                        "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 244.0
+                        "value": 0.00053,
+                        "unit": "fraction",
+                        "unit_type": "massfraction"
                     }
                 }
-            }
+            ]
         }
     ]
 }

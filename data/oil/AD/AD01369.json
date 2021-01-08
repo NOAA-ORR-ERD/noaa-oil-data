@@ -1,82 +1,79 @@
 {
+    "oil_id": "AD01369",
     "_id": "AD01369",
     "metadata": {
-        "API": 34.7,
-        "location": "NORTH SEA",
-        "model_completeness": 15,
         "name": "FLOTTA, OIL & GAS",
-        "product_type": "Crude Oil NOS",
+        "source_id": "AD01369",
+        "location": "NORTH SEA",
         "reference": {
-            "reference": "McNamara, J. (ed.), 1995. Oil & Gas Journal Data Book. Tulsa, OK: Pennwell Books. 411 pp.",
-            "year": 1995
+            "year": 1995,
+            "reference": "McNamara, J. (ed.), 1995. Oil & Gas Journal Data Book. Tulsa, OK: Pennwell Books. 411 pp."
         },
-        "source_id": "AD01369"
+        "product_type": "Crude Oil NOS",
+        "API": 34.7,
+        "model_completeness": 15
     },
-    "oil_id": "AD01369",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
-            "bulk_composition": [
-                {
-                    "measurement": {
-                        "unit": "fraction",
-                        "unit_type": "massfraction",
-                        "value": 0.121
-                    },
-                    "name": "wax_content"
-                }
-            ],
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": 252.0,
+                        "unit": "K",
+                        "unit_type": "temperature"
+                    }
+                },
                 "densities": [
                     {
                         "density": {
+                            "value": 850.0,
                             "unit": "kg/m^3",
-                            "unit_type": "density",
-                            "value": 850.0
+                            "unit_type": "density"
                         },
                         "ref_temp": {
+                            "value": 288.0,
                             "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 288.0
+                            "unit_type": "temperature"
                         }
                     }
                 ],
                 "kinematic_viscosities": [
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 293.0
-                        },
                         "viscosity": {
+                            "value": 1.22e-05,
                             "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 1.22e-05
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 293.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     }
-                ],
-                "pour_point": {
+                ]
+            },
+            "distillation_data": {
+                "type": "mass fraction"
+            },
+            "bulk_composition": [
+                {
+                    "name": "wax_content",
                     "measurement": {
-                        "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 252.0
+                        "value": 0.121,
+                        "unit": "fraction",
+                        "unit_type": "massfraction"
                     }
                 }
-            }
+            ]
         }
     ]
 }

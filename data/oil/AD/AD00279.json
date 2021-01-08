@@ -1,58 +1,55 @@
 {
+    "oil_id": "AD00279",
     "_id": "AD00279",
     "metadata": {
+        "name": "UNION, UNOCAL",
+        "source_id": "AD00279",
+        "location": "BEAUMONT, TEXAS",
+        "reference": {
+            "year": 1993,
+            "reference": "UNION 1993.  Material Safety Data Sheet: UNOCAL Crude Oil.  MSDS from Union Oil Company of California. Nederland, Texas: Beaumont Terminal.  7 pp."
+        },
+        "product_type": "Crude Oil NOS",
         "API": 28.6,
         "comments": "Oil data is for Union Crude Oil.  Sample collected at UNOCAL Beaumont Terminal.",
-        "location": "BEAUMONT, TEXAS",
-        "model_completeness": 15,
-        "name": "UNION, UNOCAL",
-        "product_type": "Crude Oil NOS",
-        "reference": {
-            "reference": "UNION 1993.  Material Safety Data Sheet: UNOCAL Crude Oil.  MSDS from Union Oil Company of California. Nederland, Texas: Beaumont Terminal.  7 pp.",
-            "year": 1993
-        },
-        "source_id": "AD00279"
+        "model_completeness": 15
     },
-    "oil_id": "AD00279",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
-                "kinematic_viscosities": [
-                    {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 313.0
-                        },
-                        "viscosity": {
-                            "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 1.12e-05
-                        }
-                    }
-                ],
                 "pour_point": {
                     "measurement": {
+                        "value": 258.0,
                         "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 258.0
+                        "unit_type": "temperature"
                     }
-                }
+                },
+                "kinematic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 1.12e-05,
+                            "unit": "m^2/s",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 313.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
+            },
+            "distillation_data": {
+                "type": "mass fraction"
             }
         }
     ]

@@ -1,94 +1,91 @@
 {
+    "oil_id": "AD01936",
     "_id": "AD01936",
     "metadata": {
-        "API": 26.7,
-        "location": "ALBERTA, CANADA",
-        "model_completeness": 15,
         "name": "BOW RIVER, OIL & GAS",
-        "product_type": "Crude Oil NOS",
+        "source_id": "AD01936",
+        "location": "ALBERTA, CANADA",
         "reference": {
-            "reference": "McNamara, J. (ed.), Patterson, M. (ed.),1998. Oil & Gas Journal Data Book. Tulsa, OK: Pennwell Books. 402 pp.",
-            "year": 1998
+            "year": 1998,
+            "reference": "McNamara, J. (ed.), Patterson, M. (ed.),1998. Oil & Gas Journal Data Book. Tulsa, OK: Pennwell Books. 402 pp."
         },
-        "source_id": "AD01936"
+        "product_type": "Crude Oil NOS",
+        "API": 26.7,
+        "model_completeness": 15
     },
-    "oil_id": "AD01936",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
-            "bulk_composition": [
-                {
-                    "measurement": {
-                        "unit": "ppm",
-                        "unit_type": "massfraction",
-                        "value": 20.7
-                    },
-                    "name": "nickel"
-                },
-                {
-                    "measurement": {
-                        "unit": "ppm",
-                        "unit_type": "massfraction",
-                        "value": 54
-                    },
-                    "name": "vanadium"
+            "metadata": {
+                "name": "Fresh Oil Sample",
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
                 }
-            ],
+            },
+            "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": 223.0,
+                        "unit": "K",
+                        "unit_type": "temperature"
+                    }
+                },
+                "kinematic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 1.83e-05,
+                            "unit": "m^2/s",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 313.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
+            },
             "distillation_data": {
                 "type": "mass fraction"
             },
-            "industry_properties": [
+            "bulk_composition": [
                 {
+                    "name": "nickel",
                     "measurement": {
-                        "unit": "bar",
-                        "unit_type": "massfraction",
-                        "value": 0.072
-                    },
-                    "name": "Reid Vapor Pressure"
+                        "value": 20.7,
+                        "unit": "ppm",
+                        "unit_type": "massfraction"
+                    }
                 },
                 {
+                    "name": "vanadium",
                     "measurement": {
-                        "unit": "fraction",
-                        "unit_type": "massfraction",
-                        "value": 0.067
-                    },
-                    "name": "Conradson Carbon Residue (CCR)"
+                        "value": 54,
+                        "unit": "ppm",
+                        "unit_type": "massfraction"
+                    }
                 }
             ],
-            "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
-                "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
-            },
-            "physical_properties": {
-                "kinematic_viscosities": [
-                    {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 313.0
-                        },
-                        "viscosity": {
-                            "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 1.83e-05
-                        }
-                    }
-                ],
-                "pour_point": {
+            "industry_properties": [
+                {
+                    "name": "Reid Vapor Pressure",
                     "measurement": {
-                        "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 223.0
+                        "value": 0.072,
+                        "unit": "bar",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Conradson Carbon Residue (CCR)",
+                    "measurement": {
+                        "value": 0.067,
+                        "unit": "fraction",
+                        "unit_type": "massfraction"
                     }
                 }
-            }
+            ]
         }
     ]
 }

@@ -1,57 +1,54 @@
 {
+    "oil_id": "AD01221",
     "_id": "AD01221",
     "metadata": {
-        "API": 22.3,
-        "location": "CHINA",
-        "model_completeness": 15,
         "name": "SHIAN LI",
-        "product_type": "Crude Oil NOS",
+        "source_id": "AD01221",
+        "location": "CHINA",
         "reference": {
-            "reference": "Chen,S., China Academy of Transportation Sciences, Ministry of Communications.  August 8, 1994.",
-            "year": 1994
+            "year": 1994,
+            "reference": "Chen,S., China Academy of Transportation Sciences, Ministry of Communications.  August 8, 1994."
         },
-        "source_id": "AD01221"
+        "product_type": "Crude Oil NOS",
+        "API": 22.3,
+        "model_completeness": 15
     },
-    "oil_id": "AD01221",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
                 "flash_point": {
                     "measurement": {
+                        "value": 313.0,
                         "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 313.0
+                        "unit_type": "temperature"
                     }
                 },
                 "kinematic_viscosities": [
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 323.0
-                        },
                         "viscosity": {
+                            "value": 0.000121,
                             "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 0.000121
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 323.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "type": "mass fraction"
             }
         }
     ]

@@ -1,68 +1,65 @@
 {
+    "oil_id": "AD02104",
     "_id": "AD02104",
     "metadata": {
-        "API": 20.7,
-        "location": "AFRICA",
-        "model_completeness": 15,
         "name": "BOLOBO",
-        "product_type": "Crude Oil NOS",
+        "source_id": "AD02104",
+        "location": "AFRICA",
         "reference": {
-            "reference": "Personal Communication to Bill Lehr, NOAA, March 1, 2000.",
-            "year": 2000
+            "year": 2000,
+            "reference": "Personal Communication to Bill Lehr, NOAA, March 1, 2000."
         },
-        "source_id": "AD02104"
+        "product_type": "Crude Oil NOS",
+        "API": 20.7,
+        "model_completeness": 15
     },
-    "oil_id": "AD02104",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
-            "bulk_composition": [
-                {
-                    "measurement": {
-                        "unit": "ppm",
-                        "unit_type": "massfraction",
-                        "value": 0.19
-                    },
-                    "name": "vanadium"
+            "metadata": {
+                "name": "Fresh Oil Sample",
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
                 }
-            ],
+            },
+            "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": 263.0,
+                        "unit": "K",
+                        "unit_type": "temperature"
+                    }
+                },
+                "dynamic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 0.072,
+                            "unit": "kg/(m s)",
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 361.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
+            },
             "distillation_data": {
                 "type": "mass fraction"
             },
-            "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
-                "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
-            },
-            "physical_properties": {
-                "dynamic_viscosities": [
-                    {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 361.0
-                        },
-                        "viscosity": {
-                            "unit": "kg/(m s)",
-                            "unit_type": "dynamicviscosity",
-                            "value": 0.072
-                        }
-                    }
-                ],
-                "pour_point": {
+            "bulk_composition": [
+                {
+                    "name": "vanadium",
                     "measurement": {
-                        "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 263.0
+                        "value": 0.19,
+                        "unit": "ppm",
+                        "unit_type": "massfraction"
                     }
                 }
-            }
+            ]
         }
     ]
 }

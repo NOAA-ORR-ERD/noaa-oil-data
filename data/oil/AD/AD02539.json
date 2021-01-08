@@ -1,82 +1,78 @@
 {
+    "oil_id": "AD02539",
     "_id": "AD02539",
     "metadata": {
-        "API": 19.0,
-        "model_completeness": 15,
         "name": "NAPO",
-        "product_type": "Crude Oil NOS",
+        "source_id": "AD02539",
         "reference": {
-            "reference": "Data from Shell Oil for Martinez Exercise 2015.",
-            "year": 2015
+            "year": 2015,
+            "reference": "Data from Shell Oil for Martinez Exercise 2015."
         },
-        "source_id": "AD02539"
+        "product_type": "Crude Oil NOS",
+        "API": 19.0,
+        "model_completeness": 15
     },
-    "oil_id": "AD02539",
-    "status": [
-        "W007: No distillation data provided",
-        "W001: Record name: NAPO is not very descriptive"
-    ],
     "sub_samples": [
         {
-            "SARA": {
-                "asphaltenes": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.1
-                }
-            },
-            "bulk_composition": [
-                {
-                    "measurement": {
-                        "unit": "fraction",
-                        "unit_type": "massfraction",
-                        "value": 0.025
-                    },
-                    "name": "sulfur"
-                }
-            ],
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": 249.0,
+                        "unit": "K",
+                        "unit_type": "temperature"
+                    }
+                },
                 "flash_point": {
                     "measurement": {
+                        "value": 303.0,
                         "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 303.0
+                        "unit_type": "temperature"
                     }
                 },
                 "kinematic_viscosities": [
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 323.0
-                        },
                         "viscosity": {
+                            "value": 0.00018,
                             "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 0.00018
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 323.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     }
-                ],
-                "pour_point": {
+                ]
+            },
+            "SARA": {
+                "asphaltenes": {
+                    "value": 0.1,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
+            },
+            "distillation_data": {
+                "type": "mass fraction"
+            },
+            "bulk_composition": [
+                {
+                    "name": "sulfur",
                     "measurement": {
-                        "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 249.0
+                        "value": 0.025,
+                        "unit": "fraction",
+                        "unit_type": "massfraction"
                     }
                 }
-            }
+            ]
         }
     ]
 }

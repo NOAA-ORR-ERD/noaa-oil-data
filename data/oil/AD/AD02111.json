@@ -1,78 +1,75 @@
 {
+    "oil_id": "AD02111",
     "_id": "AD02111",
     "metadata": {
-        "API": 18.6,
-        "location": "KUWAIT/IRAQ DIVIDED ZONE",
-        "model_completeness": 15,
         "name": "EOCENE",
-        "product_type": "Crude Oil NOS",
+        "source_id": "AD02111",
+        "location": "KUWAIT/IRAQ DIVIDED ZONE",
         "reference": {
-            "reference": "Jokuty, P., Whiticar, S., Wang, Z., Fingas, M., Fieldhouse, B., Lambert, P., Mullen, J. 1999. Properties of Crude Oils and Oil Products.  Manuscript Report EE-165, Environmental Protection Service, Environment Canada, Ottawa, Ontario.",
-            "year": 1999
+            "year": 1999,
+            "reference": "Jokuty, P., Whiticar, S., Wang, Z., Fingas, M., Fieldhouse, B., Lambert, P., Mullen, J. 1999. Properties of Crude Oils and Oil Products.  Manuscript Report EE-165, Environmental Protection Service, Environment Canada, Ottawa, Ontario."
         },
-        "source_id": "AD02111"
+        "product_type": "Crude Oil NOS",
+        "API": 18.6,
+        "model_completeness": 15
     },
-    "oil_id": "AD02111",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
-            "bulk_composition": [
-                {
-                    "measurement": {
-                        "unit": "fraction",
-                        "unit_type": "massfraction",
-                        "value": 0.0455
-                    },
-                    "name": "sulfur"
+            "metadata": {
+                "name": "Fresh Oil Sample",
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
                 }
-            ],
+            },
+            "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": 244.0,
+                        "unit": "K",
+                        "unit_type": "temperature"
+                    }
+                },
+                "kinematic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 1.53e-05,
+                            "unit": "m^2/s",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 323.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
+            },
             "distillation_data": {
                 "type": "mass fraction"
             },
-            "industry_properties": [
+            "bulk_composition": [
                 {
+                    "name": "sulfur",
                     "measurement": {
-                        "unit": "bar",
-                        "unit_type": "massfraction",
-                        "value": 0.08
-                    },
-                    "name": "Reid Vapor Pressure"
+                        "value": 0.0455,
+                        "unit": "fraction",
+                        "unit_type": "massfraction"
+                    }
                 }
             ],
-            "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
-                "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
-            },
-            "physical_properties": {
-                "kinematic_viscosities": [
-                    {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 323.0
-                        },
-                        "viscosity": {
-                            "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 1.53e-05
-                        }
-                    }
-                ],
-                "pour_point": {
+            "industry_properties": [
+                {
+                    "name": "Reid Vapor Pressure",
                     "measurement": {
-                        "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 244.0
+                        "value": 0.08,
+                        "unit": "bar",
+                        "unit_type": "massfraction"
                     }
                 }
-            }
+            ]
         }
     ]
 }

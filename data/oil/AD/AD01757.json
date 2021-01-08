@@ -1,80 +1,77 @@
 {
+    "oil_id": "AD01757",
     "_id": "AD01757",
     "metadata": {
-        "API": 80.5,
-        "location": "GULF OF MEXICO",
-        "model_completeness": 15,
         "name": "NATURAL GASOLINE",
-        "product_type": "Crude Oil NOS",
+        "source_id": "AD01757",
+        "location": "GULF OF MEXICO",
         "reference": {
-            "reference": "Bowman, H., Gulf State Pipeline Company, Letter to Jeff Lankford, NOAA, November 14, 1997.",
-            "year": 1997
+            "year": 1997,
+            "reference": "Bowman, H., Gulf State Pipeline Company, Letter to Jeff Lankford, NOAA, November 14, 1997."
         },
-        "source_id": "AD01757"
+        "product_type": "Crude Oil NOS",
+        "API": 80.5,
+        "model_completeness": 15
     },
-    "oil_id": "AD01757",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
-            "SARA": {
-                "aromatics": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.05
-                },
-                "saturates": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.8
-                }
-            },
-            "bulk_composition": [
-                {
-                    "measurement": {
-                        "unit": "fraction",
-                        "unit_type": "massfraction",
-                        "value": 0.15
-                    },
-                    "name": "naphthenes"
-                }
-            ],
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
                 "flash_point": {
                     "measurement": {
+                        "value": 250.0,
                         "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 250.0
+                        "unit_type": "temperature"
                     }
                 },
                 "kinematic_viscosities": [
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 289.0
-                        },
                         "viscosity": {
+                            "value": 7.5e-07,
                             "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 7.5e-07
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 289.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     }
                 ]
-            }
+            },
+            "SARA": {
+                "saturates": {
+                    "value": 0.8,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                },
+                "aromatics": {
+                    "value": 0.05,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
+            },
+            "distillation_data": {
+                "type": "mass fraction"
+            },
+            "bulk_composition": [
+                {
+                    "name": "naphthenes",
+                    "measurement": {
+                        "value": 0.15,
+                        "unit": "fraction",
+                        "unit_type": "massfraction"
+                    }
+                }
+            ]
         }
     ]
 }

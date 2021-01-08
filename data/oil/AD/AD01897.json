@@ -1,57 +1,54 @@
 {
+    "oil_id": "AD01897",
     "_id": "AD01897",
     "metadata": {
-        "API": 51.5,
-        "location": "INDONESIA",
-        "model_completeness": 15,
         "name": "KUKAPU, CALTEX",
-        "product_type": "Crude Oil NOS",
+        "source_id": "AD01897",
+        "location": "INDONESIA",
         "reference": {
-            "reference": "Gilbert, T., Austrlian Maritime Safety Authority., Letter to William Lehr, NOAA, June 26, 1998.",
-            "year": 1998
+            "year": 1998,
+            "reference": "Gilbert, T., Austrlian Maritime Safety Authority., Letter to William Lehr, NOAA, June 26, 1998."
         },
-        "source_id": "AD01897"
+        "product_type": "Crude Oil NOS",
+        "API": 51.5,
+        "model_completeness": 15
     },
-    "oil_id": "AD01897",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
-                "kinematic_viscosities": [
-                    {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 323.0
-                        },
-                        "viscosity": {
-                            "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 1.29e-06
-                        }
-                    }
-                ],
                 "pour_point": {
                     "measurement": {
+                        "value": 282.0,
                         "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 282.0
+                        "unit_type": "temperature"
                     }
-                }
+                },
+                "kinematic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 1.29e-06,
+                            "unit": "m^2/s",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 323.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
+            },
+            "distillation_data": {
+                "type": "mass fraction"
             }
         }
     ]

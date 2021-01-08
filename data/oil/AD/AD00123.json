@@ -1,57 +1,54 @@
 {
+    "oil_id": "AD00123",
     "_id": "AD00123",
     "metadata": {
-        "API": 22.0,
-        "location": "VENEZUELA",
-        "model_completeness": 15,
         "name": "BCF 22",
-        "product_type": "Crude Oil NOS",
+        "source_id": "AD00123",
+        "location": "VENEZUELA",
         "reference": {
-            "reference": "Yeager, John. 1986. U.S. Crude and Products Import 1985.  Prepared for the American Petroleum Institute, Washington, D.C. 14pp.",
-            "year": 1986
+            "year": 1986,
+            "reference": "Yeager, John. 1986. U.S. Crude and Products Import 1985.  Prepared for the American Petroleum Institute, Washington, D.C. 14pp."
         },
-        "source_id": "AD00123"
+        "product_type": "Crude Oil NOS",
+        "API": 22.0,
+        "model_completeness": 15
     },
-    "oil_id": "AD00123",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
-                "kinematic_viscosities": [
-                    {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 311.0
-                        },
-                        "viscosity": {
-                            "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 5.8e-05
-                        }
-                    }
-                ],
                 "pour_point": {
                     "measurement": {
+                        "value": 222.0,
                         "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 222.0
+                        "unit_type": "temperature"
                     }
-                }
+                },
+                "kinematic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 5.8e-05,
+                            "unit": "m^2/s",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 311.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
+            },
+            "distillation_data": {
+                "type": "mass fraction"
             }
         }
     ]

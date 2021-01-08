@@ -1,73 +1,70 @@
 {
+    "oil_id": "AD00165",
     "_id": "AD00165",
     "metadata": {
-        "API": 31.3,
-        "location": "INDIA",
-        "model_completeness": 18,
         "name": "BORHOLLA",
-        "product_type": "Crude Oil NOS",
+        "source_id": "AD00165",
+        "location": "INDIA",
         "reference": {
-            "reference": "Khan, H.U., Dilawar, S.V., Nautiyal, S.P., Srivastava, S.P., 1993. New Methods Determine Pour Point more Accuurately than ASTM D-97, Oil and Gas Journal, Nov 1, 1993, pp. 74-76.",
-            "year": 1993
+            "year": 1993,
+            "reference": "Khan, H.U., Dilawar, S.V., Nautiyal, S.P., Srivastava, S.P., 1993. New Methods Determine Pour Point more Accuurately than ASTM D-97, Oil and Gas Journal, Nov 1, 1993, pp. 74-76."
         },
-        "source_id": "AD00165"
+        "product_type": "Crude Oil NOS",
+        "API": 31.3,
+        "model_completeness": 18
     },
-    "oil_id": "AD00165",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
-            "bulk_composition": [
-                {
-                    "measurement": {
-                        "unit": "fraction",
-                        "unit_type": "massfraction",
-                        "value": 0.128
-                    },
-                    "name": "wax_content"
-                }
-            ],
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
                 "kinematic_viscosities": [
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 323.0
-                        },
                         "viscosity": {
+                            "value": 7.36e-06,
                             "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 7.36e-06
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 323.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     },
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 333.0
-                        },
                         "viscosity": {
+                            "value": 3.26e-06,
                             "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 3.26e-06
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 333.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     }
                 ]
-            }
+            },
+            "distillation_data": {
+                "type": "mass fraction"
+            },
+            "bulk_composition": [
+                {
+                    "name": "wax_content",
+                    "measurement": {
+                        "value": 0.128,
+                        "unit": "fraction",
+                        "unit_type": "massfraction"
+                    }
+                }
+            ]
         }
     ]
 }

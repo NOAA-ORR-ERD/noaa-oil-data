@@ -1,57 +1,54 @@
 {
+    "oil_id": "AD00101",
     "_id": "AD00101",
     "metadata": {
-        "API": 17.0,
-        "location": "LA SALINA, VENEZUELA",
-        "model_completeness": 15,
         "name": "BACHEQUERO MEDIUM",
-        "product_type": "Crude Oil NOS",
+        "source_id": "AD00101",
+        "location": "LA SALINA, VENEZUELA",
         "reference": {
-            "reference": "International Tanker Owners Pollution Federation (TOPALOP). 1982. Technical Information Paper No. 4, Use of Oil Dispersants pp.8.",
-            "year": 1982
+            "year": 1982,
+            "reference": "International Tanker Owners Pollution Federation (TOPALOP). 1982. Technical Information Paper No. 4, Use of Oil Dispersants pp.8."
         },
-        "source_id": "AD00101"
+        "product_type": "Crude Oil NOS",
+        "API": 17.0,
+        "model_completeness": 15
     },
-    "oil_id": "AD00101",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
-                "kinematic_viscosities": [
-                    {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 311.0
-                        },
-                        "viscosity": {
-                            "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 0.00035
-                        }
-                    }
-                ],
                 "pour_point": {
                     "measurement": {
+                        "value": 253.0,
                         "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 253.0
+                        "unit_type": "temperature"
                     }
-                }
+                },
+                "kinematic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 0.00035,
+                            "unit": "m^2/s",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 311.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
+            },
+            "distillation_data": {
+                "type": "mass fraction"
             }
         }
     ]

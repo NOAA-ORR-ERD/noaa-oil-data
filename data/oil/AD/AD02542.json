@@ -1,74 +1,71 @@
 {
+    "oil_id": "AD02542",
     "_id": "AD02542",
     "metadata": {
-        "API": 38.4,
-        "location": "ALASKA NORTH SLOPE",
-        "model_completeness": 15,
         "name": "ALPINE",
-        "product_type": "Crude Oil NOS",
+        "source_id": "AD02542",
+        "location": "ALASKA NORTH SLOPE",
         "reference": {
             "year": 2017
         },
-        "source_id": "AD02542"
+        "product_type": "Crude Oil NOS",
+        "API": 38.4,
+        "model_completeness": 15
     },
-    "oil_id": "AD02542",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
-            "SARA": {
-                "asphaltenes": {
+            "metadata": {
+                "name": "Fresh Oil Sample",
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
                     "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0046
+                    "unit_type": "massfraction"
                 }
             },
-            "bulk_composition": [
-                {
+            "physical_properties": {
+                "pour_point": {
                     "measurement": {
-                        "unit": "fraction",
-                        "unit_type": "massfraction",
-                        "value": 0.0205
-                    },
-                    "name": "wax_content"
+                        "value": 237.0,
+                        "unit": "K",
+                        "unit_type": "temperature"
+                    }
+                },
+                "dynamic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 0.008,
+                            "unit": "kg/(m s)",
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 283.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
+            },
+            "SARA": {
+                "asphaltenes": {
+                    "value": 0.0046,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
                 }
-            ],
+            },
             "distillation_data": {
                 "type": "mass fraction"
             },
-            "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
-                "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
-            },
-            "physical_properties": {
-                "dynamic_viscosities": [
-                    {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 283.0
-                        },
-                        "viscosity": {
-                            "unit": "kg/(m s)",
-                            "unit_type": "dynamicviscosity",
-                            "value": 0.008
-                        }
-                    }
-                ],
-                "pour_point": {
+            "bulk_composition": [
+                {
+                    "name": "wax_content",
                     "measurement": {
-                        "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 237.0
+                        "value": 0.0205,
+                        "unit": "fraction",
+                        "unit_type": "massfraction"
                     }
                 }
-            }
+            ]
         }
     ]
 }

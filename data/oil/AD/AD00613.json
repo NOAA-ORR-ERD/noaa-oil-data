@@ -1,57 +1,54 @@
 {
+    "oil_id": "AD00613",
     "_id": "AD00613",
     "metadata": {
-        "API": 35.1,
-        "location": "IRAQ",
-        "model_completeness": 15,
         "name": "KIRKUK BLEND,  OIL & GAS JOURNAL",
-        "product_type": "Crude Oil NOS",
+        "source_id": "AD00613",
+        "location": "IRAQ",
         "reference": {
-            "reference": "Aalund, L. 1983.  Guide to export crudes for the '80s.  Oil and Gas Journal, December 12, 1983.",
-            "year": 1983
+            "year": 1983,
+            "reference": "Aalund, L. 1983.  Guide to export crudes for the '80s.  Oil and Gas Journal, December 12, 1983."
         },
-        "source_id": "AD00613"
+        "product_type": "Crude Oil NOS",
+        "API": 35.1,
+        "model_completeness": 15
     },
-    "oil_id": "AD00613",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
-                "kinematic_viscosities": [
-                    {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 283.0
-                        },
-                        "viscosity": {
-                            "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 1.28e-05
-                        }
-                    }
-                ],
                 "pour_point": {
                     "measurement": {
+                        "value": 251.0,
                         "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 251.0
+                        "unit_type": "temperature"
                     }
-                }
+                },
+                "kinematic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 1.28e-05,
+                            "unit": "m^2/s",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 283.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
+            },
+            "distillation_data": {
+                "type": "mass fraction"
             }
         }
     ]

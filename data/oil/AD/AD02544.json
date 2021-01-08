@@ -1,95 +1,92 @@
 {
+    "oil_id": "AD02544",
     "_id": "AD02544",
     "metadata": {
-        "API": 35.0,
-        "location": "NORWAY",
-        "model_completeness": 15,
         "name": "MARINE DIESEL OIL, ESSO",
-        "product_type": "Refined Product NOS",
+        "source_id": "AD02544",
+        "location": "NORWAY",
         "reference": {
             "year": 2017
         },
-        "source_id": "AD02544"
+        "product_type": "Refined Product NOS",
+        "API": 35.0,
+        "model_completeness": 15
     },
-    "oil_id": "AD02544",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
-            "SARA": {
-                "asphaltenes": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0003
-                }
-            },
-            "bulk_composition": [
-                {
-                    "measurement": {
-                        "unit": "fraction",
-                        "unit_type": "massfraction",
-                        "value": 0.0196
-                    },
-                    "name": "wax_content"
-                }
-            ],
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": 237.0,
+                        "unit": "K",
+                        "unit_type": "temperature"
+                    }
+                },
+                "flash_point": {
+                    "measurement": {
+                        "value": 335.0,
+                        "unit": "K",
+                        "unit_type": "temperature"
+                    }
+                },
                 "densities": [
                     {
                         "density": {
+                            "value": 849.0,
                             "unit": "kg/m^3",
-                            "unit_type": "density",
-                            "value": 849.0
+                            "unit_type": "density"
                         },
                         "ref_temp": {
+                            "value": 289.0,
                             "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 289.0
+                            "unit_type": "temperature"
                         }
                     }
                 ],
                 "dynamic_viscosities": [
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 283.0
-                        },
                         "viscosity": {
+                            "value": 0.007,
                             "unit": "kg/(m s)",
-                            "unit_type": "dynamicviscosity",
-                            "value": 0.007
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 283.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     }
-                ],
-                "flash_point": {
+                ]
+            },
+            "SARA": {
+                "asphaltenes": {
+                    "value": 0.0003,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
+            },
+            "distillation_data": {
+                "type": "mass fraction"
+            },
+            "bulk_composition": [
+                {
+                    "name": "wax_content",
                     "measurement": {
-                        "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 335.0
-                    }
-                },
-                "pour_point": {
-                    "measurement": {
-                        "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 237.0
+                        "value": 0.0196,
+                        "unit": "fraction",
+                        "unit_type": "massfraction"
                     }
                 }
-            }
+            ]
         }
     ]
 }

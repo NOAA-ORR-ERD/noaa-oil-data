@@ -1,136 +1,136 @@
 {
+    "oil_id": "AD01775",
     "_id": "AD01775",
     "metadata": {
-        "API": 31.5,
-        "model_completeness": 39,
         "name": "DESTIN DOME CIS, MMS",
-        "product_type": "Refined Product NOS",
+        "source_id": "AD01775",
         "reference": {
-            "reference": "MMS, Letter to William Lehr, NOAA, February 25, 1998.",
-            "year": 1998
+            "year": 1998,
+            "reference": "MMS, Letter to William Lehr, NOAA, February 25, 1998."
         },
-        "source_id": "AD01775"
+        "product_type": "Refined Product NOS",
+        "API": 31.5,
+        "model_completeness": 39
     },
-    "oil_id": "AD01775",
     "sub_samples": [
         {
-            "bulk_composition": [
-                {
-                    "measurement": {
-                        "unit": "fraction",
-                        "unit_type": "massfraction",
-                        "value": 0.0045
-                    },
-                    "name": "sulfur"
-                }
-            ],
-            "distillation_data": {
-                "cuts": [
-                    {
-                        "fraction": {
-                            "unit": "fraction",
-                            "unit_type": "massfraction",
-                            "value": 0.1
-                        },
-                        "vapor_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 504.0
-                        }
-                    },
-                    {
-                        "fraction": {
-                            "unit": "fraction",
-                            "unit_type": "massfraction",
-                            "value": 0.5
-                        },
-                        "vapor_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 555.0
-                        }
-                    },
-                    {
-                        "fraction": {
-                            "unit": "fraction",
-                            "unit_type": "massfraction",
-                            "value": 0.9
-                        },
-                        "vapor_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 605.0
-                        }
-                    }
-                ],
-                "type": "volume fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
-                "dynamic_viscosities": [
+                "pour_point": {
+                    "measurement": {
+                        "value": 258.0,
+                        "unit": "K",
+                        "unit_type": "temperature"
+                    }
+                },
+                "flash_point": {
+                    "measurement": {
+                        "value": 352.0,
+                        "unit": "K",
+                        "unit_type": "temperature"
+                    }
+                },
+                "kinematic_viscosities": [
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 313.0
-                        },
                         "viscosity": {
-                            "unit": "kg/(m s)",
-                            "unit_type": "dynamicviscosity",
-                            "value": 0.00274
+                            "value": 3.16e-06,
+                            "unit": "m^2/s",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 313.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     }
                 ],
-                "flash_point": {
-                    "measurement": {
-                        "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 352.0
+                "dynamic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 0.00274,
+                            "unit": "kg/(m s)",
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 313.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
+                        }
                     }
-                },
+                ],
                 "interfacial_tension_water": [
                     {
+                        "tension": {
+                            "value": 0.03,
+                            "unit": "N/m",
+                            "unit_type": "interfacialtension"
+                        },
                         "ref_temp": {
                             "unit": "K",
                             "unit_type": "temperature"
-                        },
-                        "tension": {
-                            "unit": "N/m",
-                            "unit_type": "interfacialtension",
-                            "value": 0.03
                         }
                     }
-                ],
-                "kinematic_viscosities": [
+                ]
+            },
+            "distillation_data": {
+                "type": "volume fraction",
+                "cuts": [
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 313.0
+                        "fraction": {
+                            "value": 0.1,
+                            "unit": "fraction",
+                            "unit_type": "massfraction"
                         },
-                        "viscosity": {
-                            "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 3.16e-06
+                        "vapor_temp": {
+                            "value": 504.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 0.5,
+                            "unit": "fraction",
+                            "unit_type": "massfraction"
+                        },
+                        "vapor_temp": {
+                            "value": 555.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 0.9,
+                            "unit": "fraction",
+                            "unit_type": "massfraction"
+                        },
+                        "vapor_temp": {
+                            "value": 605.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     }
-                ],
-                "pour_point": {
+                ]
+            },
+            "bulk_composition": [
+                {
+                    "name": "sulfur",
                     "measurement": {
-                        "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 258.0
+                        "value": 0.0045,
+                        "unit": "fraction",
+                        "unit_type": "massfraction"
                     }
                 }
-            }
+            ]
         }
     ]
 }

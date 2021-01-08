@@ -1,88 +1,85 @@
 {
+    "oil_id": "AD01378",
     "_id": "AD01378",
     "metadata": {
-        "API": 38.8,
-        "location": "NORTH SEA",
-        "model_completeness": 20,
         "name": "FORTIES, OIL & GAS",
-        "product_type": "Crude Oil NOS",
+        "source_id": "AD01378",
+        "location": "NORTH SEA",
         "reference": {
-            "reference": "McNamara, J. (ed.), 1995. Oil & Gas Journal Data Book. Tulsa, OK: Pennwell Books. 411 pp.",
-            "year": 1995
+            "year": 1995,
+            "reference": "McNamara, J. (ed.), 1995. Oil & Gas Journal Data Book. Tulsa, OK: Pennwell Books. 411 pp."
         },
-        "source_id": "AD01378"
+        "product_type": "Crude Oil NOS",
+        "API": 38.8,
+        "model_completeness": 20
     },
-    "oil_id": "AD01378",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
+            "metadata": {
+                "name": "Fresh Oil Sample",
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
+            },
+            "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": 261.0,
+                        "unit": "K",
+                        "unit_type": "temperature"
+                    }
+                },
+                "kinematic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 3.04e-06,
+                            "unit": "m^2/s",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 313.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "viscosity": {
+                            "value": 2.67e-06,
+                            "unit": "m^2/s",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 323.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "viscosity": {
+                            "value": 2.37e-06,
+                            "unit": "m^2/s",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 333.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
+            },
             "SARA": {
                 "asphaltenes": {
+                    "value": 0.0045,
                     "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0045
+                    "unit_type": "massfraction"
                 }
             },
             "distillation_data": {
                 "type": "mass fraction"
-            },
-            "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
-                "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
-            },
-            "physical_properties": {
-                "kinematic_viscosities": [
-                    {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 313.0
-                        },
-                        "viscosity": {
-                            "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 3.04e-06
-                        }
-                    },
-                    {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 323.0
-                        },
-                        "viscosity": {
-                            "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 2.67e-06
-                        }
-                    },
-                    {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 333.0
-                        },
-                        "viscosity": {
-                            "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 2.37e-06
-                        }
-                    }
-                ],
-                "pour_point": {
-                    "measurement": {
-                        "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 261.0
-                    }
-                }
             }
         }
     ]

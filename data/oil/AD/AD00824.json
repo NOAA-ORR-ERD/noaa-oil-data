@@ -1,69 +1,66 @@
 {
+    "oil_id": "AD00824",
     "_id": "AD00824",
     "metadata": {
-        "API": 34.6,
-        "location": "COOK INLET, ALASKA",
-        "model_completeness": 18,
         "name": "NIKISKI",
-        "product_type": "Crude Oil NOS",
+        "source_id": "AD00824",
+        "location": "COOK INLET, ALASKA",
         "reference": {
-            "reference": "Alaska Department of Natural Resources. 1992. Historical and Projected Oil and Gas Consumption. Division of Oil and Gas. Cited by Karen Williams. April 7, 1993. Cook Inlet Regional Citizens Advisory Council, Letter to Debra Simecek-Beatty, NOAA.",
-            "year": 1993
+            "year": 1993,
+            "reference": "Alaska Department of Natural Resources. 1992. Historical and Projected Oil and Gas Consumption. Division of Oil and Gas. Cited by Karen Williams. April 7, 1993. Cook Inlet Regional Citizens Advisory Council, Letter to Debra Simecek-Beatty, NOAA."
         },
-        "source_id": "AD00824"
+        "product_type": "Crude Oil NOS",
+        "API": 34.6,
+        "model_completeness": 18
     },
-    "oil_id": "AD00824",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
-            "distillation_data": {
-                "type": "volume fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": 253.0,
+                        "unit": "K",
+                        "unit_type": "temperature"
+                    }
+                },
                 "kinematic_viscosities": [
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 291.0
-                        },
                         "viscosity": {
+                            "value": 7.34e-06,
                             "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 7.34e-06
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 291.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     },
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 305.0
-                        },
                         "viscosity": {
+                            "value": 7.17e-06,
                             "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 7.17e-06
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 305.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     }
-                ],
-                "pour_point": {
-                    "measurement": {
-                        "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 253.0
-                    }
-                }
+                ]
+            },
+            "distillation_data": {
+                "type": "volume fraction"
             }
         }
     ]

@@ -1,57 +1,54 @@
 {
+    "oil_id": "AD01529",
     "_id": "AD01529",
     "metadata": {
-        "API": 61.0,
-        "location": "NEW PLYMOUTH, NEW ZEALAND",
-        "model_completeness": 15,
         "name": "SYNGAS, MARITIME SAFETY AUTHORITY OF NEW ZEALAND",
-        "product_type": "Crude Oil NOS",
+        "source_id": "AD01529",
+        "location": "NEW PLYMOUTH, NEW ZEALAND",
         "reference": {
-            "reference": "Welsh,C., Maritime Safety Authority of New Zealand, Communication to Bill Lehr, NOAA, July 29, 1996.",
-            "year": 1996
+            "year": 1996,
+            "reference": "Welsh,C., Maritime Safety Authority of New Zealand, Communication to Bill Lehr, NOAA, July 29, 1996."
         },
-        "source_id": "AD01529"
+        "product_type": "Crude Oil NOS",
+        "API": 61.0,
+        "model_completeness": 15
     },
-    "oil_id": "AD01529",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
                 "flash_point": {
                     "measurement": {
+                        "value": 253.0,
                         "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 253.0
+                        "unit_type": "temperature"
                     }
                 },
                 "kinematic_viscosities": [
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 313.0
-                        },
                         "viscosity": {
+                            "value": 1e-06,
                             "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 1e-06
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 313.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "type": "mass fraction"
             }
         }
     ]

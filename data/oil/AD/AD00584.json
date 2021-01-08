@@ -1,77 +1,74 @@
 {
+    "oil_id": "AD00584",
     "_id": "AD00584",
     "metadata": {
+        "name": "JET A (DFA), TESORO",
+        "source_id": "AD00584",
+        "location": "KENAI, AK",
+        "reference": {
+            "year": 1993,
+            "reference": "Helmuth, A., Tesoro Alaska Petroleum Company, Letter to  Debra Simecek-Beatty,  NOAA, March 3, 1993."
+        },
+        "product_type": "Refined Product NOS",
         "API": 43.0,
         "comments": "Freezing point is less than -50\u00c2\u00b0F.",
-        "location": "KENAI, AK",
-        "model_completeness": 20,
-        "name": "JET A (DFA), TESORO",
-        "product_type": "Refined Product NOS",
-        "reference": {
-            "reference": "Helmuth, A., Tesoro Alaska Petroleum Company, Letter to  Debra Simecek-Beatty,  NOAA, March 3, 1993.",
-            "year": 1993
-        },
-        "source_id": "AD00584"
+        "model_completeness": 20
     },
-    "oil_id": "AD00584",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": 222.0,
+                        "unit": "K",
+                        "unit_type": "temperature"
+                    }
+                },
                 "flash_point": {
                     "measurement": {
+                        "value": 313.0,
                         "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 313.0
+                        "unit_type": "temperature"
                     }
                 },
                 "kinematic_viscosities": [
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 313.0
-                        },
                         "viscosity": {
+                            "value": 1.25e-06,
                             "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 1.25e-06
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 313.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     },
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 253.0
-                        },
                         "viscosity": {
+                            "value": 6.9e-06,
                             "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 6.9e-06
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 253.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     }
-                ],
-                "pour_point": {
-                    "measurement": {
-                        "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 222.0
-                    }
-                }
+                ]
+            },
+            "distillation_data": {
+                "type": "mass fraction"
             }
         }
     ]

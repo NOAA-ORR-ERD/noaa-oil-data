@@ -1,75 +1,72 @@
 {
+    "oil_id": "AD02477",
     "_id": "AD02477",
     "metadata": {
-        "API": 22.2,
-        "location": "MILNE POINT 2ND STAGE SEPARATOR, AK",
-        "model_completeness": 15,
         "name": "MILNE POINT",
-        "product_type": "Crude Oil NOS",
+        "source_id": "AD02477",
+        "location": "MILNE POINT 2ND STAGE SEPARATOR, AK",
         "reference": {
-            "reference": "Alaska Clean Seas, Personal Communication to John Whitney, NOAA, May 21, 2004.",
-            "year": 2004
+            "year": 2004,
+            "reference": "Alaska Clean Seas, Personal Communication to John Whitney, NOAA, May 21, 2004."
         },
-        "source_id": "AD02477"
+        "product_type": "Crude Oil NOS",
+        "API": 22.2,
+        "model_completeness": 15
     },
-    "oil_id": "AD02477",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
-            "bulk_composition": [
-                {
-                    "measurement": {
-                        "unit": "fraction",
-                        "unit_type": "massfraction",
-                        "value": 0.087
-                    },
-                    "name": "wax_content"
-                }
-            ],
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
                 "densities": [
                     {
                         "density": {
+                            "value": 920.0,
                             "unit": "kg/m^3",
-                            "unit_type": "density",
-                            "value": 920.0
+                            "unit_type": "density"
                         },
                         "ref_temp": {
+                            "value": 289.0,
                             "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 289.0
+                            "unit_type": "temperature"
                         }
                     }
                 ],
                 "kinematic_viscosities": [
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 311.0
-                        },
                         "viscosity": {
+                            "value": 3.76e-05,
                             "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 3.76e-05
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 311.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     }
                 ]
-            }
+            },
+            "distillation_data": {
+                "type": "mass fraction"
+            },
+            "bulk_composition": [
+                {
+                    "name": "wax_content",
+                    "measurement": {
+                        "value": 0.087,
+                        "unit": "fraction",
+                        "unit_type": "massfraction"
+                    }
+                }
+            ]
         }
     ]
 }

@@ -1,83 +1,80 @@
 {
+    "oil_id": "AD01531",
     "_id": "AD01531",
     "metadata": {
-        "API": 41.0,
-        "location": "INDONESIA",
-        "model_completeness": 20,
         "name": "BEKAPAI,  MARITIME SAFETY AUTHORITY OF NEW ZEALAND",
-        "product_type": "Crude Oil NOS",
+        "source_id": "AD01531",
+        "location": "INDONESIA",
         "reference": {
-            "reference": "Welsh,C., Maritime Safety Authority of New Zealand, Communication to Bill Lehr, NOAA, July 29, 1996.",
-            "year": 1996
+            "year": 1996,
+            "reference": "Welsh,C., Maritime Safety Authority of New Zealand, Communication to Bill Lehr, NOAA, July 29, 1996."
         },
-        "source_id": "AD01531"
+        "product_type": "Crude Oil NOS",
+        "API": 41.0,
+        "model_completeness": 20
     },
-    "oil_id": "AD01531",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": 252.0,
+                        "unit": "K",
+                        "unit_type": "temperature"
+                    }
+                },
                 "densities": [
                     {
                         "density": {
+                            "value": 820.0,
                             "unit": "kg/m^3",
-                            "unit_type": "density",
-                            "value": 820.0
+                            "unit_type": "density"
                         },
                         "ref_temp": {
+                            "value": 288.0,
                             "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 288.0
+                            "unit_type": "temperature"
                         }
                     }
                 ],
                 "kinematic_viscosities": [
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 313.0
-                        },
                         "viscosity": {
+                            "value": 1.83e-06,
                             "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 1.83e-06
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 313.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     },
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 373.0
-                        },
                         "viscosity": {
+                            "value": 9.2e-07,
                             "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 9.2e-07
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 373.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     }
-                ],
-                "pour_point": {
-                    "measurement": {
-                        "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 252.0
-                    }
-                }
+                ]
+            },
+            "distillation_data": {
+                "type": "mass fraction"
             }
         }
     ]

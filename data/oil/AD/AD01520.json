@@ -1,90 +1,87 @@
 {
+    "oil_id": "AD01520",
     "_id": "AD01520",
     "metadata": {
-        "API": 32.8,
-        "location": "DUBAI",
-        "model_completeness": 20,
         "name": "DUBAI, MARITIME SAFETY AUTHORITY OF NEW ZEALAND",
-        "product_type": "Crude Oil NOS",
+        "source_id": "AD01520",
+        "location": "DUBAI",
         "reference": {
-            "reference": "Welsh,C., Maritime Safety Authority of New Zealand, Communication to Bill Lehr, NOAA, July 29, 1996.",
-            "year": 1996
+            "year": 1996,
+            "reference": "Welsh,C., Maritime Safety Authority of New Zealand, Communication to Bill Lehr, NOAA, July 29, 1996."
         },
-        "source_id": "AD01520"
+        "product_type": "Crude Oil NOS",
+        "API": 32.8,
+        "model_completeness": 20
     },
-    "oil_id": "AD01520",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": 244.0,
+                        "unit": "K",
+                        "unit_type": "temperature"
+                    }
+                },
+                "flash_point": {
+                    "measurement": {
+                        "value": 266.0,
+                        "unit": "K",
+                        "unit_type": "temperature"
+                    }
+                },
                 "densities": [
                     {
                         "density": {
+                            "value": 840.0,
                             "unit": "kg/m^3",
-                            "unit_type": "density",
-                            "value": 840.0
+                            "unit_type": "density"
                         },
                         "ref_temp": {
+                            "value": 288.0,
                             "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 288.0
+                            "unit_type": "temperature"
                         }
                     }
                 ],
-                "flash_point": {
-                    "measurement": {
-                        "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 266.0
-                    }
-                },
                 "kinematic_viscosities": [
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 313.0
-                        },
                         "viscosity": {
+                            "value": 6e-06,
                             "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 6e-06
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 313.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     },
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 373.0
-                        },
                         "viscosity": {
+                            "value": 2e-06,
                             "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 2e-06
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 373.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     }
-                ],
-                "pour_point": {
-                    "measurement": {
-                        "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 244.0
-                    }
-                }
+                ]
+            },
+            "distillation_data": {
+                "type": "mass fraction"
             }
         }
     ]

@@ -1,57 +1,54 @@
 {
+    "oil_id": "AD00632",
     "_id": "AD00632",
     "metadata": {
-        "API": 31.4,
-        "location": "KUWAIT",
-        "model_completeness": 15,
         "name": "KUWAIT EXPORT",
-        "product_type": "Crude Oil NOS",
+        "source_id": "AD00632",
+        "location": "KUWAIT",
         "reference": {
-            "reference": "Aalund, L. 1983.  Guide to export crudes for the '80s.  Oil and Gas Journal, December 12, 1983.",
-            "year": 1983
+            "year": 1983,
+            "reference": "Aalund, L. 1983.  Guide to export crudes for the '80s.  Oil and Gas Journal, December 12, 1983."
         },
-        "source_id": "AD00632"
+        "product_type": "Crude Oil NOS",
+        "API": 31.4,
+        "model_completeness": 15
     },
-    "oil_id": "AD00632",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
-                "dynamic_viscosities": [
-                    {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 311.0
-                        },
-                        "viscosity": {
-                            "unit": "kg/(m s)",
-                            "unit_type": "dynamicviscosity",
-                            "value": 0.0581
-                        }
-                    }
-                ],
                 "pour_point": {
                     "measurement": {
+                        "value": 258.0,
                         "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 258.0
+                        "unit_type": "temperature"
                     }
-                }
+                },
+                "dynamic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 0.0581,
+                            "unit": "kg/(m s)",
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 311.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
+            },
+            "distillation_data": {
+                "type": "mass fraction"
             }
         }
     ]

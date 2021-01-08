@@ -1,50 +1,47 @@
 {
+    "oil_id": "AD00570",
     "_id": "AD00570",
     "metadata": {
-        "API": 31.0,
-        "location": "IRAN",
-        "model_completeness": 15,
         "name": "IRANIAN HEAVY, ARCO",
-        "product_type": "Crude Oil NOS",
+        "source_id": "AD00570",
+        "location": "IRAN",
         "reference": {
-            "reference": "Lindstedt-Siva, J., ARCO, Los Angeles, California.  Letter to William Lehr, NOAA, December 2, 1992.",
-            "year": 1992
+            "year": 1992,
+            "reference": "Lindstedt-Siva, J., ARCO, Los Angeles, California.  Letter to William Lehr, NOAA, December 2, 1992."
         },
-        "source_id": "AD00570"
+        "product_type": "Crude Oil NOS",
+        "API": 31.0,
+        "model_completeness": 15
     },
-    "oil_id": "AD00570",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
                 "kinematic_viscosities": [
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 311.0
-                        },
                         "viscosity": {
+                            "value": 8.83e-06,
                             "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 8.83e-06
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 311.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "type": "mass fraction"
             }
         }
     ]

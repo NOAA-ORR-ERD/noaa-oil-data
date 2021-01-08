@@ -1,57 +1,54 @@
 {
+    "oil_id": "AD00799",
     "_id": "AD00799",
     "metadata": {
-        "API": 58.7,
-        "model_completeness": 15,
         "name": "NAPHTHA (RUBBER SOLVENT)",
-        "product_type": "Refined Product NOS",
+        "source_id": "AD00799",
         "reference": {
-            "reference": "Whiticar, S. Bobra, M., Fingas, M., Jokuty, P., Liuzzo, P., Callaghan, S., Ackerman, F., and Coa, J. 1992. A Catalogue of Crude Oil and Oil Product Properties (1992 Edition). Prepared for Environment Canada, EE-144, Ottawa, Ontario. 643pp.",
-            "year": 1992
+            "year": 1992,
+            "reference": "Whiticar, S. Bobra, M., Fingas, M., Jokuty, P., Liuzzo, P., Callaghan, S., Ackerman, F., and Coa, J. 1992. A Catalogue of Crude Oil and Oil Product Properties (1992 Edition). Prepared for Environment Canada, EE-144, Ottawa, Ontario. 643pp."
         },
-        "source_id": "AD00799"
+        "product_type": "Refined Product NOS",
+        "API": 58.7,
+        "model_completeness": 15
     },
-    "oil_id": "AD00799",
-    "status": [
-        "W007: No distillation data provided"
-    ],
     "sub_samples": [
         {
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
-                "dynamic_viscosities": [
-                    {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 298.0
-                        },
-                        "viscosity": {
-                            "unit": "kg/(m s)",
-                            "unit_type": "dynamicviscosity",
-                            "value": 0.0004
-                        }
-                    }
-                ],
                 "flash_point": {
                     "measurement": {
-                        "max_value": 293.0,
-                        "min_value": 250.0,
                         "unit": "K",
+                        "min_value": 250.0,
+                        "max_value": 293.0,
                         "unit_type": "temperature"
                     }
-                }
+                },
+                "dynamic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 0.0004,
+                            "unit": "kg/(m s)",
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 298.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
+            },
+            "distillation_data": {
+                "type": "mass fraction"
             }
         }
     ]
