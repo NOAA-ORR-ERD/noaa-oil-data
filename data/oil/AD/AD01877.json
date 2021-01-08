@@ -1,89 +1,90 @@
 {
+    "oil_id": "AD01877",
     "_id": "AD01877",
     "metadata": {
-        "location": "AIRLIE ISLAND",
-        "model_completeness": 15,
         "name": "CHERVIL, NOVUS WA PTY LTD",
-        "product_type": "Crude Oil NOS",
+        "source_id": "AD01877",
+        "location": "AIRLIE ISLAND",
         "reference": {
-            "reference": "Gilbert, T., Austrlian Maritime Safety Authority., Letter to William Lehr, NOAA, March 24, 1998.",
-            "year": 1998
+            "year": 1998,
+            "reference": "Gilbert, T., Austrlian Maritime Safety Authority., Letter to William Lehr, NOAA, March 24, 1998."
         },
-        "source_id": "AD01877"
+        "product_type": "Crude Oil NOS",
+        "API": 43.04,
+        "model_completeness": 15
     },
-    "oil_id": "AD01877",
-    "status": [
-        "W007: No distillation data provided",
-        "W004: No api value provided"
-    ],
     "sub_samples": [
         {
-            "bulk_composition": [
-                {
-                    "measurement": {
-                        "unit": "fraction",
-                        "unit_type": "massfraction",
-                        "value": 0.012
-                    },
-                    "name": "wax_content"
-                }
-            ],
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": 255.0,
+                        "unit": "K",
+                        "unit_type": "temperature"
+                    }
+                },
+                "flash_point": {
+                    "measurement": {
+                        "value": 253.0,
+                        "unit": "K",
+                        "unit_type": "temperature"
+                    }
+                },
                 "densities": [
                     {
                         "density": {
+                            "value": 810.0,
                             "unit": "kg/m^3",
-                            "unit_type": "density",
-                            "value": 810.0
+                            "unit_type": "density"
                         },
                         "ref_temp": {
+                            "value": 288.0,
                             "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 288.0
+                            "unit_type": "temperature"
                         }
                     }
                 ],
-                "flash_point": {
-                    "measurement": {
-                        "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 253.0
-                    }
-                },
                 "kinematic_viscosities": [
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 313.0
-                        },
                         "viscosity": {
+                            "value": 1.78e-06,
                             "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 1.78e-06
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 313.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     }
-                ],
-                "pour_point": {
+                ]
+            },
+            "distillation_data": {
+                "type": "mass fraction"
+            },
+            "bulk_composition": [
+                {
+                    "name": "wax_content",
                     "measurement": {
-                        "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 255.0
+                        "value": 0.012,
+                        "unit": "fraction",
+                        "unit_type": "massfraction"
                     }
                 }
-            }
+            ]
         }
+    ],
+    "status": [
+        "W007: No distillation data provided",
+        "W004: No api value provided"
     ]
 }

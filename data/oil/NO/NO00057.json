@@ -1,108 +1,109 @@
 {
+    "oil_id": "NO00057",
     "_id": "NO00057",
     "metadata": {
-        "comments": "Dynamic viscosity measured at shear rate 100/s. High inaccuracy is also reported in viscosity measurements.",
-        "location": "NORWAY",
-        "model_completeness": 35,
         "name": "LILLEFRIGG KONDENSAT 1996",
-        "product_type": "Crude Oil NOS",
+        "source_id": "NO00057",
+        "location": "NORWAY",
         "reference": {
-            "reference": "Brandvik P. J. et al., 1996, Weathering properties of the Froy crude, the Lillefrigg condensate and the 75:25 blend of these products, 41.5135.00/01/96",
-            "year": 5135
+            "year": 5135,
+            "reference": "Brandvik P. J. et al., 1996, Weathering properties of the Froy crude, the Lillefrigg condensate and the 75:25 blend of these products, 41.5135.00/01/96"
         },
-        "source_id": "NO00057"
+        "product_type": "Crude Oil NOS",
+        "API": 48.6,
+        "comments": "Dynamic viscosity measured at shear rate 100/s. High inaccuracy is also reported in viscosity measurements.",
+        "model_completeness": 35
     },
-    "oil_id": "NO00057",
-    "status": [
-        "W007: No distillation data provided",
-        "E004: Reference year: 5135 is not a valid year (between 1600 and 2050)",
-        "W004: No api value provided"
-    ],
     "sub_samples": [
         {
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
                 "densities": [
                     {
                         "density": {
+                            "value": 785,
                             "unit": "kg/m^3",
-                            "unit_type": "density",
-                            "value": 785
+                            "unit_type": "density"
                         },
                         "ref_temp": {
+                            "value": 288.65,
                             "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 288.65
+                            "unit_type": "temperature"
                         }
                     }
                 ],
                 "dynamic_viscosities": [
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 286.15
-                        },
                         "viscosity": {
+                            "value": 0.002,
                             "unit": "kg/(m s)",
-                            "unit_type": "dynamicviscosity",
-                            "value": 0.002
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 286.15,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "type": "mass fraction"
             }
         },
         {
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.397
-                },
                 "name": "39.7% Weathered",
-                "short_name": "39.7% Weathered"
+                "short_name": "39.7% Weathered",
+                "fraction_weathered": {
+                    "value": 0.397,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
                 "densities": [
                     {
                         "density": {
+                            "value": 847,
                             "unit": "kg/m^3",
-                            "unit_type": "density",
-                            "value": 847
+                            "unit_type": "density"
                         },
                         "ref_temp": {
+                            "value": 288.65,
                             "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 288.65
+                            "unit_type": "temperature"
                         }
                     }
                 ],
                 "dynamic_viscosities": [
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 286.15
-                        },
                         "viscosity": {
+                            "value": 0.18,
                             "unit": "kg/(m s)",
-                            "unit_type": "dynamicviscosity",
-                            "value": 0.18
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 286.15,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     }
                 ]
             }
         }
+    ],
+    "status": [
+        "W007: No distillation data provided",
+        "E004: Reference year: 5135 is not a valid year (between 1600 and 2050)",
+        "W004: No api value provided"
     ]
 }

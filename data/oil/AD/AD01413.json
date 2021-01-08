@@ -1,113 +1,114 @@
 {
+    "oil_id": "AD01413",
     "_id": "AD01413",
     "metadata": {
-        "location": "BARENTS SEA",
-        "model_completeness": 20,
         "name": "ROSSIIELF, RUSSIAN JOINT STOCK CO",
-        "product_type": "Crude Oil NOS",
+        "source_id": "AD01413",
+        "location": "BARENTS SEA",
         "reference": {
-            "reference": "Association for Business Cooperation, Moscow, Russia.  Letter to Bill Lehr, NOAA, January 8, 1996.",
-            "year": 1996
+            "year": 1996,
+            "reference": "Association for Business Cooperation, Moscow, Russia.  Letter to Bill Lehr, NOAA, January 8, 1996."
         },
-        "source_id": "AD01413"
+        "product_type": "Crude Oil NOS",
+        "API": 23.35,
+        "model_completeness": 20
     },
-    "oil_id": "AD01413",
-    "status": [
-        "W007: No distillation data provided",
-        "W004: No api value provided"
-    ],
     "sub_samples": [
         {
-            "SARA": {
-                "aromatics": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0008
-                },
-                "asphaltenes": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0451
-                }
-            },
-            "bulk_composition": [
-                {
-                    "measurement": {
-                        "unit": "fraction",
-                        "unit_type": "massfraction",
-                        "value": 0.0178
-                    },
-                    "name": "wax_content"
-                }
-            ],
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
                 "densities": [
                     {
                         "density": {
+                            "value": 913.0,
                             "unit": "kg/m^3",
-                            "unit_type": "density",
-                            "value": 913.0
+                            "unit_type": "density"
                         },
                         "ref_temp": {
+                            "value": 288.0,
                             "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 288.0
-                        }
-                    }
-                ],
-                "dynamic_viscosities": [
-                    {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 273.0
-                        },
-                        "viscosity": {
-                            "unit": "kg/(m s)",
-                            "unit_type": "dynamicviscosity",
-                            "value": 0.12
+                            "unit_type": "temperature"
                         }
                     }
                 ],
                 "kinematic_viscosities": [
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 313.0
-                        },
                         "viscosity": {
+                            "value": 1.96e-05,
                             "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 1.96e-05
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 313.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     },
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 323.0
-                        },
                         "viscosity": {
+                            "value": 1.4e-05,
                             "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 1.4e-05
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 323.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
+                "dynamic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 0.12,
+                            "unit": "kg/(m s)",
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 273.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     }
                 ]
-            }
+            },
+            "SARA": {
+                "aromatics": {
+                    "value": 0.0008,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                },
+                "asphaltenes": {
+                    "value": 0.0451,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
+            },
+            "distillation_data": {
+                "type": "mass fraction"
+            },
+            "bulk_composition": [
+                {
+                    "name": "wax_content",
+                    "measurement": {
+                        "value": 0.0178,
+                        "unit": "fraction",
+                        "unit_type": "massfraction"
+                    }
+                }
+            ]
         }
+    ],
+    "status": [
+        "W007: No distillation data provided",
+        "W004: No api value provided"
     ]
 }

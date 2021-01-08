@@ -1,79 +1,80 @@
 {
+    "oil_id": "AD02478",
     "_id": "AD02478",
     "metadata": {
-        "location": "LISBURNE, AK",
-        "model_completeness": 15,
         "name": "LISBURNE",
-        "product_type": "Crude Oil NOS",
+        "source_id": "AD02478",
+        "location": "LISBURNE, AK",
         "reference": {
-            "reference": "Alaska Clean Seas, Personal Communication to John Whitney, NOAA, May 21, 2004.",
-            "year": 2004
+            "year": 2004,
+            "reference": "Alaska Clean Seas, Personal Communication to John Whitney, NOAA, May 21, 2004."
         },
-        "source_id": "AD02478"
+        "product_type": "Crude Oil NOS",
+        "API": 30.07,
+        "model_completeness": 15
     },
-    "oil_id": "AD02478",
-    "status": [
-        "W007: No distillation data provided",
-        "W004: No api value provided"
-    ],
     "sub_samples": [
         {
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": 270.0,
+                        "unit": "K",
+                        "unit_type": "temperature"
+                    }
+                },
+                "flash_point": {
+                    "measurement": {
+                        "value": 273.0,
+                        "unit": "K",
+                        "unit_type": "temperature"
+                    }
+                },
                 "densities": [
                     {
                         "density": {
+                            "value": 875.0,
                             "unit": "kg/m^3",
-                            "unit_type": "density",
-                            "value": 875.0
+                            "unit_type": "density"
                         },
                         "ref_temp": {
+                            "value": 288.0,
                             "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 288.0
+                            "unit_type": "temperature"
                         }
                     }
                 ],
-                "flash_point": {
-                    "measurement": {
-                        "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 273.0
-                    }
-                },
                 "kinematic_viscosities": [
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 288.0
-                        },
                         "viscosity": {
+                            "value": 1.82e-05,
                             "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 1.82e-05
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 288.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     }
-                ],
-                "pour_point": {
-                    "measurement": {
-                        "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 270.0
-                    }
-                }
+                ]
+            },
+            "distillation_data": {
+                "type": "mass fraction"
             }
         }
+    ],
+    "status": [
+        "W007: No distillation data provided",
+        "W004: No api value provided"
     ]
 }

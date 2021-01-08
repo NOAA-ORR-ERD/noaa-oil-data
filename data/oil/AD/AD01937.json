@@ -1,82 +1,83 @@
 {
+    "oil_id": "AD01937",
     "_id": "AD01937",
     "metadata": {
-        "location": "ALBERTA, CANADA",
-        "model_completeness": 15,
         "name": "COLD LAKE, OIL & GAS",
-        "product_type": "Crude Oil NOS",
+        "source_id": "AD01937",
+        "location": "ALBERTA, CANADA",
         "reference": {
-            "reference": "McNamara, J. (ed.), Patterson, M. (ed.),1998. Oil & Gas Journal Data Book. Tulsa, OK: Pennwell Books. 402 pp.",
-            "year": 1998
+            "year": 1998,
+            "reference": "McNamara, J. (ed.), Patterson, M. (ed.),1998. Oil & Gas Journal Data Book. Tulsa, OK: Pennwell Books. 402 pp."
         },
-        "source_id": "AD01937"
+        "product_type": "Crude Oil NOS",
+        "API": 25.06,
+        "model_completeness": 15
     },
-    "oil_id": "AD01937",
-    "status": [
-        "W007: No distillation data provided",
-        "W004: No api value provided"
-    ],
     "sub_samples": [
         {
-            "bulk_composition": [
-                {
-                    "measurement": {
-                        "unit": "fraction",
-                        "unit_type": "massfraction",
-                        "value": 0.0291
-                    },
-                    "name": "sulfur"
-                }
-            ],
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": 213.0,
+                        "unit": "K",
+                        "unit_type": "temperature"
+                    }
+                },
                 "densities": [
                     {
                         "density": {
+                            "value": 903.0,
                             "unit": "kg/m^3",
-                            "unit_type": "density",
-                            "value": 903.0
+                            "unit_type": "density"
                         },
                         "ref_temp": {
+                            "value": 288.0,
                             "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 288.0
+                            "unit_type": "temperature"
                         }
                     }
                 ],
                 "kinematic_viscosities": [
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 288.0
-                        },
                         "viscosity": {
+                            "value": 7.07e-05,
                             "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 7.07e-05
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 288.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     }
-                ],
-                "pour_point": {
+                ]
+            },
+            "distillation_data": {
+                "type": "mass fraction"
+            },
+            "bulk_composition": [
+                {
+                    "name": "sulfur",
                     "measurement": {
-                        "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 213.0
+                        "value": 0.0291,
+                        "unit": "fraction",
+                        "unit_type": "massfraction"
                     }
                 }
-            }
+            ]
         }
+    ],
+    "status": [
+        "W007: No distillation data provided",
+        "W004: No api value provided"
     ]
 }

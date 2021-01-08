@@ -1,109 +1,110 @@
 {
+    "oil_id": "AD01800",
     "_id": "AD01800",
     "metadata": {
-        "location": "AUSTRALIA",
-        "model_completeness": 40,
         "name": "WHITE SPIRIT, SHELL REFINING PTY ",
-        "product_type": "Refined Product NOS",
+        "source_id": "AD01800",
+        "location": "AUSTRALIA",
         "reference": {
-            "reference": "Gilbert, T., Austrlian Maritime Safety Authority., Letter to William Lehr, NOAA, February 26, 1998.",
-            "year": 1998
+            "year": 1998,
+            "reference": "Gilbert, T., Austrlian Maritime Safety Authority., Letter to William Lehr, NOAA, February 26, 1998."
         },
-        "source_id": "AD01800"
+        "product_type": "Refined Product NOS",
+        "API": 49.06,
+        "model_completeness": 40
     },
-    "oil_id": "AD01800",
-    "status": [
-        "W004: No api value provided"
-    ],
     "sub_samples": [
         {
-            "distillation_data": {
-                "cuts": [
-                    {
-                        "fraction": {
-                            "unit": "fraction",
-                            "unit_type": "massfraction",
-                            "value": 0.1
-                        },
-                        "vapor_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 427.0
-                        }
-                    },
-                    {
-                        "fraction": {
-                            "unit": "fraction",
-                            "unit_type": "massfraction",
-                            "value": 0.5
-                        },
-                        "vapor_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 436.0
-                        }
-                    },
-                    {
-                        "fraction": {
-                            "unit": "fraction",
-                            "unit_type": "massfraction",
-                            "value": 0.95
-                        },
-                        "vapor_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 460.0
-                        }
-                    }
-                ],
-                "type": "volume fraction"
-            },
             "metadata": {
-                "fraction_weathered": {
-                    "unit": "fraction",
-                    "unit_type": "massfraction",
-                    "value": 0.0
-                },
                 "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil"
+                "short_name": "Fresh Oil",
+                "fraction_weathered": {
+                    "value": 0.0,
+                    "unit": "fraction",
+                    "unit_type": "massfraction"
+                }
             },
             "physical_properties": {
+                "flash_point": {
+                    "measurement": {
+                        "value": 308.0,
+                        "unit": "K",
+                        "unit_type": "temperature"
+                    }
+                },
                 "densities": [
                     {
                         "density": {
+                            "value": 783.0,
                             "unit": "kg/m^3",
-                            "unit_type": "density",
-                            "value": 783.0
+                            "unit_type": "density"
                         },
                         "ref_temp": {
+                            "value": 288.0,
                             "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 288.0
+                            "unit_type": "temperature"
                         }
                     }
                 ],
-                "flash_point": {
-                    "measurement": {
-                        "unit": "K",
-                        "unit_type": "temperature",
-                        "value": 308.0
-                    }
-                },
                 "kinematic_viscosities": [
                     {
-                        "ref_temp": {
-                            "unit": "K",
-                            "unit_type": "temperature",
-                            "value": 288.0
-                        },
                         "viscosity": {
+                            "value": 1.13e-06,
                             "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity",
-                            "value": 1.13e-06
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 288.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
+            },
+            "distillation_data": {
+                "type": "volume fraction",
+                "cuts": [
+                    {
+                        "fraction": {
+                            "value": 0.1,
+                            "unit": "fraction",
+                            "unit_type": "massfraction"
+                        },
+                        "vapor_temp": {
+                            "value": 427.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 0.5,
+                            "unit": "fraction",
+                            "unit_type": "massfraction"
+                        },
+                        "vapor_temp": {
+                            "value": 436.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 0.95,
+                            "unit": "fraction",
+                            "unit_type": "massfraction"
+                        },
+                        "vapor_temp": {
+                            "value": 460.0,
+                            "unit": "K",
+                            "unit_type": "temperature"
                         }
                     }
                 ]
             }
         }
+    ],
+    "status": [
+        "W004: No api value provided"
     ]
 }
