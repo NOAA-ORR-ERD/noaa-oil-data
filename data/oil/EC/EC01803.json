@@ -4,16 +4,17 @@
     "metadata": {
         "name": "IFO 380",
         "source_id": "1803",
+        "location": "Unknown",
         "reference": {
-            "year": 2020,
-            "reference": "Personal communication from Fatemeh Mirnaghi (ESTS), date: April 21, 2020."
+            "year": 2021,
+            "reference": "Personal communication from Mischa Bertrand-Chetty (EC), date: Mar 4, 2021."
         },
-        "sample_date": "2011-02-04",
+        "sample_date": "2011-04-02",
         "product_type": "Residual Fuel Oil",
         "labels": [
-            "Fuel Oil",
             "Refined Product",
-            "Residual Fuel"
+            "Residual Fuel",
+            "Fuel Oil"
         ],
         "model_completeness": 0
     },
@@ -25,169 +26,29 @@
                 "sample_id": "1803",
                 "fraction_weathered": {
                     "value": 0.0,
-                    "unit": "fraction",
+                    "unit": "%",
                     "unit_type": "massfraction"
                 }
             },
             "environmental_behavior": {
                 "dispersibilities": [
                     {
-                        "dispersant": "Corexit 9500",
+                        "dispersant": "Corexit 9500 Dispersant",
                         "effectiveness": {
                             "unit": "%",
                             "max_value": 10.0,
-                            "standard_deviation": 1.1,
+                            "standard_deviation": 1,
                             "unit_type": "massfraction"
                         },
-                        "method": "Swirling Flask Test (ASTM F2059)"
-                    }
-                ],
-                "emulsions": [
-                    {
-                        "age": {
-                            "value": 0,
-                            "unit": "day",
-                            "unit_type": "time"
-                        },
-                        "water_content": {
-                            "unit": "%",
-                            "unit_type": "massfraction"
-                        },
-                        "ref_temp": {
-                            "value": 15.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        },
-                        "complex_modulus": {
-                            "unit": "Pa",
-                            "unit_type": "pressure"
-                        },
-                        "storage_modulus": {
-                            "unit": "Pa",
-                            "unit_type": "pressure"
-                        },
-                        "loss_modulus": {
-                            "unit": "Pa",
-                            "unit_type": "pressure"
-                        },
-                        "tan_delta_v_e": {
-                            "unit_type": "unitless"
-                        },
-                        "complex_viscosity": {
-                            "unit": "Pa.s",
-                            "unit_type": "dynamicviscosity"
-                        }
-                    },
-                    {
-                        "age": {
-                            "value": 7,
-                            "unit": "day",
-                            "unit_type": "time"
-                        },
-                        "water_content": {
-                            "unit": "%",
-                            "unit_type": "massfraction"
-                        },
-                        "ref_temp": {
-                            "value": 15.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        },
-                        "complex_modulus": {
-                            "unit": "Pa",
-                            "unit_type": "pressure"
-                        },
-                        "storage_modulus": {
-                            "unit": "Pa",
-                            "unit_type": "pressure"
-                        },
-                        "loss_modulus": {
-                            "unit": "Pa",
-                            "unit_type": "pressure"
-                        },
-                        "tan_delta_v_e": {
-                            "unit_type": "unitless"
-                        },
-                        "complex_viscosity": {
-                            "unit": "Pa.s",
-                            "unit_type": "dynamicviscosity"
-                        }
+                        "method": "ASTM F2059"
                     }
                 ]
-            },
-            "SARA": {
-                "saturates": {
-                    "unit": "%",
-                    "unit_type": "massfraction"
-                },
-                "aromatics": {
-                    "unit": "%",
-                    "unit_type": "massfraction"
-                },
-                "resins": {
-                    "unit": "%",
-                    "unit_type": "massfraction"
-                },
-                "asphaltenes": {
-                    "unit": "%",
-                    "unit_type": "massfraction"
-                }
-            },
-            "distillation_data": {
-                "type": "mass fraction",
-                "end_point": {
-                    "unit": "C",
-                    "unit_type": "temperature"
-                }
-            },
-            "bulk_composition": [
-                {
-                    "name": "Wax Content",
-                    "measurement": {
-                        "unit": "%",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "Water Content",
-                    "measurement": {
-                        "unit": "%",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "Sulfur Content",
-                    "measurement": {
-                        "unit": "%",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "GC-TPH",
-                    "measurement": {
-                        "unit": "mg/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "GC-TSH",
-                    "measurement": {
-                        "unit": "mg/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "GC-TAH",
-                    "measurement": {
-                        "unit": "mg/g",
-                        "unit_type": "massfraction"
-                    }
-                }
-            ]
+            }
         }
     ],
     "status": [
         "W006: No density values provided",
-        "E030: Oils must have an API"
+        "E032: Distillation type is \"None\", it must be one of: ['volume fraction', 'mass fraction']",
+        "W004: No api value provided"
     ]
 }

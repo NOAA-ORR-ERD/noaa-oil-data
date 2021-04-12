@@ -4,19 +4,20 @@
     "metadata": {
         "name": "IFO 120",
         "source_id": "1954",
+        "location": "Unknown",
         "reference": {
-            "year": 2020,
-            "reference": "Personal communication from Fatemeh Mirnaghi (ESTS), date: April 21, 2020."
+            "year": 2021,
+            "reference": "Personal communication from Mischa Bertrand-Chetty (EC), date: Mar 4, 2021."
         },
-        "sample_date": "2011-11-01",
+        "sample_date": "2011-01-11",
         "product_type": "Residual Fuel Oil",
-        "API": 16.09,
+        "API": 16.1,
         "comments": "Via Ohmsett Facility",
         "labels": [
-            "Fuel Oil",
-            "Refined Product",
             "IFO",
-            "Residual Fuel"
+            "Refined Product",
+            "Residual Fuel",
+            "Fuel Oil"
         ],
         "model_completeness": 96
     },
@@ -28,7 +29,7 @@
                 "sample_id": "1954.1",
                 "fraction_weathered": {
                     "value": 0.0,
-                    "unit": "fraction",
+                    "unit": "%",
                     "unit_type": "massfraction"
                 }
             },
@@ -45,9 +46,9 @@
                 },
                 "flash_point": {
                     "measurement": {
-                        "value": 91.067,
+                        "value": 91,
                         "unit": "C",
-                        "standard_deviation": 2.5891,
+                        "standard_deviation": 2.6,
                         "replicates": 3,
                         "unit_type": "temperature"
                     },
@@ -56,24 +57,9 @@
                 "densities": [
                     {
                         "density": {
-                            "value": 0.9683,
+                            "value": 0.9567,
                             "unit": "g/mL",
-                            "standard_deviation": 0.0003747,
-                            "replicates": 3,
-                            "unit_type": "density"
-                        },
-                        "ref_temp": {
-                            "value": 0.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        },
-                        "method": "ASTM D5002"
-                    },
-                    {
-                        "density": {
-                            "value": 0.95666,
-                            "unit": "g/mL",
-                            "standard_deviation": 2.5166e-05,
+                            "standard_deviation": 0,
                             "replicates": 3,
                             "unit_type": "density"
                         },
@@ -83,24 +69,24 @@
                             "unit_type": "temperature"
                         },
                         "method": "ASTM D5002"
-                    }
-                ],
-                "dynamic_viscosities": [
+                    },
                     {
-                        "viscosity": {
-                            "value": 9200,
-                            "unit": "mPa.s",
-                            "standard_deviation": 82,
+                        "density": {
+                            "value": 0.9683,
+                            "unit": "g/mL",
+                            "standard_deviation": 0.0004,
                             "replicates": 3,
-                            "unit_type": "dynamicviscosity"
+                            "unit_type": "density"
                         },
                         "ref_temp": {
                             "value": 0.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         },
-                        "method": "ESTS: 12.05/2.0/M"
-                    },
+                        "method": "ASTM D5002"
+                    }
+                ],
+                "dynamic_viscosities": [
                     {
                         "viscosity": {
                             "value": 1540,
@@ -114,15 +100,30 @@
                             "unit": "C",
                             "unit_type": "temperature"
                         },
-                        "method": "ESTS: 12.05/2.0/M"
+                        "method": "ESTS 12.05/2.0/M"
+                    },
+                    {
+                        "viscosity": {
+                            "value": 9200,
+                            "unit": "mPa.s",
+                            "standard_deviation": 82,
+                            "replicates": 3,
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 0.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "method": "ESTS 12.05/2.0/M"
                     }
                 ],
                 "interfacial_tension_air": [
                     {
                         "tension": {
-                            "value": 30.83,
+                            "value": 30.8,
                             "unit": "mN/m",
-                            "standard_deviation": 0.10149,
+                            "standard_deviation": 0.1,
                             "replicates": 3,
                             "unit_type": "interfacialtension"
                         },
@@ -131,7 +132,7 @@
                             "unit": "C",
                             "unit_type": "temperature"
                         },
-                        "method": "ESTS: 12.12/x.x/M"
+                        "method": "ESTS 12.12/x.x/M"
                     },
                     {
                         "tension": {
@@ -145,15 +146,15 @@
                             "unit": "C",
                             "unit_type": "temperature"
                         },
-                        "method": "ESTS: 12.12/x.x/M"
+                        "method": "ESTS 12.12/x.x/M"
                     }
                 ],
                 "interfacial_tension_water": [
                     {
                         "tension": {
-                            "value": 31.893,
+                            "value": 31.9,
                             "unit": "mN/m",
-                            "standard_deviation": 0.14012,
+                            "standard_deviation": 0.1,
                             "replicates": 3,
                             "unit_type": "interfacialtension"
                         },
@@ -162,7 +163,7 @@
                             "unit": "C",
                             "unit_type": "temperature"
                         },
-                        "method": "ESTS: 12.12/x.x/M"
+                        "method": "ESTS 12.12/x.x/M"
                     },
                     {
                         "tension": {
@@ -176,15 +177,15 @@
                             "unit": "C",
                             "unit_type": "temperature"
                         },
-                        "method": "ESTS: 12.12/x.x/M"
+                        "method": "ESTS 12.12/x.x/M"
                     }
                 ],
                 "interfacial_tension_seawater": [
                     {
                         "tension": {
-                            "value": 29.34,
+                            "value": 29.3,
                             "unit": "mN/m",
-                            "standard_deviation": 0.62,
+                            "standard_deviation": 0.6,
                             "replicates": 3,
                             "unit_type": "interfacialtension"
                         },
@@ -193,7 +194,7 @@
                             "unit": "C",
                             "unit_type": "temperature"
                         },
-                        "method": "ESTS: 12.12/x.x/M"
+                        "method": "ESTS 12.12/x.x/M"
                     },
                     {
                         "tension": {
@@ -207,22 +208,21 @@
                             "unit": "C",
                             "unit_type": "temperature"
                         },
-                        "method": "ESTS: 12.12/x.x/M"
+                        "method": "ESTS 12.12/x.x/M"
                     }
                 ]
             },
             "environmental_behavior": {
                 "dispersibilities": [
                     {
-                        "dispersant": "Corexit 9500",
+                        "dispersant": "Corexit 9500 Dispersant",
                         "effectiveness": {
-                            "value": 12.4,
+                            "value": 12,
                             "unit": "%",
                             "standard_deviation": 3,
                             "replicates": 3,
                             "unit_type": "massfraction"
-                        },
-                        "method": "Swirling Flask Test (ASTM F2059)"
+                        }
                     }
                 ],
                 "emulsions": [
@@ -233,9 +233,9 @@
                             "unit_type": "time"
                         },
                         "water_content": {
-                            "value": 69.632,
+                            "value": 70,
                             "unit": "%",
-                            "standard_deviation": 1.6,
+                            "standard_deviation": 2,
                             "replicates": 6,
                             "unit_type": "massfraction"
                         },
@@ -247,11 +247,11 @@
                         "complex_modulus": {
                             "value": 171,
                             "unit": "Pa",
-                            "standard_deviation": 4.2,
+                            "standard_deviation": 4,
                             "unit_type": "pressure"
                         },
                         "storage_modulus": {
-                            "value": 69.525,
+                            "value": 70,
                             "unit": "Pa",
                             "standard_deviation": 3,
                             "unit_type": "pressure"
@@ -259,22 +259,22 @@
                         "loss_modulus": {
                             "value": 156,
                             "unit": "Pa",
-                            "standard_deviation": 3.7,
+                            "standard_deviation": 4,
                             "unit_type": "pressure"
                         },
                         "tan_delta_v_e": {
-                            "value": 2.2425,
-                            "standard_deviation": 0.068,
+                            "value": 2,
+                            "standard_deviation": 0.1,
                             "unit_type": "unitless"
                         },
                         "complex_viscosity": {
-                            "value": 27.175,
+                            "value": 27,
                             "unit": "Pa.s",
-                            "standard_deviation": 0.7,
+                            "standard_deviation": 1,
                             "replicates": 4,
                             "unit_type": "dynamicviscosity"
                         },
-                        "method": "ESTS: 13.02/x.x/M",
+                        "method": "ESTS 13.02/x.x/M",
                         "visual_stability": "Stable"
                     },
                     {
@@ -286,7 +286,7 @@
                         "water_content": {
                             "value": 72,
                             "unit": "%",
-                            "standard_deviation": 1.3,
+                            "standard_deviation": 1,
                             "replicates": 6,
                             "unit_type": "massfraction"
                         },
@@ -314,41 +314,37 @@
                             "unit_type": "pressure"
                         },
                         "tan_delta_v_e": {
-                            "value": 2.4775,
-                            "standard_deviation": 0.23,
+                            "value": 2,
+                            "standard_deviation": 0.2,
                             "unit_type": "unitless"
                         },
                         "complex_viscosity": {
                             "value": 27,
                             "unit": "Pa.s",
-                            "standard_deviation": 2.2,
+                            "standard_deviation": 2,
                             "replicates": 4,
                             "unit_type": "dynamicviscosity"
                         },
-                        "method": "ESTS: 13.02/x.x/M",
+                        "method": "ESTS 13.02/x.x/M",
                         "visual_stability": "Stable"
                     }
                 ],
                 "ests_evaporation_test": {
                     "a_for_ev_a_b_sqrt_t": -0.11,
                     "b_for_ev_a_b_sqrt_t": 0.013,
-                    "method": "ESTS: 13.01/x.x/M"
+                    "method": "ESTS 12.16/1.0/M"
                 }
             },
             "SARA": {
-                "method": "ESTS: 12.11/3.0/M",
+                "method": "ESTS 12.11/3.0/M",
                 "saturates": {
-                    "value": 41.82,
+                    "value": 42,
                     "unit": "%",
-                    "standard_deviation": 0.4,
-                    "replicates": 3,
                     "unit_type": "massfraction"
                 },
                 "aromatics": {
-                    "value": 40.18,
+                    "value": 40,
                     "unit": "%",
-                    "standard_deviation": 0.4,
-                    "replicates": 3,
                     "unit_type": "massfraction"
                 },
                 "resins": {
@@ -377,7 +373,19 @@
                 "cuts": [
                     {
                         "fraction": {
-                            "value": 5,
+                            "value": 0.0,
+                            "unit": "%",
+                            "unit_type": "massfraction"
+                        },
+                        "vapor_temp": {
+                            "value": 109.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 5.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -389,7 +397,7 @@
                     },
                     {
                         "fraction": {
-                            "value": 10,
+                            "value": 10.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -401,7 +409,7 @@
                     },
                     {
                         "fraction": {
-                            "value": 15,
+                            "value": 15.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -413,7 +421,7 @@
                     },
                     {
                         "fraction": {
-                            "value": 20,
+                            "value": 20.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -425,7 +433,7 @@
                     },
                     {
                         "fraction": {
-                            "value": 25,
+                            "value": 25.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -437,7 +445,7 @@
                     },
                     {
                         "fraction": {
-                            "value": 30,
+                            "value": 30.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -449,7 +457,7 @@
                     },
                     {
                         "fraction": {
-                            "value": 35,
+                            "value": 35.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -461,7 +469,7 @@
                     },
                     {
                         "fraction": {
-                            "value": 40,
+                            "value": 40.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -473,7 +481,7 @@
                     },
                     {
                         "fraction": {
-                            "value": 45,
+                            "value": 45.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -485,7 +493,7 @@
                     },
                     {
                         "fraction": {
-                            "value": 50,
+                            "value": 50.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -497,7 +505,7 @@
                     },
                     {
                         "fraction": {
-                            "value": 55,
+                            "value": 55.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -509,7 +517,7 @@
                     },
                     {
                         "fraction": {
-                            "value": 60,
+                            "value": 60.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -521,7 +529,7 @@
                     },
                     {
                         "fraction": {
-                            "value": 65,
+                            "value": 65.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -533,7 +541,7 @@
                     },
                     {
                         "fraction": {
-                            "value": 70,
+                            "value": 70.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -545,7 +553,7 @@
                     },
                     {
                         "fraction": {
-                            "value": 75,
+                            "value": 75.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -557,7 +565,7 @@
                     },
                     {
                         "fraction": {
-                            "value": 80,
+                            "value": 80.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -569,7 +577,7 @@
                     },
                     {
                         "fraction": {
-                            "value": 85,
+                            "value": 85.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -581,7 +589,7 @@
                     },
                     {
                         "fraction": {
-                            "value": 90,
+                            "value": 90.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -593,7 +601,7 @@
                     },
                     {
                         "fraction": {
-                            "value": 95,
+                            "value": 95.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -602,29 +610,17 @@
                             "unit": "C",
                             "unit_type": "temperature"
                         }
-                    },
-                    {
-                        "fraction": {
-                            "value": 0.0,
-                            "unit": "%",
-                            "unit_type": "massfraction"
-                        },
-                        "vapor_temp": {
-                            "value": 109.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
                     }
                 ]
             },
             "bulk_composition": [
                 {
-                    "name": "Wax Content",
-                    "method": "ESTS: 12.11/2.0/M",
+                    "name": "Sulfur Content",
+                    "method": "ASTM D4294",
                     "measurement": {
-                        "value": 9,
+                        "value": 1,
                         "unit": "%",
-                        "standard_deviation": 0.4,
+                        "standard_deviation": 0.01,
                         "replicates": 3,
                         "unit_type": "massfraction"
                     }
@@ -633,27 +629,19 @@
                     "name": "Water Content",
                     "method": "ASTM E203",
                     "measurement": {
-                        "value": 0.33667,
+                        "value": 0.3,
                         "unit": "%",
-                        "standard_deviation": 0.13204,
+                        "standard_deviation": 0.13,
                         "replicates": 3,
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "Sulfur Content",
-                    "method": "ASTM D4294",
-                    "measurement": {
-                        "value": 0.9572,
-                        "unit": "%",
-                        "standard_deviation": 0.00541,
-                        "replicates": 3,
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "GC-TPH",
-                    "method": "ESTS: 5.03/x.x/M",
+                    "name": "Gas Chromatography-Total Petroleum Hydrocarbon (GC-TPH)",
+                    "groups": [
+                        "GC-Detected Petroleum Hydrocarbon Content"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
                     "measurement": {
                         "value": 313,
                         "unit": "mg/g",
@@ -661,8 +649,11 @@
                     }
                 },
                 {
-                    "name": "GC-TSH",
-                    "method": "ESTS: 5.03/x.x/M",
+                    "name": "Gas Chromatography-Total Saturate Hydrocarbon (GC-TSH)",
+                    "groups": [
+                        "GC-Detected Petroleum Hydrocarbon Content"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
                     "measurement": {
                         "value": 159,
                         "unit": "mg/g",
@@ -670,8 +661,11 @@
                     }
                 },
                 {
-                    "name": "GC-TAH",
-                    "method": "ESTS: 5.03/x.x/M",
+                    "name": "Gas Chromatography-Total Aromatic Hydrocarbon (GC-TAH)",
+                    "groups": [
+                        "GC-Detected Petroleum Hydrocarbon Content"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
                     "measurement": {
                         "value": 154,
                         "unit": "mg/g",
@@ -681,11 +675,11 @@
                 {
                     "name": "GC-TSH/GC-TPH",
                     "groups": [
-                        "Hydrocarbon Content Ratio"
+                        "GC-Detected Petroleum Hydrocarbon Content"
                     ],
-                    "method": "ESTS: 5.03/x.x/M",
+                    "method": "ESTS 5.03/x.x/M",
                     "measurement": {
-                        "value": 50.7,
+                        "value": 51,
                         "unit": "%",
                         "unit_type": "massfraction"
                     }
@@ -693,11 +687,11 @@
                 {
                     "name": "GC-TAH/GC-TPH",
                     "groups": [
-                        "Hydrocarbon Content Ratio"
+                        "GC-Detected Petroleum Hydrocarbon Content"
                     ],
-                    "method": "ESTS: 5.03/x.x/M",
+                    "method": "ESTS 5.03/x.x/M",
                     "measurement": {
-                        "value": 49.3,
+                        "value": 49,
                         "unit": "%",
                         "unit_type": "massfraction"
                     }
@@ -705,34 +699,45 @@
                 {
                     "name": "Resolved Peaks/TPH",
                     "groups": [
-                        "Hydrocarbon Content Ratio"
+                        "GC-Detected Petroleum Hydrocarbon Content"
                     ],
-                    "method": "ESTS: 5.03/x.x/M",
+                    "method": "ESTS 5.03/x.x/M",
                     "measurement": {
                         "value": 22,
                         "unit": "%",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Waxes",
+                    "method": "ESTS 12.11/2.0/M",
+                    "measurement": {
+                        "value": 9,
+                        "unit": "%",
+                        "standard_deviation": 0.4,
+                        "replicates": 3,
                         "unit_type": "massfraction"
                     }
                 }
             ],
             "CCME": {
                 "F1": {
-                    "value": 19.093,
+                    "value": 19,
                     "unit": "mg/g",
                     "unit_type": "massfraction"
                 },
                 "F2": {
-                    "value": 100.79,
+                    "value": 101,
                     "unit": "mg/g",
                     "unit_type": "massfraction"
                 },
                 "F3": {
-                    "value": 137.72,
+                    "value": 138,
                     "unit": "mg/g",
                     "unit_type": "massfraction"
                 },
                 "F4": {
-                    "value": 55.401,
+                    "value": 55,
                     "unit": "mg/g",
                     "unit_type": "massfraction"
                 },
@@ -742,57 +747,57 @@
                 "method": "ESTS 5.03/x.x/M",
                 "saturates": [
                     {
-                        "name": "n-C8 to n-C10",
+                        "name": "n-C8 To n-C10",
                         "measurement": {
-                            "value": 9.93,
+                            "value": 10,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
                     },
                     {
-                        "name": "n-C10 to n-C12",
+                        "name": "n-C10 To n-C12",
                         "measurement": {
-                            "value": 12.13,
+                            "value": 12,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
                     },
                     {
-                        "name": "n-C12 to n-C16",
+                        "name": "n-C12 To n-C16",
                         "measurement": {
-                            "value": 35.25,
+                            "value": 35,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
                     },
                     {
-                        "name": "n-C16 to n-C20",
+                        "name": "n-C16 To n-C20",
                         "measurement": {
-                            "value": 34.94,
+                            "value": 35,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
                     },
                     {
-                        "name": "n-C20 to n-C24",
+                        "name": "n-C20 To n-C24",
                         "measurement": {
-                            "value": 14.92,
+                            "value": 15,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
                     },
                     {
-                        "name": "n-C24 to n-C28",
+                        "name": "n-C24 To n-C28",
                         "measurement": {
-                            "value": 7.93,
+                            "value": 8,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
                     },
                     {
-                        "name": "n-C28 to n-C34",
+                        "name": "n-C28 To n-C34",
                         "measurement": {
-                            "value": 10.07,
+                            "value": 10,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
@@ -800,7 +805,7 @@
                     {
                         "name": "n-C34+",
                         "measurement": {
-                            "value": 33.52,
+                            "value": 34,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
@@ -808,57 +813,57 @@
                 ],
                 "aromatics": [
                     {
-                        "name": "n-C8 to n-C10",
+                        "name": "n-C8 To n-C10",
                         "measurement": {
-                            "value": 10.68,
+                            "value": 11,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
                     },
                     {
-                        "name": "n-C10 to n-C12",
+                        "name": "n-C10 To n-C12",
                         "measurement": {
-                            "value": 20.37,
+                            "value": 20,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
                     },
                     {
-                        "name": "n-C12 to n-C16",
+                        "name": "n-C12 To n-C16",
                         "measurement": {
-                            "value": 48.34,
+                            "value": 48,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
                     },
                     {
-                        "name": "n-C16 to n-C20",
+                        "name": "n-C16 To n-C20",
                         "measurement": {
-                            "value": 31.94,
+                            "value": 32,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
                     },
                     {
-                        "name": "n-C20 to n-C24",
+                        "name": "n-C20 To n-C24",
                         "measurement": {
-                            "value": 12.24,
+                            "value": 12,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
                     },
                     {
-                        "name": "n-C24 to n-C28",
+                        "name": "n-C24 To n-C28",
                         "measurement": {
-                            "value": 7.24,
+                            "value": 7,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
                     },
                     {
-                        "name": "n-C28 to n-C34",
+                        "name": "n-C28 To n-C34",
                         "measurement": {
-                            "value": 8.25,
+                            "value": 8,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
@@ -866,7 +871,7 @@
                     {
                         "name": "n-C34+",
                         "measurement": {
-                            "value": 15.24,
+                            "value": 15,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
@@ -874,57 +879,57 @@
                 ],
                 "GC_TPH": [
                     {
-                        "name": "n-C8 to n-C10",
+                        "name": "n-C8 To n-C10",
                         "measurement": {
-                            "value": 20.34,
+                            "value": 20,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
                     },
                     {
-                        "name": "n-C10 to n-C12",
+                        "name": "n-C10 To n-C12",
                         "measurement": {
-                            "value": 34.05,
+                            "value": 34,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
                     },
                     {
-                        "name": "n-C12 to n-C16",
+                        "name": "n-C12 To n-C16",
                         "measurement": {
-                            "value": 90.85,
+                            "value": 91,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
                     },
                     {
-                        "name": "n-C16 to n-C20",
+                        "name": "n-C16 To n-C20",
                         "measurement": {
-                            "value": 73.12,
+                            "value": 73,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
                     },
                     {
-                        "name": "n-C20 to n-C24",
+                        "name": "n-C20 To n-C24",
                         "measurement": {
-                            "value": 27.91,
+                            "value": 28,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
                     },
                     {
-                        "name": "n-C24 to n-C28",
+                        "name": "n-C24 To n-C28",
                         "measurement": {
-                            "value": 14.62,
+                            "value": 15,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
                     },
                     {
-                        "name": "n-C28 to n-C34",
+                        "name": "n-C28 To n-C34",
                         "measurement": {
-                            "value": 18.13,
+                            "value": 18,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
@@ -932,7 +937,7 @@
                     {
                         "name": "n-C34+",
                         "measurement": {
-                            "value": 33.98,
+                            "value": 34,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
@@ -942,12 +947,12 @@
         },
         {
             "metadata": {
-                "name": "9.54% Weathered",
-                "short_name": "9.54% Weathered",
+                "name": "9.5% Evaporated",
+                "short_name": "9.5% Evaporated",
                 "sample_id": "1954.3.1",
                 "fraction_weathered": {
-                    "value": 0.0954,
-                    "unit": "fraction",
+                    "value": 9.5,
+                    "unit": "%",
                     "unit_type": "massfraction"
                 }
             },
@@ -964,9 +969,9 @@
                 },
                 "flash_point": {
                     "measurement": {
-                        "value": 146.43,
+                        "value": 146,
                         "unit": "C",
-                        "standard_deviation": 0.57735,
+                        "standard_deviation": 0.6,
                         "replicates": 3,
                         "unit_type": "temperature"
                     },
@@ -975,24 +980,9 @@
                 "densities": [
                     {
                         "density": {
-                            "value": 0.98109,
+                            "value": 0.9701,
                             "unit": "g/mL",
-                            "standard_deviation": 0.00069778,
-                            "replicates": 3,
-                            "unit_type": "density"
-                        },
-                        "ref_temp": {
-                            "value": 0.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        },
-                        "method": "ASTM D5002"
-                    },
-                    {
-                        "density": {
-                            "value": 0.97013,
-                            "unit": "g/mL",
-                            "standard_deviation": 0.00021127,
+                            "standard_deviation": 0.0002,
                             "replicates": 3,
                             "unit_type": "density"
                         },
@@ -1002,27 +992,27 @@
                             "unit_type": "temperature"
                         },
                         "method": "ASTM D5002"
-                    }
-                ],
-                "dynamic_viscosities": [
+                    },
                     {
-                        "viscosity": {
-                            "value": 137990.0,
-                            "unit": "mPa.s",
-                            "standard_deviation": 370,
+                        "density": {
+                            "value": 0.9811,
+                            "unit": "g/mL",
+                            "standard_deviation": 0.0007,
                             "replicates": 3,
-                            "unit_type": "dynamicviscosity"
+                            "unit_type": "density"
                         },
                         "ref_temp": {
                             "value": 0.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         },
-                        "method": "ESTS: 12.05/2.0/M"
-                    },
+                        "method": "ASTM D5002"
+                    }
+                ],
+                "dynamic_viscosities": [
                     {
                         "viscosity": {
-                            "value": 14577.0,
+                            "value": 14600.0,
                             "unit": "mPa.s",
                             "standard_deviation": 100,
                             "replicates": 3,
@@ -1033,7 +1023,22 @@
                             "unit": "C",
                             "unit_type": "temperature"
                         },
-                        "method": "ESTS: 12.05/2.0/M"
+                        "method": "ESTS 12.05/2.0/M"
+                    },
+                    {
+                        "viscosity": {
+                            "value": 138000.0,
+                            "unit": "mPa.s",
+                            "standard_deviation": 370,
+                            "replicates": 3,
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 0.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "method": "ESTS 12.05/2.0/M"
                     }
                 ],
                 "interfacial_tension_air": [
@@ -1048,7 +1053,7 @@
                             "unit": "C",
                             "unit_type": "temperature"
                         },
-                        "method": "ESTS: 12.12/x.x/M"
+                        "method": "ESTS 12.12/x.x/M"
                     },
                     {
                         "tension": {
@@ -1062,7 +1067,7 @@
                             "unit": "C",
                             "unit_type": "temperature"
                         },
-                        "method": "ESTS: 12.12/x.x/M"
+                        "method": "ESTS 12.12/x.x/M"
                     }
                 ],
                 "interfacial_tension_water": [
@@ -1078,7 +1083,7 @@
                             "unit": "C",
                             "unit_type": "temperature"
                         },
-                        "method": "ESTS: 12.12/x.x/M"
+                        "method": "ESTS 12.12/x.x/M"
                     },
                     {
                         "tension": {
@@ -1092,7 +1097,7 @@
                             "unit": "C",
                             "unit_type": "temperature"
                         },
-                        "method": "ESTS: 12.12/x.x/M"
+                        "method": "ESTS 12.12/x.x/M"
                     }
                 ],
                 "interfacial_tension_seawater": [
@@ -1108,7 +1113,7 @@
                             "unit": "C",
                             "unit_type": "temperature"
                         },
-                        "method": "ESTS: 12.12/x.x/M"
+                        "method": "ESTS 12.12/x.x/M"
                     },
                     {
                         "tension": {
@@ -1122,7 +1127,7 @@
                             "unit": "C",
                             "unit_type": "temperature"
                         },
-                        "method": "ESTS: 12.12/x.x/M"
+                        "method": "ESTS 12.12/x.x/M"
                     }
                 ]
             },
@@ -1135,7 +1140,7 @@
                             "unit_type": "time"
                         },
                         "water_content": {
-                            "value": 59.578,
+                            "value": 60,
                             "unit": "%",
                             "standard_deviation": 11,
                             "replicates": 6,
@@ -1165,8 +1170,8 @@
                             "unit_type": "pressure"
                         },
                         "tan_delta_v_e": {
-                            "value": 1.3525,
-                            "standard_deviation": 0.16,
+                            "value": 1,
+                            "standard_deviation": 0.2,
                             "unit_type": "unitless"
                         },
                         "complex_viscosity": {
@@ -1176,7 +1181,7 @@
                             "replicates": 4,
                             "unit_type": "dynamicviscosity"
                         },
-                        "method": "ESTS: 13.02/x.x/M",
+                        "method": "ESTS 13.02/x.x/M",
                         "visual_stability": "Stable"
                     },
                     {
@@ -1188,7 +1193,7 @@
                         "water_content": {
                             "value": 63,
                             "unit": "%",
-                            "standard_deviation": 4.2,
+                            "standard_deviation": 4,
                             "replicates": 6,
                             "unit_type": "massfraction"
                         },
@@ -1200,11 +1205,11 @@
                         "complex_modulus": {
                             "value": 515,
                             "unit": "Pa",
-                            "standard_deviation": 6.2,
+                            "standard_deviation": 6,
                             "unit_type": "pressure"
                         },
                         "storage_modulus": {
-                            "value": 300.25,
+                            "value": 300,
                             "unit": "Pa",
                             "standard_deviation": 17,
                             "unit_type": "pressure"
@@ -1212,12 +1217,12 @@
                         "loss_modulus": {
                             "value": 418,
                             "unit": "Pa",
-                            "standard_deviation": 8.3,
+                            "standard_deviation": 8,
                             "unit_type": "pressure"
                         },
                         "tan_delta_v_e": {
-                            "value": 1.3975,
-                            "standard_deviation": 0.098,
+                            "value": 1,
+                            "standard_deviation": 0.1,
                             "unit_type": "unitless"
                         },
                         "complex_viscosity": {
@@ -1227,28 +1232,10 @@
                             "replicates": 4,
                             "unit_type": "dynamicviscosity"
                         },
-                        "method": "ESTS: 13.02/x.x/M",
+                        "method": "ESTS 13.02/x.x/M",
                         "visual_stability": "Stable"
                     }
                 ]
-            },
-            "SARA": {
-                "saturates": {
-                    "unit": "%",
-                    "unit_type": "massfraction"
-                },
-                "aromatics": {
-                    "unit": "%",
-                    "unit_type": "massfraction"
-                },
-                "resins": {
-                    "unit": "%",
-                    "unit_type": "massfraction"
-                },
-                "asphaltenes": {
-                    "unit": "%",
-                    "unit_type": "massfraction"
-                }
             },
             "distillation_data": {
                 "type": "mass fraction",
@@ -1261,7 +1248,19 @@
                 "cuts": [
                     {
                         "fraction": {
-                            "value": 5,
+                            "value": 0.0,
+                            "unit": "%",
+                            "unit_type": "massfraction"
+                        },
+                        "vapor_temp": {
+                            "value": 81.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 5.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -1273,7 +1272,7 @@
                     },
                     {
                         "fraction": {
-                            "value": 10,
+                            "value": 10.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -1285,7 +1284,7 @@
                     },
                     {
                         "fraction": {
-                            "value": 15,
+                            "value": 15.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -1297,7 +1296,7 @@
                     },
                     {
                         "fraction": {
-                            "value": 20,
+                            "value": 20.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -1309,7 +1308,7 @@
                     },
                     {
                         "fraction": {
-                            "value": 25,
+                            "value": 25.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -1321,7 +1320,7 @@
                     },
                     {
                         "fraction": {
-                            "value": 30,
+                            "value": 30.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -1333,7 +1332,7 @@
                     },
                     {
                         "fraction": {
-                            "value": 35,
+                            "value": 35.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -1345,7 +1344,7 @@
                     },
                     {
                         "fraction": {
-                            "value": 40,
+                            "value": 40.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -1357,7 +1356,7 @@
                     },
                     {
                         "fraction": {
-                            "value": 45,
+                            "value": 45.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -1369,7 +1368,7 @@
                     },
                     {
                         "fraction": {
-                            "value": 50,
+                            "value": 50.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -1381,7 +1380,7 @@
                     },
                     {
                         "fraction": {
-                            "value": 55,
+                            "value": 55.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -1393,7 +1392,7 @@
                     },
                     {
                         "fraction": {
-                            "value": 60,
+                            "value": 60.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -1405,7 +1404,7 @@
                     },
                     {
                         "fraction": {
-                            "value": 65,
+                            "value": 65.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -1417,7 +1416,7 @@
                     },
                     {
                         "fraction": {
-                            "value": 70,
+                            "value": 70.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -1429,7 +1428,7 @@
                     },
                     {
                         "fraction": {
-                            "value": 75,
+                            "value": 75.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -1441,7 +1440,7 @@
                     },
                     {
                         "fraction": {
-                            "value": 80,
+                            "value": 80.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -1453,7 +1452,7 @@
                     },
                     {
                         "fraction": {
-                            "value": 85,
+                            "value": 85.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -1465,7 +1464,7 @@
                     },
                     {
                         "fraction": {
-                            "value": 90,
+                            "value": 90.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -1477,7 +1476,7 @@
                     },
                     {
                         "fraction": {
-                            "value": 95,
+                            "value": 95.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
@@ -1486,26 +1485,18 @@
                             "unit": "C",
                             "unit_type": "temperature"
                         }
-                    },
-                    {
-                        "fraction": {
-                            "value": 0.0,
-                            "unit": "%",
-                            "unit_type": "massfraction"
-                        },
-                        "vapor_temp": {
-                            "value": 81.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
                     }
                 ]
             },
             "bulk_composition": [
                 {
-                    "name": "Wax Content",
+                    "name": "Sulfur Content",
+                    "method": "ASTM D4294",
                     "measurement": {
+                        "value": 1,
                         "unit": "%",
+                        "standard_deviation": 0.01,
+                        "replicates": 3,
                         "unit_type": "massfraction"
                     }
                 },
@@ -1513,27 +1504,19 @@
                     "name": "Water Content",
                     "method": "ASTM E203",
                     "measurement": {
-                        "value": 0.23667,
+                        "value": 0.2,
                         "unit": "%",
-                        "standard_deviation": 0.21779,
+                        "standard_deviation": 0.22,
                         "replicates": 3,
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "Sulfur Content",
-                    "method": "ASTM D4294",
-                    "measurement": {
-                        "value": 1.012,
-                        "unit": "%",
-                        "standard_deviation": 0.00563,
-                        "replicates": 3,
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "GC-TPH",
-                    "method": "ESTS: 5.03/x.x/M",
+                    "name": "Gas Chromatography-Total Petroleum Hydrocarbon (GC-TPH)",
+                    "groups": [
+                        "GC-Detected Petroleum Hydrocarbon Content"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
                     "measurement": {
                         "value": 291,
                         "unit": "mg/g",
@@ -1541,8 +1524,11 @@
                     }
                 },
                 {
-                    "name": "GC-TSH",
-                    "method": "ESTS: 5.03/x.x/M",
+                    "name": "Gas Chromatography-Total Saturate Hydrocarbon (GC-TSH)",
+                    "groups": [
+                        "GC-Detected Petroleum Hydrocarbon Content"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
                     "measurement": {
                         "value": 170,
                         "unit": "mg/g",
@@ -1550,8 +1536,11 @@
                     }
                 },
                 {
-                    "name": "GC-TAH",
-                    "method": "ESTS: 5.03/x.x/M",
+                    "name": "Gas Chromatography-Total Aromatic Hydrocarbon (GC-TAH)",
+                    "groups": [
+                        "GC-Detected Petroleum Hydrocarbon Content"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
                     "measurement": {
                         "value": 121,
                         "unit": "mg/g",
@@ -1561,11 +1550,11 @@
                 {
                     "name": "GC-TSH/GC-TPH",
                     "groups": [
-                        "Hydrocarbon Content Ratio"
+                        "GC-Detected Petroleum Hydrocarbon Content"
                     ],
-                    "method": "ESTS: 5.03/x.x/M",
+                    "method": "ESTS 5.03/x.x/M",
                     "measurement": {
-                        "value": 58.5,
+                        "value": 59,
                         "unit": "%",
                         "unit_type": "massfraction"
                     }
@@ -1573,11 +1562,11 @@
                 {
                     "name": "GC-TAH/GC-TPH",
                     "groups": [
-                        "Hydrocarbon Content Ratio"
+                        "GC-Detected Petroleum Hydrocarbon Content"
                     ],
-                    "method": "ESTS: 5.03/x.x/M",
+                    "method": "ESTS 5.03/x.x/M",
                     "measurement": {
-                        "value": 41.5,
+                        "value": 42,
                         "unit": "%",
                         "unit_type": "massfraction"
                     }
@@ -1585,9 +1574,9 @@
                 {
                     "name": "Resolved Peaks/TPH",
                     "groups": [
-                        "Hydrocarbon Content Ratio"
+                        "GC-Detected Petroleum Hydrocarbon Content"
                     ],
-                    "method": "ESTS: 5.03/x.x/M",
+                    "method": "ESTS 5.03/x.x/M",
                     "measurement": {
                         "value": 27,
                         "unit": "%",
@@ -1597,81 +1586,82 @@
             ],
             "CCME": {
                 "F1": {
-                    "value": 4.365,
+                    "value": 4,
                     "unit": "mg/g",
                     "unit_type": "massfraction"
                 },
                 "F2": {
-                    "value": 74.496,
+                    "value": 74,
                     "unit": "mg/g",
                     "unit_type": "massfraction"
                 },
                 "F3": {
-                    "value": 161.8,
+                    "value": 162,
                     "unit": "mg/g",
                     "unit_type": "massfraction"
                 },
                 "F4": {
-                    "value": 50.634,
+                    "value": 51,
                     "unit": "mg/g",
                     "unit_type": "massfraction"
-                }
+                },
+                "method": "ESTS 5.03/x.x/M"
             },
             "ESTS_hydrocarbon_fractions": {
-                "method": "Hollebone, Bruce (2020) Personal communication",
+                "method": "ESTS 5.03/x.x/M",
                 "saturates": [
                     {
-                        "name": "n-C8 to n-C10",
+                        "name": "n-C8 To n-C10",
                         "measurement": {
-                            "value": 1.66,
+                            "value": 2,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
                     },
                     {
-                        "name": "n-C10 to n-C12",
+                        "name": "n-C10 To n-C12",
                         "measurement": {
-                            "value": 2.51,
+                            "value": 3,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
                     },
                     {
-                        "name": "n-C12 to n-C16",
+                        "name": "n-C12 To n-C16",
                         "measurement": {
-                            "value": 41.4,
+                            "value": 41,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
                     },
                     {
-                        "name": "n-C16 to n-C20",
+                        "name": "n-C16 To n-C20",
                         "measurement": {
-                            "value": 48.68,
+                            "value": 49,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
                     },
                     {
-                        "name": "n-C20 to n-C24",
+                        "name": "n-C20 To n-C24",
                         "measurement": {
-                            "value": 18.67,
+                            "value": 19,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
                     },
                     {
-                        "name": "n-C24 to n-C28",
+                        "name": "n-C24 To n-C28",
                         "measurement": {
-                            "value": 8.21,
+                            "value": 8,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
                     },
                     {
-                        "name": "n-C28 to n-C34",
+                        "name": "n-C28 To n-C34",
                         "measurement": {
-                            "value": 11.73,
+                            "value": 12,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
@@ -1679,7 +1669,7 @@
                     {
                         "name": "n-C34+",
                         "measurement": {
-                            "value": 37.37,
+                            "value": 37,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
@@ -1687,57 +1677,57 @@
                 ],
                 "aromatics": [
                     {
-                        "name": "n-C8 to n-C10",
+                        "name": "n-C8 To n-C10",
                         "measurement": {
-                            "value": 1.04,
+                            "value": 1,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
                     },
                     {
-                        "name": "n-C10 to n-C12",
+                        "name": "n-C10 To n-C12",
                         "measurement": {
-                            "value": 3.34,
+                            "value": 3,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
                     },
                     {
-                        "name": "n-C12 to n-C16",
+                        "name": "n-C12 To n-C16",
                         "measurement": {
-                            "value": 39.96,
+                            "value": 40,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
                     },
                     {
-                        "name": "n-C16 to n-C20",
+                        "name": "n-C16 To n-C20",
                         "measurement": {
-                            "value": 32.95,
+                            "value": 33,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
                     },
                     {
-                        "name": "n-C20 to n-C24",
+                        "name": "n-C20 To n-C24",
                         "measurement": {
-                            "value": 12.62,
+                            "value": 13,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
                     },
                     {
-                        "name": "n-C24 to n-C28",
+                        "name": "n-C24 To n-C28",
                         "measurement": {
-                            "value": 7.56,
+                            "value": 8,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
                     },
                     {
-                        "name": "n-C28 to n-C34",
+                        "name": "n-C28 To n-C34",
                         "measurement": {
-                            "value": 8.79,
+                            "value": 9,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
@@ -1745,7 +1735,7 @@
                     {
                         "name": "n-C34+",
                         "measurement": {
-                            "value": 14.51,
+                            "value": 15,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
@@ -1753,57 +1743,57 @@
                 ],
                 "GC_TPH": [
                     {
-                        "name": "n-C8 to n-C10",
+                        "name": "n-C8 To n-C10",
                         "measurement": {
-                            "value": 2.24,
+                            "value": 2,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
                     },
                     {
-                        "name": "n-C10 to n-C12",
+                        "name": "n-C10 To n-C12",
                         "measurement": {
-                            "value": 6.53,
+                            "value": 7,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
                     },
                     {
-                        "name": "n-C12 to n-C16",
+                        "name": "n-C12 To n-C16",
                         "measurement": {
-                            "value": 87.43,
+                            "value": 87,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
                     },
                     {
-                        "name": "n-C16 to n-C20",
+                        "name": "n-C16 To n-C20",
                         "measurement": {
-                            "value": 81.28,
+                            "value": 81,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
                     },
                     {
-                        "name": "n-C20 to n-C24",
+                        "name": "n-C20 To n-C24",
                         "measurement": {
-                            "value": 31.38,
+                            "value": 31,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
                     },
                     {
-                        "name": "n-C24 to n-C28",
+                        "name": "n-C24 To n-C28",
                         "measurement": {
-                            "value": 17.1,
+                            "value": 17,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
                     },
                     {
-                        "name": "n-C28 to n-C34",
+                        "name": "n-C28 To n-C34",
                         "measurement": {
-                            "value": 22.94,
+                            "value": 23,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }
@@ -1811,7 +1801,7 @@
                     {
                         "name": "n-C34+",
                         "measurement": {
-                            "value": 42.1,
+                            "value": 42,
                             "unit": "mg/g",
                             "unit_type": "massfraction"
                         }

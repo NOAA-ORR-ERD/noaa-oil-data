@@ -2,19 +2,19 @@
     "oil_id": "EC00604",
     "adios_data_model_version": "0.10.0",
     "metadata": {
-        "name": "Hibernia",
+        "name": "Hibernia [1999]",
         "source_id": "604",
         "location": "Newfoundland & Labrador, Canada",
         "reference": {
-            "year": 2020,
-            "reference": "Personal communication from Fatemeh Mirnaghi (ESTS), date: April 21, 2020."
+            "year": 2021,
+            "reference": "Personal communication from Mischa Bertrand-Chetty (EC), date: Mar 4, 2021."
         },
         "sample_date": "1999-12-01",
         "product_type": "Crude Oil NOS",
-        "API": 33.82,
+        "API": 33.8,
         "labels": [
-            "Crude Oil",
-            "Light Crude"
+            "Light Crude",
+            "Crude Oil"
         ],
         "model_completeness": 68
     },
@@ -26,7 +26,7 @@
                 "sample_id": "604",
                 "fraction_weathered": {
                     "value": 0.0,
-                    "unit": "fraction",
+                    "unit": "%",
                     "unit_type": "massfraction"
                 }
             },
@@ -42,7 +42,7 @@
                 },
                 "flash_point": {
                     "measurement": {
-                        "value": -16.7,
+                        "value": -17,
                         "unit": "C",
                         "replicates": 2,
                         "unit_type": "temperature"
@@ -50,20 +50,6 @@
                     "method": "ASTM D56 mod."
                 },
                 "densities": [
-                    {
-                        "density": {
-                            "value": 0.8637,
-                            "unit": "g/mL",
-                            "replicates": 2,
-                            "unit_type": "density"
-                        },
-                        "ref_temp": {
-                            "value": 0.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        },
-                        "method": "ASTM D5002"
-                    },
                     {
                         "density": {
                             "value": 0.8504,
@@ -77,9 +63,38 @@
                             "unit_type": "temperature"
                         },
                         "method": "ASTM D5002"
+                    },
+                    {
+                        "density": {
+                            "value": 0.8637,
+                            "unit": "g/mL",
+                            "replicates": 2,
+                            "unit_type": "density"
+                        },
+                        "ref_temp": {
+                            "value": 0.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "method": "ASTM D5002"
                     }
                 ],
                 "dynamic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 13,
+                            "unit": "mPa.s",
+                            "standard_deviation": 1,
+                            "replicates": 2,
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "method": "ESTS 12.05/1.0/M"
+                    },
                     {
                         "viscosity": {
                             "value": 110,
@@ -96,7 +111,7 @@
                             "unit": "1/s",
                             "unit_type": "angularvelocity"
                         },
-                        "method": "ESTS: 12.05/1.0/M"
+                        "method": "ESTS 12.05/1.0/M"
                     },
                     {
                         "viscosity": {
@@ -114,11 +129,11 @@
                             "unit": "1/s",
                             "unit_type": "angularvelocity"
                         },
-                        "method": "ESTS: 12.05/1.0/M"
+                        "method": "ESTS 12.05/1.0/M"
                     },
                     {
                         "viscosity": {
-                            "value": 12600,
+                            "value": 13000.0,
                             "unit": "mPa.s",
                             "unit_type": "dynamicviscosity"
                         },
@@ -132,22 +147,7 @@
                             "unit": "1/s",
                             "unit_type": "angularvelocity"
                         },
-                        "method": "ESTS: 12.05/1.0/M"
-                    },
-                    {
-                        "viscosity": {
-                            "value": 13.03,
-                            "unit": "mPa.s",
-                            "standard_deviation": 1,
-                            "replicates": 2,
-                            "unit_type": "dynamicviscosity"
-                        },
-                        "ref_temp": {
-                            "value": 15.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        },
-                        "method": "ESTS: 12.05/1.0/M"
+                        "method": "ESTS 12.05/1.0/M"
                     }
                 ],
                 "interfacial_tension_air": [
@@ -207,35 +207,12 @@
                             "unit": "day",
                             "unit_type": "time"
                         },
-                        "water_content": {
-                            "unit": "%",
-                            "unit_type": "massfraction"
-                        },
                         "ref_temp": {
                             "value": 15.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         },
-                        "complex_modulus": {
-                            "unit": "Pa",
-                            "unit_type": "pressure"
-                        },
-                        "storage_modulus": {
-                            "unit": "Pa",
-                            "unit_type": "pressure"
-                        },
-                        "loss_modulus": {
-                            "unit": "Pa",
-                            "unit_type": "pressure"
-                        },
-                        "tan_delta_v_e": {
-                            "unit_type": "unitless"
-                        },
-                        "complex_viscosity": {
-                            "unit": "Pa.s",
-                            "unit_type": "dynamicviscosity"
-                        },
-                        "method": "ESTS: 13.02/x.x/M",
+                        "method": "ESTS 13.02/x.x/M",
                         "visual_stability": "Unstable"
                     },
                     {
@@ -244,657 +221,146 @@
                             "unit": "day",
                             "unit_type": "time"
                         },
-                        "water_content": {
-                            "unit": "%",
-                            "unit_type": "massfraction"
-                        },
                         "ref_temp": {
                             "value": 15.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         },
-                        "complex_modulus": {
-                            "unit": "Pa",
-                            "unit_type": "pressure"
-                        },
-                        "storage_modulus": {
-                            "unit": "Pa",
-                            "unit_type": "pressure"
-                        },
-                        "loss_modulus": {
-                            "unit": "Pa",
-                            "unit_type": "pressure"
-                        },
-                        "tan_delta_v_e": {
-                            "unit_type": "unitless"
-                        },
-                        "complex_viscosity": {
-                            "unit": "Pa.s",
-                            "unit_type": "dynamicviscosity"
-                        },
-                        "method": "ESTS: 13.02/x.x/M",
+                        "method": "ESTS 13.02/x.x/M",
                         "visual_stability": "Unstable"
                     }
                 ],
                 "adhesion": {
                     "value": 12,
-                    "unit": "g/cm^2",
+                    "unit": "g/m^2",
                     "standard_deviation": 1,
                     "replicates": 2,
                     "unit_type": null
                 }
             },
             "SARA": {
-                "method": "ESTS: 12.11/1.0/M",
+                "method": "ESTS 12.11/1.0/M",
                 "saturates": {
-                    "value": 73.445,
+                    "value": 73,
                     "unit": "%",
-                    "standard_deviation": 1.4651,
-                    "replicates": 3,
                     "unit_type": "massfraction"
                 },
                 "aromatics": {
-                    "value": 18.161,
+                    "value": 18,
                     "unit": "%",
-                    "standard_deviation": 1.4651,
-                    "replicates": 3,
                     "unit_type": "massfraction"
                 },
                 "resins": {
-                    "value": 6.6657,
+                    "value": 7,
                     "unit": "%",
-                    "standard_deviation": 1.4651,
+                    "standard_deviation": 1,
                     "replicates": 3,
                     "unit_type": "massfraction"
                 },
                 "asphaltenes": {
-                    "value": 1.7288,
+                    "value": 1.7,
                     "unit": "%",
-                    "standard_deviation": 0.036923,
+                    "standard_deviation": 0,
                     "replicates": 3,
                     "unit_type": "massfraction"
                 }
             },
-            "distillation_data": {
-                "type": "mass fraction",
-                "end_point": {
-                    "unit": "C",
-                    "unit_type": "temperature"
-                }
-            },
             "compounds": [
                 {
-                    "name": "C0-N",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "measurement": {
-                        "value": 510.64,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C1-N",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "measurement": {
-                        "value": 1682.2,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C2-N",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "measurement": {
-                        "value": 2482.8,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C3-N",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "measurement": {
-                        "value": 1934.6,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C4-N",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "measurement": {
-                        "value": 955.98,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C0-P",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "measurement": {
-                        "value": 219.94,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C1-P",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "measurement": {
-                        "value": 653.87,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C2-P",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "measurement": {
-                        "value": 682.54,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C3-P",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "measurement": {
-                        "value": 455.88,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C4-P",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "measurement": {
-                        "value": 221.93,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C0-D",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "measurement": {
-                        "value": 58.132,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C1-D",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "measurement": {
-                        "value": 215.04,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C2-D",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "measurement": {
-                        "value": 262.65,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C3-D",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "measurement": {
-                        "value": 179.89,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C0-F",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "measurement": {
-                        "value": 108.73,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C1-F",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "measurement": {
-                        "value": 344.97,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C2-F",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "measurement": {
-                        "value": 453.54,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C3-F",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "measurement": {
-                        "value": 379.88,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C0-B",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "measurement": {
-                        "value": 24.855,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C1-B",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "measurement": {
-                        "value": 85.528,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C2-B",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "measurement": {
-                        "value": 108.35,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C3-B",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "measurement": {
-                        "value": 86.938,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C4-B",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "measurement": {
-                        "value": 46.013,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C0-C",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "measurement": {
-                        "value": 45.491,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C1-C",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "measurement": {
-                        "value": 74.804,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C2-C",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "measurement": {
-                        "value": 102.01,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C3-C",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "measurement": {
-                        "value": 102.86,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "Biphenyl (Bph)",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "method": "ESTS: 5.03/x.x/M",
-                    "measurement": {
-                        "value": 132.24,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "Acenaphthylene (Acl)",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "method": "ESTS: 5.03/x.x/M",
-                    "measurement": {
-                        "value": 14.518,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "Acenaphthene (Ace)",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "method": "ESTS: 5.03/x.x/M",
-                    "measurement": {
-                        "value": 16.059,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "Anthracene (An)",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "method": "ESTS: 5.03/x.x/M",
-                    "measurement": {
-                        "value": 7.3894,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "Fluoranthene (Fl)",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "method": "ESTS: 5.03/x.x/M",
-                    "measurement": {
-                        "value": 4.3599,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "Pyrene (Py)",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "method": "ESTS: 5.03/x.x/M",
-                    "measurement": {
-                        "value": 16.914,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "Benz(a)anthracene (BaA)",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "method": "ESTS: 5.03/x.x/M",
-                    "measurement": {
-                        "value": 2.9919,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "Benzo(b)fluoranthene (BbF)",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "method": "ESTS: 5.03/x.x/M",
-                    "measurement": {
-                        "value": 4.3337,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "Benzo(k)fluoranthene (BkF)",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "method": "ESTS: 5.03/x.x/M",
-                    "measurement": {
-                        "value": 0,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "Benzo(e)pyrene (BeP)",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "method": "ESTS: 5.03/x.x/M",
-                    "measurement": {
-                        "value": 9.9197,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "Benzo(a)pyrene (BaP)",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "method": "ESTS: 5.03/x.x/M",
-                    "measurement": {
-                        "value": 1.2907,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "Perylene (Pe)",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "method": "ESTS: 5.03/x.x/M",
-                    "measurement": {
-                        "value": 0.69655,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "Indeno(1,2,3-cd)pyrene (IP)",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "method": "ESTS: 5.03/x.x/M",
-                    "measurement": {
-                        "value": 0.29186,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "Dibenzo(ah)anthracene (DA)",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "method": "ESTS: 5.03/x.x/M",
-                    "measurement": {
-                        "value": 1.7268,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "Benzo(ghi)perylene (BgP)",
-                    "groups": [
-                        "Alkylated Aromatic Hydrocarbons"
-                    ],
-                    "method": "ESTS: 5.03/x.x/M",
-                    "measurement": {
-                        "value": 2.0202,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C9",
+                    "name": "n-C9",
                     "groups": [
                         "n-Alkanes"
                     ],
                     "measurement": {
-                        "value": 4655.1,
+                        "value": 4655,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "C10",
+                    "name": "n-C10",
                     "groups": [
                         "n-Alkanes"
                     ],
                     "measurement": {
-                        "value": 4558.4,
+                        "value": 4558,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "C11",
+                    "name": "n-C11",
                     "groups": [
                         "n-Alkanes"
                     ],
                     "measurement": {
-                        "value": 4348.6,
+                        "value": 4349,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "C12",
+                    "name": "n-C12",
                     "groups": [
                         "n-Alkanes"
                     ],
                     "measurement": {
-                        "value": 4338.9,
+                        "value": 4339,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "C13",
+                    "name": "n-C13",
                     "groups": [
                         "n-Alkanes"
                     ],
                     "measurement": {
-                        "value": 4517.4,
+                        "value": 4517,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "C14",
+                    "name": "n-C14",
                     "groups": [
                         "n-Alkanes"
                     ],
                     "measurement": {
-                        "value": 4388.9,
+                        "value": 4389,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "C15",
+                    "name": "n-C15",
                     "groups": [
                         "n-Alkanes"
                     ],
                     "measurement": {
-                        "value": 4112.3,
+                        "value": 4112,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "C16",
+                    "name": "n-C16",
                     "groups": [
                         "n-Alkanes"
                     ],
                     "measurement": {
-                        "value": 3828.8,
+                        "value": 3829,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "C17",
+                    "name": "n-C17",
                     "groups": [
                         "n-Alkanes"
                     ],
                     "measurement": {
-                        "value": 3993.6,
+                        "value": 3994,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
@@ -905,18 +371,18 @@
                         "n-Alkanes"
                     ],
                     "measurement": {
-                        "value": 1123.2,
+                        "value": 1123,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "C18",
+                    "name": "n-C18",
                     "groups": [
                         "n-Alkanes"
                     ],
                     "measurement": {
-                        "value": 3300.4,
+                        "value": 3300,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
@@ -927,297 +393,885 @@
                         "n-Alkanes"
                     ],
                     "measurement": {
-                        "value": 2052.9,
+                        "value": 2053,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "C19",
+                    "name": "n-C19",
                     "groups": [
                         "n-Alkanes"
                     ],
                     "measurement": {
-                        "value": 2914.9,
+                        "value": 2915,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "C20",
+                    "name": "n-C20",
                     "groups": [
                         "n-Alkanes"
                     ],
                     "measurement": {
-                        "value": 2716.6,
+                        "value": 2717,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "C21",
+                    "name": "n-C21",
                     "groups": [
                         "n-Alkanes"
                     ],
                     "measurement": {
-                        "value": 2594.5,
+                        "value": 2595,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "C22",
+                    "name": "n-C22",
                     "groups": [
                         "n-Alkanes"
                     ],
                     "measurement": {
-                        "value": 2404.2,
+                        "value": 2404,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "C23",
+                    "name": "n-C23",
                     "groups": [
                         "n-Alkanes"
                     ],
                     "measurement": {
-                        "value": 2496.8,
+                        "value": 2497,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "C24",
+                    "name": "n-C24",
                     "groups": [
                         "n-Alkanes"
                     ],
                     "measurement": {
-                        "value": 2342.9,
+                        "value": 2343,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "C25",
+                    "name": "n-C25",
                     "groups": [
                         "n-Alkanes"
                     ],
                     "measurement": {
-                        "value": 2414.9,
+                        "value": 2415,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "C26",
+                    "name": "n-C26",
                     "groups": [
                         "n-Alkanes"
                     ],
                     "measurement": {
-                        "value": 2287.5,
+                        "value": 2288,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "C27",
+                    "name": "n-C27",
                     "groups": [
                         "n-Alkanes"
                     ],
                     "measurement": {
-                        "value": 2181.4,
+                        "value": 2181,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "C28",
+                    "name": "n-C28",
                     "groups": [
                         "n-Alkanes"
                     ],
                     "measurement": {
-                        "value": 1964.1,
+                        "value": 1964,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "C29",
+                    "name": "n-C29",
                     "groups": [
                         "n-Alkanes"
                     ],
                     "measurement": {
-                        "value": 1944.0,
+                        "value": 1944,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "C30",
+                    "name": "n-C30",
                     "groups": [
                         "n-Alkanes"
                     ],
                     "measurement": {
-                        "value": 1549.9,
+                        "value": 1550,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "C31",
+                    "name": "n-C31",
                     "groups": [
                         "n-Alkanes"
                     ],
                     "measurement": {
-                        "value": 1369.3,
+                        "value": 1369,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "C32",
+                    "name": "n-C32",
                     "groups": [
                         "n-Alkanes"
                     ],
                     "measurement": {
-                        "value": 1197.3,
+                        "value": 1197,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "C33",
+                    "name": "n-C33",
                     "groups": [
                         "n-Alkanes"
                     ],
                     "measurement": {
-                        "value": 926.63,
+                        "value": 927,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "C34",
+                    "name": "n-C34",
                     "groups": [
                         "n-Alkanes"
                     ],
                     "measurement": {
-                        "value": 758.39,
+                        "value": 758,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "C35",
+                    "name": "n-C35",
                     "groups": [
                         "n-Alkanes"
                     ],
                     "measurement": {
-                        "value": 520.65,
+                        "value": 521,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "C36",
+                    "name": "n-C36",
                     "groups": [
                         "n-Alkanes"
                     ],
                     "measurement": {
-                        "value": 404.17,
+                        "value": 404,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "C37",
+                    "name": "n-C37",
                     "groups": [
                         "n-Alkanes"
                     ],
                     "measurement": {
-                        "value": 287.56,
+                        "value": 288,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "C38",
+                    "name": "n-C38",
                     "groups": [
                         "n-Alkanes"
                     ],
                     "measurement": {
-                        "value": 209.98,
+                        "value": 210,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "C39",
+                    "name": "n-C39",
                     "groups": [
                         "n-Alkanes"
                     ],
                     "measurement": {
-                        "value": 185.23,
+                        "value": 185,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "C40",
+                    "name": "n-C40",
                     "groups": [
                         "n-Alkanes"
                     ],
                     "measurement": {
-                        "value": 149.84,
+                        "value": 150,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "C21 tricyclic terpane (C21T)",
+                    "name": "C0-Naphthalene",
+                    "groups": [
+                        "Alkylated Polycyclic Aromatic Hydrocarbons (PAHs)"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 511,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "C1-Naphthalene",
+                    "groups": [
+                        "Alkylated Polycyclic Aromatic Hydrocarbons (PAHs)"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 1682,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "C2-Naphthalene",
+                    "groups": [
+                        "Alkylated Polycyclic Aromatic Hydrocarbons (PAHs)"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 2483,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "C3-Naphthalene",
+                    "groups": [
+                        "Alkylated Polycyclic Aromatic Hydrocarbons (PAHs)"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 1935,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "C4-Naphthalene",
+                    "groups": [
+                        "Alkylated Polycyclic Aromatic Hydrocarbons (PAHs)"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 956,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "C0-Phenanthrene",
+                    "groups": [
+                        "Alkylated Polycyclic Aromatic Hydrocarbons (PAHs)"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 220,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "C1-Phenanthrene",
+                    "groups": [
+                        "Alkylated Polycyclic Aromatic Hydrocarbons (PAHs)"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 654,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "C2-Phenanthrene",
+                    "groups": [
+                        "Alkylated Polycyclic Aromatic Hydrocarbons (PAHs)"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 683,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "C3-Phenanthrene",
+                    "groups": [
+                        "Alkylated Polycyclic Aromatic Hydrocarbons (PAHs)"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 456,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "C4-Phenanthrene",
+                    "groups": [
+                        "Alkylated Polycyclic Aromatic Hydrocarbons (PAHs)"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 222,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "C0-Dibenzothiophene",
+                    "groups": [
+                        "Alkylated Polycyclic Aromatic Hydrocarbons (PAHs)"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 58,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "C1-Dibenzothiophene",
+                    "groups": [
+                        "Alkylated Polycyclic Aromatic Hydrocarbons (PAHs)"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 215,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "C2-Dibenzothiophene",
+                    "groups": [
+                        "Alkylated Polycyclic Aromatic Hydrocarbons (PAHs)"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 263,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "C3-Dibenzothiophene",
+                    "groups": [
+                        "Alkylated Polycyclic Aromatic Hydrocarbons (PAHs)"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 180,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "C0-Fluorene",
+                    "groups": [
+                        "Alkylated Polycyclic Aromatic Hydrocarbons (PAHs)"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 109,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "C1-Fluorene",
+                    "groups": [
+                        "Alkylated Polycyclic Aromatic Hydrocarbons (PAHs)"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 345,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "C2-Fluorene",
+                    "groups": [
+                        "Alkylated Polycyclic Aromatic Hydrocarbons (PAHs)"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 454,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "C3-Fluorene",
+                    "groups": [
+                        "Alkylated Polycyclic Aromatic Hydrocarbons (PAHs)"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 380,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "C0-Fluoranthene",
+                    "groups": [
+                        "Alkylated Polycyclic Aromatic Hydrocarbons (PAHs)"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 1,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "C1-Fluoranthene",
+                    "groups": [
+                        "Alkylated Polycyclic Aromatic Hydrocarbons (PAHs)"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 63,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "C2-Fluoranthene",
+                    "groups": [
+                        "Alkylated Polycyclic Aromatic Hydrocarbons (PAHs)"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 102,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "C3-Fluoranthene",
+                    "groups": [
+                        "Alkylated Polycyclic Aromatic Hydrocarbons (PAHs)"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 109,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "C4-Fluoranthene",
+                    "groups": [
+                        "Alkylated Polycyclic Aromatic Hydrocarbons (PAHs)"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 75,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "C0-Benzonaphthothiophene",
+                    "groups": [
+                        "Alkylated Polycyclic Aromatic Hydrocarbons (PAHs)"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 25,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "C1-Benzonaphthothiophene",
+                    "groups": [
+                        "Alkylated Polycyclic Aromatic Hydrocarbons (PAHs)"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 86,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "C2-Benzonaphthothiophene",
+                    "groups": [
+                        "Alkylated Polycyclic Aromatic Hydrocarbons (PAHs)"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 108,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "C3-Benzonaphthothiophene",
+                    "groups": [
+                        "Alkylated Polycyclic Aromatic Hydrocarbons (PAHs)"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 87,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "C4-Benzonaphthothiophene",
+                    "groups": [
+                        "Alkylated Polycyclic Aromatic Hydrocarbons (PAHs)"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 46,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "C0-Chrysene",
+                    "groups": [
+                        "Alkylated Polycyclic Aromatic Hydrocarbons (PAHs)"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 45,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "C1-Chrysene",
+                    "groups": [
+                        "Alkylated Polycyclic Aromatic Hydrocarbons (PAHs)"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 75,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "C2-Chrysene",
+                    "groups": [
+                        "Alkylated Polycyclic Aromatic Hydrocarbons (PAHs)"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 102,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "C3-Chrysene",
+                    "groups": [
+                        "Alkylated Polycyclic Aromatic Hydrocarbons (PAHs)"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 103,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Biphenyl (Bph)",
+                    "groups": [
+                        "Other Priority PAHs"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 132.2,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Acenaphthylene (Acl)",
+                    "groups": [
+                        "Other Priority PAHs"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 14.5,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Acenaphthene (Ace)",
+                    "groups": [
+                        "Other Priority PAHs"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 16.1,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Anthracene (An)",
+                    "groups": [
+                        "Other Priority PAHs"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 7.4,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Fluoranthene (Fl)",
+                    "groups": [
+                        "Other Priority PAHs"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 4.4,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Pyrene (Py)",
+                    "groups": [
+                        "Other Priority PAHs"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 16.9,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Benz(a)anthracene (BaA)",
+                    "groups": [
+                        "Other Priority PAHs"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 3,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Benzo(b)fluoranthene (BbF)",
+                    "groups": [
+                        "Other Priority PAHs"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 4.3,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Benzo(k)fluoranthene (BkF)",
+                    "groups": [
+                        "Other Priority PAHs"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "unit": "\u00b5g/g",
+                        "max_value": 0.05,
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Benzo(e)pyrene (BeP)",
+                    "groups": [
+                        "Other Priority PAHs"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 9.9,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Benzo(a)pyrene (BaP)",
+                    "groups": [
+                        "Other Priority PAHs"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 1.3,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Perylene (Pe)",
+                    "groups": [
+                        "Other Priority PAHs"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 0.7,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Indeno(1,2,3-cd)pyrene (IP)",
+                    "groups": [
+                        "Other Priority PAHs"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 0.3,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Dibenzo(ah)anthracene (DA)",
+                    "groups": [
+                        "Other Priority PAHs"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 1.7,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Benzo(ghi)perylene (BgP)",
+                    "groups": [
+                        "Other Priority PAHs"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 2,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "C21 Tricyclic Terpane (C21T)",
                     "groups": [
                         "Biomarkers"
                     ],
-                    "method": "ESTS: 5.03/x.x/M",
+                    "method": "ESTS 5.03/x.x/M",
                     "measurement": {
-                        "value": 8.9011,
+                        "value": 9,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "C22 tricyclic terpane (C22T)",
+                    "name": "C22 Tricyclic Terpane (C22T)",
                     "groups": [
                         "Biomarkers"
                     ],
-                    "method": "ESTS: 5.03/x.x/M",
+                    "method": "ESTS 5.03/x.x/M",
                     "measurement": {
-                        "value": 2.2123,
+                        "value": 2,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "C23 tricyclic terpane (C23T)",
+                    "name": "C23 Tricyclic Terpane (C23T)",
                     "groups": [
                         "Biomarkers"
                     ],
-                    "method": "ESTS: 5.03/x.x/M",
+                    "method": "ESTS 5.03/x.x/M",
                     "measurement": {
-                        "value": 10.03,
+                        "value": 10,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "C24 tricyclic terpane (C24T)",
+                    "name": "C24 Tricyclic Terpane (C24T)",
                     "groups": [
                         "Biomarkers"
                     ],
-                    "method": "ESTS: 5.03/x.x/M",
+                    "method": "ESTS 5.03/x.x/M",
                     "measurement": {
-                        "value": 10.95,
+                        "value": 11,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "18A,22,29,30-Trisnorneohopane (C27Ts)",
+                    "groups": [
+                        "Biomarkers"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 30,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "17a(H)-22,29,30-Trisnorhopane (C27Tm)",
+                    "groups": [
+                        "Biomarkers"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
+                    "measurement": {
+                        "value": 22,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
@@ -1227,9 +1281,9 @@
                     "groups": [
                         "Biomarkers"
                     ],
-                    "method": "ESTS: 5.03/x.x/M",
+                    "method": "ESTS 5.03/x.x/M",
                     "measurement": {
-                        "value": 29.887,
+                        "value": 79,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
@@ -1239,9 +1293,9 @@
                     "groups": [
                         "Biomarkers"
                     ],
-                    "method": "ESTS: 5.03/x.x/M",
+                    "method": "ESTS 5.03/x.x/M",
                     "measurement": {
-                        "value": 22.151,
+                        "value": 172,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
@@ -1251,9 +1305,9 @@
                     "groups": [
                         "Biomarkers"
                     ],
-                    "method": "ESTS: 5.03/x.x/M",
+                    "method": "ESTS 5.03/x.x/M",
                     "measurement": {
-                        "value": 79.298,
+                        "value": 62,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
@@ -1263,9 +1317,9 @@
                     "groups": [
                         "Biomarkers"
                     ],
-                    "method": "ESTS: 5.03/x.x/M",
+                    "method": "ESTS 5.03/x.x/M",
                     "measurement": {
-                        "value": 171.96,
+                        "value": 46,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
@@ -1275,9 +1329,9 @@
                     "groups": [
                         "Biomarkers"
                     ],
-                    "method": "ESTS: 5.03/x.x/M",
+                    "method": "ESTS 5.03/x.x/M",
                     "measurement": {
-                        "value": 62.48,
+                        "value": 52,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
@@ -1287,9 +1341,9 @@
                     "groups": [
                         "Biomarkers"
                     ],
-                    "method": "ESTS: 5.03/x.x/M",
+                    "method": "ESTS 5.03/x.x/M",
                     "measurement": {
-                        "value": 45.684,
+                        "value": 39,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
@@ -1299,9 +1353,9 @@
                     "groups": [
                         "Biomarkers"
                     ],
-                    "method": "ESTS: 5.03/x.x/M",
+                    "method": "ESTS 5.03/x.x/M",
                     "measurement": {
-                        "value": 51.715,
+                        "value": 38,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
@@ -1311,9 +1365,9 @@
                     "groups": [
                         "Biomarkers"
                     ],
-                    "method": "ESTS: 5.03/x.x/M",
+                    "method": "ESTS 5.03/x.x/M",
                     "measurement": {
-                        "value": 39.419,
+                        "value": 27,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
@@ -1323,9 +1377,9 @@
                     "groups": [
                         "Biomarkers"
                     ],
-                    "method": "ESTS: 5.03/x.x/M",
+                    "method": "ESTS 5.03/x.x/M",
                     "measurement": {
-                        "value": 38.018,
+                        "value": 24,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
@@ -1335,9 +1389,9 @@
                     "groups": [
                         "Biomarkers"
                     ],
-                    "method": "ESTS: 5.03/x.x/M",
+                    "method": "ESTS 5.03/x.x/M",
                     "measurement": {
-                        "value": 26.697,
+                        "value": 16,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
@@ -1347,9 +1401,9 @@
                     "groups": [
                         "Biomarkers"
                     ],
-                    "method": "ESTS: 5.03/x.x/M",
+                    "method": "ESTS 5.03/x.x/M",
                     "measurement": {
-                        "value": 24.245,
+                        "value": 17,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
@@ -1359,69 +1413,9 @@
                     "groups": [
                         "Biomarkers"
                     ],
-                    "method": "ESTS: 5.03/x.x/M",
+                    "method": "ESTS 5.03/x.x/M",
                     "measurement": {
-                        "value": 15.829,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "18\u03b1,22,29,30-trisnorneohopane (C27Ts)",
-                    "groups": [
-                        "Biomarkers"
-                    ],
-                    "method": "ESTS: 5.03/x.x/M",
-                    "measurement": {
-                        "value": 16.896,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "17\u03b1(H)-22,29,30-Trisnorhopane (C27Tm)",
-                    "groups": [
-                        "Biomarkers"
-                    ],
-                    "method": "ESTS: 5.03/x.x/M",
-                    "measurement": {
-                        "value": 12.451,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "14\u00df(H),17\u00df(H)-20-Cholestane (C27\u03b1\u00df\u00df)",
-                    "groups": [
-                        "Biomarkers"
-                    ],
-                    "method": "ESTS: 5.03/x.x/M",
-                    "measurement": {
-                        "value": 219.41,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "14\u00df(H),17\u00df(H)-20-Methylcholestane (C28\u03b1\u00df\u00df)",
-                    "groups": [
-                        "Biomarkers"
-                    ],
-                    "method": "ESTS: 5.03/x.x/M",
-                    "measurement": {
-                        "value": 99.351,
-                        "unit": "\u00b5g/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "14\u00df(H),17\u00df(H)-20-Ethylcholestane (C29\u03b1\u00df\u00df)",
-                    "groups": [
-                        "Biomarkers"
-                    ],
-                    "method": "ESTS: 5.03/x.x/M",
-                    "measurement": {
-                        "value": 153.41,
+                        "value": 12,
                         "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
@@ -1429,49 +1423,37 @@
             ],
             "bulk_composition": [
                 {
-                    "name": "Wax Content",
+                    "name": "Gas Chromatography-Total Petroleum Hydrocarbon (GC-TPH)",
+                    "groups": [
+                        "GC-Detected Petroleum Hydrocarbon Content"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
                     "measurement": {
-                        "unit": "%",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "Water Content",
-                    "measurement": {
-                        "unit": "%",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "Sulfur Content",
-                    "measurement": {
-                        "unit": "%",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "GC-TPH",
-                    "method": "ESTS: 5.03/x.x/M",
-                    "measurement": {
-                        "value": 615.39,
+                        "value": 615,
                         "unit": "mg/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "GC-TSH",
-                    "method": "ESTS: 5.03/x.x/M",
+                    "name": "Gas Chromatography-Total Saturate Hydrocarbon (GC-TSH)",
+                    "groups": [
+                        "GC-Detected Petroleum Hydrocarbon Content"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
                     "measurement": {
-                        "value": 453.36,
+                        "value": 453,
                         "unit": "mg/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "GC-TAH",
-                    "method": "ESTS: 5.03/x.x/M",
+                    "name": "Gas Chromatography-Total Aromatic Hydrocarbon (GC-TAH)",
+                    "groups": [
+                        "GC-Detected Petroleum Hydrocarbon Content"
+                    ],
+                    "method": "ESTS 5.03/x.x/M",
                     "measurement": {
-                        "value": 162.03,
+                        "value": 162,
                         "unit": "mg/g",
                         "unit_type": "massfraction"
                     }
@@ -1479,11 +1461,11 @@
                 {
                     "name": "GC-TSH/GC-TPH",
                     "groups": [
-                        "Hydrocarbon Content Ratio"
+                        "GC-Detected Petroleum Hydrocarbon Content"
                     ],
-                    "method": "ESTS: 5.03/x.x/M",
+                    "method": "ESTS 5.03/x.x/M",
                     "measurement": {
-                        "value": 73.67,
+                        "value": 74,
                         "unit": "%",
                         "unit_type": "massfraction"
                     }
@@ -1491,11 +1473,11 @@
                 {
                     "name": "GC-TAH/GC-TPH",
                     "groups": [
-                        "Hydrocarbon Content Ratio"
+                        "GC-Detected Petroleum Hydrocarbon Content"
                     ],
-                    "method": "ESTS: 5.03/x.x/M",
+                    "method": "ESTS 5.03/x.x/M",
                     "measurement": {
-                        "value": 26.33,
+                        "value": 26,
                         "unit": "%",
                         "unit_type": "massfraction"
                     }
@@ -1503,11 +1485,11 @@
                 {
                     "name": "Resolved Peaks/TPH",
                     "groups": [
-                        "Hydrocarbon Content Ratio"
+                        "GC-Detected Petroleum Hydrocarbon Content"
                     ],
-                    "method": "ESTS: 5.03/x.x/M",
+                    "method": "ESTS 5.03/x.x/M",
                     "measurement": {
-                        "value": 37.296,
+                        "value": 37,
                         "unit": "%",
                         "unit_type": "massfraction"
                     }
@@ -1515,22 +1497,22 @@
             ],
             "CCME": {
                 "F1": {
-                    "value": 38.611,
+                    "value": 39,
                     "unit": "mg/g",
                     "unit_type": "massfraction"
                 },
                 "F2": {
-                    "value": 112.16,
+                    "value": 112,
                     "unit": "mg/g",
                     "unit_type": "massfraction"
                 },
                 "F3": {
-                    "value": 256.74,
+                    "value": 257,
                     "unit": "mg/g",
                     "unit_type": "massfraction"
                 },
                 "F4": {
-                    "value": 78.55,
+                    "value": 79,
                     "unit": "mg/g",
                     "unit_type": "massfraction"
                 },
@@ -1539,19 +1521,19 @@
         },
         {
             "metadata": {
-                "name": "10.1% Weathered",
-                "short_name": "10.1% Weathered",
+                "name": "10.1% Evaporated",
+                "short_name": "10.1% Evaporated",
                 "sample_id": "604.6",
                 "fraction_weathered": {
-                    "value": 0.101,
-                    "unit": "fraction",
+                    "value": 10.1,
+                    "unit": "%",
                     "unit_type": "massfraction"
                 }
             },
             "physical_properties": {
                 "pour_point": {
                     "measurement": {
-                        "value": 14.5,
+                        "value": 15,
                         "unit": "C",
                         "replicates": 2,
                         "unit_type": "temperature"
@@ -1560,7 +1542,7 @@
                 },
                 "flash_point": {
                     "measurement": {
-                        "value": 30.3,
+                        "value": 30,
                         "unit": "C",
                         "replicates": 2,
                         "unit_type": "temperature"
@@ -1568,20 +1550,6 @@
                     "method": "ASTM D56 mod."
                 },
                 "densities": [
-                    {
-                        "density": {
-                            "value": 0.8887,
-                            "unit": "g/mL",
-                            "replicates": 2,
-                            "unit_type": "density"
-                        },
-                        "ref_temp": {
-                            "value": 0.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        },
-                        "method": "ASTM D5002"
-                    },
                     {
                         "density": {
                             "value": 0.8753,
@@ -1595,9 +1563,38 @@
                             "unit_type": "temperature"
                         },
                         "method": "ASTM D5002"
+                    },
+                    {
+                        "density": {
+                            "value": 0.8887,
+                            "unit": "g/mL",
+                            "replicates": 2,
+                            "unit_type": "density"
+                        },
+                        "ref_temp": {
+                            "value": 0.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "method": "ASTM D5002"
                     }
                 ],
                 "dynamic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 35,
+                            "unit": "mPa.s",
+                            "standard_deviation": 1,
+                            "replicates": 2,
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "method": "ESTS 12.05/1.0/M"
+                    },
                     {
                         "viscosity": {
                             "value": 300,
@@ -1614,7 +1611,7 @@
                             "unit": "1/s",
                             "unit_type": "angularvelocity"
                         },
-                        "method": "ESTS: 12.05/1.0/M"
+                        "method": "ESTS 12.05/1.0/M"
                     },
                     {
                         "viscosity": {
@@ -1632,11 +1629,11 @@
                             "unit": "1/s",
                             "unit_type": "angularvelocity"
                         },
-                        "method": "ESTS: 12.05/1.0/M"
+                        "method": "ESTS 12.05/1.0/M"
                     },
                     {
                         "viscosity": {
-                            "value": 16000,
+                            "value": 16000.0,
                             "unit": "mPa.s",
                             "unit_type": "dynamicviscosity"
                         },
@@ -1650,22 +1647,7 @@
                             "unit": "1/s",
                             "unit_type": "angularvelocity"
                         },
-                        "method": "ESTS: 12.05/1.0/M"
-                    },
-                    {
-                        "viscosity": {
-                            "value": 34.83,
-                            "unit": "mPa.s",
-                            "standard_deviation": 1,
-                            "replicates": 2,
-                            "unit_type": "dynamicviscosity"
-                        },
-                        "ref_temp": {
-                            "value": 15.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        },
-                        "method": "ESTS: 12.05/1.0/M"
+                        "method": "ESTS 12.05/1.0/M"
                     }
                 ],
                 "interfacial_tension_air": [
@@ -1771,7 +1753,7 @@
                             "replicates": 4,
                             "unit_type": "dynamicviscosity"
                         },
-                        "method": "ESTS: 13.02/x.x/M",
+                        "method": "ESTS 13.02/x.x/M",
                         "visual_stability": "Mesostable"
                     },
                     {
@@ -1780,165 +1762,66 @@
                             "unit": "day",
                             "unit_type": "time"
                         },
-                        "water_content": {
-                            "unit": "%",
-                            "unit_type": "massfraction"
-                        },
                         "ref_temp": {
                             "value": 15.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         },
-                        "complex_modulus": {
-                            "unit": "Pa",
-                            "unit_type": "pressure"
-                        },
-                        "storage_modulus": {
-                            "unit": "Pa",
-                            "unit_type": "pressure"
-                        },
-                        "loss_modulus": {
-                            "unit": "Pa",
-                            "unit_type": "pressure"
-                        },
-                        "tan_delta_v_e": {
-                            "unit_type": "unitless"
-                        },
-                        "complex_viscosity": {
-                            "unit": "Pa.s",
-                            "unit_type": "dynamicviscosity"
-                        },
-                        "method": "ESTS: 13.02/x.x/M",
+                        "method": "ESTS 13.02/x.x/M",
                         "visual_stability": "Meso-stable"
                     }
                 ],
                 "adhesion": {
                     "value": 27,
-                    "unit": "g/cm^2",
+                    "unit": "g/m^2",
                     "standard_deviation": 4,
                     "replicates": 2,
                     "unit_type": null
                 }
             },
             "SARA": {
-                "method": "ESTS: 12.11/1.0/M",
+                "method": "ESTS 12.11/1.0/M",
                 "saturates": {
-                    "value": 71.007,
+                    "value": 71,
                     "unit": "%",
-                    "standard_deviation": 2.0753,
-                    "replicates": 3,
                     "unit_type": "massfraction"
                 },
                 "aromatics": {
-                    "value": 18.688,
+                    "value": 19,
                     "unit": "%",
-                    "standard_deviation": 2.0753,
-                    "replicates": 3,
                     "unit_type": "massfraction"
                 },
                 "resins": {
-                    "value": 8.0119,
+                    "value": 8,
                     "unit": "%",
-                    "standard_deviation": 2.0753,
+                    "standard_deviation": 2,
                     "replicates": 3,
                     "unit_type": "massfraction"
                 },
                 "asphaltenes": {
-                    "value": 2.2922,
+                    "value": 2.3,
                     "unit": "%",
-                    "standard_deviation": 0.092171,
+                    "standard_deviation": 0.1,
                     "replicates": 3,
                     "unit_type": "massfraction"
                 }
-            },
-            "distillation_data": {
-                "type": "mass fraction",
-                "end_point": {
-                    "unit": "C",
-                    "unit_type": "temperature"
-                }
-            },
-            "bulk_composition": [
-                {
-                    "name": "Wax Content",
-                    "measurement": {
-                        "unit": "%",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "Water Content",
-                    "measurement": {
-                        "unit": "%",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "Sulfur Content",
-                    "measurement": {
-                        "unit": "%",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "GC-TPH",
-                    "measurement": {
-                        "unit": "mg/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "GC-TSH",
-                    "measurement": {
-                        "unit": "mg/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "GC-TAH",
-                    "measurement": {
-                        "unit": "mg/g",
-                        "unit_type": "massfraction"
-                    }
-                }
-            ],
-            "CCME": {
-                "F1": {
-                    "unit": "mg/g",
-                    "unit_type": "massfraction"
-                },
-                "F2": {
-                    "unit": "mg/g",
-                    "unit_type": "massfraction"
-                },
-                "F3": {
-                    "unit": "mg/g",
-                    "unit_type": "massfraction"
-                },
-                "F4": {
-                    "unit": "mg/g",
-                    "unit_type": "massfraction"
-                }
-            },
-            "ESTS_hydrocarbon_fractions": {
-                "method": "Hollebone, Bruce (2020) Personal communication"
             }
         },
         {
             "metadata": {
-                "name": "20.8% Weathered",
-                "short_name": "20.8% Weathered",
+                "name": "20.8% Evaporated",
+                "short_name": "20.8% Evaporated",
                 "sample_id": "604.7",
                 "fraction_weathered": {
-                    "value": 0.208,
-                    "unit": "fraction",
+                    "value": 20.8,
+                    "unit": "%",
                     "unit_type": "massfraction"
                 }
             },
             "physical_properties": {
                 "pour_point": {
                     "measurement": {
-                        "value": 17.5,
+                        "value": 18,
                         "unit": "C",
                         "replicates": 2,
                         "unit_type": "temperature"
@@ -1947,7 +1830,7 @@
                 },
                 "flash_point": {
                     "measurement": {
-                        "value": 71.2,
+                        "value": 71,
                         "unit": "C",
                         "replicates": 2,
                         "unit_type": "temperature"
@@ -1955,20 +1838,6 @@
                     "method": "ASTM D56 mod."
                 },
                 "densities": [
-                    {
-                        "density": {
-                            "value": 0.9015,
-                            "unit": "g/mL",
-                            "replicates": 2,
-                            "unit_type": "density"
-                        },
-                        "ref_temp": {
-                            "value": 0.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        },
-                        "method": "ASTM D5002"
-                    },
                     {
                         "density": {
                             "value": 0.8893,
@@ -1982,9 +1851,38 @@
                             "unit_type": "temperature"
                         },
                         "method": "ASTM D5002"
+                    },
+                    {
+                        "density": {
+                            "value": 0.9015,
+                            "unit": "g/mL",
+                            "replicates": 2,
+                            "unit_type": "density"
+                        },
+                        "ref_temp": {
+                            "value": 0.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "method": "ASTM D5002"
                     }
                 ],
                 "dynamic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 99,
+                            "unit": "mPa.s",
+                            "standard_deviation": 1,
+                            "replicates": 2,
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "method": "ESTS 12.05/1.0/M"
+                    },
                     {
                         "viscosity": {
                             "value": 550,
@@ -2001,7 +1899,7 @@
                             "unit": "1/s",
                             "unit_type": "angularvelocity"
                         },
-                        "method": "ESTS: 12.05/1.0/M"
+                        "method": "ESTS 12.05/1.0/M"
                     },
                     {
                         "viscosity": {
@@ -2019,11 +1917,11 @@
                             "unit": "1/s",
                             "unit_type": "angularvelocity"
                         },
-                        "method": "ESTS: 12.05/1.0/M"
+                        "method": "ESTS 12.05/1.0/M"
                     },
                     {
                         "viscosity": {
-                            "value": 21600,
+                            "value": 22000.0,
                             "unit": "mPa.s",
                             "unit_type": "dynamicviscosity"
                         },
@@ -2037,22 +1935,7 @@
                             "unit": "1/s",
                             "unit_type": "angularvelocity"
                         },
-                        "method": "ESTS: 12.05/1.0/M"
-                    },
-                    {
-                        "viscosity": {
-                            "value": 99.16,
-                            "unit": "mPa.s",
-                            "standard_deviation": 1,
-                            "replicates": 2,
-                            "unit_type": "dynamicviscosity"
-                        },
-                        "ref_temp": {
-                            "value": 15.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        },
-                        "method": "ESTS: 12.05/1.0/M"
+                        "method": "ESTS 12.05/1.0/M"
                     }
                 ],
                 "interfacial_tension_air": [
@@ -2142,7 +2025,7 @@
                             "replicates": 4,
                             "unit_type": "dynamicviscosity"
                         },
-                        "method": "ESTS: 13.02/x.x/M",
+                        "method": "ESTS 13.02/x.x/M",
                         "visual_stability": "Mesostable"
                     },
                     {
@@ -2151,158 +2034,59 @@
                             "unit": "day",
                             "unit_type": "time"
                         },
-                        "water_content": {
-                            "unit": "%",
-                            "unit_type": "massfraction"
-                        },
                         "ref_temp": {
                             "value": 15.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         },
-                        "complex_modulus": {
-                            "unit": "Pa",
-                            "unit_type": "pressure"
-                        },
-                        "storage_modulus": {
-                            "unit": "Pa",
-                            "unit_type": "pressure"
-                        },
-                        "loss_modulus": {
-                            "unit": "Pa",
-                            "unit_type": "pressure"
-                        },
-                        "tan_delta_v_e": {
-                            "unit_type": "unitless"
-                        },
-                        "complex_viscosity": {
-                            "unit": "Pa.s",
-                            "unit_type": "dynamicviscosity"
-                        },
-                        "method": "ESTS: 13.02/x.x/M",
+                        "method": "ESTS 13.02/x.x/M",
                         "visual_stability": "Meso-stable"
                     }
                 ],
                 "adhesion": {
                     "value": 51,
-                    "unit": "g/cm^2",
+                    "unit": "g/m^2",
                     "standard_deviation": 8,
                     "replicates": 2,
                     "unit_type": null
                 }
             },
             "SARA": {
-                "method": "ESTS: 12.11/1.0/M",
+                "method": "ESTS 12.11/1.0/M",
                 "saturates": {
-                    "value": 60.553,
+                    "value": 61,
                     "unit": "%",
-                    "standard_deviation": 0.76488,
-                    "replicates": 3,
                     "unit_type": "massfraction"
                 },
                 "aromatics": {
-                    "value": 28.742,
+                    "value": 29,
                     "unit": "%",
-                    "standard_deviation": 0.76488,
-                    "replicates": 3,
                     "unit_type": "massfraction"
                 },
                 "resins": {
-                    "value": 8.3366,
+                    "value": 8,
                     "unit": "%",
-                    "standard_deviation": 0.76488,
+                    "standard_deviation": 1,
                     "replicates": 3,
                     "unit_type": "massfraction"
                 },
                 "asphaltenes": {
-                    "value": 2.3678,
+                    "value": 2.4,
                     "unit": "%",
-                    "standard_deviation": 0.12114,
+                    "standard_deviation": 0.1,
                     "replicates": 3,
                     "unit_type": "massfraction"
                 }
-            },
-            "distillation_data": {
-                "type": "mass fraction",
-                "end_point": {
-                    "unit": "C",
-                    "unit_type": "temperature"
-                }
-            },
-            "bulk_composition": [
-                {
-                    "name": "Wax Content",
-                    "measurement": {
-                        "unit": "%",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "Water Content",
-                    "measurement": {
-                        "unit": "%",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "Sulfur Content",
-                    "measurement": {
-                        "unit": "%",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "GC-TPH",
-                    "measurement": {
-                        "unit": "mg/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "GC-TSH",
-                    "measurement": {
-                        "unit": "mg/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "GC-TAH",
-                    "measurement": {
-                        "unit": "mg/g",
-                        "unit_type": "massfraction"
-                    }
-                }
-            ],
-            "CCME": {
-                "F1": {
-                    "unit": "mg/g",
-                    "unit_type": "massfraction"
-                },
-                "F2": {
-                    "unit": "mg/g",
-                    "unit_type": "massfraction"
-                },
-                "F3": {
-                    "unit": "mg/g",
-                    "unit_type": "massfraction"
-                },
-                "F4": {
-                    "unit": "mg/g",
-                    "unit_type": "massfraction"
-                }
-            },
-            "ESTS_hydrocarbon_fractions": {
-                "method": "Hollebone, Bruce (2020) Personal communication"
             }
         },
         {
             "metadata": {
-                "name": "32.6% Weathered",
-                "short_name": "32.6% Weathered",
+                "name": "32.6% Evaporated",
+                "short_name": "32.6% Evaporated",
                 "sample_id": "604.8",
                 "fraction_weathered": {
-                    "value": 0.326,
-                    "unit": "fraction",
+                    "value": 32.6,
+                    "unit": "%",
                     "unit_type": "massfraction"
                 }
             },
@@ -2328,20 +2112,6 @@
                 "densities": [
                     {
                         "density": {
-                            "value": 0.9191,
-                            "unit": "g/mL",
-                            "replicates": 2,
-                            "unit_type": "density"
-                        },
-                        "ref_temp": {
-                            "value": 0.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        },
-                        "method": "ASTM D5002"
-                    },
-                    {
-                        "density": {
                             "value": 0.9075,
                             "unit": "g/mL",
                             "replicates": 2,
@@ -2353,63 +2123,23 @@
                             "unit_type": "temperature"
                         },
                         "method": "ASTM D5002"
+                    },
+                    {
+                        "density": {
+                            "value": 0.9191,
+                            "unit": "g/mL",
+                            "replicates": 2,
+                            "unit_type": "density"
+                        },
+                        "ref_temp": {
+                            "value": 0.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "method": "ASTM D5002"
                     }
                 ],
                 "dynamic_viscosities": [
-                    {
-                        "viscosity": {
-                            "value": 3570.0,
-                            "unit": "mPa.s",
-                            "unit_type": "dynamicviscosity"
-                        },
-                        "ref_temp": {
-                            "value": 0.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        },
-                        "shear_rate": {
-                            "value": 100.0,
-                            "unit": "1/s",
-                            "unit_type": "angularvelocity"
-                        },
-                        "method": "ESTS: 12.05/1.0/M"
-                    },
-                    {
-                        "viscosity": {
-                            "value": 13960,
-                            "unit": "mPa.s",
-                            "unit_type": "dynamicviscosity"
-                        },
-                        "ref_temp": {
-                            "value": 0.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        },
-                        "shear_rate": {
-                            "value": 10.0,
-                            "unit": "1/s",
-                            "unit_type": "angularvelocity"
-                        },
-                        "method": "ESTS: 12.05/1.0/M"
-                    },
-                    {
-                        "viscosity": {
-                            "value": 137500,
-                            "unit": "mPa.s",
-                            "unit_type": "dynamicviscosity"
-                        },
-                        "ref_temp": {
-                            "value": 0.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        },
-                        "shear_rate": {
-                            "value": 1.0,
-                            "unit": "1/s",
-                            "unit_type": "angularvelocity"
-                        },
-                        "method": "ESTS: 12.05/1.0/M"
-                    },
                     {
                         "viscosity": {
                             "value": 770,
@@ -2426,13 +2156,13 @@
                             "unit": "1/s",
                             "unit_type": "angularvelocity"
                         },
-                        "method": "ESTS: 12.05/1.0/M"
+                        "method": "ESTS 12.05/1.0/M"
                     },
                     {
                         "viscosity": {
                             "value": 2170,
                             "unit": "mPa.s",
-                            "standard_deviation": "12.05/1.0/M",
+                            "standard_deviation": "ESTS 12.05/1.0/M",
                             "unit_type": "dynamicviscosity"
                         },
                         "ref_temp": {
@@ -2444,13 +2174,14 @@
                             "value": 10.0,
                             "unit": "1/s",
                             "unit_type": "angularvelocity"
-                        }
+                        },
+                        "method": "ESTS 12.05/1.0/M"
                     },
                     {
                         "viscosity": {
-                            "value": 23700,
+                            "value": 24000.0,
                             "unit": "mPa.s",
-                            "standard_deviation": "12.05/1.0/M",
+                            "standard_deviation": "ESTS 12.05/1.0/M",
                             "unit_type": "dynamicviscosity"
                         },
                         "ref_temp": {
@@ -2462,7 +2193,62 @@
                             "value": 1.0,
                             "unit": "1/s",
                             "unit_type": "angularvelocity"
-                        }
+                        },
+                        "method": "ESTS 12.05/1.0/M"
+                    },
+                    {
+                        "viscosity": {
+                            "value": 3570,
+                            "unit": "mPa.s",
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 0.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "shear_rate": {
+                            "value": 100.0,
+                            "unit": "1/s",
+                            "unit_type": "angularvelocity"
+                        },
+                        "method": "ESTS 12.05/1.0/M"
+                    },
+                    {
+                        "viscosity": {
+                            "value": 14000.0,
+                            "unit": "mPa.s",
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 0.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "shear_rate": {
+                            "value": 10.0,
+                            "unit": "1/s",
+                            "unit_type": "angularvelocity"
+                        },
+                        "method": "ESTS 12.05/1.0/M"
+                    },
+                    {
+                        "viscosity": {
+                            "value": 140000.0,
+                            "unit": "mPa.s",
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 0.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "shear_rate": {
+                            "value": 1.0,
+                            "unit": "1/s",
+                            "unit_type": "angularvelocity"
+                        },
+                        "method": "ESTS 12.05/1.0/M"
                     }
                 ],
                 "interfacial_tension_air": [
@@ -2536,7 +2322,7 @@
                             "replicates": 4,
                             "unit_type": "dynamicviscosity"
                         },
-                        "method": "ESTS: 13.02/x.x/M",
+                        "method": "ESTS 13.02/x.x/M",
                         "visual_stability": "Mesostable"
                     },
                     {
@@ -2591,121 +2377,48 @@
                             "replicates": 4,
                             "unit_type": "dynamicviscosity"
                         },
-                        "method": "ESTS: 13.02/x.x/M",
+                        "method": "ESTS 13.02/x.x/M",
                         "visual_stability": "Meso-stable"
                     }
                 ],
                 "adhesion": {
                     "value": 160,
-                    "unit": "g/cm^2",
+                    "unit": "g/m^2",
                     "standard_deviation": 8,
                     "replicates": 2,
                     "unit_type": null
                 }
             },
             "SARA": {
-                "method": "ESTS: 12.11/1.0/M",
+                "method": "ESTS 12.11/1.0/M",
                 "saturates": {
-                    "value": 55.918,
+                    "value": 56,
                     "unit": "%",
-                    "standard_deviation": 4.5317,
-                    "replicates": 3,
                     "unit_type": "massfraction"
                 },
                 "aromatics": {
-                    "value": 29.183,
+                    "value": 29,
                     "unit": "%",
-                    "standard_deviation": 4.5317,
-                    "replicates": 3,
                     "unit_type": "massfraction"
                 },
                 "resins": {
-                    "value": 11.429,
+                    "value": 11,
                     "unit": "%",
-                    "standard_deviation": 4.5317,
+                    "standard_deviation": 5,
                     "replicates": 3,
                     "unit_type": "massfraction"
                 },
                 "asphaltenes": {
-                    "value": 3.4703,
+                    "value": 3.5,
                     "unit": "%",
-                    "standard_deviation": 0.16149,
+                    "standard_deviation": 0.2,
                     "replicates": 3,
                     "unit_type": "massfraction"
                 }
-            },
-            "distillation_data": {
-                "type": "mass fraction",
-                "end_point": {
-                    "unit": "C",
-                    "unit_type": "temperature"
-                }
-            },
-            "bulk_composition": [
-                {
-                    "name": "Wax Content",
-                    "measurement": {
-                        "unit": "%",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "Water Content",
-                    "measurement": {
-                        "unit": "%",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "Sulfur Content",
-                    "measurement": {
-                        "unit": "%",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "GC-TPH",
-                    "measurement": {
-                        "unit": "mg/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "GC-TSH",
-                    "measurement": {
-                        "unit": "mg/g",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "GC-TAH",
-                    "measurement": {
-                        "unit": "mg/g",
-                        "unit_type": "massfraction"
-                    }
-                }
-            ],
-            "CCME": {
-                "F1": {
-                    "unit": "mg/g",
-                    "unit_type": "massfraction"
-                },
-                "F2": {
-                    "unit": "mg/g",
-                    "unit_type": "massfraction"
-                },
-                "F3": {
-                    "unit": "mg/g",
-                    "unit_type": "massfraction"
-                },
-                "F4": {
-                    "unit": "mg/g",
-                    "unit_type": "massfraction"
-                }
-            },
-            "ESTS_hydrocarbon_fractions": {
-                "method": "Hollebone, Bruce (2020) Personal communication"
             }
         }
+    ],
+    "status": [
+        "E032: Distillation type is \"None\", it must be one of: ['volume fraction', 'mass fraction']"
     ]
 }
