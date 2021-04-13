@@ -22,7 +22,7 @@ test_master:
   script:
     - echo "running the scripts"
     - pwd
-    - git clone -b master https://gitlab.orr.noaa.gov/gnome/oil_database/oil_database.git
+    - git clone --depth 1 -b master https://gitlab.orr.noaa.gov/gnome/oil_database/oil_database.git
     - conda install -y --file oil_database/adios_db/conda_requirements.txt --file web_api/conda_requirements.txt
 
     # Install & test the adios_db package
