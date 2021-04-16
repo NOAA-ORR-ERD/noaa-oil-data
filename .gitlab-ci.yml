@@ -13,6 +13,11 @@ test_master:
   except:
     - schedules
 
+  artifacts:
+    paths:
+      - oil_database/adios_db/scripts/adios_db_validation.txt
+#    expire_in: 1 week
+
   before_script:
     - echo "ip_resolve=4" >> /etc/yum.conf
     - yum update -y
