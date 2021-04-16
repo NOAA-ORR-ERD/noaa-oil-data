@@ -23,7 +23,8 @@ test_master:
     - echo "running the scripts"
     - pwd
 #    - git clone https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.orr.noaa.gov/gnome/oil_database/oildb-deploy.gi
-    - git clone --depth 1 -b master https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.orr.noaa.gov/gnome/oil_database/oil_database.git
+#   note: this should be master, once things settle down.
+    - git clone --depth 1 -b develop https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.orr.noaa.gov/gnome/oil_database/oil_database.git
     - pwd
     - ls
     - cd oil_database
