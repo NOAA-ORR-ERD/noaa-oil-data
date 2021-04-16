@@ -24,6 +24,7 @@ test_master:
     - pwd
 #    - git clone https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.orr.noaa.gov/gnome/oil_database/oildb-deploy.gi
     - git clone --depth 1 -b master https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.orr.noaa.gov/gnome/oil_database/oil_database.git
+    - pwd
     - conda install -y --file oil_database/adios_db/conda_requirements.txt --file web_api/conda_requirements.txt
 
     # Install & test the adios_db package
