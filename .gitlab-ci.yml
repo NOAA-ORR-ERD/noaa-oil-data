@@ -6,7 +6,7 @@ stages:
 
 test_master:
   stage: test
-  image: registry.orr.noaa.gov/erd/centos-conda/centos7-python3
+  image: registry.orr.noaa.gov/erd/centos-conda/centos7-python3.9
   tags:
     - docker
 
@@ -20,9 +20,9 @@ test_master:
 
   before_script:
     - echo "ip_resolve=4" >> /etc/yum.conf
-    - yum update -y
-    - conda install -y python=3.9
-    - conda update -y conda
+    # - yum update -y
+    # - conda install -y python=3.9
+    # - conda update -y conda
 
   script:
     - echo "running the scripts"
