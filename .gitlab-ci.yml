@@ -35,11 +35,11 @@ test_master:
     - cd oil_database
     - conda install -y --file adios_db/conda_requirements.txt
 
-    # Install & test the adios_db package
+    # Install the adios_db package
     - cd adios_db
     - pip install -e ./
-    - cd scripts
-    - python run_through_oil_object.py ../../../data/oil/
-    - python validation_report.py ../../../data/oil
+    - cd ../../
+    - adios_db_process_json ./data/oil/
+    - adios_db_validate ./data/oil
 
 
