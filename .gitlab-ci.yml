@@ -17,6 +17,8 @@ test_master:
     paths:
       - validation_by_error.txt
       - validation_by_record.txt
+      - validation_by_error.html
+      - validation_by_record.html
 #    expire_in: 1 week
 
   before_script:
@@ -34,7 +36,7 @@ test_master:
     - pwd
     - ls
     - cd oil_database
-    - conda install -y --file adios_db/conda_requirements.txt
+    - conda install -y --file adios_db/conda_requirements.txt docutils
 
     # Install the adios_db package
     - cd adios_db
@@ -42,5 +44,9 @@ test_master:
     - cd ../../
     - adios_db_process_json ./data/oil/
     - adios_db_validate ./data/oil
+    - rst2html.py validation_by_record.txt > validation_by_record.html
+    - rst2html.py validation_by_error.txt > validation_by_error.html
+
+
 
 
