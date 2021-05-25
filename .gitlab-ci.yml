@@ -3,8 +3,9 @@
 
 stages:
   - test
+  - update
 
-test_master:
+test:
   stage: test
   image: registry.orr.noaa.gov/erd/centos-conda/centos7-python3.9
   tags:
@@ -17,20 +18,28 @@ test_master:
     paths:
       - validation_by_error.html
       - validation_by_record.html
-#    expire_in: 1 week
+      - data
 
   before_script:
     - echo "ip_resolve=4" >> /etc/yum.conf
     # - yum update -y
     # - conda install -y python=3.9
     # - conda update -y conda
+    - |-
+        if [[ $CI_COMMIT_BRANCH = "production" ]]; then
+          BRANCH="production"
+        else
+          BRANCH="develop"
+        fi
+
 
   script:
     - echo "running the scripts"
     - pwd
+    - echo "cloning ${BRANCH}"
 #    - git clone https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.orr.noaa.gov/gnome/oil_database/oildb-deploy.gi
 #   note: this should be master, once things settle down.
-    - git clone --depth 1 -b develop https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.orr.noaa.gov/gnome/oil_database/oil_database.git
+    - git clone --depth 1 -b ${BRANCH} https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.orr.noaa.gov/gnome/oil_database/oil_database.git
     - pwd
     - ls
     - cd oil_database
@@ -40,11 +49,39 @@ test_master:
     - cd adios_db
     - pip install -e ./
     - cd ../../
-    - adios_db_process_json ./data/oil/
+    - adios_db_process_json ./data/oil/ save
     - adios_db_validate ./data/oil
     - rst2html.py validation_by_record.txt > validation_by_record.html
     - rst2html.py validation_by_error.txt > validation_by_error.html
+  only:
+    changes:
+      - .gitlab-ci.yml
+      - data/**/*
 
+update_pages:
+  stage: update
+  tags:
+    - shell
+    - linux
+  script:
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY_CI_WIKI" | tr -d '\r' | ssh-add - > /dev/null
+    - git remote set-url origin ssh://git@gitlab.orr.noaa.gov:9933/${CI_PROJECT_PATH}.git
+    - git stash
+    - git checkout ${CI_COMMIT_BRANCH}
+    - git pull
+    - |-
+        if [[ `git stash list` ]];then
+          git stash pop
+        fi
+    - mkdir -p public/validation/${CI_COMMIT_BRANCH}/
+    - mv validation_by_* ./public/validation/${CI_COMMIT_BRANCH}/
+    - git add -A
+    - git commit -m "updating validation reports"
+    - git push
+    - eval $(ssh-agent -k)
 
-
-
+  only:
+    changes:
+      - .gitlab-ci.yml
+      - data/**/*
