@@ -76,8 +76,8 @@ update_pages:
         if [[ `git stash list` ]];then
           git stash pop
         fi
-    - mkdir -p public/validation/${CI_COMMIT_BRANCH}/
-    - mv validation_by_* ./public/validation/${CI_COMMIT_BRANCH}/
+    - mkdir -p validation/${CI_COMMIT_BRANCH}/
+    - mv validation_by_* ./validation/${CI_COMMIT_BRANCH}/
     - git add -A
     - git commit -m "updating validation reports"
     - git push
