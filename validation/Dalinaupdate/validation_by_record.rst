@@ -25,8 +25,8 @@ Validation of data in:
  |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD00020``: ALASKA NORTH SLOPE
- |    W009: Distillation fraction recovered is missing or invalid
  |    W000: Warning: Dynamic and Kinematic Viscosity may be out of sync
+ |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00024``: ALBERTA (1992)
  |    W009: Distillation fraction recovered is missing or invalid
@@ -78,8 +78,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00051``: ARABIAN LIGHT
- |    W009: Distillation fraction recovered is missing or invalid
  |    E050: Duplicate Temperatures in DynamicViscosityList
+ |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00053``: ARABIAN LIGHT, CITGO
  |    W009: Distillation fraction recovered is missing or invalid
@@ -293,12 +293,12 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00198``: BRIGHT STOCK 145, STAR ENTERPRISE
- |    W002: Record has no product type
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W002: Record has no product type
 
 ``AD00199``: BRIGHT STOCK 150, STAR ENTERPRISE
- |    W002: Record has no product type
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W002: Record has no product type
 
 ``AD00204``: BUCHAN
  |    W009: Distillation fraction recovered is missing or invalid
@@ -473,8 +473,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00376``: FAO, CITGO
- |    W002: Record has no product type
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W002: Record has no product type
 
 ``AD00377``: FCC HEAVY CYCLE OIL
  |    W009: Distillation fraction recovered is missing or invalid
@@ -611,8 +611,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00474``: GASOLINE: POLYMER
- |    W002: Record has no product type
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W002: Record has no product type
 
 ``AD00486``: GIPPSLAND, EXXON
  |    W009: Distillation fraction recovered is missing or invalid
@@ -942,8 +942,8 @@ Validation of data in:
  |    E030: Oils must have an API
 
 ``AD00769``: MINERAL SEAL OIL
- |    W002: Record has no product type
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W002: Record has no product type
 
 ``AD00776``: MONTROSE
  |    W009: Distillation fraction recovered is missing or invalid
@@ -1146,8 +1146,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00915``: PRIMER ASPHALT
- |    W002: Record has no product type
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W002: Record has no product type
 
 ``AD00917``: PRUDHOE BAY
  |    W009: Distillation fraction recovered is missing or invalid
@@ -1241,8 +1241,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01012``: SNO 200, STAR ENTERPRISE
- |    W002: Record has no product type
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W002: Record has no product type
 
 ``AD01020``: SOCKEYE
  |    W009: Distillation fraction recovered is missing or invalid
@@ -1264,8 +1264,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01036``: SPRAY OIL
- |    W002: Record has no product type
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W002: Record has no product type
 
 ``AD01040``: STATFJORD
  |    W009: Distillation fraction recovered is missing or invalid
@@ -2387,12 +2387,12 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01669``: HIBERNIA (EPA 86)
- |    E040: Value for distillation vapor temp: -188.00 C is out of range: unit error?
- |    E040: Value for distillation vapor temp: -158.00 C is out of range: unit error?
- |    E040: Value for distillation vapor temp: -113.00 C is out of range: unit error?
- |    E040: Value for distillation vapor temp: -134.00 C is out of range: unit error?
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    E040: Value for distillation vapor temp: -113.00 C is out of range: unit error?
+ |    E040: Value for distillation vapor temp: -188.00 C is out of range: unit error?
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
+ |    E040: Value for distillation vapor temp: -158.00 C is out of range: unit error?
+ |    E040: Value for distillation vapor temp: -134.00 C is out of range: unit error?
 
 ``AD01670``: HIGH VISCOSITY FUEL OIL
  |    W009: Distillation fraction recovered is missing or invalid
@@ -2523,8 +2523,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01712``: PROPYLENE TETRAMER
- |    W002: Record has no product type
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W002: Record has no product type
 
 ``AD01713``: PRUDHOE BAY (1995)
  |    W009: Distillation fraction recovered is missing or invalid
@@ -2686,8 +2686,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01799``: MINERAL TURPS, SHELL REFINING PTY 
- |    W002: Record has no product type
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W002: Record has no product type
 
 ``AD01800``: WHITE SPIRIT, SHELL REFINING PTY 
  |    W009: Distillation fraction recovered is missing or invalid
@@ -3347,9 +3347,9 @@ Validation of data in:
  |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD02062``: CASTOR OIL
+ |    E050: Duplicate Temperatures in DynamicViscosityList
  |    W009: Distillation fraction recovered is missing or invalid
  |    E050: Duplicate Temperatures in DensityList
- |    E050: Duplicate Temperatures in DynamicViscosityList
 
 ``AD02063``: CATALYTIC CRACKING FEED
  |    W009: Distillation fraction recovered is missing or invalid
@@ -3712,8 +3712,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02185``: IPAR 3
- |    W002: Record has no product type
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W002: Record has no product type
 
 ``AD02186``: IRANIAN HEAVY (1999)
  |    W009: Distillation fraction recovered is missing or invalid
@@ -3752,9 +3752,9 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02201``: KOAKOAK
+ |    E050: Duplicate Temperatures in DynamicViscosityList
  |    W009: Distillation fraction recovered is missing or invalid
  |    E050: Duplicate Temperatures in DensityList
- |    E050: Duplicate Temperatures in DynamicViscosityList
 
 ``AD02202``: KOLE MARINE BLEND (1999)
  |    W009: Distillation fraction recovered is missing or invalid
@@ -4009,8 +4009,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02303``: PROPYLENE TETRAMER
- |    W002: Record has no product type
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W002: Record has no product type
 
 ``AD02304``: PRUDHOE BAY
  |    W009: Distillation fraction recovered is missing or invalid
@@ -4142,15 +4142,15 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02348``: SOYBEAN OIL
- |    W009: Distillation fraction recovered is missing or invalid
  |    E050: Duplicate Temperatures in DynamicViscosityList
+ |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02349``: SOYO BLEND (1999)
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02350``: SPRAY OIL
- |    W002: Record has no product type
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W002: Record has no product type
 
 ``AD02351``: STATFJORD
  |    W009: Distillation fraction recovered is missing or invalid
@@ -4284,8 +4284,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02400``: FUEL OIL N0.1 (JP-8)
- |    W009: Distillation fraction recovered is missing or invalid
  |    E041: Value for distillation fraction: 3.0 must be between 0 and 1
+ |    W009: Distillation fraction recovered is missing or invalid
  |    E041: Value for distillation fraction: 2.05 must be between 0 and 1
 
 ``AD02401``: GULF ALBERTA LIGHT AND MEDIUM (1999)
@@ -4368,16 +4368,16 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02437``: STAR 4, EQUILON
- |    W002: Record has no product type
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W002: Record has no product type
 
 ``AD02438``: STAR 5, EQUILON
- |    W002: Record has no product type
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W002: Record has no product type
 
 ``AD02439``: STAR 12, EQUILON
- |    W002: Record has no product type
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W002: Record has no product type
 
 ``AD02440``: SAKHALIN II
  |    W009: Distillation fraction recovered is missing or invalid
@@ -4634,8 +4634,8 @@ Validation of data in:
  |    E030: Oils must have an API
 
 ``EC00647``: Mississippi Canyon Block 807 [2002]
- |    E030: Oils must have an API
  |    W006: No density values provided
+ |    E030: Oils must have an API
 
 ``EC00662``: Orimulsion 400 [2001]
  |    W009: Distillation fraction recovered is missing or invalid
@@ -4697,18 +4697,18 @@ Validation of data in:
  |    E030: Oils must have an API
 
 ``EC01655``: Deep Water Horizon Riser
+ |    W006: No density values provided
  |    W009: Distillation fraction recovered is missing or invalid
  |    E030: Oils must have an API
- |    W006: No density values provided
 
 ``EC01714``: Deep Water Horizon Riser
  |    W009: Distillation fraction recovered is missing or invalid
  |    E030: Oils must have an API
 
 ``EC01803``: IFO 380
+ |    W006: No density values provided
  |    W009: Distillation fraction recovered is missing or invalid
  |    E030: Oils must have an API
- |    W006: No density values provided
 
 ``EC01969``: Bakken
  |    E030: Oils must have an API
@@ -4838,8 +4838,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``NO00027``: FROY 1996
- |    W009: Distillation fraction recovered is missing or invalid
  |    E012: Reference year: 5135 is not a valid year (between 1600 and 2050)
+ |    W009: Distillation fraction recovered is missing or invalid
 
 ``NO00028``: GARANTIANA 2013
  |    W009: Distillation fraction recovered is missing or invalid
@@ -4930,8 +4930,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``NO00057``: LILLEFRIGG KONDENSAT 1996
- |    W009: Distillation fraction recovered is missing or invalid
  |    E012: Reference year: 5135 is not a valid year (between 1600 and 2050)
+ |    W009: Distillation fraction recovered is missing or invalid
 
 ``NO00058``: LINERLE 2005
  |    W009: Distillation fraction recovered is missing or invalid
@@ -5082,8 +5082,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``NO00107``: WISTING 2015
- |    W009: Distillation fraction recovered is missing or invalid
  |    E012: Reference year: 7428 is not a valid year (between 1600 and 2050)
+ |    W009: Distillation fraction recovered is missing or invalid
 
 ``NO00108``: AASGARD A 2003
  |    W009: Distillation fraction recovered is missing or invalid

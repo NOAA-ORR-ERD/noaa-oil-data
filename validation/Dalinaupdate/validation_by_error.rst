@@ -132,15 +132,15 @@ E040:
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
+    E040: Value for distillation vapor temp: -113.00 C is out of range: unit error?
+
+``AD01669`` -- HIBERNIA (EPA 86):
+
     E040: Value for distillation vapor temp: -188.00 C is out of range: unit error?
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
     E040: Value for distillation vapor temp: -158.00 C is out of range: unit error?
-
-``AD01669`` -- HIBERNIA (EPA 86):
-
-    E040: Value for distillation vapor temp: -113.00 C is out of range: unit error?
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
@@ -188,19 +188,19 @@ E050:
 
 ``AD02062`` -- CASTOR OIL:
 
-    E050: Duplicate Temperatures in DensityList
+    E050: Duplicate Temperatures in DynamicViscosityList
 
 ``AD02062`` -- CASTOR OIL:
 
-    E050: Duplicate Temperatures in DynamicViscosityList
-
-``AD02201`` -- KOAKOAK:
-
     E050: Duplicate Temperatures in DensityList
 
 ``AD02201`` -- KOAKOAK:
 
     E050: Duplicate Temperatures in DynamicViscosityList
+
+``AD02201`` -- KOAKOAK:
+
+    E050: Duplicate Temperatures in DensityList
 
 ``AD02348`` -- SOYBEAN OIL:
 
