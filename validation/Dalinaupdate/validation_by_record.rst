@@ -11,8 +11,8 @@ Validation of data in:
 
 
 ``AD00005``: ABSORPTION OIL
- |    W004: No api value provided
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W004: No api value provided
 
 ``AD00009``: ABU SAFAH
  |    W009: Distillation fraction recovered is missing or invalid
@@ -21,12 +21,12 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00017``: ADGO
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD00020``: ALASKA NORTH SLOPE
- |    W000: Warning: Dynamic and Kinematic Viscosity may be out of sync
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: Dynamic and Kinematic Viscosity may be out of sync
 
 ``AD00024``: ALBERTA (1992)
  |    W009: Distillation fraction recovered is missing or invalid
@@ -59,8 +59,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00042``: ARABIAN HEAVY
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD00044``: ARABIAN HEAVY, CITGO
  |    W009: Distillation fraction recovered is missing or invalid
@@ -78,8 +78,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00051``: ARABIAN LIGHT
- |    E050: Duplicate Temperatures in DynamicViscosityList
  |    W009: Distillation fraction recovered is missing or invalid
+ |    E050: Duplicate Temperatures in DynamicViscosityList
 
 ``AD00053``: ARABIAN LIGHT, CITGO
  |    W009: Distillation fraction recovered is missing or invalid
@@ -94,8 +94,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00059``: ARABIAN MEDIUM
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD00062``: ARABIAN MEDIUM, EXXON
  |    W009: Distillation fraction recovered is missing or invalid
@@ -293,12 +293,12 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00198``: BRIGHT STOCK 145, STAR ENTERPRISE
- |    W009: Distillation fraction recovered is missing or invalid
  |    W002: Record has no product type
+ |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00199``: BRIGHT STOCK 150, STAR ENTERPRISE
- |    W009: Distillation fraction recovered is missing or invalid
  |    W002: Record has no product type
+ |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00204``: BUCHAN
  |    W009: Distillation fraction recovered is missing or invalid
@@ -340,8 +340,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00249``: CLARIFIED OIL
- |    W004: No api value provided
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W004: No api value provided
 
 ``AD00254``: COBAN BLEND
  |    W009: Distillation fraction recovered is missing or invalid
@@ -473,8 +473,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00376``: FAO, CITGO
- |    W009: Distillation fraction recovered is missing or invalid
  |    W002: Record has no product type
+ |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00377``: FCC HEAVY CYCLE OIL
  |    W009: Distillation fraction recovered is missing or invalid
@@ -611,8 +611,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00474``: GASOLINE: POLYMER
- |    W009: Distillation fraction recovered is missing or invalid
  |    W002: Record has no product type
+ |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00486``: GIPPSLAND, EXXON
  |    W009: Distillation fraction recovered is missing or invalid
@@ -648,8 +648,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00531``: HEAVY REFORMATE
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD00534``: HI 317, PHILLIPS
  |    W009: Distillation fraction recovered is missing or invalid
@@ -898,8 +898,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00730``: MAYA
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD00732``: MAYA, CITGO
  |    W009: Distillation fraction recovered is missing or invalid
@@ -942,8 +942,8 @@ Validation of data in:
  |    E030: Oils must have an API
 
 ``AD00769``: MINERAL SEAL OIL
- |    W009: Distillation fraction recovered is missing or invalid
  |    W002: Record has no product type
+ |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00776``: MONTROSE
  |    W009: Distillation fraction recovered is missing or invalid
@@ -958,8 +958,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00784``: MOUSSE MIX (PETAWAWA)
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD00786``: MTBE, EXXON
  |    W009: Distillation fraction recovered is missing or invalid
@@ -974,8 +974,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00796``: NAPHTHA (COAL TAR)
- |    W004: No api value provided
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W004: No api value provided
 
 ``AD00797``: NAPHTHA (SOLVENT)
  |    W009: Distillation fraction recovered is missing or invalid
@@ -987,23 +987,23 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00800``: NAPHTHA (SOLVENT)
- |    W004: No api value provided
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W004: No api value provided
 
 ``AD00801``: NAPHTHA (STODDARD SOLVENT)
- |    W004: No api value provided
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W004: No api value provided
 
 ``AD00802``: NAPHTHA (VARNISH MAKERS & PAINTERS)
- |    W004: No api value provided
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W004: No api value provided
 
 ``AD00803``: NAPHTHA CRACKING FRACTION, EXXON
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00809``: NEKTORALIK K-59
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD00810``: NEKTORALIK K-59A
  |    W009: Distillation fraction recovered is missing or invalid
@@ -1045,8 +1045,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00829``: NINIAN BLEND
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD00831``: NORMAN WELLS
  |    W009: Distillation fraction recovered is missing or invalid
@@ -1112,8 +1112,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00884``: PENETRATING OIL
- |    W004: No api value provided
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W004: No api value provided
 
 ``AD00893``: PILON
  |    W009: Distillation fraction recovered is missing or invalid
@@ -1146,8 +1146,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00915``: PRIMER ASPHALT
- |    W009: Distillation fraction recovered is missing or invalid
  |    W002: Record has no product type
+ |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00917``: PRUDHOE BAY
  |    W009: Distillation fraction recovered is missing or invalid
@@ -1189,8 +1189,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00950``: ROAD OIL
- |    W004: No api value provided
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W004: No api value provided
 
 ``AD00956``: SABLE ISLAND CONDENSATE
  |    W009: Distillation fraction recovered is missing or invalid
@@ -1241,15 +1241,15 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01012``: SNO 200, STAR ENTERPRISE
- |    W009: Distillation fraction recovered is missing or invalid
  |    W002: Record has no product type
+ |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01020``: SOCKEYE
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01022``: SOUR BLEND
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD01025``: SOUTH LOUISIANA
  |    W009: Distillation fraction recovered is missing or invalid
@@ -1264,8 +1264,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01036``: SPRAY OIL
- |    W009: Distillation fraction recovered is missing or invalid
  |    W002: Record has no product type
+ |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01040``: STATFJORD
  |    W009: Distillation fraction recovered is missing or invalid
@@ -1410,8 +1410,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01141``: UVILUK
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD01147``: VENEZUELA MIX
  |    W009: Distillation fraction recovered is missing or invalid
@@ -2182,8 +2182,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01591``: ALBERTA SWEET MIXED BLEND (REFERENCE #2, 1996)
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD01592``: ALBERTA SWEET MIXED BLEND (REFERENCE #3, 1996)
  |    W009: Distillation fraction recovered is missing or invalid
@@ -2342,8 +2342,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01654``: FCC MEDIUM CYCLE OIL
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD01656``: FORCADOS BLEND
  |    W009: Distillation fraction recovered is missing or invalid
@@ -2370,12 +2370,12 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01664``: GREEN CANYON BLOCK 65
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD01665``: GREEN CANYON BLOCK 109
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD01666``: GRIFFIN
  |    W009: Distillation fraction recovered is missing or invalid
@@ -2387,12 +2387,12 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01669``: HIBERNIA (EPA 86)
- |    E040: Value for distillation vapor temp: -134.00 C is out of range: unit error?
- |    W009: Distillation fraction recovered is missing or invalid
  |    E040: Value for distillation vapor temp: -188.00 C is out of range: unit error?
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    E040: Value for distillation vapor temp: -158.00 C is out of range: unit error?
  |    E040: Value for distillation vapor temp: -113.00 C is out of range: unit error?
+ |    E040: Value for distillation vapor temp: -134.00 C is out of range: unit error?
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
+ |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01670``: HIGH VISCOSITY FUEL OIL
  |    W009: Distillation fraction recovered is missing or invalid
@@ -2434,8 +2434,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01683``: KOMINEFT
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD01684``: KUMKOL
  |    W009: Distillation fraction recovered is missing or invalid
@@ -2465,8 +2465,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01693``: MAIN PASS BLOCK 37
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD01694``: MAIN PASS BLOCK 306
  |    W009: Distillation fraction recovered is missing or invalid
@@ -2523,8 +2523,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01712``: PROPYLENE TETRAMER
- |    W009: Distillation fraction recovered is missing or invalid
  |    W002: Record has no product type
+ |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01713``: PRUDHOE BAY (1995)
  |    W009: Distillation fraction recovered is missing or invalid
@@ -2575,8 +2575,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01730``: SHIP SHOAL BLOCK 239
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD01731``: SHIP SHOAL BLOCK 269
  |    W009: Distillation fraction recovered is missing or invalid
@@ -2597,16 +2597,16 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01738``: SOUTH PASS BLOCK 60
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD01739``: SOUTH PASS BLOCK 67
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD01740``: SOUTH PASS BLOCK 93
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD01741``: SOUTH TIMBALIER BLOCK 130
  |    W009: Distillation fraction recovered is missing or invalid
@@ -2630,8 +2630,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01751``: WEST DELTA BLOCK 30
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD01752``: WEST DELTA BLOCK 97
  |    W009: Distillation fraction recovered is missing or invalid
@@ -2667,8 +2667,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01775``: DESTIN DOME CIS, MMS
- |    E042: Must have a value for InterfacialTensionList reference temp
  |    W009: Distillation fraction recovered is missing or invalid
+ |    E042: Must have a value for InterfacialTensionList reference temp
 
 ``AD01776``: MOTOR GASOLINE-PREMIUM UNLEADED, SHELL REFINING PTY 
  |    W009: Distillation fraction recovered is missing or invalid
@@ -2686,8 +2686,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01799``: MINERAL TURPS, SHELL REFINING PTY 
- |    W009: Distillation fraction recovered is missing or invalid
  |    W002: Record has no product type
+ |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01800``: WHITE SPIRIT, SHELL REFINING PTY 
  |    W009: Distillation fraction recovered is missing or invalid
@@ -3125,19 +3125,19 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01987``: ALASKA NORTH SLOPE (MIDDLE PIPELINE, 1999)
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD01988``: ALASKA NORTH SLOPE (NORTHERN PIPELINE, 1999)
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD01989``: ALASKA NORTH SLOPE (SOCSEX, 1999)
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01990``: ALASKA NORTH SLOPE (SOUTHERN PIPELINE, 1999)
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD01991``: ALBA (1999)
  |    W009: Distillation fraction recovered is missing or invalid
@@ -3170,12 +3170,12 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02002``: ARABIAN LIGHT (1999)
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD02003``: ARABIAN MEDIUM (1999)
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD02004``: ARDJUNA
  |    W009: Distillation fraction recovered is missing or invalid
@@ -3343,12 +3343,12 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02061``: CARPINTERIA
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD02062``: CASTOR OIL
- |    E050: Duplicate Temperatures in DensityList
  |    W009: Distillation fraction recovered is missing or invalid
+ |    E050: Duplicate Temperatures in DensityList
  |    E050: Duplicate Temperatures in DynamicViscosityList
 
 ``AD02063``: CATALYTIC CRACKING FEED
@@ -3424,8 +3424,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02088``: DOS CUADRAS
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD02089``: DUBAI (1999)
  |    W009: Distillation fraction recovered is missing or invalid
@@ -3596,12 +3596,12 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02147``: GARDEN BANKS BLOCK 387
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD02148``: GARDEN BANKS BLOCK 426
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD02149``: GAS OIL (CRACKED)
  |    W009: Distillation fraction recovered is missing or invalid
@@ -3622,8 +3622,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02156``: GENESIS
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD02157``: GIPPSLAND (1999)
  |    W009: Distillation fraction recovered is missing or invalid
@@ -3638,8 +3638,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02161``: GREEN CANYON BLOCK 184
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD02162``: GREEN CANYON BLOCK 65
  |    W009: Distillation fraction recovered is missing or invalid
@@ -3675,8 +3675,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02173``: HONDO
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD02174``: HONDO BLEND
  |    W009: Distillation fraction recovered is missing or invalid
@@ -3712,8 +3712,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02185``: IPAR 3
- |    W009: Distillation fraction recovered is missing or invalid
  |    W002: Record has no product type
+ |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02186``: IRANIAN HEAVY (1999)
  |    W009: Distillation fraction recovered is missing or invalid
@@ -3752,8 +3752,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02201``: KOAKOAK
- |    E050: Duplicate Temperatures in DensityList
  |    W009: Distillation fraction recovered is missing or invalid
+ |    E050: Duplicate Temperatures in DensityList
  |    E050: Duplicate Temperatures in DynamicViscosityList
 
 ``AD02202``: KOLE MARINE BLEND (1999)
@@ -3865,8 +3865,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02252``: MARS TLP
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD02253``: MAUREEN
  |    W009: Distillation fraction recovered is missing or invalid
@@ -3893,12 +3893,12 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02261``: MISSISSIPPI CANYON BLOCK 72
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD02262``: MISSISSIPPI CANYON BLOCK 807 (1999)
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD02263``: MONTROSE
  |    W009: Distillation fraction recovered is missing or invalid
@@ -3919,8 +3919,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02273``: NEPTUNE SPAR
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD02275``: NEWFOUNDLAND OFFSHORE BURN EXP SAMPLE #1
  |    W009: Distillation fraction recovered is missing or invalid
@@ -3950,15 +3950,15 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02284``: POINT ARGUELLO COMINGLED (1999)
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD02285``: OLMECA (1999)
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02286``: POINT ARGUELLO HEAVY (1999)
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD02287``: OMAN EXPORT (1999)
  |    W009: Distillation fraction recovered is missing or invalid
@@ -3991,26 +3991,26 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02298``: PLATFORM GAIL
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD02299``: PLATFORM HOLLY
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD02300``: PLATFORM IRENE
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02301``: POINT ARGUELLO LIGHT (1999)
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD02302``: PORT HUENEME
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02303``: PROPYLENE TETRAMER
- |    W009: Distillation fraction recovered is missing or invalid
  |    W002: Record has no product type
+ |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02304``: PRUDHOE BAY
  |    W009: Distillation fraction recovered is missing or invalid
@@ -4040,8 +4040,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02313``: ROAD OIL
- |    W004: No api value provided
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W004: No api value provided
 
 ``AD02314``: ROSTAM (1999)
  |    W009: Distillation fraction recovered is missing or invalid
@@ -4068,8 +4068,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02323``: SANTA CLARA
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD02324``: SARIR (1999)
  |    W009: Distillation fraction recovered is missing or invalid
@@ -4105,20 +4105,20 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02336``: SOCKEYE
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD02337``: SOCKEYE COMINGLED
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD02338``: SOCKEYE SOUR
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD02339``: SOCKEYE SWEET
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD02340``: SOROOSH (1999)
  |    W009: Distillation fraction recovered is missing or invalid
@@ -4142,15 +4142,15 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02348``: SOYBEAN OIL
- |    E050: Duplicate Temperatures in DynamicViscosityList
  |    W009: Distillation fraction recovered is missing or invalid
+ |    E050: Duplicate Temperatures in DynamicViscosityList
 
 ``AD02349``: SOYO BLEND (1999)
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02350``: SPRAY OIL
- |    W009: Distillation fraction recovered is missing or invalid
  |    W002: Record has no product type
+ |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02351``: STATFJORD
  |    W009: Distillation fraction recovered is missing or invalid
@@ -4162,8 +4162,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02354``: SWANSON RIVER
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD02355``: SWEET BLEND (1999)
  |    W009: Distillation fraction recovered is missing or invalid
@@ -4172,8 +4172,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02358``: TAKULA (1999)
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD02359``: TAPIS (1999)
  |    W009: Distillation fraction recovered is missing or invalid
@@ -4233,12 +4233,12 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02382``: VIOSCA KNOLL BLOCK 826
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD02383``: VIOSCA KNOLL BLOCK 990 (ref. 1999)
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD02384``: WABASCA BITUMEN (1999)
  |    W009: Distillation fraction recovered is missing or invalid
@@ -4250,8 +4250,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02387``: WAXY LIGHT HEAVY BLEND
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD02388``: WEST DELTA BLOCK 30
  |    W009: Distillation fraction recovered is missing or invalid
@@ -4284,9 +4284,9 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02400``: FUEL OIL N0.1 (JP-8)
+ |    W009: Distillation fraction recovered is missing or invalid
  |    E041: Value for distillation fraction: 3.0 must be between 0 and 1
  |    E041: Value for distillation fraction: 2.05 must be between 0 and 1
- |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02401``: GULF ALBERTA LIGHT AND MEDIUM (1999)
  |    W009: Distillation fraction recovered is missing or invalid
@@ -4298,8 +4298,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02404``: CANOLA OIL
- |    W004: No api value provided
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W004: No api value provided
 
 ``AD02405``: ARAB EXTRA LIGHT, AMSA
  |    W009: Distillation fraction recovered is missing or invalid
@@ -4368,16 +4368,16 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02437``: STAR 4, EQUILON
- |    W009: Distillation fraction recovered is missing or invalid
  |    W002: Record has no product type
+ |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02438``: STAR 5, EQUILON
- |    W009: Distillation fraction recovered is missing or invalid
  |    W002: Record has no product type
+ |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02439``: STAR 12, EQUILON
- |    W009: Distillation fraction recovered is missing or invalid
  |    W002: Record has no product type
+ |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02440``: SAKHALIN II
  |    W009: Distillation fraction recovered is missing or invalid
@@ -4443,16 +4443,15 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02472``: PIERCE, OIL & GAS JOURNAL
- |    E012: Reference year: 9764 is not a valid year (between 1600 and 2050)
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02473``: TEMPA ROSSA, OIL & GAS JOURNAL
- |    E012: Reference year: 9764 is not a valid year (between 1600 and 2050)
  |    W009: Distillation fraction recovered is missing or invalid
+ |    E012: Reference year: 9764 is not a valid year (between 1600 and 2050)
 
 ``AD02474``: ZUATA SWEET, OIL & GAS JOURNAL
- |    E012: Reference year: 9764 is not a valid year (between 1600 and 2050)
  |    W009: Distillation fraction recovered is missing or invalid
+ |    E012: Reference year: 9764 is not a valid year (between 1600 and 2050)
 
 ``AD02475``: BASRAH HEAVY
  |    W009: Distillation fraction recovered is missing or invalid
@@ -4672,8 +4671,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``EC01003``: Biodiesel Tallow B20 Biodiesel Tallow B100 Biodiesel Tallow B5
- |    W004: No api value provided
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W004: No api value provided
 
 ``EC01004``: Biodiesel Canola-B100 Biodiesel Canola-B5 Biodiesel Canola-B20
  |    W009: Distillation fraction recovered is missing or invalid
@@ -4682,8 +4681,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``EC01485``: Biodiesel Tallow B20 Biodiesel Tallow B100 Biodiesel Tallow B5
- |    W004: No api value provided
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W004: No api value provided
 
 ``EC01486``: Biodiesel Canola B20 Biodiesel Canola B100 Biodiesel Canola B5
  |    W009: Distillation fraction recovered is missing or invalid
@@ -4839,8 +4838,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``NO00027``: FROY 1996
- |    E012: Reference year: 5135 is not a valid year (between 1600 and 2050)
  |    W009: Distillation fraction recovered is missing or invalid
+ |    E012: Reference year: 5135 is not a valid year (between 1600 and 2050)
 
 ``NO00028``: GARANTIANA 2013
  |    W009: Distillation fraction recovered is missing or invalid
@@ -4882,8 +4881,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``NO00041``: GULLFAKS SOR 1996
- |    E012: Reference year: 5154 is not a valid year (between 1600 and 2050)
  |    W009: Distillation fraction recovered is missing or invalid
+ |    E012: Reference year: 5154 is not a valid year (between 1600 and 2050)
 
 ``NO00042``: GYDA 2002
  |    W009: Distillation fraction recovered is missing or invalid
@@ -4931,8 +4930,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``NO00057``: LILLEFRIGG KONDENSAT 1996
- |    E012: Reference year: 5135 is not a valid year (between 1600 and 2050)
  |    W009: Distillation fraction recovered is missing or invalid
+ |    E012: Reference year: 5135 is not a valid year (between 1600 and 2050)
 
 ``NO00058``: LINERLE 2005
  |    W009: Distillation fraction recovered is missing or invalid
@@ -5141,8 +5140,8 @@ Validation of data in:
  |    E030: Oils must have an API
 
 ``NO00124``: WIDE RANGE GAS OIL 2017
- |    W004: No api value provided
  |    W009: Distillation fraction recovered is missing or invalid
+ |    W004: No api value provided
 
 ``NO00125``: OSEBERG BLEND 2007
  |    W009: Distillation fraction recovered is missing or invalid
