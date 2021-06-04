@@ -22,10 +22,6 @@ E012:
 
     E012: Reference year: 9764 is not a valid year (between 1600 and 2050)
 
-``NO00027`` -- FROY 1996:
-
-    E012: Reference year: 5135 is not a valid year (between 1600 and 2050)
-
 ``NO00041`` -- GULLFAKS SOR 1996:
 
     E012: Reference year: 5154 is not a valid year (between 1600 and 2050)
@@ -132,15 +128,15 @@ E040:
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
-    E040: Value for distillation vapor temp: -158.00 C is out of range: unit error?
-
-``AD01669`` -- HIBERNIA (EPA 86):
-
     E040: Value for distillation vapor temp: -113.00 C is out of range: unit error?
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
     E040: Value for distillation vapor temp: -188.00 C is out of range: unit error?
+
+``AD01669`` -- HIBERNIA (EPA 86):
+
+    E040: Value for distillation vapor temp: -158.00 C is out of range: unit error?
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
@@ -188,19 +184,19 @@ E050:
 
 ``AD02062`` -- CASTOR OIL:
 
-    E050: Duplicate Temperatures in DynamicViscosityList
+    E050: Duplicate Temperatures in DensityList
 
 ``AD02062`` -- CASTOR OIL:
 
-    E050: Duplicate Temperatures in DensityList
-
-``AD02201`` -- KOAKOAK:
-
     E050: Duplicate Temperatures in DynamicViscosityList
 
 ``AD02201`` -- KOAKOAK:
 
     E050: Duplicate Temperatures in DensityList
+
+``AD02201`` -- KOAKOAK:
+
+    E050: Duplicate Temperatures in DynamicViscosityList
 
 ``AD02348`` -- SOYBEAN OIL:
 
