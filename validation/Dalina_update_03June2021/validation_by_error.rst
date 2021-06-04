@@ -100,19 +100,19 @@ E040:
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
-    E040: Value for distillation vapor temp: -158.00 C is out of range: unit error?
-
-``AD01669`` -- HIBERNIA (EPA 86):
-
-    E040: Value for distillation vapor temp: -113.00 C is out of range: unit error?
-
-``AD01669`` -- HIBERNIA (EPA 86):
-
     E040: Value for distillation vapor temp: -188.00 C is out of range: unit error?
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
+    E040: Value for distillation vapor temp: -158.00 C is out of range: unit error?
+
+``AD01669`` -- HIBERNIA (EPA 86):
+
     E040: Value for distillation vapor temp: -134.00 C is out of range: unit error?
+
+``AD01669`` -- HIBERNIA (EPA 86):
+
+    E040: Value for distillation vapor temp: -113.00 C is out of range: unit error?
 
 ``AD02130`` -- FOROOZAN (1999):
 
