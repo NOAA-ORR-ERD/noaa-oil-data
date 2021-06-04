@@ -11,14 +11,6 @@ Validation of data in:
 
 
 
-E012:
-=====
-
-``AD02474`` -- ZUATA SWEET, OIL & GAS JOURNAL:
-
-    E012: Reference year: 9764 is not a valid year (between 1600 and 2050)
-
-
 E030:
 =====
 
@@ -108,7 +100,7 @@ E040:
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
-    E040: Value for distillation vapor temp: -188.00 C is out of range: unit error?
+    E040: Value for distillation vapor temp: -113.00 C is out of range: unit error?
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
@@ -120,7 +112,7 @@ E040:
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
-    E040: Value for distillation vapor temp: -113.00 C is out of range: unit error?
+    E040: Value for distillation vapor temp: -188.00 C is out of range: unit error?
 
 ``AD02130`` -- FOROOZAN (1999):
 
