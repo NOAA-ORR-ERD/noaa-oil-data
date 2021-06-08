@@ -7,7 +7,7 @@ Validation of data in:
 
 ``/builds/gnome/oil_database/noaa-oil-data/data/oil``
 
-**Generated:** Jun 08, 2021 -- 0000
+**Generated:** Jun 08, 2021 -- 1700
 
 
 
@@ -132,7 +132,7 @@ E040:
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
-    E040: Value for distillation vapor temp: -134.00 C is out of range: unit error?
+    E040: Value for distillation vapor temp: -113.00 C is out of range: unit error?
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
@@ -140,7 +140,7 @@ E040:
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
-    E040: Value for distillation vapor temp: -113.00 C is out of range: unit error?
+    E040: Value for distillation vapor temp: -134.00 C is out of range: unit error?
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
@@ -156,11 +156,11 @@ E041:
 
 ``AD02400`` -- FUEL OIL N0.1 (JP-8):
 
-    E041: Value for distillation fraction: 3.0 must be between 0 and 1
+    E041: Value for distillation fraction: 2.05 must be between 0 and 1
 
 ``AD02400`` -- FUEL OIL N0.1 (JP-8):
 
-    E041: Value for distillation fraction: 2.05 must be between 0 and 1
+    E041: Value for distillation fraction: 3.0 must be between 0 and 1
 
 
 E042:
@@ -188,19 +188,19 @@ E050:
 
 ``AD02062`` -- CASTOR OIL:
 
-    E050: Duplicate Temperatures in DensityList
+    E050: Duplicate Temperatures in DynamicViscosityList
 
 ``AD02062`` -- CASTOR OIL:
 
-    E050: Duplicate Temperatures in DynamicViscosityList
-
-``AD02201`` -- KOAKOAK:
-
     E050: Duplicate Temperatures in DensityList
 
 ``AD02201`` -- KOAKOAK:
 
     E050: Duplicate Temperatures in DynamicViscosityList
+
+``AD02201`` -- KOAKOAK:
+
+    E050: Duplicate Temperatures in DensityList
 
 ``AD02348`` -- SOYBEAN OIL:
 
@@ -538,11 +538,27 @@ W004:
 
     W004: No api value provided
 
-``EC01003`` -- Biodiesel Tallow B20 Biodiesel Tallow B100 Biodiesel Tallow B5:
+``EC10032`` -- Biodiesel Tallow B100:
 
     W004: No api value provided
 
-``EC01485`` -- Biodiesel Tallow B20 Biodiesel Tallow B100 Biodiesel Tallow B5:
+``EC10033`` -- Biodiesel Tallow B20:
+
+    W004: No api value provided
+
+``EC10034`` -- Biodiesel Tallow B5:
+
+    W004: No api value provided
+
+``EC14852`` -- Biodiesel Tallow B100:
+
+    W004: No api value provided
+
+``EC14853`` -- Biodiesel Tallow B20:
+
+    W004: No api value provided
+
+``EC14854`` -- Biodiesel Tallow B5:
 
     W004: No api value provided
 
@@ -6634,30 +6650,6 @@ W009:
 
     W009: Distillation fraction recovered is missing or invalid
 
-``EC01002`` -- Biodiesel Soy-1002-B20 Biodiesel Soy-1002-B5 Biodiesel Soy-1002-B100:
-
-    W009: Distillation fraction recovered is missing or invalid
-
-``EC01003`` -- Biodiesel Tallow B20 Biodiesel Tallow B100 Biodiesel Tallow B5:
-
-    W009: Distillation fraction recovered is missing or invalid
-
-``EC01004`` -- Biodiesel Canola-B100 Biodiesel Canola-B5 Biodiesel Canola-B20:
-
-    W009: Distillation fraction recovered is missing or invalid
-
-``EC01484`` -- Biodiesel Soy B100 Biodiesel Soy B20 Biodiesel Soy B5:
-
-    W009: Distillation fraction recovered is missing or invalid
-
-``EC01485`` -- Biodiesel Tallow B20 Biodiesel Tallow B100 Biodiesel Tallow B5:
-
-    W009: Distillation fraction recovered is missing or invalid
-
-``EC01486`` -- Biodiesel Canola B20 Biodiesel Canola B100 Biodiesel Canola B5:
-
-    W009: Distillation fraction recovered is missing or invalid
-
 ``EC01487`` -- Diesel (summer) COM ULSD:
 
     W009: Distillation fraction recovered is missing or invalid
@@ -6735,6 +6727,78 @@ W009:
     W009: Distillation fraction recovered is missing or invalid
 
 ``EC05517`` -- Cold Lake Blend Winter [2019]:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC10021`` -- Biodiesel Soy-1002-B100:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC10022`` -- Biodiesel Soy-1002-B20:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC10023`` -- Biodiesel Soy-1002-B5:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC10032`` -- Biodiesel Tallow B100:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC10033`` -- Biodiesel Tallow B20:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC10034`` -- Biodiesel Tallow B5:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC10042`` -- Biodiesel Canola-B100:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC10043`` -- Biodiesel Canola-B5:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC10044`` -- Biodiesel Canola-B20:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC14842`` -- Biodiesel Soy B100:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC14843`` -- Biodiesel Soy B20:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC14844`` -- Biodiesel Soy B5:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC14852`` -- Biodiesel Tallow B100:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC14853`` -- Biodiesel Tallow B20:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC14854`` -- Biodiesel Tallow B5:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC14862`` -- Biodiesel Canola B100:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC14863`` -- Biodiesel Canola B20:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC14864`` -- Biodiesel Canola B5:
 
     W009: Distillation fraction recovered is missing or invalid
 
