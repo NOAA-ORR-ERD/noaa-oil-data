@@ -7,7 +7,7 @@ Validation of data in:
 
 ``/builds/gnome/oil_database/noaa-oil-data/data/oil``
 
-**Generated:** Jun 08, 2021 -- 1700
+**Generated:** Jun 12, 2021 -- 0000
 
 
 
@@ -102,6 +102,30 @@ E030:
 
     E030: Oils must have an API
 
+``EC10032`` -- Biodiesel Tallow B100:
+
+    E030: Oils must have an API
+
+``EC10033`` -- Biodiesel Tallow B20:
+
+    E030: Oils must have an API
+
+``EC10034`` -- Biodiesel Tallow B5:
+
+    E030: Oils must have an API
+
+``EC14852`` -- Biodiesel Tallow B100:
+
+    E030: Oils must have an API
+
+``EC14853`` -- Biodiesel Tallow B20:
+
+    E030: Oils must have an API
+
+``EC14854`` -- Biodiesel Tallow B5:
+
+    E030: Oils must have an API
+
 ``NO00117`` -- SIGYN CONDENSATE 2017:
 
     E030: Oils must have an API
@@ -132,15 +156,15 @@ E040:
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
-    E040: Value for distillation vapor temp: -113.00 C is out of range: unit error?
-
-``AD01669`` -- HIBERNIA (EPA 86):
-
     E040: Value for distillation vapor temp: -158.00 C is out of range: unit error?
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
     E040: Value for distillation vapor temp: -134.00 C is out of range: unit error?
+
+``AD01669`` -- HIBERNIA (EPA 86):
+
+    E040: Value for distillation vapor temp: -113.00 C is out of range: unit error?
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
@@ -188,19 +212,19 @@ E050:
 
 ``AD02062`` -- CASTOR OIL:
 
-    E050: Duplicate Temperatures in DynamicViscosityList
+    E050: Duplicate Temperatures in DensityList
 
 ``AD02062`` -- CASTOR OIL:
 
-    E050: Duplicate Temperatures in DensityList
-
-``AD02201`` -- KOAKOAK:
-
     E050: Duplicate Temperatures in DynamicViscosityList
 
 ``AD02201`` -- KOAKOAK:
 
     E050: Duplicate Temperatures in DensityList
+
+``AD02201`` -- KOAKOAK:
+
+    E050: Duplicate Temperatures in DynamicViscosityList
 
 ``AD02348`` -- SOYBEAN OIL:
 
@@ -535,30 +559,6 @@ W004:
     W004: No api value provided
 
 ``AD02404`` -- CANOLA OIL:
-
-    W004: No api value provided
-
-``EC10032`` -- Biodiesel Tallow B100:
-
-    W004: No api value provided
-
-``EC10033`` -- Biodiesel Tallow B20:
-
-    W004: No api value provided
-
-``EC10034`` -- Biodiesel Tallow B5:
-
-    W004: No api value provided
-
-``EC14852`` -- Biodiesel Tallow B100:
-
-    W004: No api value provided
-
-``EC14853`` -- Biodiesel Tallow B20:
-
-    W004: No api value provided
-
-``EC14854`` -- Biodiesel Tallow B5:
 
     W004: No api value provided
 

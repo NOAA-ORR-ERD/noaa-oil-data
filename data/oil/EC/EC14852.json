@@ -1,142 +1,142 @@
 {
+    "oil_id": "EC14852",
     "adios_data_model_version": "0.11.0",
     "metadata": {
-        "gnome_suitable": false,
-        "location": "Unknown",
-        "model_completeness": 39,
         "name": "Biodiesel Tallow B100",
-        "product_type": "Bio-Petro Fuel Oil",
+        "source_id": "1485.2",
+        "location": "Unknown",
         "reference": {
-            "reference": "Environment and Climate Change Canada, Environment Canada Crude Oil and Petroleum Product Database, Environment and Climate Change Canada, 2021.\n\nurl: https://open.canada.ca/data/en/dataset/53c38f91-35c8-49a6-a437-b311703db8c5",
-            "year": 2021
+            "year": 2021,
+            "reference": "Environment and Climate Change Canada, Environment Canada Crude Oil and Petroleum Product Database, Environment and Climate Change Canada, 2021.\n\nurl: https://open.canada.ca/data/en/dataset/53c38f91-35c8-49a6-a437-b311703db8c5"
         },
         "sample_date": "2009-10-12",
-        "source_id": "1485.2"
+        "product_type": "Bio-Petro Fuel Oil",
+        "model_completeness": 39,
+        "gnome_suitable": false
     },
-    "oil_id": "EC14852",
-    "status": [
-        "E030: Oils must have an API",
-        "W009: Distillation fraction recovered is missing or invalid"
-    ],
     "sub_samples": [
         {
             "metadata": {
                 "name": "B100",
-                "sample_id": "1485.2",
-                "short_name": "B100"
+                "short_name": "B100",
+                "sample_id": "1485.2"
             },
             "physical_properties": {
+                "flash_point": {
+                    "measurement": {
+                        "value": 175,
+                        "unit": "C",
+                        "standard_deviation": 1.2,
+                        "replicates": 3,
+                        "unit_type": "temperature"
+                    },
+                    "method": "ASTM D7094"
+                },
                 "densities": [
                     {
                         "density": {
-                            "replicates": 3,
-                            "standard_deviation": 0,
+                            "value": 0.876,
                             "unit": "g/mL",
-                            "unit_type": "density",
-                            "value": 0.876
+                            "standard_deviation": 0,
+                            "replicates": 3,
+                            "unit_type": "density"
                         },
-                        "method": "ASTM D5002",
                         "ref_temp": {
+                            "value": 15.0,
                             "unit": "C",
-                            "unit_type": "temperature",
-                            "value": 15.0
-                        }
+                            "unit_type": "temperature"
+                        },
+                        "method": "ASTM D5002"
                     },
                     {
                         "density": {
-                            "replicates": 3,
-                            "standard_deviation": "NM",
+                            "value": "NM",
                             "unit": "g/mL",
-                            "unit_type": "density",
-                            "value": "NM"
+                            "standard_deviation": "NM",
+                            "replicates": 3,
+                            "unit_type": "density"
                         },
-                        "method": "ASTM D5002",
                         "ref_temp": {
+                            "value": 0.0,
                             "unit": "C",
-                            "unit_type": "temperature",
-                            "value": 0.0
-                        }
+                            "unit_type": "temperature"
+                        },
+                        "method": "ASTM D5002"
                     }
                 ],
                 "dynamic_viscosities": [
                     {
-                        "method": "ESTS 12.05/2.0/M",
-                        "ref_temp": {
-                            "unit": "C",
-                            "unit_type": "temperature",
-                            "value": 15.0
-                        },
                         "viscosity": {
-                            "replicates": 3,
-                            "standard_deviation": 0.3,
+                            "value": 9,
                             "unit": "mPa.s",
-                            "unit_type": "dynamicviscosity",
-                            "value": 9
-                        }
+                            "standard_deviation": 0.3,
+                            "replicates": 3,
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "method": "ESTS 12.05/2.0/M"
                     }
                 ],
-                "flash_point": {
-                    "measurement": {
-                        "replicates": 3,
-                        "standard_deviation": 1.2,
-                        "unit": "C",
-                        "unit_type": "temperature",
-                        "value": 175
-                    },
-                    "method": "ASTM D7094"
-                },
                 "interfacial_tension_air": [
                     {
-                        "method": "ESTS 12.12/x.x/M",
-                        "ref_temp": {
-                            "unit": "C",
-                            "unit_type": "temperature",
-                            "value": 15.0
-                        },
                         "tension": {
-                            "replicates": 3,
+                            "value": 31.5,
+                            "unit": "mN/m",
                             "standard_deviation": 0.3,
-                            "unit": "mN/m",
-                            "unit_type": "interfacialtension",
-                            "value": 31.5
-                        }
-                    }
-                ],
-                "interfacial_tension_seawater": [
-                    {
-                        "method": "ESTS 12.12/x.x/M",
-                        "ref_temp": {
-                            "unit": "C",
-                            "unit_type": "temperature",
-                            "value": 15.0
-                        },
-                        "tension": {
                             "replicates": 3,
-                            "standard_deviation": 0.2,
-                            "unit": "mN/m",
-                            "unit_type": "interfacialtension",
-                            "value": 12.2
-                        }
+                            "unit_type": "interfacialtension"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "method": "ESTS 12.12/x.x/M"
                     }
                 ],
                 "interfacial_tension_water": [
                     {
-                        "method": "ESTS 12.12/x.x/M",
-                        "ref_temp": {
-                            "unit": "C",
-                            "unit_type": "temperature",
-                            "value": 15.0
-                        },
                         "tension": {
-                            "replicates": 3,
-                            "standard_deviation": 0.1,
+                            "value": 12.4,
                             "unit": "mN/m",
-                            "unit_type": "interfacialtension",
-                            "value": 12.4
-                        }
+                            "standard_deviation": 0.1,
+                            "replicates": 3,
+                            "unit_type": "interfacialtension"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "method": "ESTS 12.12/x.x/M"
+                    }
+                ],
+                "interfacial_tension_seawater": [
+                    {
+                        "tension": {
+                            "value": 12.2,
+                            "unit": "mN/m",
+                            "standard_deviation": 0.2,
+                            "replicates": 3,
+                            "unit_type": "interfacialtension"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "method": "ESTS 12.12/x.x/M"
                     }
                 ]
             }
         }
+    ],
+    "status": [
+        "E030: Oils must have an API",
+        "W009: Distillation fraction recovered is missing or invalid"
     ]
 }
