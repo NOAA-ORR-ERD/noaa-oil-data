@@ -1,118 +1,118 @@
 {
+    "oil_id": "EC10023",
     "adios_data_model_version": "0.11.0",
     "metadata": {
-        "API": 27.6,
-        "comments": "West Central Soy",
-        "gnome_suitable": false,
-        "location": "Unknown",
-        "model_completeness": 42,
         "name": "Biodiesel Soy-1002-B5",
-        "product_type": "Bio-Petro Fuel Oil",
+        "source_id": "1002.3",
+        "location": "Unknown",
         "reference": {
-            "reference": "Environment and Climate Change Canada, Environment Canada Crude Oil and Petroleum Product Database, Environment and Climate Change Canada, 2021.\n\nurl: https://open.canada.ca/data/en/dataset/53c38f91-35c8-49a6-a437-b311703db8c5",
-            "year": 2021
+            "year": 2021,
+            "reference": "Environment and Climate Change Canada, Environment Canada Crude Oil and Petroleum Product Database, Environment and Climate Change Canada, 2021.\n\nurl: https://open.canada.ca/data/en/dataset/53c38f91-35c8-49a6-a437-b311703db8c5"
         },
         "sample_date": "2006-11-24",
-        "source_id": "1002.3"
+        "product_type": "Bio-Petro Fuel Oil",
+        "API": 27.6,
+        "comments": "West Central Soy",
+        "model_completeness": 42,
+        "gnome_suitable": false
     },
-    "oil_id": "EC10023",
-    "status": [
-        "W009: Distillation fraction recovered is missing or invalid"
-    ],
     "sub_samples": [
         {
-            "bulk_composition": [
-                {
-                    "measurement": {
-                        "max_value": 0.1,
-                        "replicates": 3,
-                        "unit": "%",
-                        "unit_type": "massfraction"
-                    },
-                    "method": "ASTM E203",
-                    "name": "Water Content"
-                }
-            ],
-            "environmental_behavior": {
-                "adhesion": {
-                    "replicates": 3,
-                    "standard_deviation": 0.7,
-                    "unit": "g/m^2",
-                    "unit_type": null,
-                    "value": 15.6
-                }
-            },
             "metadata": {
                 "name": "B5",
-                "sample_id": "1002.3",
-                "short_name": "B5"
+                "short_name": "B5",
+                "sample_id": "1002.3"
             },
             "physical_properties": {
                 "densities": [
                     {
                         "density": {
-                            "replicates": 3,
-                            "standard_deviation": 0,
+                            "value": 0.8303,
                             "unit": "g/mL",
-                            "unit_type": "density",
-                            "value": 0.8303
+                            "standard_deviation": 0,
+                            "replicates": 3,
+                            "unit_type": "density"
                         },
-                        "method": "ASTM D5002",
                         "ref_temp": {
+                            "value": 15.0,
                             "unit": "C",
-                            "unit_type": "temperature",
-                            "value": 15.0
-                        }
+                            "unit_type": "temperature"
+                        },
+                        "method": "ASTM D5002"
                     },
                     {
                         "density": {
-                            "replicates": 3,
-                            "standard_deviation": 0,
+                            "value": 0.8409,
                             "unit": "g/mL",
-                            "unit_type": "density",
-                            "value": 0.8409
+                            "standard_deviation": 0,
+                            "replicates": 3,
+                            "unit_type": "density"
                         },
-                        "method": "ASTM D5002",
                         "ref_temp": {
+                            "value": 0.0,
                             "unit": "C",
-                            "unit_type": "temperature",
-                            "value": 0.0
-                        }
+                            "unit_type": "temperature"
+                        },
+                        "method": "ASTM D5002"
                     }
                 ],
                 "dynamic_viscosities": [
                     {
-                        "method": "ESTS 12.05/2.0/M",
-                        "ref_temp": {
-                            "unit": "C",
-                            "unit_type": "temperature",
-                            "value": 15.0
-                        },
                         "viscosity": {
-                            "replicates": 3,
-                            "standard_deviation": 0.2,
+                            "value": 5,
                             "unit": "mPa.s",
-                            "unit_type": "dynamicviscosity",
-                            "value": 5
-                        }
+                            "standard_deviation": 0.2,
+                            "replicates": 3,
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "method": "ESTS 12.05/2.0/M"
                     },
                     {
-                        "method": "ESTS 12.05/2.0/M",
-                        "ref_temp": {
-                            "unit": "C",
-                            "unit_type": "temperature",
-                            "value": 0.0
-                        },
                         "viscosity": {
-                            "replicates": 3,
-                            "standard_deviation": 0.3,
+                            "value": 7,
                             "unit": "mPa.s",
-                            "unit_type": "dynamicviscosity",
-                            "value": 7
-                        }
+                            "standard_deviation": 0.3,
+                            "replicates": 3,
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 0.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "method": "ESTS 12.05/2.0/M"
                     }
                 ]
-            }
+            },
+            "environmental_behavior": {
+                "adhesion": {
+                    "value": 15.6,
+                    "unit": "g/m^2",
+                    "standard_deviation": 0.7,
+                    "replicates": 3,
+                    "unit_type": null
+                }
+            },
+            "bulk_composition": [
+                {
+                    "name": "Water Content",
+                    "method": "ASTM E203",
+                    "measurement": {
+                        "unit": "%",
+                        "max_value": 0.1,
+                        "replicates": 3,
+                        "unit_type": "massfraction"
+                    }
+                }
+            ]
         }
+    ],
+    "status": [
+        "W009: Distillation fraction recovered is missing or invalid"
     ]
 }

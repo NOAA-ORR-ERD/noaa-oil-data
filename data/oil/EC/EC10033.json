@@ -1,214 +1,214 @@
 {
+    "oil_id": "EC10033",
     "adios_data_model_version": "0.11.0",
     "metadata": {
-        "comments": "Rothsay Inc, Via ERMD",
-        "gnome_suitable": false,
-        "location": "Unknown",
-        "model_completeness": 35,
         "name": "Biodiesel Tallow B20",
-        "product_type": "Bio-Petro Fuel Oil",
+        "source_id": "1003.3",
+        "location": "Unknown",
         "reference": {
-            "reference": "Environment and Climate Change Canada, Environment Canada Crude Oil and Petroleum Product Database, Environment and Climate Change Canada, 2021.\n\nurl: https://open.canada.ca/data/en/dataset/53c38f91-35c8-49a6-a437-b311703db8c5",
-            "year": 2021
+            "year": 2021,
+            "reference": "Environment and Climate Change Canada, Environment Canada Crude Oil and Petroleum Product Database, Environment and Climate Change Canada, 2021.\n\nurl: https://open.canada.ca/data/en/dataset/53c38f91-35c8-49a6-a437-b311703db8c5"
         },
         "sample_date": "2006-11-24",
-        "source_id": "1003.3"
+        "product_type": "Bio-Petro Fuel Oil",
+        "comments": "Rothsay Inc, Via ERMD",
+        "model_completeness": 35,
+        "gnome_suitable": false
     },
-    "oil_id": "EC10033",
-    "status": [
-        "E030: Oils must have an API",
-        "W009: Distillation fraction recovered is missing or invalid"
-    ],
     "sub_samples": [
         {
-            "bulk_composition": [
-                {
-                    "measurement": {
-                        "max_value": 0.1,
-                        "replicates": 3,
-                        "unit": "%",
-                        "unit_type": "massfraction"
-                    },
-                    "method": "ASTM E203",
-                    "name": "Water Content"
-                }
-            ],
-            "environmental_behavior": {
-                "adhesion": {
-                    "replicates": 3,
-                    "standard_deviation": 0.9,
-                    "unit": "g/m^2",
-                    "unit_type": null,
-                    "value": 16
-                }
-            },
             "metadata": {
                 "name": "B20",
-                "sample_id": "1003.3",
-                "short_name": "B20"
+                "short_name": "B20",
+                "sample_id": "1003.3"
             },
             "physical_properties": {
                 "densities": [
                     {
                         "density": {
-                            "replicates": 3,
-                            "standard_deviation": 0,
+                            "value": 0.8376,
                             "unit": "g/mL",
-                            "unit_type": "density",
-                            "value": 0.8376
+                            "standard_deviation": 0,
+                            "replicates": 3,
+                            "unit_type": "density"
                         },
-                        "method": "ASTM D5002",
                         "ref_temp": {
+                            "value": 15.0,
                             "unit": "C",
-                            "unit_type": "temperature",
-                            "value": 15.0
-                        }
+                            "unit_type": "temperature"
+                        },
+                        "method": "ASTM D5002"
                     },
                     {
                         "density": {
-                            "replicates": 3,
-                            "standard_deviation": 0,
+                            "value": 0.8483,
                             "unit": "g/mL",
-                            "unit_type": "density",
-                            "value": 0.8483
+                            "standard_deviation": 0,
+                            "replicates": 3,
+                            "unit_type": "density"
                         },
-                        "method": "ASTM D5002",
                         "ref_temp": {
+                            "value": 0.0,
                             "unit": "C",
-                            "unit_type": "temperature",
-                            "value": 0.0
-                        }
+                            "unit_type": "temperature"
+                        },
+                        "method": "ASTM D5002"
                     }
                 ],
                 "dynamic_viscosities": [
                     {
-                        "method": "ESTS 12.05/2.0/M",
-                        "ref_temp": {
-                            "unit": "C",
-                            "unit_type": "temperature",
-                            "value": 15.0
-                        },
                         "viscosity": {
-                            "replicates": 6,
-                            "standard_deviation": 0.3,
+                            "value": 5,
                             "unit": "mPa.s",
-                            "unit_type": "dynamicviscosity",
-                            "value": 5
-                        }
+                            "standard_deviation": 0.3,
+                            "replicates": 6,
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "method": "ESTS 12.05/2.0/M"
                     },
                     {
-                        "method": "ESTS 12.05/2.0/M",
-                        "ref_temp": {
-                            "unit": "C",
-                            "unit_type": "temperature",
-                            "value": 0.0
-                        },
                         "viscosity": {
-                            "replicates": 3,
-                            "standard_deviation": 0.2,
+                            "value": 8,
                             "unit": "mPa.s",
-                            "unit_type": "dynamicviscosity",
-                            "value": 8
-                        }
+                            "standard_deviation": 0.2,
+                            "replicates": 3,
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 0.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "method": "ESTS 12.05/2.0/M"
                     }
                 ],
                 "interfacial_tension_air": [
                     {
-                        "method": "ASTM D971 mod.",
-                        "ref_temp": {
-                            "unit": "C",
-                            "unit_type": "temperature",
-                            "value": 15.0
-                        },
                         "tension": {
-                            "replicates": 3,
+                            "value": 27.8,
+                            "unit": "mN/m",
                             "standard_deviation": 0.2,
-                            "unit": "mN/m",
-                            "unit_type": "interfacialtension",
-                            "value": 27.8
-                        }
-                    },
-                    {
-                        "method": "ASTM D971 mod.",
-                        "ref_temp": {
-                            "unit": "C",
-                            "unit_type": "temperature",
-                            "value": 0.0
-                        },
-                        "tension": {
                             "replicates": 3,
-                            "standard_deviation": 0.3,
-                            "unit": "mN/m",
-                            "unit_type": "interfacialtension",
-                            "value": 29
-                        }
-                    }
-                ],
-                "interfacial_tension_seawater": [
-                    {
-                        "method": "ASTM D971 mod.",
-                        "ref_temp": {
-                            "unit": "C",
-                            "unit_type": "temperature",
-                            "value": 15.0
+                            "unit_type": "interfacialtension"
                         },
-                        "tension": {
-                            "replicates": 4,
-                            "standard_deviation": 0.3,
-                            "unit": "mN/m",
-                            "unit_type": "interfacialtension",
-                            "value": 7.2
-                        }
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "method": "ASTM D971 mod."
                     },
                     {
-                        "method": "ASTM D971 mod.",
-                        "ref_temp": {
-                            "unit": "C",
-                            "unit_type": "temperature",
-                            "value": 0.0
-                        },
                         "tension": {
-                            "replicates": 6,
-                            "standard_deviation": 0.4,
+                            "value": 29,
                             "unit": "mN/m",
-                            "unit_type": "interfacialtension",
-                            "value": 1.3
-                        }
+                            "standard_deviation": 0.3,
+                            "replicates": 3,
+                            "unit_type": "interfacialtension"
+                        },
+                        "ref_temp": {
+                            "value": 0.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "method": "ASTM D971 mod."
                     }
                 ],
                 "interfacial_tension_water": [
                     {
-                        "method": "ASTM D971 mod.",
-                        "ref_temp": {
-                            "unit": "C",
-                            "unit_type": "temperature",
-                            "value": 15.0
-                        },
                         "tension": {
-                            "replicates": 3,
-                            "standard_deviation": 0.1,
+                            "value": 9,
                             "unit": "mN/m",
-                            "unit_type": "interfacialtension",
-                            "value": 9
-                        }
+                            "standard_deviation": 0.1,
+                            "replicates": 3,
+                            "unit_type": "interfacialtension"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "method": "ASTM D971 mod."
                     },
                     {
-                        "method": "ASTM D971 mod.",
-                        "ref_temp": {
-                            "unit": "C",
-                            "unit_type": "temperature",
-                            "value": 0.0
-                        },
                         "tension": {
-                            "replicates": 3,
-                            "standard_deviation": 0.1,
+                            "value": 3.7,
                             "unit": "mN/m",
-                            "unit_type": "interfacialtension",
-                            "value": 3.7
-                        }
+                            "standard_deviation": 0.1,
+                            "replicates": 3,
+                            "unit_type": "interfacialtension"
+                        },
+                        "ref_temp": {
+                            "value": 0.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "method": "ASTM D971 mod."
+                    }
+                ],
+                "interfacial_tension_seawater": [
+                    {
+                        "tension": {
+                            "value": 7.2,
+                            "unit": "mN/m",
+                            "standard_deviation": 0.3,
+                            "replicates": 4,
+                            "unit_type": "interfacialtension"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "method": "ASTM D971 mod."
+                    },
+                    {
+                        "tension": {
+                            "value": 1.3,
+                            "unit": "mN/m",
+                            "standard_deviation": 0.4,
+                            "replicates": 6,
+                            "unit_type": "interfacialtension"
+                        },
+                        "ref_temp": {
+                            "value": 0.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "method": "ASTM D971 mod."
                     }
                 ]
-            }
+            },
+            "environmental_behavior": {
+                "adhesion": {
+                    "value": 16,
+                    "unit": "g/m^2",
+                    "standard_deviation": 0.9,
+                    "replicates": 3,
+                    "unit_type": null
+                }
+            },
+            "bulk_composition": [
+                {
+                    "name": "Water Content",
+                    "method": "ASTM E203",
+                    "measurement": {
+                        "unit": "%",
+                        "max_value": 0.1,
+                        "replicates": 3,
+                        "unit_type": "massfraction"
+                    }
+                }
+            ]
         }
+    ],
+    "status": [
+        "E030: Oils must have an API",
+        "W009: Distillation fraction recovered is missing or invalid"
     ]
 }
