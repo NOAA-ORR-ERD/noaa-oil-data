@@ -7,7 +7,7 @@ Validation of data in:
 
 ``/builds/gnome/oil_database/noaa-oil-data/data/oil``
 
-**Generated:** Jun 15, 2021 -- 1700
+**Generated:** Jun 23, 2021 -- 0400
 
 
 
@@ -156,7 +156,7 @@ E040:
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
-    E040: Value for distillation vapor temp: -188.00 C is out of range: unit error?
+    E040: Value for distillation vapor temp: -134.00 C is out of range: unit error?
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
@@ -168,7 +168,7 @@ E040:
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
-    E040: Value for distillation vapor temp: -134.00 C is out of range: unit error?
+    E040: Value for distillation vapor temp: -188.00 C is out of range: unit error?
 
 ``AD02130`` -- FOROOZAN (1999):
 
@@ -180,11 +180,11 @@ E041:
 
 ``AD02400`` -- FUEL OIL N0.1 (JP-8):
 
-    E041: Value for distillation fraction: 3.0 must be between 0 and 1
+    E041: Value for distillation fraction: 2.05 must be between 0 and 1
 
 ``AD02400`` -- FUEL OIL N0.1 (JP-8):
 
-    E041: Value for distillation fraction: 2.05 must be between 0 and 1
+    E041: Value for distillation fraction: 3.0 must be between 0 and 1
 
 
 E042:
@@ -212,19 +212,19 @@ E050:
 
 ``AD02062`` -- CASTOR OIL:
 
-    E050: Duplicate Temperatures in DynamicViscosityList
+    E050: Duplicate Temperatures in DensityList
 
 ``AD02062`` -- CASTOR OIL:
 
-    E050: Duplicate Temperatures in DensityList
-
-``AD02201`` -- KOAKOAK:
-
     E050: Duplicate Temperatures in DynamicViscosityList
 
 ``AD02201`` -- KOAKOAK:
 
     E050: Duplicate Temperatures in DensityList
+
+``AD02201`` -- KOAKOAK:
+
+    E050: Duplicate Temperatures in DynamicViscosityList
 
 ``AD02348`` -- SOYBEAN OIL:
 
