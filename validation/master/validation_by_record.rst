@@ -7,7 +7,7 @@ Validation of data in:
 
 ``/builds/gnome/oil_database/noaa-oil-data/data/oil``
 
-**Generated:** Jun 29, 2021 -- 2200
+**Generated:** Jun 29, 2021 -- 2300
 
 
 ``AD00005``: ABSORPTION OIL
@@ -1173,12 +1173,12 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01669``: HIBERNIA (EPA 86)
- |    E040: Value for distillation vapor temp: -188.00 C is out of range: unit error?
- |    E040: Value for distillation vapor temp: -113.00 C is out of range: unit error?
- |    W009: Distillation fraction recovered is missing or invalid
  |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
- |    E040: Value for distillation vapor temp: -158.00 C is out of range: unit error?
+ |    W009: Distillation fraction recovered is missing or invalid
  |    E040: Value for distillation vapor temp: -134.00 C is out of range: unit error?
+ |    E040: Value for distillation vapor temp: -158.00 C is out of range: unit error?
+ |    E040: Value for distillation vapor temp: -113.00 C is out of range: unit error?
+ |    E040: Value for distillation vapor temp: -188.00 C is out of range: unit error?
 
 ``AD01670``: HIGH VISCOSITY FUEL OIL
  |    W009: Distillation fraction recovered is missing or invalid
@@ -1285,8 +1285,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01775``: DESTIN DOME CIS, MMS
- |    W009: Distillation fraction recovered is missing or invalid
  |    E042: Must have a value for InterfacialTensionList reference temp
+ |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01776``: MOTOR GASOLINE-PREMIUM UNLEADED, SHELL REFINING PTY 
  |    W009: Distillation fraction recovered is missing or invalid
@@ -2241,22 +2241,22 @@ Validation of data in:
  |    E030: Oils must have an API
 
 ``EC00647``: Mississippi Canyon Block 807 [2002]
- |    E030: Oils must have an API
  |    W006: No density values provided
+ |    E030: Oils must have an API
 
 ``EC01598``: Deep Water Horizon Riser
  |    E030: Oils must have an API
 
 ``EC01655``: Deep Water Horizon Riser
- |    E030: Oils must have an API
  |    W006: No density values provided
+ |    E030: Oils must have an API
 
 ``EC01714``: Deep Water Horizon Riser
  |    E030: Oils must have an API
 
 ``EC01803``: IFO 380
- |    E030: Oils must have an API
  |    W006: No density values provided
+ |    E030: Oils must have an API
 
 ``EC01969``: Bakken
  |    E030: Oils must have an API
@@ -2537,8 +2537,8 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``NO00107``: WISTING 2015
- |    W009: Distillation fraction recovered is missing or invalid
  |    E012: Reference year: 7428 is not a valid year (between 1600 and 2050)
+ |    W009: Distillation fraction recovered is missing or invalid
 
 ``NO00109``: SVALIN 2014
  |    W009: Distillation fraction recovered is missing or invalid
