@@ -16,8 +16,8 @@ test:
 
   artifacts:
     paths:
-      - validation_by_record.txt
-      - validation_by_error.txt
+      - validation_by_record.rst
+      - validation_by_error.rst
       - validation_by_error.html
       - validation_by_record.html
       - data
@@ -53,8 +53,8 @@ test:
     - cd ../../
     - adios_db_process_json ./data/oil/ save
     - adios_db_validate ./data/oil
-    - rst2html.py validation_by_record.txt > validation_by_record.html
-    - rst2html.py validation_by_error.txt > validation_by_error.html
+    - rst2html.py validation_by_record.rst > validation_by_record.html
+    - rst2html.py validation_by_error.rst > validation_by_error.html
   only:
     changes:
       - .gitlab-ci.yml
