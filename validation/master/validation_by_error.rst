@@ -7,7 +7,7 @@ Validation of data in:
 
 ``/builds/gnome/oil_database/noaa-oil-data/data/oil``
 
-**Generated:** Jul 08, 2021 -- 1700
+**Generated:** Jul 08, 2021 -- 2200
 
 
 
@@ -156,11 +156,7 @@ E040: (5 records affected)
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
-    E040: Value for distillation vapor temp: -113.00 C is out of range: unit error?
-
-``AD01669`` -- HIBERNIA (EPA 86):
-
-    E040: Value for distillation vapor temp: -158.00 C is out of range: unit error?
+    E040: Value for distillation vapor temp: -134.00 C is out of range: unit error?
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
@@ -168,7 +164,11 @@ E040: (5 records affected)
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
-    E040: Value for distillation vapor temp: -134.00 C is out of range: unit error?
+    E040: Value for distillation vapor temp: -158.00 C is out of range: unit error?
+
+``AD01669`` -- HIBERNIA (EPA 86):
+
+    E040: Value for distillation vapor temp: -113.00 C is out of range: unit error?
 
 ``AD02130`` -- FOROOZAN (1999):
 
