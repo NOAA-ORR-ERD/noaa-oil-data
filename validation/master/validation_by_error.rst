@@ -7,7 +7,7 @@ Validation of data in:
 
 ``/builds/gnome/oil_database/noaa-oil-data/data/oil``
 
-**Generated:** Jul 08, 2021 -- 2200
+**Generated:** Jul 10, 2021 -- 0500
 
 
 
@@ -43,7 +43,7 @@ E012: (7 records affected)
     E012: Reference year: 7428 is not a valid year (between 1600 and 2050)
 
 
-E030: (26 records affected)
+E030: (24 records affected)
 ===========================
 
 ``AD00410`` -- FUEL OIL NO.1 (JP-3):
@@ -66,10 +66,6 @@ E030: (26 records affected)
 
     E030: Oils must have an API
 
-``EC00612`` -- IFO 180 [2004]:
-
-    E030: Oils must have an API
-
 ``EC00643`` -- Maya [2004]:
 
     E030: Oils must have an API
@@ -87,10 +83,6 @@ E030: (26 records affected)
     E030: Oils must have an API
 
 ``EC01714`` -- Deep Water Horizon Riser:
-
-    E030: Oils must have an API
-
-``EC01803`` -- IFO 380:
 
     E030: Oils must have an API
 
@@ -156,10 +148,6 @@ E040: (5 records affected)
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
-    E040: Value for distillation vapor temp: -113.00 C is out of range: unit error?
-
-``AD01669`` -- HIBERNIA (EPA 86):
-
     E040: Value for distillation vapor temp: -188.00 C is out of range: unit error?
 
 ``AD01669`` -- HIBERNIA (EPA 86):
@@ -169,6 +157,10 @@ E040: (5 records affected)
 ``AD01669`` -- HIBERNIA (EPA 86):
 
     E040: Value for distillation vapor temp: -158.00 C is out of range: unit error?
+
+``AD01669`` -- HIBERNIA (EPA 86):
+
+    E040: Value for distillation vapor temp: -113.00 C is out of range: unit error?
 
 ``AD02130`` -- FOROOZAN (1999):
 
@@ -180,11 +172,11 @@ E041: (2 records affected)
 
 ``AD02400`` -- FUEL OIL N0.1 (JP-8):
 
-    E041: Value for distillation fraction: 3.0 must be between 0 and 1
+    E041: Value for distillation fraction: 2.05 must be between 0 and 1
 
 ``AD02400`` -- FUEL OIL N0.1 (JP-8):
 
-    E041: Value for distillation fraction: 2.05 must be between 0 and 1
+    E041: Value for distillation fraction: 3.0 must be between 0 and 1
 
 
 E042: (1 records affected)
@@ -1435,7 +1427,7 @@ W002: (16 records affected)
     W002: Record has no product type
 
 
-W004: (11 records affected)
+W004: (13 records affected)
 ===========================
 
 ``AD00005`` -- ABSORPTION OIL:
@@ -1478,6 +1470,14 @@ W004: (11 records affected)
 
     W004: No api value provided
 
+``EC00612`` -- IFO 180 [2004]:
+
+    W004: No api value provided
+
+``EC01803`` -- IFO 380:
+
+    W004: No api value provided
+
 ``NO00124`` -- WIDE RANGE GAS OIL 2017:
 
     W004: No api value provided
@@ -1499,7 +1499,7 @@ W006: (3 records affected)
     W006: No density values provided
 
 
-W009: (784 records affected)
+W009: (850 records affected)
 ============================
 
 ``AD00010`` -- ABU SAFAH, ARAMCO:
@@ -4223,6 +4223,270 @@ W009: (784 records affected)
     W009: Distillation fraction recovered is missing or invalid
 
 ``AD02578`` -- POINT ARGUELLO HEAVY:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC00506`` -- Alaminos Canyon Block 25:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC00507`` -- Alaska North Slope [2002]:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC00511`` -- Alberta Sweet Mixed Blend #4:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC00512`` -- Alberta Sweet Mixed Blend #5:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC00515`` -- Amauligak:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC00517`` -- Anadarko HIA-376:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC00523`` -- Arabian Light [2002]:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC00527`` -- Atkinson:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC00539`` -- Bunker C [1987]:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC00540`` -- Bunker C - IFO-300 [1994]:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC00552`` -- Chayvo:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC00567`` -- Diesel [2002]:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC00586`` -- Fuel Oil # 5:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC00593`` -- Green Canyon Block 200:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC00601`` -- HFO 6303 [2002]:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC00616`` -- Issungnak:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC00647`` -- Mississippi Canyon Block 807 [2002]:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC00648`` -- Morpeth Block EW921:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC00654`` -- Norman Wells:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC00658`` -- Odoptu:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC00668`` -- Petronius Block VK786A:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC00690`` -- Sockeye Sour:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC00696`` -- South Louisiana:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC00736`` -- West Texas Intermediate [2001]:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC01172`` -- Albian Heavy Synthetic:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC01346`` -- Wabiska Heavy:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC01456`` -- Independent Hub:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC01459`` -- Neptune BHP [2009]:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC01464`` -- Platform Irene:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC01465`` -- Platform Irene Comingled:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC01466`` -- Gail Well E010:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC01467`` -- Gail Well E019:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC01482`` -- Platform Ellen A038:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC01483`` -- Platform Ellen A040:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC01499`` -- Heritage HE 05:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC01500`` -- Heritage HE 26:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC01598`` -- Deep Water Horizon Riser:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC01822`` -- Dos Cuadros HE-05 [2011]:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC01823`` -- Dos Cuadros HE-26 [2011]:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC01950`` -- Alaska North Slope [2011]:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC01951`` -- DOBA:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC01952`` -- Endicott:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC01953`` -- Harmony:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC01954`` -- IFO 120:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC01955`` -- IFO 180:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC01956`` -- North Star:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC01957`` -- Rock:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC01958`` -- Terra Nova [2011]:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC01969`` -- Bakken:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC02152`` -- Alaska North Slope [2012]:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC02234`` -- Access West Blend Winter:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC02235`` -- Cold Lake Blend Winter [2013]:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC02427`` -- Cold Lake Blend Summer [2014]:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC02542`` -- Bunker C MV Manolis:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC02664`` -- Synthetic Bitumen Blend:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC02695`` -- Sweet Synthetic Crude Oil [2015a]:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC02709`` -- Western Canadian Select:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC02712`` -- Cold Lake Blend Winter [2015]:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC02713`` -- Alaska North Slope [2015]:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC03288`` -- Husky Energy SGS:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC03629`` -- Diesel Echo Bay (B5 Biodiesel):
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC04016`` -- Terra Nova [2018]:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC04026`` -- Marine Diesel [2018]:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC04028`` -- Hibernia [2018]:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC04029`` -- Hebron [2018]:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC04030`` -- White Rose [2018]:
 
     W009: Distillation fraction recovered is missing or invalid
 
