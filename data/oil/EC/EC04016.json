@@ -14,7 +14,7 @@
         "API": 33.3,
         "comments": "Suncor Co-FPSO",
         "labels": [
-            "Light Crude",
+            "Medium Crude",
             "Crude Oil"
         ],
         "model_completeness": 96,
@@ -172,11 +172,6 @@
             "distillation_data": {
                 "type": "mass fraction",
                 "method": "Merged ASTM D7169 & ASTM D6730 mod.",
-                "fraction_recovered": {
-                    "value": 1.0,
-                    "unit": "fraction",
-                    "unit_type": "concentration"
-                },
                 "cuts": [
                     {
                         "fraction": {
@@ -1951,11 +1946,6 @@
             "distillation_data": {
                 "type": "mass fraction",
                 "method": "Merged ASTM D7169 & ASTM D6730 mod.",
-                "fraction_recovered": {
-                    "value": 1.0,
-                    "unit": "fraction",
-                    "unit_type": "concentration"
-                },
                 "cuts": [
                     {
                         "fraction": {
@@ -3729,11 +3719,6 @@
             "distillation_data": {
                 "type": "mass fraction",
                 "method": "ASTM D7169",
-                "fraction_recovered": {
-                    "value": 1.0,
-                    "unit": "fraction",
-                    "unit_type": "concentration"
-                },
                 "cuts": [
                     {
                         "fraction": {
@@ -5544,11 +5529,6 @@
                     "min_value": 720.0,
                     "unit_type": "temperature"
                 },
-                "fraction_recovered": {
-                    "value": 1.0,
-                    "unit": "fraction",
-                    "unit_type": "concentration"
-                },
                 "cuts": [
                     {
                         "fraction": {
@@ -7100,5 +7080,9 @@
                 "method": "ESTS 5.03/x.x/M"
             }
         }
+    ],
+    "status": [
+        "E043: API, 33.3 does not match density at 60F. API should be: 34.3",
+        "W009: Distillation fraction recovered is missing or invalid"
     ]
 }

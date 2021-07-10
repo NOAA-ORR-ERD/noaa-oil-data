@@ -14,7 +14,7 @@
         "API": 32.6,
         "comments": "Hibernia Platform",
         "labels": [
-            "Light Crude",
+            "Medium Crude",
             "Crude Oil"
         ],
         "model_completeness": 71,
@@ -162,11 +162,6 @@
             "distillation_data": {
                 "type": "mass fraction",
                 "method": "Merged ASTM D7169 & ASTM D6730 mod.",
-                "fraction_recovered": {
-                    "value": 1.0,
-                    "unit": "fraction",
-                    "unit_type": "concentration"
-                },
                 "cuts": [
                     {
                         "fraction": {
@@ -1873,11 +1868,6 @@
             "distillation_data": {
                 "type": "mass fraction",
                 "method": "Merged ASTM D7169 & ASTM D6730 mod.",
-                "fraction_recovered": {
-                    "value": 1.0,
-                    "unit": "fraction",
-                    "unit_type": "concentration"
-                },
                 "cuts": [
                     {
                         "fraction": {
@@ -3587,11 +3577,6 @@
                     "value": 521,
                     "unit": "C",
                     "unit_type": "temperature"
-                },
-                "fraction_recovered": {
-                    "value": 1.0,
-                    "unit": "fraction",
-                    "unit_type": "concentration"
                 },
                 "cuts": [
                     {
@@ -5314,11 +5299,6 @@
                     "unit": "C",
                     "unit_type": "temperature"
                 },
-                "fraction_recovered": {
-                    "value": 1.0,
-                    "unit": "fraction",
-                    "unit_type": "concentration"
-                },
                 "cuts": [
                     {
                         "fraction": {
@@ -6894,5 +6874,9 @@
                 "method": "ESTS 5.03/x.x/M"
             }
         }
+    ],
+    "status": [
+        "E043: API, 32.6 does not match density at 60F. API should be: 33.6",
+        "W009: Distillation fraction recovered is missing or invalid"
     ]
 }

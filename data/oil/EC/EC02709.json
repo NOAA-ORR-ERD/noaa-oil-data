@@ -10,10 +10,10 @@
             "reference": "Environment and Climate Change Canada, Environment Canada Crude Oil and Petroleum Product Database, Environment and Climate Change Canada, 2021.\n\nurl: https://open.canada.ca/data/en/dataset/53c38f91-35c8-49a6-a437-b311703db8c5"
         },
         "sample_date": "2015-03-17",
-        "product_type": "Bitumen Blend",
+        "product_type": "Crude Oil NOS",
         "API": 21.1,
         "labels": [
-            "Heavy Crude",
+            "Medium Crude",
             "Crude Oil"
         ],
         "model_completeness": 93,
@@ -361,11 +361,6 @@
                     "value": 716,
                     "unit": "C",
                     "unit_type": "temperature"
-                },
-                "fraction_recovered": {
-                    "value": 1.0,
-                    "unit": "fraction",
-                    "unit_type": "concentration"
                 },
                 "cuts": [
                     {
@@ -2179,13 +2174,6 @@
                     "unit_type": "massfraction"
                 }
             },
-            "distillation_data": {
-                "fraction_recovered": {
-                    "value": 1.0,
-                    "unit": "fraction",
-                    "unit_type": "concentration"
-                }
-            },
             "compounds": [
                 {
                     "name": "n-C9",
@@ -3777,13 +3765,6 @@
                     "unit_type": "massfraction"
                 }
             },
-            "distillation_data": {
-                "fraction_recovered": {
-                    "value": 1.0,
-                    "unit": "fraction",
-                    "unit_type": "concentration"
-                }
-            },
             "compounds": [
                 {
                     "name": "n-C9",
@@ -5306,13 +5287,6 @@
                     "unit_type": "massfraction"
                 }
             },
-            "distillation_data": {
-                "fraction_recovered": {
-                    "value": 1.0,
-                    "unit": "fraction",
-                    "unit_type": "concentration"
-                }
-            },
             "compounds": [
                 {
                     "name": "n-C9",
@@ -6574,5 +6548,9 @@
                 "method": "ESTS 5.03/x.x/M"
             }
         }
+    ],
+    "status": [
+        "W009: Distillation fraction recovered is missing or invalid",
+        "E043: API, 21.1 does not match density at 60F. API should be: 21.6"
     ]
 }

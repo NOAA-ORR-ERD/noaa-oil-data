@@ -13,7 +13,7 @@
         "product_type": "Crude Oil NOS",
         "API": 31.9,
         "labels": [
-            "Light Crude",
+            "Medium Crude",
             "Crude Oil"
         ],
         "model_completeness": 96,
@@ -176,11 +176,6 @@
                     "value": 655,
                     "unit": "C",
                     "unit_type": "temperature"
-                },
-                "fraction_recovered": {
-                    "value": 1.0,
-                    "unit": "fraction",
-                    "unit_type": "concentration"
                 },
                 "cuts": [
                     {
@@ -1956,11 +1951,6 @@
             "distillation_data": {
                 "type": "mass fraction",
                 "method": "Merged ASTM D7169 & ASTM D6730 mod.",
-                "fraction_recovered": {
-                    "value": 1.0,
-                    "unit": "fraction",
-                    "unit_type": "concentration"
-                },
                 "cuts": [
                     {
                         "fraction": {
@@ -3738,11 +3728,6 @@
                     "value": 672,
                     "unit": "C",
                     "unit_type": "temperature"
-                },
-                "fraction_recovered": {
-                    "value": 1.0,
-                    "unit": "fraction",
-                    "unit_type": "concentration"
                 },
                 "cuts": [
                     {
@@ -5556,11 +5541,6 @@
                     "unit": "C",
                     "unit_type": "temperature"
                 },
-                "fraction_recovered": {
-                    "value": 1.0,
-                    "unit": "fraction",
-                    "unit_type": "concentration"
-                },
                 "cuts": [
                     {
                         "fraction": {
@@ -7124,5 +7104,9 @@
                 "method": "ESTS 5.03/x.x/M"
             }
         }
+    ],
+    "status": [
+        "W009: Distillation fraction recovered is missing or invalid",
+        "E043: API, 31.9 does not match density at 60F. API should be: 32.8"
     ]
 }

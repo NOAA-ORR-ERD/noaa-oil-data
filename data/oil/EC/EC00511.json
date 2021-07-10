@@ -246,11 +246,6 @@
             "distillation_data": {
                 "type": "mass fraction",
                 "method": "Merged ASTM D7169 & ASTM D6730 mod.",
-                "fraction_recovered": {
-                    "value": 1.0,
-                    "unit": "fraction",
-                    "unit_type": "concentration"
-                },
                 "cuts": [
                     {
                         "fraction": {
@@ -740,13 +735,6 @@
                     }
                 ]
             },
-            "distillation_data": {
-                "fraction_recovered": {
-                    "value": 1.0,
-                    "unit": "fraction",
-                    "unit_type": "concentration"
-                }
-            },
             "bulk_composition": [
                 {
                     "name": "Sulfur Content",
@@ -1002,13 +990,6 @@
                         "method": "ESTS 12.12/x.x/M"
                     }
                 ]
-            },
-            "distillation_data": {
-                "fraction_recovered": {
-                    "value": 1.0,
-                    "unit": "fraction",
-                    "unit_type": "concentration"
-                }
             },
             "bulk_composition": [
                 {
@@ -1311,13 +1292,6 @@
                     }
                 ]
             },
-            "distillation_data": {
-                "fraction_recovered": {
-                    "value": 1.0,
-                    "unit": "fraction",
-                    "unit_type": "concentration"
-                }
-            },
             "bulk_composition": [
                 {
                     "name": "Sulfur Content",
@@ -1618,13 +1592,6 @@
                     }
                 ]
             },
-            "distillation_data": {
-                "fraction_recovered": {
-                    "value": 1.0,
-                    "unit": "fraction",
-                    "unit_type": "concentration"
-                }
-            },
             "bulk_composition": [
                 {
                     "name": "Sulfur Content",
@@ -1652,6 +1619,7 @@
         }
     ],
     "status": [
-        "E050: Duplicate Temperatures in DynamicViscosityList"
+        "W009: Distillation fraction recovered is missing or invalid",
+        "E043: API, 35 does not match density at 60F. API should be: 36.1"
     ]
 }

@@ -10,13 +10,14 @@
             "reference": "Environment and Climate Change Canada, Environment Canada Crude Oil and Petroleum Product Database, Environment and Climate Change Canada, 2021.\n\nurl: https://open.canada.ca/data/en/dataset/53c38f91-35c8-49a6-a437-b311703db8c5"
         },
         "sample_date": "2014-08-19",
-        "product_type": "Residual Fuel Oil",
+        "product_type": "Refined Product NOS",
         "API": 10.6,
         "comments": "from Cofferdam, Via Canadian Coast Guard",
         "labels": [
             "Refined Product",
-            "Residual Fuel",
-            "Fuel Oil"
+            "Transformer Oil",
+            "Fuel Oil",
+            "Residual Fuel"
         ],
         "model_completeness": 96,
         "gnome_suitable": true
@@ -321,11 +322,6 @@
                     "value": 504,
                     "unit": "C",
                     "unit_type": "temperature"
-                },
-                "fraction_recovered": {
-                    "unit": "fraction",
-                    "max_value": 1.0,
-                    "unit_type": "concentration"
                 },
                 "cuts": [
                     {
@@ -2317,11 +2313,6 @@
                     "unit": "C",
                     "unit_type": "temperature"
                 },
-                "fraction_recovered": {
-                    "unit": "fraction",
-                    "max_value": 1.0,
-                    "unit_type": "concentration"
-                },
                 "cuts": [
                     {
                         "fraction": {
@@ -4037,6 +4028,6 @@
         }
     ],
     "status": [
-        "E050: Duplicate Temperatures in DynamicViscosityList"
+        "W009: Distillation fraction recovered is missing or invalid"
     ]
 }

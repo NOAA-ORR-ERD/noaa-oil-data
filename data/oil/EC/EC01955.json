@@ -10,17 +10,18 @@
             "reference": "Environment and Climate Change Canada, Environment Canada Crude Oil and Petroleum Product Database, Environment and Climate Change Canada, 2021.\n\nurl: https://open.canada.ca/data/en/dataset/53c38f91-35c8-49a6-a437-b311703db8c5"
         },
         "sample_date": "2011-01-11",
-        "product_type": "Residual Fuel Oil",
+        "product_type": "Refined Product NOS",
         "API": 14.7,
         "comments": "Via Ohmsett Facility",
         "labels": [
-            "Refined Product",
+            "Transformer Oil",
             "HFO",
-            "Residual Fuel",
             "Bunker C",
-            "Fuel Oil",
+            "Residual Fuel",
             "No. 6 Fuel Oil",
-            "Heavy Fuel Oil"
+            "Heavy Fuel Oil",
+            "Refined Product",
+            "Fuel Oil"
         ],
         "model_completeness": 94,
         "gnome_suitable": true
@@ -373,11 +374,6 @@
                     "unit": "C",
                     "min_value": 720.0,
                     "unit_type": "temperature"
-                },
-                "fraction_recovered": {
-                    "value": 1.0,
-                    "unit": "fraction",
-                    "unit_type": "concentration"
                 },
                 "cuts": [
                     {
@@ -2375,13 +2371,6 @@
                     }
                 ]
             },
-            "distillation_data": {
-                "fraction_recovered": {
-                    "value": 1.0,
-                    "unit": "fraction",
-                    "unit_type": "concentration"
-                }
-            },
             "bulk_composition": [
                 {
                     "name": "Sulfur Content",
@@ -2703,5 +2692,8 @@
                 ]
             }
         }
+    ],
+    "status": [
+        "W009: Distillation fraction recovered is missing or invalid"
     ]
 }

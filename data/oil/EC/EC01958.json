@@ -14,7 +14,7 @@
         "API": 31.6,
         "comments": "Via Ohmsett Facility",
         "labels": [
-            "Light Crude",
+            "Medium Crude",
             "Crude Oil"
         ],
         "model_completeness": 96,
@@ -298,11 +298,6 @@
                     "value": 526,
                     "unit": "C",
                     "unit_type": "temperature"
-                },
-                "fraction_recovered": {
-                    "unit": "fraction",
-                    "max_value": 1.0,
-                    "unit_type": "concentration"
                 },
                 "cuts": [
                     {
@@ -1955,13 +1950,6 @@
                     }
                 ]
             },
-            "distillation_data": {
-                "fraction_recovered": {
-                    "unit": "fraction",
-                    "max_value": 1.0,
-                    "unit_type": "concentration"
-                }
-            },
             "compounds": [
                 {
                     "name": "n-C9",
@@ -3357,13 +3345,6 @@
                         "method": "ESTS 12.05/2.0/M"
                     }
                 ]
-            },
-            "distillation_data": {
-                "fraction_recovered": {
-                    "unit": "fraction",
-                    "max_value": 1.0,
-                    "unit_type": "concentration"
-                }
             },
             "compounds": [
                 {
@@ -4996,11 +4977,6 @@
                     "unit": "C",
                     "unit_type": "temperature"
                 },
-                "fraction_recovered": {
-                    "unit": "fraction",
-                    "max_value": 1.0,
-                    "unit_type": "concentration"
-                },
                 "cuts": [
                     {
                         "fraction": {
@@ -5563,5 +5539,9 @@
                 ]
             }
         }
+    ],
+    "status": [
+        "E043: API, 31.6 does not match density at 60F. API should be: 32.5",
+        "W009: Distillation fraction recovered is missing or invalid"
     ]
 }

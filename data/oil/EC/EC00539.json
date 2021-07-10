@@ -10,16 +10,17 @@
             "reference": "Environment and Climate Change Canada, Environment Canada Crude Oil and Petroleum Product Database, Environment and Climate Change Canada, 2021.\n\nurl: https://open.canada.ca/data/en/dataset/53c38f91-35c8-49a6-a437-b311703db8c5"
         },
         "sample_date": "1995-09-06",
-        "product_type": "Residual Fuel Oil",
+        "product_type": "Refined Product NOS",
         "API": 12.4,
         "labels": [
-            "Refined Product",
+            "Transformer Oil",
             "HFO",
-            "Residual Fuel",
             "Bunker C",
-            "Fuel Oil",
+            "Residual Fuel",
             "No. 6 Fuel Oil",
-            "Heavy Fuel Oil"
+            "Heavy Fuel Oil",
+            "Refined Product",
+            "Fuel Oil"
         ],
         "model_completeness": 92,
         "gnome_suitable": true
@@ -276,11 +277,6 @@
             "distillation_data": {
                 "type": "mass fraction",
                 "method": "ASTM D7169",
-                "fraction_recovered": {
-                    "value": 1.0,
-                    "unit": "fraction",
-                    "unit_type": "concentration"
-                },
                 "cuts": [
                     {
                         "fraction": {
@@ -1810,13 +1806,6 @@
                     "unit_type": "massfraction"
                 }
             },
-            "distillation_data": {
-                "fraction_recovered": {
-                    "value": 1.0,
-                    "unit": "fraction",
-                    "unit_type": "concentration"
-                }
-            },
             "compounds": [
                 {
                     "name": "n-C9",
@@ -3127,5 +3116,8 @@
                 "method": "ESTS 5.03/x.x/M"
             }
         }
+    ],
+    "status": [
+        "W009: Distillation fraction recovered is missing or invalid"
     ]
 }

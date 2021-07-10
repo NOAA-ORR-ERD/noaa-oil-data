@@ -4,11 +4,6 @@
     "metadata": {
         "name": "North Star",
         "source_id": "1956",
-        "alternate_names": [
-            "Alaska North Slope",
-            "ANS",
-            "Northstar"
-        ],
         "location": "Alaska, USA",
         "reference": {
             "year": 2021,
@@ -19,7 +14,7 @@
         "API": 32.6,
         "comments": "Via Ohmsett Facility",
         "labels": [
-            "Light Crude",
+            "Medium Crude",
             "Crude Oil"
         ],
         "model_completeness": 96,
@@ -282,11 +277,6 @@
                     "value": 555,
                     "unit": "C",
                     "unit_type": "temperature"
-                },
-                "fraction_recovered": {
-                    "unit": "fraction",
-                    "max_value": 1.0,
-                    "unit_type": "concentration"
                 },
                 "cuts": [
                     {
@@ -1948,13 +1938,6 @@
                     }
                 ]
             },
-            "distillation_data": {
-                "fraction_recovered": {
-                    "unit": "fraction",
-                    "max_value": 1.0,
-                    "unit_type": "concentration"
-                }
-            },
             "compounds": [
                 {
                     "name": "n-C9",
@@ -3360,13 +3343,6 @@
                         "method": "ASTM D7042"
                     }
                 ]
-            },
-            "distillation_data": {
-                "fraction_recovered": {
-                    "unit": "fraction",
-                    "max_value": 1.0,
-                    "unit_type": "concentration"
-                }
             },
             "compounds": [
                 {
@@ -4995,11 +4971,6 @@
                     "unit": "C",
                     "unit_type": "temperature"
                 },
-                "fraction_recovered": {
-                    "unit": "fraction",
-                    "max_value": 1.0,
-                    "unit_type": "concentration"
-                },
                 "cuts": [
                     {
                         "fraction": {
@@ -5350,5 +5321,9 @@
                 "method": "ESTS 5.03/x.x/M"
             }
         }
+    ],
+    "status": [
+        "E043: API, 32.6 does not match density at 60F. API should be: 33.5",
+        "W009: Distillation fraction recovered is missing or invalid"
     ]
 }
