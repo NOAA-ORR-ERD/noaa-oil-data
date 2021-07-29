@@ -7,40 +7,8 @@ Validation of data in:
 
 ``/builds/gnome/oil_database/noaa-oil-data/data/oil``
 
-**Generated:** Jul 13, 2021 -- 2300
+**Generated:** Jul 29, 2021 -- 2100
 
-
-
-E012: (7 records affected)
-==========================
-
-``AD02473`` -- TEMPA ROSSA, OIL & GAS JOURNAL:
-
-    E012: Reference year: 9764 is not a valid year (between 1600 and 2050)
-
-``AD02474`` -- ZUATA SWEET, OIL & GAS JOURNAL:
-
-    E012: Reference year: 9764 is not a valid year (between 1600 and 2050)
-
-``NO00027`` -- FROY 1996:
-
-    E012: Reference year: 5135 is not a valid year (between 1600 and 2050)
-
-``NO00041`` -- GULLFAKS SOR 1996:
-
-    E012: Reference year: 5154 is not a valid year (between 1600 and 2050)
-
-``NO00057`` -- LILLEFRIGG KONDENSAT 1996:
-
-    E012: Reference year: 5135 is not a valid year (between 1600 and 2050)
-
-``NO00092`` -- TORDIS 2002:
-
-    E012: Reference year: 5134 is not a valid year (between 1600 and 2050)
-
-``NO00107`` -- WISTING 2015:
-
-    E012: Reference year: 7428 is not a valid year (between 1600 and 2050)
 
 
 E030: (26 records affected)
@@ -156,7 +124,7 @@ E040: (5 records affected)
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
-    E040: Value for distillation vapor temp: -158.00 C is out of range: unit error?
+    E040: Value for distillation vapor temp: -113.00 C is out of range: unit error?
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
@@ -164,11 +132,11 @@ E040: (5 records affected)
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
-    E040: Value for distillation vapor temp: -188.00 C is out of range: unit error?
+    E040: Value for distillation vapor temp: -158.00 C is out of range: unit error?
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
-    E040: Value for distillation vapor temp: -113.00 C is out of range: unit error?
+    E040: Value for distillation vapor temp: -188.00 C is out of range: unit error?
 
 ``AD02130`` -- FOROOZAN (1999):
 
@@ -180,11 +148,11 @@ E041: (2 records affected)
 
 ``AD02400`` -- FUEL OIL N0.1 (JP-8):
 
-    E041: Value for distillation fraction: 3.0 must be between 0 and 1
+    E041: Value for distillation fraction: 2.05 must be between 0 and 1
 
 ``AD02400`` -- FUEL OIL N0.1 (JP-8):
 
-    E041: Value for distillation fraction: 2.05 must be between 0 and 1
+    E041: Value for distillation fraction: 3.0 must be between 0 and 1
 
 
 E042: (1 records affected)
