@@ -124,19 +124,19 @@ E040: (5 records affected)
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
-    E040: Value for distillation vapor temp: -113.00 C is out of range: unit error?
-
-``AD01669`` -- HIBERNIA (EPA 86):
-
     E040: Value for distillation vapor temp: -188.00 C is out of range: unit error?
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
-    E040: Value for distillation vapor temp: -158.00 C is out of range: unit error?
+    E040: Value for distillation vapor temp: -134.00 C is out of range: unit error?
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
-    E040: Value for distillation vapor temp: -134.00 C is out of range: unit error?
+    E040: Value for distillation vapor temp: -113.00 C is out of range: unit error?
+
+``AD01669`` -- HIBERNIA (EPA 86):
+
+    E040: Value for distillation vapor temp: -158.00 C is out of range: unit error?
 
 ``AD02130`` -- FOROOZAN (1999):
 
@@ -148,11 +148,11 @@ E041: (2 records affected)
 
 ``AD02400`` -- FUEL OIL N0.1 (JP-8):
 
-    E041: Value for distillation fraction: 3.0 must be between 0 and 1
+    E041: Value for distillation fraction: 2.05 must be between 0 and 1
 
 ``AD02400`` -- FUEL OIL N0.1 (JP-8):
 
-    E041: Value for distillation fraction: 2.05 must be between 0 and 1
+    E041: Value for distillation fraction: 3.0 must be between 0 and 1
 
 
 E042: (1 records affected)
@@ -163,12 +163,8 @@ E042: (1 records affected)
     E042: Must have a value for InterfacialTensionList reference temp
 
 
-E043: (228 records affected)
+E043: (227 records affected)
 ============================
-
-``AD00017`` -- ADGO:
-
-    E043: API, 16.8 does not match density at 60F. API should be: 15.9
 
 ``AD00020`` -- ALASKA NORTH SLOPE:
 
@@ -1096,19 +1092,19 @@ E050: (8 records affected)
 
 ``AD02062`` -- CASTOR OIL:
 
-    E050: Duplicate Temperatures in DensityList
+    E050: Duplicate Temperatures in DynamicViscosityList
 
 ``AD02062`` -- CASTOR OIL:
 
-    E050: Duplicate Temperatures in DynamicViscosityList
-
-``AD02201`` -- KOAKOAK:
-
     E050: Duplicate Temperatures in DensityList
 
 ``AD02201`` -- KOAKOAK:
 
     E050: Duplicate Temperatures in DynamicViscosityList
+
+``AD02201`` -- KOAKOAK:
+
+    E050: Duplicate Temperatures in DensityList
 
 ``AD02348`` -- SOYBEAN OIL:
 
