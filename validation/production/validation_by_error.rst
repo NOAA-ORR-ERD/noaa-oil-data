@@ -128,15 +128,15 @@ E040: (5 records affected)
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
-    E040: Value for distillation vapor temp: -188.00 C is out of range: unit error?
-
-``AD01669`` -- HIBERNIA (EPA 86):
-
     E040: Value for distillation vapor temp: -158.00 C is out of range: unit error?
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
     E040: Value for distillation vapor temp: -113.00 C is out of range: unit error?
+
+``AD01669`` -- HIBERNIA (EPA 86):
+
+    E040: Value for distillation vapor temp: -188.00 C is out of range: unit error?
 
 ``AD02130`` -- FOROOZAN (1999):
 
@@ -148,11 +148,11 @@ E041: (2 records affected)
 
 ``AD02400`` -- FUEL OIL N0.1 (JP-8):
 
-    E041: Value for distillation fraction: 2.05 must be between 0 and 1
+    E041: Value for distillation fraction: 3.0 must be between 0 and 1
 
 ``AD02400`` -- FUEL OIL N0.1 (JP-8):
 
-    E041: Value for distillation fraction: 3.0 must be between 0 and 1
+    E041: Value for distillation fraction: 2.05 must be between 0 and 1
 
 
 E042: (1 records affected)
@@ -1092,19 +1092,19 @@ E050: (8 records affected)
 
 ``AD02062`` -- CASTOR OIL:
 
-    E050: Duplicate Temperatures in DynamicViscosityList
+    E050: Duplicate Temperatures in DensityList
 
 ``AD02062`` -- CASTOR OIL:
 
-    E050: Duplicate Temperatures in DensityList
-
-``AD02201`` -- KOAKOAK:
-
     E050: Duplicate Temperatures in DynamicViscosityList
 
 ``AD02201`` -- KOAKOAK:
 
     E050: Duplicate Temperatures in DensityList
+
+``AD02201`` -- KOAKOAK:
+
+    E050: Duplicate Temperatures in DynamicViscosityList
 
 ``AD02348`` -- SOYBEAN OIL:
 
