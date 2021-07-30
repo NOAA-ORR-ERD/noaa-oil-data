@@ -52,6 +52,7 @@ test:
     - pip install -e ./
     - cd ../../
     - adios_db_process_json ./data/oil/ save
+    # we are saving the status list inside the records.
     - adios_db_validate ./data/oil save
     - rst2html.py validation_by_record.rst > validation_by_record.html
     - rst2html.py validation_by_error.rst > validation_by_error.html
