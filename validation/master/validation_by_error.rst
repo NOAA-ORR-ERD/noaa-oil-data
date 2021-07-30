@@ -7,7 +7,7 @@ Validation of data in:
 
 ``/builds/gnome/oil_database/noaa-oil-data/data/oil``
 
-**Generated:** Jul 29, 2021 -- 2100
+**Generated:** Jul 30, 2021 -- 0100
 
 
 
@@ -124,11 +124,7 @@ E040: (5 records affected)
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
-    E040: Value for distillation vapor temp: -113.00 C is out of range: unit error?
-
-``AD01669`` -- HIBERNIA (EPA 86):
-
-    E040: Value for distillation vapor temp: -134.00 C is out of range: unit error?
+    E040: Value for distillation vapor temp: -188.00 C is out of range: unit error?
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
@@ -136,7 +132,11 @@ E040: (5 records affected)
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
-    E040: Value for distillation vapor temp: -188.00 C is out of range: unit error?
+    E040: Value for distillation vapor temp: -134.00 C is out of range: unit error?
+
+``AD01669`` -- HIBERNIA (EPA 86):
+
+    E040: Value for distillation vapor temp: -113.00 C is out of range: unit error?
 
 ``AD02130`` -- FOROOZAN (1999):
 
@@ -1096,19 +1096,19 @@ E050: (8 records affected)
 
 ``AD02062`` -- CASTOR OIL:
 
-    E050: Duplicate Temperatures in DynamicViscosityList
+    E050: Duplicate Temperatures in DensityList
 
 ``AD02062`` -- CASTOR OIL:
 
-    E050: Duplicate Temperatures in DensityList
-
-``AD02201`` -- KOAKOAK:
-
     E050: Duplicate Temperatures in DynamicViscosityList
 
 ``AD02201`` -- KOAKOAK:
 
     E050: Duplicate Temperatures in DensityList
+
+``AD02201`` -- KOAKOAK:
+
+    E050: Duplicate Temperatures in DynamicViscosityList
 
 ``AD02348`` -- SOYBEAN OIL:
 
@@ -1467,7 +1467,7 @@ W006: (3 records affected)
     W006: No density values provided
 
 
-W009: (784 records affected)
+W009: (790 records affected)
 ============================
 
 ``AD00010`` -- ABU SAFAH, ARAMCO:
@@ -4191,6 +4191,30 @@ W009: (784 records affected)
     W009: Distillation fraction recovered is missing or invalid
 
 ``AD02578`` -- POINT ARGUELLO HEAVY:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EX00058`` -- Liza:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EX00058`` -- Liza:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EX00058`` -- Liza:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EX00058`` -- Liza:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EX00058`` -- Liza:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EX00058`` -- Liza:
 
     W009: Distillation fraction recovered is missing or invalid
 
