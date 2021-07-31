@@ -80,7 +80,7 @@ update_pages:
     - mkdir -p validation/${CI_COMMIT_BRANCH}/
     - mv validation_by_* ./validation/${CI_COMMIT_BRANCH}/
     - git add -A
-    - git commit -m "updating validation reports"
+    - git diff-index --quiet HEAD || git commit -m 'updating validation reports'
     - git push
     - eval $(ssh-agent -k)
 
