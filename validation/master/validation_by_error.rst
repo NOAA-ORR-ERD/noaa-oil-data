@@ -7,18 +7,14 @@ Validation of data in:
 
 ``/builds/gnome/oil_database/noaa-oil-data/data/oil``
 
-**Generated:** Jul 31, 2021 -- 0000
+**Generated:** Aug 13, 2021 -- 0000
 
 
 
-E030: (26 records affected)
+E030: (25 records affected)
 ===========================
 
 ``AD00410`` -- FUEL OIL NO.1 (JP-3):
-
-    E030: Oils must have an API
-
-``AD00768`` -- MINERAL OIL:
 
     E030: Oils must have an API
 
@@ -163,12 +159,8 @@ E042: (1 records affected)
     E042: Must have a value for InterfacialTensionList reference temp
 
 
-E043: (228 records affected)
+E043: (241 records affected)
 ============================
-
-``AD00017`` -- ADGO:
-
-    E043: API, 16.8 does not match density at 60F. API should be: 15.9
 
 ``AD00020`` -- ALASKA NORTH SLOPE:
 
@@ -176,7 +168,7 @@ E043: (228 records affected)
 
 ``AD00031`` -- AMAULIGAK (1996):
 
-    E043: API, 27.4 does not match density at 60F. API should be: 2257.2
+    E043: API, 27.4 does not match density at 60F. API should be: 2256.9
 
 ``AD00042`` -- ARABIAN HEAVY:
 
@@ -200,7 +192,7 @@ E043: (228 records affected)
 
 ``AD00257`` -- COHASSET:
 
-    E043: API, 50.1 does not match density at 60F. API should be: 47.5
+    E043: API, 50.1 does not match density at 60F. API should be: 47.4
 
 ``AD00297`` -- DIESEL:
 
@@ -208,15 +200,19 @@ E043: (228 records affected)
 
 ``AD00328`` -- EKOFISK:
 
-    E043: API, 40.0 does not match density at 60F. API should be: 43.3
+    E043: API, 40.0 does not match density at 60F. API should be: 43.2
 
 ``AD00346`` -- ELECTRICAL INSULATING OIL (VIRGIN):
 
     E043: API, 28.8 does not match density at 60F. API should be: 31.0
 
+``AD00393`` -- FORTIES:
+
+    E043: API, 37.4 does not match density at 60F. API should be: 37.2
+
 ``AD00406`` -- FUEL OIL NO.1 (JP-4):
 
-    E043: API, 50.8 does not match density at 60F. API should be: 55.9
+    E043: API, 50.8 does not match density at 60F. API should be: 55.8
 
 ``AD00408`` -- FUEL OIL NO.1 (JP-8):
 
@@ -224,7 +220,7 @@ E043: (228 records affected)
 
 ``AD00412`` -- FUEL OIL NO.1 (JET FUEL A):
 
-    E043: API, 42.0 does not match density at 60F. API should be: 41.8
+    E043: API, 42.0 does not match density at 60F. API should be: 41.7
 
 ``AD00413`` -- FUEL OIL NO.1 (JET FUEL A-1):
 
@@ -232,7 +228,7 @@ E043: (228 records affected)
 
 ``AD00414`` -- FUEL OIL NO.1 (JET FUEL B):
 
-    E043: API, 53.8 does not match density at 60F. API should be: 55.4
+    E043: API, 53.8 does not match density at 60F. API should be: 55.3
 
 ``AD00416`` -- FUEL OIL NO.1 (KEROSENE) :
 
@@ -244,7 +240,7 @@ E043: (228 records affected)
 
 ``AD00465`` -- GASOLINE (CASINGHEAD):
 
-    E043: API, 79.3 does not match density at 60F. API should be: 78.6
+    E043: API, 79.3 does not match density at 60F. API should be: 78.5
 
 ``AD00466`` -- GASOLINE (LEADED):
 
@@ -308,7 +304,7 @@ E043: (228 records affected)
 
 ``AD00695`` -- LUBRICATING OIL (EXTREME PRESSURE GEAR OIL):
 
-    E043: API, 22.0 does not match density at 60F. API should be: 27.4
+    E043: API, 22.0 does not match density at 60F. API should be: 27.3
 
 ``AD00697`` -- LUBRICATING OIL (AUTO ENGINE OIL, VIRGIN):
 
@@ -326,6 +322,10 @@ E043: (228 records affected)
 
     E043: API, 22.0 does not match density at 60F. API should be: 21.2
 
+``AD00741`` -- MCARTHUR RIVER:
+
+    E043: API, 35.4 does not match density at 60F. API should be: 35.2
+
 ``AD00758`` -- METHYL TERTIARY BUTYL ETHER:
 
     E043: API, 58.8 does not match density at 60F. API should be: 58.0
@@ -340,7 +340,7 @@ E043: (228 records affected)
 
 ``AD00810`` -- NEKTORALIK K-59A:
 
-    E043: API, 39.9 does not match density at 60F. API should be: 39.7
+    E043: API, 39.9 does not match density at 60F. API should be: 39.6
 
 ``AD00812`` -- NERLERK M-98B:
 
@@ -366,6 +366,10 @@ E043: (228 records affected)
 
     E043: API, 28.0 does not match density at 60F. API should be: 30.1
 
+``AD01118`` -- TRADING BAY (OFFSHORE COOK INLET):
+
+    E043: API, 31.0 does not match density at 60F. API should be: 30.8
+
 ``AD01119`` -- TRANSMOUNTAIN BLEND:
 
     E043: API, 33.8 does not match density at 60F. API should be: 32.4
@@ -390,13 +394,25 @@ E043: (228 records affected)
 
     E043: API, 60.2 does not match density at 60F. API should be: 61.1
 
+``AD01514`` -- MCKEE BLEND 10% NGAT-3, MARITIME SAFETY AUTHORITY OF NEW ZEALAND:
+
+    E043: API, 47.2 does not match density at 60F. API should be: 47.0
+
 ``AD01516`` -- ARUN, MARITIME SAFETY AUTHORITY OF NEW ZEALAND:
 
-    E043: API, 56.2 does not match density at 60F. API should be: 55.3
+    E043: API, 56.2 does not match density at 60F. API should be: 55.2
+
+``AD01517`` -- BARROW ISLAND, MARITIME SAFETY AUTHORITY OF NEW ZEALAND:
+
+    E043: API, 37.8 does not match density at 60F. API should be: 37.6
 
 ``AD01518`` -- NORTHWEST SHELF, MARITIME SAFETY AUTHORITY OF NEW ZEALAND:
 
     E043: API, 53.2 does not match density at 60F. API should be: 54.0
+
+``AD01519`` -- BRASS RIVER, MARITIME SAFETY AUTHORITY OF NEW ZEALAND:
+
+    E043: API, 45.2 does not match density at 60F. API should be: 45.0
 
 ``AD01520`` -- DUBAI, MARITIME SAFETY AUTHORITY OF NEW ZEALAND:
 
@@ -416,11 +432,19 @@ E043: (228 records affected)
 
 ``AD01525`` -- GRIFFIN, MARITIME SAFETY AUTHORITY OF NEW ZEALAND:
 
-    E043: API, 55.0 does not match density at 60F. API should be: 54.8
+    E043: API, 55.0 does not match density at 60F. API should be: 54.7
+
+``AD01526`` -- BELINDA, MARITIME SAFETY AUTHORITY OF NEW ZEALAND:
+
+    E043: API, 45.2 does not match density at 60F. API should be: 45.0
 
 ``AD01557`` -- MEDANITO, OIL & GAS:
 
     E043: API, 35.1 does not match density at 60F. API should be: 34.8
+
+``AD01577`` -- ARABIAN EXTRA LIGHT, BOUCHARD:
+
+    E043: API, 36.6 does not match density at 60F. API should be: 36.4
 
 ``AD01584`` -- ALASKA NORTH SLOPE (MIDDLE PIPELINE, 1996):
 
@@ -462,9 +486,17 @@ E043: (228 records affected)
 
     E043: API, 28.0 does not match density at 60F. API should be: 38.0
 
+``AD01728`` -- SHARJAH CONDENSATE:
+
+    E043: API, 49.7 does not match density at 60F. API should be: 49.5
+
+``AD01732`` -- SIBERIAN BLEND:
+
+    E043: API, 37.8 does not match density at 60F. API should be: 37.6
+
 ``AD01750`` -- WALIO:
 
-    E043: API, 34.1 does not match density at 60F. API should be: 33.9
+    E043: API, 34.1 does not match density at 60F. API should be: 33.8
 
 ``AD01823`` -- CHALLIS, BHP PETROLEUM:
 
@@ -472,11 +504,27 @@ E043: (228 records affected)
 
 ``AD01824`` -- GRIFFIN, BHP PETROLEUM:
 
-    E043: API, 55.0 does not match density at 60F. API should be: 54.8
+    E043: API, 55.0 does not match density at 60F. API should be: 54.7
+
+``AD01826`` -- HARRIET, APACHE ENERGY LTD:
+
+    E043: API, 38.0 does not match density at 60F. API should be: 37.8
 
 ``AD01834`` -- GIPPSLAND, AMSA:
 
     E043: API, 46.4 does not match density at 60F. API should be: 46.1
+
+``AD01858`` -- THEVENAND, BP:
+
+    E043: API, 37.6 does not match density at 60F. API should be: 37.4
+
+``AD01863`` -- MARGHAM, BP:
+
+    E043: API, 53.5 does not match density at 60F. API should be: 53.3
+
+``AD01874`` -- KERAPU, BP:
+
+    E043: API, 45.2 does not match density at 60F. API should be: 45.0
 
 ``AD01887`` -- EAST SPAB, MOBIL OIL AUSTRALIA:
 
@@ -484,11 +532,11 @@ E043: (228 records affected)
 
 ``AD01893`` -- THAMMAMA, MOBIL OIL AUSTRALIA :
 
-    E043: API, 58.5 does not match density at 60F. API should be: 58.3
+    E043: API, 58.5 does not match density at 60F. API should be: 58.2
 
 ``AD01894`` -- UPPER ZAKUM, MOBIL OIL AUSTRALIA :
 
-    E043: API, 33.7 does not match density at 60F. API should be: 33.5
+    E043: API, 33.7 does not match density at 60F. API should be: 33.4
 
 ``AD01973`` -- SOUTH GEISUM, GEISUM OIL:
 
@@ -524,11 +572,11 @@ E043: (228 records affected)
 
 ``AD02014`` -- AVALON:
 
-    E043: API, 36.0 does not match density at 60F. API should be: 26.3
+    E043: API, 36.0 does not match density at 60F. API should be: 26.2
 
 ``AD02017`` -- AVIATION GASOLINE 80:
 
-    E043: API, 71.8 does not match density at 60F. API should be: 72.1
+    E043: API, 71.8 does not match density at 60F. API should be: 72.0
 
 ``AD02057`` -- CALIFORNIA (API 11):
 
@@ -536,7 +584,7 @@ E043: (228 records affected)
 
 ``AD02082`` -- DIESEL FUEL OIL (CANADA):
 
-    E043: API, 39.4 does not match density at 60F. API should be: 40.0
+    E043: API, 39.4 does not match density at 60F. API should be: 39.9
 
 ``AD02098`` -- ELECTRICAL INSULATING OIL (VOLTESSO 35):
 
@@ -544,7 +592,7 @@ E043: (228 records affected)
 
 ``AD02109`` -- ANTAN, HUVENSA:
 
-    E043: API, 31.8 does not match density at 60F. API should be: 31.6
+    E043: API, 31.8 does not match density at 60F. API should be: 31.5
 
 ``AD02115`` -- ESPOIR (1999):
 
@@ -656,7 +704,15 @@ E043: (228 records affected)
 
 ``AD02316`` -- SAHARAN BLEND (1999):
 
-    E043: API, 45.5 does not match density at 60F. API should be: 43.6
+    E043: API, 45.5 does not match density at 60F. API should be: 43.5
+
+``AD02328`` -- SHARJAH CONDENSATE (1999):
+
+    E043: API, 49.7 does not match density at 60F. API should be: 49.5
+
+``AD02332`` -- SIBERIAN LIGHT:
+
+    E043: API, 37.8 does not match density at 60F. API should be: 37.6
 
 ``AD02342`` -- SOUR BLEND:
 
@@ -664,7 +720,7 @@ E043: (228 records affected)
 
 ``AD02347`` -- SOUTH TIMBALIER BLOCK 130:
 
-    E043: API, 35.1 does not match density at 60F. API should be: 17.0
+    E043: API, 35.1 does not match density at 60F. API should be: 16.9
 
 ``AD02360`` -- TAPIS BLEND (1999):
 
@@ -672,7 +728,7 @@ E043: (228 records affected)
 
 ``AD02364`` -- TERRA NOVA:
 
-    E043: API, 33.7 does not match density at 60F. API should be: 34.0
+    E043: API, 33.7 does not match density at 60F. API should be: 33.9
 
 ``AD02410`` -- EAST SPAR, AMSA:
 
@@ -680,7 +736,7 @@ E043: (228 records affected)
 
 ``AD02417`` -- UPPER ZAKUM, AMSA:
 
-    E043: API, 33.7 does not match density at 60F. API should be: 33.5
+    E043: API, 33.7 does not match density at 60F. API should be: 33.4
 
 ``AD02430`` -- JP-5:
 
@@ -700,7 +756,11 @@ E043: (228 records affected)
 
 ``AD02550`` -- ALGERIAN CONDENSATE, STATOIL:
 
-    E043: API, 68.7 does not match density at 60F. API should be: 68.5
+    E043: API, 68.7 does not match density at 60F. API should be: 68.4
+
+``AD02553`` -- AZERI BTC, STATOIL:
+
+    E043: API, 36.4 does not match density at 60F. API should be: 36.2
 
 ``AD02572`` -- ARABIAN LIGHT (2000):
 
@@ -712,7 +772,7 @@ E043: (228 records affected)
 
 ``AD02574`` -- ALASKA NORTH SLOPE 2011:
 
-    E043: API, 29.3 does not match density at 60F. API should be: 30.2
+    E043: API, 29.3 does not match density at 60F. API should be: 30.1
 
 ``EC00501`` -- 158 RGN Mistura:
 
@@ -806,17 +866,13 @@ E043: (228 records affected)
 
     E043: API, 30 does not match density at 60F. API should be: 30.8
 
-``EC00670`` -- Platform Elly:
-
-    E043: API, 15.5 does not match density at 60F. API should be: 15.7
-
 ``EC00679`` -- Prudhoe Bay [2004]:
 
     E043: API, 25.9 does not match density at 60F. API should be: 26.6
 
 ``EC00680`` -- Pure Drill IA-35:
 
-    E043: API, 38.3 does not match density at 60F. API should be: 39.6
+    E043: API, 38.3 does not match density at 60F. API should be: 39.5
 
 ``EC00690`` -- Sockeye Sour:
 
@@ -858,10 +914,6 @@ E043: (228 records affected)
 
     E043: API, 19 does not match density at 60F. API should be: 19.4
 
-``EC01346`` -- Wabiska Heavy:
-
-    E043: API, 16.3 does not match density at 60F. API should be: 16.5
-
 ``EC01456`` -- Independent Hub:
 
     E043: API, 22.6 does not match density at 60F. API should be: 23.0
@@ -884,7 +936,7 @@ E043: (228 records affected)
 
 ``EC01487`` -- Diesel (summer) COM ULSD:
 
-    E043: API, 40 does not match density at 60F. API should be: 41.3
+    E043: API, 40 does not match density at 60F. API should be: 41.2
 
 ``EC01497`` -- Alaska North Slope [2010]:
 
@@ -908,7 +960,7 @@ E043: (228 records affected)
 
 ``EC01952`` -- Endicott:
 
-    E043: API, 24.6 does not match density at 60F. API should be: 25.3
+    E043: API, 24.6 does not match density at 60F. API should be: 25.2
 
 ``EC01953`` -- Harmony:
 
@@ -944,7 +996,7 @@ E043: (228 records affected)
 
 ``EC02664`` -- Synthetic Bitumen Blend:
 
-    E043: API, 19.9 does not match density at 60F. API should be: 20.4
+    E043: API, 19.9 does not match density at 60F. API should be: 20.3
 
 ``EC02681`` -- Sweet Synthetic Crude Oil [2015b]:
 
@@ -956,7 +1008,7 @@ E043: (228 records affected)
 
 ``EC02709`` -- Western Canadian Select:
 
-    E043: API, 21.1 does not match density at 60F. API should be: 21.6
+    E043: API, 21.1 does not match density at 60F. API should be: 21.5
 
 ``EC02712`` -- Cold Lake Blend Winter [2015]:
 
@@ -965,10 +1017,6 @@ E043: (228 records affected)
 ``EC02713`` -- Alaska North Slope [2015]:
 
     E043: API, 31.3 does not match density at 60F. API should be: 32.2
-
-``EC03048`` -- MV Arrow [2015]:
-
-    E043: API, 14.8 does not match density at 60F. API should be: 15.0
 
 ``EC03097`` -- Marine Safe Lube:
 
@@ -1000,7 +1048,7 @@ E043: (228 records affected)
 
 ``EC04024`` -- Marine Diesel (B5):
 
-    E043: API, 32.1 does not match density at 60F. API should be: 33.1
+    E043: API, 32.1 does not match density at 60F. API should be: 33.0
 
 ``EC04025`` -- Marine Diesel-Burnaby BC:
 
@@ -1016,7 +1064,7 @@ E043: (228 records affected)
 
 ``EC04028`` -- Hibernia [2018]:
 
-    E043: API, 32.6 does not match density at 60F. API should be: 33.6
+    E043: API, 32.6 does not match density at 60F. API should be: 33.5
 
 ``EC04029`` -- Hebron [2018]:
 
@@ -1032,7 +1080,7 @@ E043: (228 records affected)
 
 ``EC10021`` -- Biodiesel Soy-1002-B100:
 
-    E043: API, 27.6 does not match density at 60F. API should be: 28.4
+    E043: API, 27.6 does not match density at 60F. API should be: 28.3
 
 ``EC10022`` -- Biodiesel Soy-1002-B20:
 
@@ -1040,11 +1088,11 @@ E043: (228 records affected)
 
 ``EC10023`` -- Biodiesel Soy-1002-B5:
 
-    E043: API, 27.6 does not match density at 60F. API should be: 38.9
+    E043: API, 27.6 does not match density at 60F. API should be: 38.8
 
 ``EC10042`` -- Biodiesel Canola-B100:
 
-    E043: API, 27.7 does not match density at 60F. API should be: 28.5
+    E043: API, 27.7 does not match density at 60F. API should be: 28.4
 
 ``EC10043`` -- Biodiesel Canola-B5:
 
@@ -1052,7 +1100,7 @@ E043: (228 records affected)
 
 ``EC10044`` -- Biodiesel Canola-B20:
 
-    E043: API, 27.7 does not match density at 60F. API should be: 37.2
+    E043: API, 27.7 does not match density at 60F. API should be: 37.1
 
 ``EC14842`` -- Biodiesel Soy B100:
 
@@ -1064,7 +1112,7 @@ E043: (228 records affected)
 
 ``EC14844`` -- Biodiesel Soy B5:
 
-    E043: API, 29.5 does not match density at 60F. API should be: 40.7
+    E043: API, 29.5 does not match density at 60F. API should be: 40.6
 
 ``EC14862`` -- Biodiesel Canola B100:
 
@@ -4629,3 +4677,19 @@ W009: (790 records affected)
 ``NO00127`` -- OSEBERG C 2013:
 
     W009: Distillation fraction recovered is missing or invalid
+
+
+################
+Reviewed Records
+################
+
+The rest of these are records that have been reviewed,
+but still have issues that will probably never be resolved
+
+
+E030: (1 records affected)
+==========================
+
+``AD00768`` -- MINERAL OIL:
+
+    E030: Oils must have an API
