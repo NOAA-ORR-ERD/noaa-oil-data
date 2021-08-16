@@ -11,7 +11,7 @@ Validation of data in:
 
 
 
-E030: (26 records affected)
+E030: (20 records affected)
 ===========================
 
 ``AD00410`` -- FUEL OIL NO.1 (JP-3):
@@ -91,30 +91,6 @@ E030: (26 records affected)
     E030: Oils must have an API
 
 ``EC14854`` -- Biodiesel Tallow B5:
-
-    E030: Oils must have an API
-
-``NO00117`` -- SIGYN CONDENSATE 2017:
-
-    E030: Oils must have an API
-
-``NO00119`` -- MARINE GAS OIL 500 ppm S 2017:
-
-    E030: Oils must have an API
-
-``NO00120`` -- ULTRA LOW SULFUR FUEL OIL 2017:
-
-    E030: Oils must have an API
-
-``NO00121`` -- HEAVY DISTILLATE MARINE ECA 50 2017:
-
-    E030: Oils must have an API
-
-``NO00122`` -- ROTTERDAM DIESEL 2017:
-
-    E030: Oils must have an API
-
-``NO00123`` -- GAS OIL 10 ppm S 2017:
 
     E030: Oils must have an API
 
@@ -1455,7 +1431,7 @@ W002: (16 records affected)
     W002: Record has no product type
 
 
-W004: (11 records affected)
+W004: (10 records affected)
 ===========================
 
 ``AD00005`` -- ABSORPTION OIL:
@@ -1495,10 +1471,6 @@ W004: (11 records affected)
     W004: No api value provided
 
 ``AD02404`` -- CANOLA OIL:
-
-    W004: No api value provided
-
-``NO00124`` -- WIDE RANGE GAS OIL 2017:
 
     W004: No api value provided
 
