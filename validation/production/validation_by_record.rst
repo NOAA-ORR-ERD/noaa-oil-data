@@ -7,7 +7,7 @@ Validation of data in:
 
 ``/builds/gnome/oil_database/noaa-oil-data/data/oil``
 
-**Generated:** Aug 13, 2021 -- 0000
+**Generated:** Aug 16, 2021 -- 2300
 
 
 ``AD00005``: ABSORPTION OIL
@@ -3096,34 +3096,27 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``NO00117``: SIGYN CONDENSATE 2017
- |    E030: Oils must have an API
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``NO00118``: NORNE CRUDE 2017
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``NO00119``: MARINE GAS OIL 500 ppm S 2017
- |    E030: Oils must have an API
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``NO00120``: ULTRA LOW SULFUR FUEL OIL 2017
- |    E030: Oils must have an API
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``NO00121``: HEAVY DISTILLATE MARINE ECA 50 2017
- |    E030: Oils must have an API
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``NO00122``: ROTTERDAM DIESEL 2017
- |    E030: Oils must have an API
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``NO00123``: GAS OIL 10 ppm S 2017
- |    E030: Oils must have an API
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``NO00124``: WIDE RANGE GAS OIL 2017
- |    W004: No api value provided
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``NO00125``: OSEBERG BLEND 2007
