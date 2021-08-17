@@ -7,11 +7,11 @@ Validation of data in:
 
 ``/builds/gnome/oil_database/noaa-oil-data/data/oil``
 
-**Generated:** Aug 16, 2021 -- 2300
+**Generated:** Aug 17, 2021 -- 0100
 
 
 
-E030: (20 records affected)
+E030: (12 records affected)
 ===========================
 
 ``AD00410`` -- FUEL OIL NO.1 (JP-3):
@@ -26,19 +26,7 @@ E030: (20 records affected)
 
     E030: Oils must have an API
 
-``AD02141`` -- FUEL OIL NO.4:
-
-    E030: Oils must have an API
-
-``EC00519`` -- Arabian Heavy [2004]:
-
-    E030: Oils must have an API
-
 ``EC00612`` -- IFO 180 [2004]:
-
-    E030: Oils must have an API
-
-``EC00643`` -- Maya [2004]:
 
     E030: Oils must have an API
 
@@ -46,31 +34,11 @@ E030: (20 records affected)
 
     E030: Oils must have an API
 
-``EC01598`` -- Deep Water Horizon Riser:
-
-    E030: Oils must have an API
-
 ``EC01655`` -- Deep Water Horizon Riser:
 
     E030: Oils must have an API
 
-``EC01714`` -- Deep Water Horizon Riser:
-
-    E030: Oils must have an API
-
 ``EC01803`` -- IFO 380:
-
-    E030: Oils must have an API
-
-``EC01969`` -- Bakken:
-
-    E030: Oils must have an API
-
-``EC04002`` -- Alberta Sweet Mixed Blend #6:
-
-    E030: Oils must have an API
-
-``EC10032`` -- Biodiesel Tallow B100:
 
     E030: Oils must have an API
 
@@ -1431,8 +1399,8 @@ W002: (16 records affected)
     W002: Record has no product type
 
 
-W004: (10 records affected)
-===========================
+W004: (9 records affected)
+==========================
 
 ``AD00005`` -- ABSORPTION OIL:
 
@@ -1455,10 +1423,6 @@ W004: (10 records affected)
     W004: No api value provided
 
 ``AD00802`` -- NAPHTHA (VARNISH MAKERS & PAINTERS):
-
-    W004: No api value provided
-
-``AD00884`` -- PENETRATING OIL:
 
     W004: No api value provided
 
@@ -4653,3 +4617,11 @@ W009: (790 records affected)
 ``NO00127`` -- OSEBERG C 2013:
 
     W009: Distillation fraction recovered is missing or invalid
+
+
+################
+Reviewed Records
+################
+
+The rest of these are records that have been reviewed,
+but still have issues that will probably never be resolved

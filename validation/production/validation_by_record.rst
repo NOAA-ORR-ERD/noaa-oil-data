@@ -7,7 +7,7 @@ Validation of data in:
 
 ``/builds/gnome/oil_database/noaa-oil-data/data/oil``
 
-**Generated:** Aug 16, 2021 -- 2300
+**Generated:** Aug 17, 2021 -- 0100
 
 
 ``AD00005``: ABSORPTION OIL
@@ -726,9 +726,6 @@ Validation of data in:
 
 ``AD00880``: PECAN ISLAND, AMOCO
  |    W009: Distillation fraction recovered is missing or invalid
-
-``AD00884``: PENETRATING OIL
- |    W004: No api value provided
 
 ``AD00894``: PILON, CITGO
  |    W009: Distillation fraction recovered is missing or invalid
@@ -1880,9 +1877,6 @@ Validation of data in:
 ``AD02139``: FUEL OIL NO.2 (HIGH AROMATIC CONTENT HEATING OIL)
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD02141``: FUEL OIL NO.4
- |    E030: Oils must have an API
-
 ``AD02145``: GALEOTA MIX (1999)
  |    E043: API, 32.8 does not match density at 60F. API should be: 32.3
 
@@ -2519,9 +2513,6 @@ Validation of data in:
 ``EC00517``: Anadarko HIA-376
  |    E043: API, 33.8 does not match density at 60F. API should be: 34.8
 
-``EC00519``: Arabian Heavy [2004]
- |    E030: Oils must have an API
-
 ``EC00523``: Arabian Light [2002]
  |    E043: API, 31.3 does not match density at 60F. API should be: 32.2
 
@@ -2560,9 +2551,6 @@ Validation of data in:
 
 ``EC00638``: Mars TLP [2000]
  |    E043: API, 26.2 does not match density at 60F. API should be: 26.8
-
-``EC00643``: Maya [2004]
- |    E030: Oils must have an API
 
 ``EC00647``: Mississippi Canyon Block 807 [2002]
  |    E030: Oils must have an API
@@ -2637,15 +2625,9 @@ Validation of data in:
 ``EC01497``: Alaska North Slope [2010]
  |    E043: API, 31.6 does not match density at 60F. API should be: 32.5
 
-``EC01598``: Deep Water Horizon Riser
- |    E030: Oils must have an API
-
 ``EC01655``: Deep Water Horizon Riser
  |    E030: Oils must have an API
  |    W006: No density values provided
-
-``EC01714``: Deep Water Horizon Riser
- |    E030: Oils must have an API
 
 ``EC01803``: IFO 380
  |    E030: Oils must have an API
@@ -2677,9 +2659,6 @@ Validation of data in:
 
 ``EC01958``: Terra Nova [2011]
  |    E043: API, 31.6 does not match density at 60F. API should be: 32.5
-
-``EC01969``: Bakken
- |    E030: Oils must have an API
 
 ``EC02152``: Alaska North Slope [2012]
  |    E043: API, 31.1 does not match density at 60F. API should be: 32.0
@@ -2729,9 +2708,6 @@ Validation of data in:
 ``EC03869``: Marine Diesel-Hurst Marina
  |    E043: API, 39.9 does not match density at 60F. API should be: 41.2
 
-``EC04002``: Alberta Sweet Mixed Blend #6
- |    E030: Oils must have an API
-
 ``EC04016``: Terra Nova [2018]
  |    E043: API, 33.3 does not match density at 60F. API should be: 34.3
 
@@ -2767,9 +2743,6 @@ Validation of data in:
 
 ``EC10023``: Biodiesel Soy-1002-B5
  |    E043: API, 27.6 does not match density at 60F. API should be: 38.8
-
-``EC10032``: Biodiesel Tallow B100
- |    E030: Oils must have an API
 
 ``EC10033``: Biodiesel Tallow B20
  |    E030: Oils must have an API
@@ -3127,3 +3100,11 @@ Validation of data in:
 
 ``NO00127``: OSEBERG C 2013
  |    W009: Distillation fraction recovered is missing or invalid
+
+
+################
+Reviewed Records
+################
+
+The rest of these are records that have been reviewed,
+but still have issues that will probably never be resolved
