@@ -11,20 +11,8 @@ Validation of data in:
 
 
 
-E030: (7 records affected)
+E030: (4 records affected)
 ==========================
-
-``AD00410`` -- FUEL OIL NO.1 (JP-3):
-
-    E030: Oils must have an API
-
-``AD00768`` -- MINERAL OIL:
-
-    E030: Oils must have an API
-
-``AD02133`` -- FUEL OIL NO.1 (JP-3):
-
-    E030: Oils must have an API
 
 ``EC00647`` -- Mississippi Canyon Block 807 [2002]:
 
@@ -85,14 +73,6 @@ E042: (1 records affected)
 ``AD01775`` -- DESTIN DOME CIS, MMS:
 
     E042: Must have a value for InterfacialTensionList reference temp
-
-
-E043: (1 records affected)
-==========================
-
-``AD00471`` -- GASOLINE BLENDING STOCKS:
-
-    E043: API, 62.5 does not match density at 60F. API should be: 47.0
 
 
 E050: (8 records affected)
