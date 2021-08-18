@@ -61,7 +61,7 @@ test:
       - .gitlab-ci.yml
       - data/**/*
 
-update_pages:
+update_validation_report:
   stage: update
   tags:
     - shell
@@ -77,8 +77,9 @@ update_pages:
         if [[ `git stash list` ]];then
           git stash pop
         fi
-    - mkdir -p validation/${CI_COMMIT_BRANCH}/
-    - mv validation_by_* ./validation/${CI_COMMIT_BRANCH}/
+#    - mkdir -p validation/${CI_COMMIT_BRANCH}/
+#    - mv validation_by_* ./validation/${CI_COMMIT_BRANCH}/
+    - mv validation_by_* ./validation/
     - git add -A
     - git diff-index --quiet HEAD || git commit -m 'updating validation reports'
     - git push
