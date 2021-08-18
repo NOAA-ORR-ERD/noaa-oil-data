@@ -7,7 +7,7 @@ Validation of data in:
 
 ``/builds/gnome/oil_database/noaa-oil-data/data/oil``
 
-**Generated:** Aug 18, 2021 -- 0000
+**Generated:** Aug 18, 2021 -- 2300
 
 
 ``AD00005``: ABSORPTION OIL
@@ -20,7 +20,6 @@ Validation of data in:
  |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD00020``: ALASKA NORTH SLOPE
- |    E043: API, 26.8 does not match density at 60F. API should be: 24.9
  |    W000: Warning: Dynamic and Kinematic Viscosity may be out of sync
 
 ``AD00024``: ALBERTA (1992)
@@ -33,7 +32,7 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00031``: AMAULIGAK (1996)
- |    E043: API, 27.4 does not match density at 60F. API should be: 2256.9
+ |    W005: API value: 2256.95 seems unlikely
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00038``: ARABIAN (1996)
@@ -46,7 +45,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00042``: ARABIAN HEAVY
- |    E043: API, 27.4 does not match density at 60F. API should be: 27.9
  |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD00044``: ARABIAN HEAVY, CITGO
@@ -148,14 +146,10 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00138``: BENT HORN A-02
- |    E043: API, 42.0 does not match density at 60F. API should be: 41.3
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00142``: BERRI A-21, ARAMCO
  |    W009: Distillation fraction recovered is missing or invalid
-
-``AD00143``: BERYL
- |    E043: API, 39.6 does not match density at 60F. API should be: 36.4
 
 ``AD00145``: BETA
  |    W009: Distillation fraction recovered is missing or invalid
@@ -205,14 +199,12 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00208``: BUNKER C FUEL OIL
- |    E043: API, 14.1 does not match density at 60F. API should be: 13.7
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00213``: CABINDA, CITGO
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00222``: CALIFORNIA (API GRAVITY:11)
- |    E043: API, 10.3 does not match density at 60F. API should be: 11.6
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00223``: CALIFORNIA (API GRAVITY:15)
@@ -231,7 +223,6 @@ Validation of data in:
  |    W004: No api value provided
 
 ``AD00257``: COHASSET
- |    E043: API, 50.1 does not match density at 60F. API should be: 47.4
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00259``: COLD LAKE, EXXON
@@ -262,7 +253,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00297``: DIESEL
- |    E043: API, 39.0 does not match density at 60F. API should be: 36.8
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00307``: DOS CUADRAS
@@ -278,7 +268,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00328``: EKOFISK
- |    E043: API, 40.0 does not match density at 60F. API should be: 43.2
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00329``: EKOFISK, CITGO
@@ -288,7 +277,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00346``: ELECTRICAL INSULATING OIL (VIRGIN)
- |    E043: API, 28.8 does not match density at 60F. API should be: 31.0
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00353``: EMPIRE
@@ -332,7 +320,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00393``: FORTIES
- |    E043: API, 37.4 does not match density at 60F. API should be: 37.2
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00397``: FOSTERTON
@@ -345,33 +332,22 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00406``: FUEL OIL NO.1 (JP-4)
- |    E043: API, 50.8 does not match density at 60F. API should be: 55.8
  |    W009: Distillation fraction recovered is missing or invalid
-
-``AD00408``: FUEL OIL NO.1 (JP-8)
- |    E043: API, 43.8 does not match density at 60F. API should be: 44.1
 
 ``AD00410``: FUEL OIL NO.1 (JP-3)
  |    E030: Oils must have an API
 
 ``AD00412``: FUEL OIL NO.1 (JET FUEL A)
- |    E043: API, 42.0 does not match density at 60F. API should be: 41.7
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00413``: FUEL OIL NO.1 (JET FUEL A-1)
- |    E043: API, 44.0 does not match density at 60F. API should be: 44.4
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00414``: FUEL OIL NO.1 (JET FUEL B)
- |    E043: API, 53.8 does not match density at 60F. API should be: 55.3
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00416``: FUEL OIL NO.1 (KEROSENE) 
- |    E043: API, 45.4 does not match density at 60F. API should be: 43.3
  |    W009: Distillation fraction recovered is missing or invalid
-
-``AD00423``: FUEL OIL NO.2
- |    E043: API, 30.0 does not match density at 60F. API should be: 31.8
 
 ``AD00424``: FUEL OIL NO.2
  |    W009: Distillation fraction recovered is missing or invalid
@@ -394,12 +370,6 @@ Validation of data in:
 ``AD00459``: GAS OIL, TESORO
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD00465``: GASOLINE (CASINGHEAD)
- |    E043: API, 79.3 does not match density at 60F. API should be: 78.5
-
-``AD00466``: GASOLINE (LEADED)
- |    E043: API, 62.4 does not match density at 60F. API should be: 59.9
-
 ``AD00468``: GASOLINE BLENDING STOCK (ALKYLATE), EXXON
  |    W009: Distillation fraction recovered is missing or invalid
 
@@ -409,11 +379,7 @@ Validation of data in:
 ``AD00471``: GASOLINE BLENDING STOCKS
  |    E043: API, 62.5 does not match density at 60F. API should be: 47.0
 
-``AD00472``: GASOLINE: BLENDING STOCKS (ALKYLATES)
- |    E043: API, 62.5 does not match density at 60F. API should be: 68.0
-
 ``AD00474``: GASOLINE: POLYMER
- |    E043: API, 62.5 does not match density at 60F. API should be: 68.0
  |    W002: Record has no product type
 
 ``AD00486``: GIPPSLAND, EXXON
@@ -426,7 +392,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00515``: GULLFAKS
- |    E043: API, 29.3 does not match density at 60F. API should be: 31.1
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00516``: GULLFAKS, EXXON
@@ -436,7 +401,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00531``: HEAVY REFORMATE
- |    E043: API, 10.1 does not match density at 60F. API should be: 21.7
  |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
 
@@ -482,23 +446,8 @@ Validation of data in:
 ``AD00611``: KIRKUK, EXXON
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD00615``: KOAKOAK 0-22
- |    E043: API, 28.1 does not match density at 60F. API should be: 27.9
-
 ``AD00619``: KOLE MARINE, AMOCO
  |    W009: Distillation fraction recovered is missing or invalid
-
-``AD00621``: KOPANOAR
- |    E043: API, 25.7 does not match density at 60F. API should be: 31.4
-
-``AD00622``: KOPANOAR 2I-44
- |    E043: API, 31.5 does not match density at 60F. API should be: 26.6
-
-``AD00623``: KOPANOAR M-13
- |    E043: API, 31.5 does not match density at 60F. API should be: 26.6
-
-``AD00624``: KOPANOAR M-13A
- |    E043: API, 30.5 does not match density at 60F. API should be: 26.8
 
 ``AD00625``: KUPARUK
  |    W009: Distillation fraction recovered is missing or invalid
@@ -507,14 +456,12 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00638``: LA ROSA
- |    E043: API, 25.3 does not match density at 60F. API should be: 23.2
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00643``: LAGO
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00644``: LAGO MEDIO
- |    E043: API, 31.5 does not match density at 60F. API should be: 30.7
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00647``: LAGO TRECO, CITGO
@@ -541,14 +488,10 @@ Validation of data in:
 ``AD00679``: LIGHT NAPHTHA, EXXON
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD00680``: LIGHT SOUR BLEND
- |    E043: API, 35.9 does not match density at 60F. API should be: 36.4
-
 ``AD00682``: LIUHUA, AMOCO
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00683``: LLOYDMINSTER
- |    E043: API, 20.7 does not match density at 60F. API should be: 25.3
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00685``: LOKELE, CITGO
@@ -557,11 +500,7 @@ Validation of data in:
 ``AD00686``: LOKELE, EXXON
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD00695``: LUBRICATING OIL (EXTREME PRESSURE GEAR OIL)
- |    E043: API, 22.0 does not match density at 60F. API should be: 27.3
-
 ``AD00697``: LUBRICATING OIL (AUTO ENGINE OIL, VIRGIN)
- |    E043: API, 29.0 does not match density at 60F. API should be: 29.7
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00701``: LUCULA
@@ -574,18 +513,15 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00721``: MARINE DIESEL FUEL OIL
- |    E043: API, 31.3 does not match density at 60F. API should be: 36.4
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00724``: MARINE INTERMEDIATE FUEL OIL
- |    E043: API, 14.6 does not match density at 60F. API should be: 13.0
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00725``: MARJAN/ZULUF, ARAMCO
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00730``: MAYA
- |    E043: API, 22.0 does not match density at 60F. API should be: 21.2
  |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
 
@@ -602,7 +538,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00741``: MCARTHUR RIVER
- |    E043: API, 35.4 does not match density at 60F. API should be: 35.2
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00750``: MENEMOTA, CITGO
@@ -613,9 +548,6 @@ Validation of data in:
 
 ``AD00757``: MESA 30, CITGO
  |    W009: Distillation fraction recovered is missing or invalid
-
-``AD00758``: METHYL TERTIARY BUTYL ETHER
- |    E043: API, 58.8 does not match density at 60F. API should be: 58.0
 
 ``AD00760``: MIDDLE GROUND SHOAL
  |    W009: Distillation fraction recovered is missing or invalid
@@ -632,9 +564,6 @@ Validation of data in:
 
 ``AD00786``: MTBE, EXXON
  |    W009: Distillation fraction recovered is missing or invalid
-
-``AD00787``: MURBAN
- |    E043: API, 40.5 does not match density at 60F. API should be: 39.3
 
 ``AD00794``: NAPHTHA, EXXON
  |    W009: Distillation fraction recovered is missing or invalid
@@ -655,21 +584,11 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00809``: NEKTORALIK K-59
- |    E043: API, 26.1 does not match density at 60F. API should be: 24.5
  |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD00810``: NEKTORALIK K-59A
- |    E043: API, 39.9 does not match density at 60F. API should be: 39.6
-
 ``AD00811``: NERLERK
  |    W009: Distillation fraction recovered is missing or invalid
-
-``AD00812``: NERLERK M-98B
- |    E043: API, 24.3 does not match density at 60F. API should be: 23.7
-
-``AD00813``: NERLERK M-98C
- |    E043: API, 26.4 does not match density at 60F. API should be: 25.9
 
 ``AD00817``: NIGERIAN EXP. B1
  |    W009: Distillation fraction recovered is missing or invalid
@@ -693,7 +612,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00829``: NINIAN BLEND
- |    E043: API, 35.6 does not match density at 60F. API should be: 36.1
  |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
 
@@ -758,7 +676,6 @@ Validation of data in:
  |    W004: No api value provided
 
 ``AD00956``: SABLE ISLAND CONDENSATE
- |    E043: API, 39.9 does not match density at 60F. API should be: 40.7
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00970``: SANTA CLARA
@@ -818,7 +735,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01054``: SWEET BLEND
- |    E043: API, 38.6 does not match density at 60F. API should be: 37.2
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01055``: SYNTHETIC
@@ -832,9 +748,6 @@ Validation of data in:
 
 ``AD01063``: TAKULA, CITGO
  |    W009: Distillation fraction recovered is missing or invalid
-
-``AD01070``: TARSIUT
- |    E043: API, 28.0 does not match density at 60F. API should be: 30.1
 
 ``AD01077``: TERRA NOVA K-08 DST #1
  |    W009: Distillation fraction recovered is missing or invalid
@@ -864,11 +777,9 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01118``: TRADING BAY (OFFSHORE COOK INLET)
- |    E043: API, 31.0 does not match density at 60F. API should be: 30.8
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01119``: TRANSMOUNTAIN BLEND
- |    E043: API, 33.8 does not match density at 60F. API should be: 32.4
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01129``: UDANG
@@ -939,7 +850,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01412``: SOLVENT NEUTRAL OIL 320, STAR ENTERPRISE
- |    E043: API, 29.0 does not match density at 60F. API should be: 28.8
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01419``: KUTUBU, AMSA
@@ -964,15 +874,12 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01429``: GALEOTA MIX, AMOCO
- |    E043: API, 31.4 does not match density at 60F. API should be: 31.1
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01430``: POUI, AMOCO
- |    E043: API, 32.5 does not match density at 60F. API should be: 32.3
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01432``: QATAR/DUKHAM, CHEVRON
- |    E043: API, 40.5 does not match density at 60F. API should be: 40.3
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01433``: ALGERIAN CONDENSATE, SHELL OIL
@@ -1179,42 +1086,6 @@ Validation of data in:
 ``AD01501``: DUAL PURPOSE KEROSINE,  MARITIME SAFETY AUTHORITY OF NEW ZEALAND
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD01506``: MAUI CONDENSATE, MARITIME SAFETY AUTHORITY OF NEW ZEALAND
- |    E043: API, 60.2 does not match density at 60F. API should be: 61.1
-
-``AD01514``: MCKEE BLEND 10% NGAT-3, MARITIME SAFETY AUTHORITY OF NEW ZEALAND
- |    E043: API, 47.2 does not match density at 60F. API should be: 47.0
-
-``AD01516``: ARUN, MARITIME SAFETY AUTHORITY OF NEW ZEALAND
- |    E043: API, 56.2 does not match density at 60F. API should be: 55.2
-
-``AD01517``: BARROW ISLAND, MARITIME SAFETY AUTHORITY OF NEW ZEALAND
- |    E043: API, 37.8 does not match density at 60F. API should be: 37.6
-
-``AD01518``: NORTHWEST SHELF, MARITIME SAFETY AUTHORITY OF NEW ZEALAND
- |    E043: API, 53.2 does not match density at 60F. API should be: 54.0
-
-``AD01519``: BRASS RIVER, MARITIME SAFETY AUTHORITY OF NEW ZEALAND
- |    E043: API, 45.2 does not match density at 60F. API should be: 45.0
-
-``AD01520``: DUBAI, MARITIME SAFETY AUTHORITY OF NEW ZEALAND
- |    E043: API, 32.8 does not match density at 60F. API should be: 36.8
-
-``AD01521``: MURBAN, MARITIME SAFETY AUTHORITY OF NEW ZEALAND
- |    E043: API, 39.8 does not match density at 60F. API should be: 39.2
-
-``AD01522``: MAUI B, MARITIME SAFETY AUTHORITY OF NEW ZEALAND
- |    E043: API, 59.9 does not match density at 60F. API should be: 59.0
-
-``AD01524``: KUTUBU, MARITIME SAFETY AUTHORITY OF NEW ZEALAND
- |    E043: API, 43.8 does not match density at 60F. API should be: 44.1
-
-``AD01525``: GRIFFIN, MARITIME SAFETY AUTHORITY OF NEW ZEALAND
- |    E043: API, 55.0 does not match density at 60F. API should be: 54.7
-
-``AD01526``: BELINDA, MARITIME SAFETY AUTHORITY OF NEW ZEALAND
- |    E043: API, 45.2 does not match density at 60F. API should be: 45.0
-
 ``AD01552``: FORCADOS, BP
  |    W009: Distillation fraction recovered is missing or invalid
 
@@ -1228,7 +1099,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01557``: MEDANITO, OIL & GAS
- |    E043: API, 35.1 does not match density at 60F. API should be: 34.8
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01561``: ESCRAVOS SWAMP BLEND, CHEVRON
@@ -1249,17 +1119,8 @@ Validation of data in:
 ``AD01572``: ENDICOTT 96
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD01577``: ARABIAN EXTRA LIGHT, BOUCHARD
- |    E043: API, 36.6 does not match density at 60F. API should be: 36.4
-
 ``AD01579``: BRENT, SUN
  |    W009: Distillation fraction recovered is missing or invalid
-
-``AD01584``: ALASKA NORTH SLOPE (MIDDLE PIPELINE, 1996)
- |    E043: API, 29.9 does not match density at 60F. API should be: 27.9
-
-``AD01587``: ALASKA NORTH SLOPE (SOCSEX, 1996)
- |    E043: API, 27.5 does not match density at 60F. API should be: 29.0
 
 ``AD01589``: ALBA (1996)
  |    W009: Distillation fraction recovered is missing or invalid
@@ -1283,7 +1144,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01622``: BUNKER C FUEL OIL (IRVING WHALE)
- |    E043: API, 11.6 does not match density at 60F. API should be: 10.6
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01634``: CUSIANA
@@ -1305,9 +1165,6 @@ Validation of data in:
  |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD01658``: FORTIES BLEND
- |    E043: API, 40.5 does not match density at 60F. API should be: 40.3
-
 ``AD01664``: GREEN CANYON BLOCK 65
  |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
@@ -1325,11 +1182,9 @@ Validation of data in:
  |    E040: Value for distillation vapor temp: -113.00 C is out of range: unit error?
 
 ``AD01670``: HIGH VISCOSITY FUEL OIL
- |    E043: API, 8.0 does not match density at 60F. API should be: 8.5
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01674``: HOUT
- |    E043: API, 32.8 does not match density at 60F. API should be: 32.4
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01676``: IFO 180
@@ -1346,11 +1201,9 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01690``: LOW SULPHUR WAXY GAS OIL
- |    E043: API, 43.8 does not match density at 60F. API should be: 43.5
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01691``: LOW SULPHUR WAXY RESIDUUM
- |    E043: API, 39.5 does not match density at 60F. API should be: 39.3
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01693``: MAIN PASS BLOCK 37
@@ -1364,7 +1217,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01706``: ORIMULSION
- |    E043: API, 8.2 does not match density at 60F. API should be: 8.5
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01709``: POINT ARGUELLO COMINGLED
@@ -1386,21 +1238,12 @@ Validation of data in:
 ``AD01717``: RANGELY
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD01722``: SALAWATI
- |    E043: API, 28.0 does not match density at 60F. API should be: 38.0
-
-``AD01728``: SHARJAH CONDENSATE
- |    E043: API, 49.7 does not match density at 60F. API should be: 49.5
-
 ``AD01730``: SHIP SHOAL BLOCK 239
  |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01731``: SHIP SHOAL BLOCK 269
  |    W009: Distillation fraction recovered is missing or invalid
-
-``AD01732``: SIBERIAN BLEND
- |    E043: API, 37.8 does not match density at 60F. API should be: 37.6
 
 ``AD01738``: SOUTH PASS BLOCK 60
  |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
@@ -1419,9 +1262,6 @@ Validation of data in:
 
 ``AD01747``: TERRA NOVA (1994)
  |    W009: Distillation fraction recovered is missing or invalid
-
-``AD01750``: WALIO
- |    E043: API, 34.1 does not match density at 60F. API should be: 33.8
 
 ``AD01751``: WEST DELTA BLOCK 30
  |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
@@ -1472,18 +1312,15 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01823``: CHALLIS, BHP PETROLEUM
- |    E043: API, 39.5 does not match density at 60F. API should be: 39.2
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01824``: GRIFFIN, BHP PETROLEUM
- |    E043: API, 55.0 does not match density at 60F. API should be: 54.7
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01825``: JABIRU, AMSA
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01826``: HARRIET, APACHE ENERGY LTD
- |    E043: API, 38.0 does not match density at 60F. API should be: 37.8
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01827``: STAG, APACHE ENERGY LTD
@@ -1502,7 +1339,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01834``: GIPPSLAND, AMSA
- |    E043: API, 46.4 does not match density at 60F. API should be: 46.1
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01850``: ALASKA NORTH SLOPE-PUMP STATION #9, BP
@@ -1527,7 +1363,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01858``: THEVENAND, BP
- |    E043: API, 37.6 does not match density at 60F. API should be: 37.4
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01859``: VARANUS, BP
@@ -1543,7 +1378,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01863``: MARGHAM, BP
- |    E043: API, 53.5 does not match density at 60F. API should be: 53.3
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01864``: KUWAIT, BP
@@ -1570,9 +1404,6 @@ Validation of data in:
 ``AD01873``: HANDIL, BP
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD01874``: KERAPU, BP
- |    E043: API, 45.2 does not match density at 60F. API should be: 45.0
-
 ``AD01876``: MIRI LIGHT, BP
  |    W009: Distillation fraction recovered is missing or invalid
 
@@ -1589,7 +1420,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01887``: EAST SPAB, MOBIL OIL AUSTRALIA
- |    E043: API, 57.8 does not match density at 60F. API should be: 57.5
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01888``: ERAWAN, MOBIL OIL AUSTRALIA 
@@ -1605,11 +1435,9 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01893``: THAMMAMA, MOBIL OIL AUSTRALIA 
- |    E043: API, 58.5 does not match density at 60F. API should be: 58.2
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01894``: UPPER ZAKUM, MOBIL OIL AUSTRALIA 
- |    E043: API, 33.7 does not match density at 60F. API should be: 33.4
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01895``: WANDOO, MOBIL OIL AUSTRALIA
@@ -1634,11 +1462,7 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01973``: SOUTH GEISUM, GEISUM OIL
- |    E043: API, 16.3 does not match density at 60F. API should be: 16.1
  |    W009: Distillation fraction recovered is missing or invalid
-
-``AD01978``: VIOSCA KNOLL BLOCK 990
- |    E043: API, 38.02 does not match density at 60F. API should be: 37.6
 
 ``AD01985``: ADGO (1999)
  |    W009: Distillation fraction recovered is missing or invalid
@@ -1655,7 +1479,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01989``: ALASKA NORTH SLOPE (SOCSEX, 1999)
- |    E043: API, 27.5 does not match density at 60F. API should be: 29.0
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01990``: ALASKA NORTH SLOPE (SOUTHERN PIPELINE, 1999)
@@ -1664,9 +1487,6 @@ Validation of data in:
 
 ``AD01991``: ALBA (1999)
  |    W009: Distillation fraction recovered is missing or invalid
-
-``AD01992``: ALBERTA (1999)
- |    E043: API, 36.8 does not match density at 60F. API should be: 37.1
 
 ``AD01993``: ALBERTA SWEET MIXED BLEND (PETAWAWA, 1999)
  |    W009: Distillation fraction recovered is missing or invalid
@@ -1681,17 +1501,12 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01998``: AMAULIGAK (1999)
- |    E043: API, 27.4 does not match density at 60F. API should be: 26.7
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02000``: ARABIAN (1999)
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD02001``: ARABIAN HEAVY (1999)
- |    E043: API, 27.4 does not match density at 60F. API should be: 27.9
-
 ``AD02002``: ARABIAN LIGHT (1999)
- |    E043: API, 33.4 does not match density at 60F. API should be: 31.8
  |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
 
@@ -1699,18 +1514,13 @@ Validation of data in:
  |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD02008``: ASPHALT CHARGED STOCK
- |    E043: API, 15.8 does not match density at 60F. API should be: 15.6
-
 ``AD02014``: AVALON
- |    E043: API, 36.0 does not match density at 60F. API should be: 26.2
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02015``: AVIATION GASOLINE 100
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02017``: AVIATION GASOLINE 80
- |    E043: API, 71.8 does not match density at 60F. API should be: 72.0
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02022``: BARROW ISLAND
@@ -1747,7 +1557,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02057``: CALIFORNIA (API 11)
- |    E043: API, 10.3 does not match density at 60F. API should be: 11.6
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02058``: CALIFORNIA (API 15)
@@ -1774,7 +1583,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02082``: DIESEL FUEL OIL (CANADA)
- |    E043: API, 39.4 does not match density at 60F. API should be: 39.9
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02083``: DIESEL FUEL OIL (SOUTHERN USA 1994)
@@ -1791,7 +1599,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02098``: ELECTRICAL INSULATING OIL (VOLTESSO 35)
- |    E043: API, 31.8 does not match density at 60F. API should be: 30.9
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02099``: EMERALD (1999)
@@ -1816,14 +1623,10 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02109``: ANTAN, HUVENSA
- |    E043: API, 31.8 does not match density at 60F. API should be: 31.5
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02110``: ENDICOTT
  |    W009: Distillation fraction recovered is missing or invalid
-
-``AD02115``: ESPOIR (1999)
- |    E043: API, 31.4 does not match density at 60F. API should be: 31.2
 
 ``AD02116``: EUGENE ISLAND BLOCK 32
  |    W009: Distillation fraction recovered is missing or invalid
@@ -1847,7 +1650,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02126``: FLUID CATALYTIC CRACKER LIGHT CYCLE OIL
- |    E043: API, 1.6 does not match density at 60F. API should be: 1.9
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02127``: FLUID CATALYTIC CRACKER MEDIUM CYCLE OIL
@@ -1859,9 +1661,6 @@ Validation of data in:
 ``AD02130``: FOROOZAN (1999)
  |    E040: Value for KinematicViscosityList: -253.00 C is out of range: unit error?
 
-``AD02131``: FORTIES BLEND (1999)
- |    E043: API, 40.5 does not match density at 60F. API should be: 40.3
-
 ``AD02133``: FUEL OIL NO.1 (JP-3)
  |    E030: Oils must have an API
 
@@ -1871,14 +1670,8 @@ Validation of data in:
 ``AD02136``: FUEL OIL NO.1 (JP-6)
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD02138``: FUEL OIL NO.2
- |    E043: API, 31.75 does not match density at 60F. API should be: 32.3
-
 ``AD02139``: FUEL OIL NO.2 (HIGH AROMATIC CONTENT HEATING OIL)
  |    W009: Distillation fraction recovered is missing or invalid
-
-``AD02145``: GALEOTA MIX (1999)
- |    E043: API, 32.8 does not match density at 60F. API should be: 32.3
 
 ``AD02147``: GARDEN BANKS BLOCK 387
  |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
@@ -1901,7 +1694,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02161``: GREEN CANYON BLOCK 184
- |    E043: API, 39.4 does not match density at 60F. API should be: 38.7
  |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
 
@@ -1909,15 +1701,12 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02165``: GULLFAKS
- |    E043: API, 29.3 does not match density at 60F. API should be: 31.1
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02167``: HEAVY REFORMATE
- |    E043: API, 10.1 does not match density at 60F. API should be: 21.7
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02168``: HEBRON
- |    E043: API, 20.1 does not match density at 60F. API should be: 20.4
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02169``: HEIDRUN
@@ -1930,18 +1719,13 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02172``: HIGH VISCOSITY FUEL OIL
- |    E043: API, 8.0 does not match density at 60F. API should be: 8.5
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02173``: HONDO
  |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD02175``: HONDO MONTEREY
- |    E043: API, 18.3 does not match density at 60F. API should be: 19.3
-
 ``AD02177``: HOUT (1999)
- |    E043: API, 32.8 does not match density at 60F. API should be: 32.4
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02179``: IF-30 FUEL OIL
@@ -1963,14 +1747,12 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02185``: IPAR 3
- |    E043: API, 22.2 does not match density at 60F. API should be: 41.0
  |    W002: Record has no product type
 
 ``AD02186``: IRANIAN HEAVY (1999)
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02189``: ISTHMUS (1999)
- |    E043: API, 32.0 does not match density at 60F. API should be: 34.7
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02194``: JET B
@@ -1978,9 +1760,6 @@ Validation of data in:
 
 ``AD02195``: JET B (ALASKA)
  |    W009: Distillation fraction recovered is missing or invalid
-
-``AD02200``: KITTIWAKE (1999)
- |    E043: API, 37.0 does not match density at 60F. API should be: 36.6
 
 ``AD02201``: KOAKOAK
  |    E050: Duplicate Temperatures in DensityList
@@ -1992,32 +1771,22 @@ Validation of data in:
 ``AD02207``: KUWAIT (1999)
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD02208``: LA ROSA MEDIUM
- |    E043: API, 25.3 does not match density at 60F. API should be: 23.2
-
 ``AD02210``: LAGO (1999)
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02211``: LAGO TRECO
- |    E043: API, 22.6 does not match density at 60F. API should be: 21.7
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02212``: LAGOMEDIO
- |    E043: API, 31.5 does not match density at 60F. API should be: 30.7
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02215``: LLOYDMINSTER
- |    E043: API, 20.7 does not match density at 60F. API should be: 25.3
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02217``: LOUISIANA (1999)
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD02218``: LOW SULPHUR WAXY GAS OIL
- |    E043: API, 43.8 does not match density at 60F. API should be: 43.5
-
 ``AD02219``: LOW SULPHUR WAXY RESIDUUM
- |    E043: API, 39.6 does not match density at 60F. API should be: 39.3
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02220``: LUBRICATING OIL (AIR COMPRESSOR) NEW
@@ -2053,9 +1822,6 @@ Validation of data in:
 ``AD02255``: MAYA (1997)
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD02256``: MEDANITO (1999)
- |    E043: API, 35.1 does not match density at 60F. API should be: 34.8
-
 ``AD02260``: MISSISSIPPI CANYON BLOCK 194
  |    W009: Distillation fraction recovered is missing or invalid
 
@@ -2069,9 +1835,6 @@ Validation of data in:
 
 ``AD02264``: MOUSSE MIX (PETAWAWA)
  |    W009: Distillation fraction recovered is missing or invalid
-
-``AD02266``: MURBAN
- |    E043: API, 40.5 does not match density at 60F. API should be: 39.3
 
 ``AD02273``: NEPTUNE SPAR
  |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
@@ -2103,15 +1866,12 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02290``: ORIMULSION-100
- |    E043: API, 8.2 does not match density at 60F. API should be: 8.5
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02293``: OSEBERG
- |    E043: API, 33.7 does not match density at 60F. API should be: 34.5
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02294``: PANUKE (1999)
- |    E043: API, 50.8 does not match density at 60F. API should be: 27.4
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02297``: PITAS POINT
@@ -2147,28 +1907,20 @@ Validation of data in:
  |    W004: No api value provided
 
 ``AD02315``: SABLE ISLAND CONDENSATE (1999)
- |    E043: API, 39.9 does not match density at 60F. API should be: 40.7
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02316``: SAHARAN BLEND (1999)
- |    E043: API, 45.5 does not match density at 60F. API should be: 43.5
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02323``: SANTA CLARA
  |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD02328``: SHARJAH CONDENSATE (1999)
- |    E043: API, 49.7 does not match density at 60F. API should be: 49.5
-
 ``AD02330``: SHIP SHOAL BLOCK 239
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02331``: SHIP SHOAL BLOCK 269
  |    W009: Distillation fraction recovered is missing or invalid
-
-``AD02332``: SIBERIAN LIGHT
- |    E043: API, 37.8 does not match density at 60F. API should be: 37.6
 
 ``AD02336``: SOCKEYE
  |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
@@ -2187,7 +1939,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02342``: SOUR BLEND
- |    E043: API, 34.8 does not match density at 60F. API should be: 35.5
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02344``: SOUTH PASS BLOCK 60
@@ -2200,7 +1951,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02347``: SOUTH TIMBALIER BLOCK 130
- |    E043: API, 35.1 does not match density at 60F. API should be: 16.9
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02348``: SOYBEAN OIL
@@ -2233,11 +1983,7 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02360``: TAPIS BLEND (1999)
- |    E043: API, 45.9 does not match density at 60F. API should be: 44.9
  |    W009: Distillation fraction recovered is missing or invalid
-
-``AD02364``: TERRA NOVA
- |    E043: API, 33.7 does not match density at 60F. API should be: 33.9
 
 ``AD02365``: TERRA NOVA (1994)
  |    W009: Distillation fraction recovered is missing or invalid
@@ -2310,7 +2056,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02410``: EAST SPAR, AMSA
- |    E043: API, 57.8 does not match density at 60F. API should be: 57.5
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02412``: KUTUBU LIGHT, AMSA
@@ -2326,7 +2071,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02417``: UPPER ZAKUM, AMSA
- |    E043: API, 33.7 does not match density at 60F. API should be: 33.4
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02418``: WANDOO, AMSA
@@ -2345,7 +2089,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02430``: JP-5
- |    E043: API, 35.8 does not match density at 60F. API should be: 47.9
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02431``: FUEL OIL NO.6
@@ -2379,7 +2122,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02441``: ESCALANTE, ITS
- |    E043: API, 23.0 does not match density at 60F. API should be: 23.3
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02447``: MARINE DIESEL, U.S. NAVY
@@ -2388,9 +2130,6 @@ Validation of data in:
 ``AD02448``: LUCKENBACH FUEL OIL
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD02480``: NORTHSTAR
- |    E043: API, 39.0 does not match density at 60F. API should be: 44.1
-
 ``AD02482``: BACHAQUERO-DELAWARE RIVER, CITGO
  |    W009: Distillation fraction recovered is missing or invalid
 
@@ -2398,7 +2137,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02538``: EAGLE FORD SHALE
- |    E043: API, 52.0 does not match density at 60F. API should be: 50.7
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02541``: ULTRA LOW SULFUR DIESEL
@@ -2414,7 +2152,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02550``: ALGERIAN CONDENSATE, STATOIL
- |    E043: API, 68.7 does not match density at 60F. API should be: 68.4
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02551``: ALVHEIM BLEND, STATOIL
@@ -2424,7 +2161,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02553``: AZERI BTC, STATOIL
- |    E043: API, 36.4 does not match density at 60F. API should be: 36.2
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02554``: AZERI LIGHT, STATOIL
@@ -2476,14 +2212,9 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02572``: ARABIAN LIGHT (2000)
- |    E043: API, 31.3 does not match density at 60F. API should be: 32.1
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD02573``: ALASKA NORTH SLOPE 2010
- |    E043: API, 31.6 does not match density at 60F. API should be: 32.4
-
 ``AD02574``: ALASKA NORTH SLOPE 2011
- |    E043: API, 29.3 does not match density at 60F. API should be: 30.1
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02576``: ALASKA NORTH SLOPE 2015
