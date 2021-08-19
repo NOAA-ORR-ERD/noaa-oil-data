@@ -7,28 +7,8 @@ Validation of data in:
 
 ``/builds/gnome/oil_database/noaa-oil-data/data/oil``
 
-**Generated:** Aug 18, 2021 -- 2300
+**Generated:** Aug 19, 2021 -- 0000
 
-
-
-E030: (4 records affected)
-==========================
-
-``EC00647`` -- Mississippi Canyon Block 807 [2002]:
-
-    E030: Oils must have an API
-
-``EC01655`` -- Deep Water Horizon Riser:
-
-    E030: Oils must have an API
-
-``EC01803`` -- IFO 380:
-
-    E030: Oils must have an API
-
-``EC14852`` -- Biodiesel Tallow B100:
-
-    E030: Oils must have an API
 
 
 E040: (5 records affected)
@@ -445,22 +425,6 @@ W005: (1 records affected)
 ``AD00031`` -- AMAULIGAK (1996):
 
     W005: API value: 2256.95 seems unlikely
-
-
-W006: (3 records affected)
-==========================
-
-``EC00647`` -- Mississippi Canyon Block 807 [2002]:
-
-    W006: No density values provided
-
-``EC01655`` -- Deep Water Horizon Riser:
-
-    W006: No density values provided
-
-``EC01803`` -- IFO 380:
-
-    W006: No density values provided
 
 
 W009: (790 records affected)
@@ -3633,3 +3597,35 @@ Reviewed Records
 
 The rest of these are records that have been reviewed,
 but still have issues that will probably never be resolved
+
+
+E030: (3 records affected)
+==========================
+
+``EC00647`` -- Mississippi Canyon Block 807 [2002]:
+
+    E030: Oils must have an API
+
+``EC01655`` -- Deep Water Horizon Riser:
+
+    E030: Oils must have an API
+
+``EC01803`` -- IFO 380:
+
+    E030: Oils must have an API
+
+
+W006: (3 records affected)
+==========================
+
+``EC00647`` -- Mississippi Canyon Block 807 [2002]:
+
+    W006: No density values provided
+
+``EC01655`` -- Deep Water Horizon Riser:
+
+    W006: No density values provided
+
+``EC01803`` -- IFO 380:
+
+    W006: No density values provided

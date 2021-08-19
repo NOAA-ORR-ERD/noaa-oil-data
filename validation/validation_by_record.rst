@@ -7,7 +7,7 @@ Validation of data in:
 
 ``/builds/gnome/oil_database/noaa-oil-data/data/oil``
 
-**Generated:** Aug 18, 2021 -- 2300
+**Generated:** Aug 19, 2021 -- 0000
 
 
 ``AD00005``: ABSORPTION OIL
@@ -2211,21 +2211,6 @@ Validation of data in:
 ``AD02578``: POINT ARGUELLO HEAVY
  |    W009: Distillation fraction recovered is missing or invalid
 
-``EC00647``: Mississippi Canyon Block 807 [2002]
- |    E030: Oils must have an API
- |    W006: No density values provided
-
-``EC01655``: Deep Water Horizon Riser
- |    E030: Oils must have an API
- |    W006: No density values provided
-
-``EC01803``: IFO 380
- |    E030: Oils must have an API
- |    W006: No density values provided
-
-``EC14852``: Biodiesel Tallow B100
- |    E030: Oils must have an API
-
 ``EX00058``: Liza
  |    W009: Distillation fraction recovered is missing or invalid
  |    W009: Distillation fraction recovered is missing or invalid
@@ -2548,3 +2533,15 @@ Reviewed Records
 
 The rest of these are records that have been reviewed,
 but still have issues that will probably never be resolved
+
+``EC00647``: Mississippi Canyon Block 807 [2002]
+ |    E030: Oils must have an API
+ |    W006: No density values provided
+
+``EC01655``: Deep Water Horizon Riser
+ |    E030: Oils must have an API
+ |    W006: No density values provided
+
+``EC01803``: IFO 380
+ |    E030: Oils must have an API
+ |    W006: No density values provided
