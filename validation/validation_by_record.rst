@@ -334,9 +334,6 @@ Validation of data in:
 ``AD00406``: FUEL OIL NO.1 (JP-4)
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD00410``: FUEL OIL NO.1 (JP-3)
- |    E030: Oils must have an API
-
 ``AD00412``: FUEL OIL NO.1 (JET FUEL A)
  |    W009: Distillation fraction recovered is missing or invalid
 
@@ -375,9 +372,6 @@ Validation of data in:
 
 ``AD00470``: GASOLINE BLENDING STOCK (REFORMATE), EXXON
  |    W009: Distillation fraction recovered is missing or invalid
-
-``AD00471``: GASOLINE BLENDING STOCKS
- |    E043: API, 62.5 does not match density at 60F. API should be: 47.0
 
 ``AD00474``: GASOLINE: POLYMER
  |    W002: Record has no product type
@@ -551,9 +545,6 @@ Validation of data in:
 
 ``AD00760``: MIDDLE GROUND SHOAL
  |    W009: Distillation fraction recovered is missing or invalid
-
-``AD00768``: MINERAL OIL
- |    E030: Oils must have an API
 
 ``AD00769``: MINERAL SEAL OIL
  |    W002: Record has no product type
@@ -1660,9 +1651,6 @@ Validation of data in:
 
 ``AD02130``: FOROOZAN (1999)
  |    E040: Value for KinematicViscosityList: -253.00 C is out of range: unit error?
-
-``AD02133``: FUEL OIL NO.1 (JP-3)
- |    E030: Oils must have an API
 
 ``AD02134``: FUEL OIL NO.1 (JP-4)
  |    W009: Distillation fraction recovered is missing or invalid
