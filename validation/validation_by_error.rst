@@ -7,8 +7,28 @@ Validation of data in:
 
 ``/builds/gnome/oil_database/noaa-oil-data/data/oil``
 
-**Generated:** Aug 19, 2021 -- 0000
+**Generated:** Sep 09, 2021 -- 0500
 
+
+
+E030: (4 records affected)
+==========================
+
+``EC00647`` -- Mississippi Canyon Block 807 [2002]:
+
+    E030: Oils must have an API
+
+``EC01655`` -- Deep Water Horizon Riser:
+
+    E030: Oils must have an API
+
+``EC01803`` -- IFO 380:
+
+    E030: Oils must have an API
+
+``EC14852`` -- Biodiesel Tallow B100:
+
+    E030: Oils must have an API
 
 
 E040: (5 records affected)
@@ -16,11 +36,7 @@ E040: (5 records affected)
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
-    E040: Value for distillation vapor temp: -188.00 C is out of range: unit error?
-
-``AD01669`` -- HIBERNIA (EPA 86):
-
-    E040: Value for distillation vapor temp: -158.00 C is out of range: unit error?
+    E040: Value for distillation vapor temp: -113.00 C is out of range: unit error?
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
@@ -28,7 +44,11 @@ E040: (5 records affected)
 
 ``AD01669`` -- HIBERNIA (EPA 86):
 
-    E040: Value for distillation vapor temp: -113.00 C is out of range: unit error?
+    E040: Value for distillation vapor temp: -158.00 C is out of range: unit error?
+
+``AD01669`` -- HIBERNIA (EPA 86):
+
+    E040: Value for distillation vapor temp: -188.00 C is out of range: unit error?
 
 ``AD02130`` -- FOROOZAN (1999):
 
@@ -53,6 +73,206 @@ E042: (1 records affected)
 ``AD01775`` -- DESTIN DOME CIS, MMS:
 
     E042: Must have a value for InterfacialTensionList reference temp
+
+
+E044: (49 records affected)
+===========================
+
+``AD00020`` -- ALASKA NORTH SLOPE:
+
+    E044: Value: 0.0 for tension is not valid
+
+``AD00051`` -- ARABIAN LIGHT:
+
+    E044: Value: 0.0 for viscosity is not valid
+
+``AD01759`` -- ALASKA NORTH SLOPE (MIDDLE PIPELINE, 1997):
+
+    E044: Value: 0.0 for tension is not valid
+
+``AD01994`` -- ALBERTA SWEET MIXED BLEND (REFERENCE #2, 1999):
+
+    E044: Value: 0.0 for tension is not valid
+
+``AD01996`` -- ALBERTA SWEET MIXED BLEND (REFERENCE #4, 1999):
+
+    E044: Value: 0.0 for tension is not valid
+
+``EC00506`` -- Alaminos Canyon Block 25:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC00511`` -- Alberta Sweet Mixed Blend #4:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC00540`` -- Bunker C - IFO-300 [1994]:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC00586`` -- Fuel Oil # 5:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC00601`` -- HFO 6303 [2002]:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC00616`` -- Issungnak:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC00643`` -- Maya [2004]:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC00647`` -- Mississippi Canyon Block 807 [2002]:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC00648`` -- Morpeth Block EW921:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC00654`` -- Norman Wells:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC00679`` -- Prudhoe Bay [2004]:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC00734`` -- West Delta Block 143:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC01346`` -- Wabiska Heavy:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC01464`` -- Platform Irene:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC01465`` -- Platform Irene Comingled:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC01466`` -- Gail Well E010:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC01467`` -- Gail Well E019:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC01482`` -- Platform Ellen A038:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC01483`` -- Platform Ellen A040:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC01499`` -- Heritage HE 05:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC01500`` -- Heritage HE 26:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC01822`` -- Dos Cuadros HE-05 [2011]:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC01950`` -- Alaska North Slope [2011]:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC01951`` -- DOBA:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC01952`` -- Endicott:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC01953`` -- Harmony:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC01954`` -- IFO 120:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC01955`` -- IFO 180:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC01956`` -- North Star:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC01957`` -- Rock:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC01958`` -- Terra Nova [2011]:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC02152`` -- Alaska North Slope [2012]:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC02234`` -- Access West Blend Winter:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC02235`` -- Cold Lake Blend Winter [2013]:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC02427`` -- Cold Lake Blend Summer [2014]:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC02542`` -- Bunker C MV Manolis:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC02664`` -- Synthetic Bitumen Blend:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC02709`` -- Western Canadian Select:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC02712`` -- Cold Lake Blend Winter [2015]:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC02713`` -- Alaska North Slope [2015]:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC02714`` -- Bunker C Zalinski:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC03126`` -- Rail Bitumen:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC03288`` -- Husky Energy SGS:
+
+    E044: Value: Too Viscous for tension is not valid
+
+``EC14852`` -- Biodiesel Tallow B100:
+
+    E044: Value: NM for density is not valid
 
 
 E050: (8 records affected)
@@ -427,7 +647,23 @@ W005: (1 records affected)
     W005: API value: 2256.95 seems unlikely
 
 
-W009: (790 records affected)
+W006: (3 records affected)
+==========================
+
+``EC00647`` -- Mississippi Canyon Block 807 [2002]:
+
+    W006: No density values provided
+
+``EC01655`` -- Deep Water Horizon Riser:
+
+    W006: No density values provided
+
+``EC01803`` -- IFO 380:
+
+    W006: No density values provided
+
+
+W009: (784 records affected)
 ============================
 
 ``AD00010`` -- ABU SAFAH, ARAMCO:
@@ -3158,30 +3394,6 @@ W009: (790 records affected)
 
     W009: Distillation fraction recovered is missing or invalid
 
-``EX00058`` -- Liza:
-
-    W009: Distillation fraction recovered is missing or invalid
-
-``EX00058`` -- Liza:
-
-    W009: Distillation fraction recovered is missing or invalid
-
-``EX00058`` -- Liza:
-
-    W009: Distillation fraction recovered is missing or invalid
-
-``EX00058`` -- Liza:
-
-    W009: Distillation fraction recovered is missing or invalid
-
-``EX00058`` -- Liza:
-
-    W009: Distillation fraction recovered is missing or invalid
-
-``EX00058`` -- Liza:
-
-    W009: Distillation fraction recovered is missing or invalid
-
 ``NO00001`` -- ALVE 2010:
 
     W009: Distillation fraction recovered is missing or invalid
@@ -3597,35 +3809,3 @@ Reviewed Records
 
 The rest of these are records that have been reviewed,
 but still have issues that will probably never be resolved
-
-
-E030: (3 records affected)
-==========================
-
-``EC00647`` -- Mississippi Canyon Block 807 [2002]:
-
-    E030: Oils must have an API
-
-``EC01655`` -- Deep Water Horizon Riser:
-
-    E030: Oils must have an API
-
-``EC01803`` -- IFO 380:
-
-    E030: Oils must have an API
-
-
-W006: (3 records affected)
-==========================
-
-``EC00647`` -- Mississippi Canyon Block 807 [2002]:
-
-    W006: No density values provided
-
-``EC01655`` -- Deep Water Horizon Riser:
-
-    W006: No density values provided
-
-``EC01803`` -- IFO 380:
-
-    W006: No density values provided
