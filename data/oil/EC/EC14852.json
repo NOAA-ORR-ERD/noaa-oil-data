@@ -11,13 +11,12 @@
         },
         "sample_date": "2009-10-12",
         "product_type": "Bio-fuel Oil",
-        "API": 29.9,
         "labels": [
             "Refined Product",
             "Fuel Oil"
         ],
         "model_completeness": 39,
-        "gnome_suitable": true
+        "gnome_suitable": false
     },
     "sub_samples": [
         {
@@ -48,6 +47,21 @@
                         },
                         "ref_temp": {
                             "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "method": "ASTM D5002"
+                    },
+                    {
+                        "density": {
+                            "value": "NM",
+                            "unit": "g/mL",
+                            "standard_deviation": "NM",
+                            "replicates": 3,
+                            "unit_type": "density"
+                        },
+                        "ref_temp": {
+                            "value": 0.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         },
@@ -124,6 +138,10 @@
                 ]
             }
         }
+    ],
+    "status": [
+        "E030: Oils must have an API",
+        "E044: Value: NM for density is not valid"
     ],
     "review_status": {
         "status": "Not Reviewed"
