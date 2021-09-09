@@ -7,7 +7,7 @@ Validation of data in:
 
 ``/builds/gnome/oil_database/noaa-oil-data/data/oil``
 
-**Generated:** Sep 09, 2021 -- 0500
+**Generated:** Sep 09, 2021 -- 2000
 
 
 ``AD00005``: ABSORPTION OIL
@@ -1653,9 +1653,6 @@ Validation of data in:
 
 ``AD02128``: FLUID CATALYTIC CRACKER VIRGIN GAS OIL
  |    W009: Distillation fraction recovered is missing or invalid
-
-``AD02130``: FOROOZAN (1999)
- |    E040: Value for KinematicViscosityList: -253.00 C is out of range: unit error?
 
 ``AD02134``: FUEL OIL NO.1 (JP-4)
  |    W009: Distillation fraction recovered is missing or invalid

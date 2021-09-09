@@ -7,7 +7,7 @@ Validation of data in:
 
 ``/builds/gnome/oil_database/noaa-oil-data/data/oil``
 
-**Generated:** Sep 09, 2021 -- 0500
+**Generated:** Sep 09, 2021 -- 2000
 
 
 
@@ -31,7 +31,7 @@ E030: (4 records affected)
     E030: Oils must have an API
 
 
-E040: (5 records affected)
+E040: (4 records affected)
 ==========================
 
 ``AD01669`` -- HIBERNIA (EPA 86):
@@ -49,10 +49,6 @@ E040: (5 records affected)
 ``AD01669`` -- HIBERNIA (EPA 86):
 
     E040: Value for distillation vapor temp: -188.00 C is out of range: unit error?
-
-``AD02130`` -- FOROOZAN (1999):
-
-    E040: Value for KinematicViscosityList: -253.00 C is out of range: unit error?
 
 
 E041: (2 records affected)
