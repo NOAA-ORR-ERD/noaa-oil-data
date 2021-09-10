@@ -7,7 +7,11 @@ Validation of data in:
 
 ``/builds/gnome/oil_database/noaa-oil-data/data/oil``
 
+<<<<<<< HEAD
 **Generated:** Sep 09, 2021 -- 2100
+=======
+**Generated:** Sep 09, 2021 -- 2000
+>>>>>>> 80ebc79350713952560e5266c41787336c8bec56
 
 
 ``AD00005``: ABSORPTION OIL
