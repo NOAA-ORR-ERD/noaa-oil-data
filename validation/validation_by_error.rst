@@ -7,16 +7,12 @@ Validation of data in:
 
 ``/builds/gnome/oil_database/noaa-oil-data/data/oil``
 
-**Generated:** Sep 10, 2021 -- 0900
+**Generated:** Sep 16, 2021 -- 0900
 
 
 
-E030: (4 records affected)
+E030: (3 records affected)
 ==========================
-
-``EC00647`` -- Mississippi Canyon Block 807 [2002]:
-
-    E030: Oils must have an API
 
 ``EC01655`` -- Deep Water Horizon Riser:
 
@@ -593,46 +589,6 @@ W002: (16 records affected)
 ``AD02439`` -- STAR 12, EQUILON:
 
     W002: Record has no product type
-
-
-W004: (9 records affected)
-==========================
-
-``AD00005`` -- ABSORPTION OIL:
-
-    W004: No api value provided
-
-``AD00249`` -- CLARIFIED OIL:
-
-    W004: No api value provided
-
-``AD00796`` -- NAPHTHA (COAL TAR):
-
-    W004: No api value provided
-
-``AD00800`` -- NAPHTHA (SOLVENT):
-
-    W004: No api value provided
-
-``AD00801`` -- NAPHTHA (STODDARD SOLVENT):
-
-    W004: No api value provided
-
-``AD00802`` -- NAPHTHA (VARNISH MAKERS & PAINTERS):
-
-    W004: No api value provided
-
-``AD00950`` -- ROAD OIL:
-
-    W004: No api value provided
-
-``AD02313`` -- ROAD OIL:
-
-    W004: No api value provided
-
-``AD02404`` -- CANOLA OIL:
-
-    W004: No api value provided
 
 
 W005: (1 records affected)
