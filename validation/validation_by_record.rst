@@ -7,11 +7,8 @@ Validation of data in:
 
 ``/builds/gnome/oil_database/noaa-oil-data/data/oil``
 
-**Generated:** Sep 09, 2021 -- 2100
+**Generated:** Sep 23, 2021 -- 2200
 
-
-``AD00005``: ABSORPTION OIL
- |    W004: No api value provided
 
 ``AD00010``: ABU SAFAH, ARAMCO
  |    W009: Distillation fraction recovered is missing or invalid
@@ -220,9 +217,6 @@ Validation of data in:
 
 ``AD00236``: CAT CRACKING FEED
  |    W009: Distillation fraction recovered is missing or invalid
-
-``AD00249``: CLARIFIED OIL
- |    W004: No api value provided
 
 ``AD00257``: COHASSET
  |    W009: Distillation fraction recovered is missing or invalid
@@ -561,18 +555,6 @@ Validation of data in:
 ``AD00794``: NAPHTHA, EXXON
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD00796``: NAPHTHA (COAL TAR)
- |    W004: No api value provided
-
-``AD00800``: NAPHTHA (SOLVENT)
- |    W004: No api value provided
-
-``AD00801``: NAPHTHA (STODDARD SOLVENT)
- |    W004: No api value provided
-
-``AD00802``: NAPHTHA (VARNISH MAKERS & PAINTERS)
- |    W004: No api value provided
-
 ``AD00803``: NAPHTHA CRACKING FRACTION, EXXON
  |    W009: Distillation fraction recovered is missing or invalid
 
@@ -664,9 +646,6 @@ Validation of data in:
 
 ``AD00944``: RESIDUAL FUEL 900, TESORO
  |    W009: Distillation fraction recovered is missing or invalid
-
-``AD00950``: ROAD OIL
- |    W004: No api value provided
 
 ``AD00956``: SABLE ISLAND CONDENSATE
  |    W009: Distillation fraction recovered is missing or invalid
@@ -1893,9 +1872,6 @@ Validation of data in:
 ``AD02311``: RANGELY (1999)
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD02313``: ROAD OIL
- |    W004: No api value provided
-
 ``AD02315``: SABLE ISLAND CONDENSATE (1999)
  |    W009: Distillation fraction recovered is missing or invalid
 
@@ -2029,9 +2005,6 @@ Validation of data in:
  |    E041: Value for distillation fraction: 2.05 must be between 0 and 1
  |    E041: Value for distillation fraction: 3.0 must be between 0 and 1
  |    W009: Distillation fraction recovered is missing or invalid
-
-``AD02404``: CANOLA OIL
- |    W004: No api value provided
 
 ``AD02405``: ARAB EXTRA LIGHT, AMSA
  |    W009: Distillation fraction recovered is missing or invalid
