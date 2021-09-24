@@ -7,7 +7,7 @@ Validation of data in:
 
 ``/builds/gnome/oil_database/noaa-oil-data/data/oil``
 
-**Generated:** Sep 22, 2021 -- 0900
+**Generated:** Sep 23, 2021 -- 2200
 
 
 ``AD00010``: ABU SAFAH, ARAMCO
@@ -2208,6 +2208,7 @@ Validation of data in:
  |    E044: Value: Too Viscous for tension is not valid
 
 ``EC00647``: Mississippi Canyon Block 807 [2002]
+ |    E030: Oils must have an API
  |    E044: Value: Too Viscous for tension is not valid
  |    W006: No density values provided
 
