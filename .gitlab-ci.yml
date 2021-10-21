@@ -34,7 +34,6 @@ test:
           BRANCH="develop"
         fi
 
-
   script:
     - echo "running the scripts"
     - pwd
@@ -55,6 +54,8 @@ test:
     # The status list inside the records -- and saved in artifacts to be updated in git
     #    at the next stage
     - adios_db_process_json ./data/oil/ save
+    # so we can see what's changed:
+    - git status
     - adios_db_validate ./data/oil save
     - rst2html.py validation_by_record.rst > validation_by_record.html
     - rst2html.py validation_by_error.rst > validation_by_error.html
