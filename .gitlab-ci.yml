@@ -79,6 +79,8 @@ update_validation_report:
     - git remote set-url origin ssh://git@gitlab.orr.noaa.gov:9933/${CI_PROJECT_PATH}.git
     - git stash
     - git checkout ${CI_COMMIT_BRANCH}
+    - git log | head -n 10
+    - git log origin/production | head -n 10
 #    - git pull --allow-unrelated-histories
     - git pull
     - git stash list
