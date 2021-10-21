@@ -85,6 +85,8 @@ update_validation_report:
     - git push
     - eval $(ssh-agent -k)
 
+  except:
+    - server_working_copy
   only:
     changes:
       - .gitlab-ci.yml
