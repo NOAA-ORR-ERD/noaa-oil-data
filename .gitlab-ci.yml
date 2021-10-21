@@ -76,6 +76,7 @@ update_validation_report:
     - git stash
     - git checkout ${CI_COMMIT_BRANCH}
     - git pull --allow-unrelated-histories
+    - git stash list
     - |-
         if [[ `git stash list` ]];then
           git stash pop
