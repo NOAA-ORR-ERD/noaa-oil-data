@@ -70,7 +70,7 @@ update_validation_report:
     - shell
     - linux
   script:
-    - echo "CI_PROJECT_PATH is: "
+    - echo "CI_PROJECT_PATH is"
     - echo $CI_PROJECT_PATH
     - eval $(ssh-agent -s)
     - echo "$SSH_PRIVATE_KEY_CI_WIKI" | tr -d '\r' | ssh-add - > /dev/null
