@@ -34,13 +34,11 @@ test:
           BRANCH="develop"
         fi
 
+
   script:
     - echo "running the scripts"
-    - git status
     - pwd
     - echo "cloning ${BRANCH}"
-#    - git clone https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.orr.noaa.gov/gnome/oil_database/oildb-deploy.gi
-#   note: this should be master, once things settle down.
     - git clone --depth 1 -b ${BRANCH} https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.orr.noaa.gov/gnome/oil_database/oil_database.git
     - pwd
     - ls
@@ -51,12 +49,8 @@ test:
     - cd adios_db
     - pip install -e ./
     - cd ../../
-    # this will normalize records and update status
-    # The status list inside the records -- and saved in artifacts to be updated in git
-    #    at the next stage
+    # we are saving the status list inside the records.
     - adios_db_process_json ./data/oil/ save
-    # so we can see what's changed:
-    - git status
     - adios_db_validate ./data/oil save
     - rst2html.py validation_by_record.rst > validation_by_record.html
     - rst2html.py validation_by_error.rst > validation_by_error.html
@@ -71,29 +65,16 @@ update_validation_report:
     - shell
     - linux
   script:
-    - echo "CI_PROJECT_PATH is"
-    - echo $CI_PROJECT_PATH
     - eval $(ssh-agent -s)
     - echo "$SSH_PRIVATE_KEY_CI_WIKI" | tr -d '\r' | ssh-add - > /dev/null
-    - git status
-    - git log | head -n 10
-    - git remote -v
     - git remote set-url origin ssh://git@gitlab.orr.noaa.gov:9933/${CI_PROJECT_PATH}.git
-    - git remote -v
-    - git stash clear
     - git stash
     - git checkout ${CI_COMMIT_BRANCH}
-    - git log | head -n 10
-    - git log origin/production | head -n 10
-#    - git pull --allow-unrelated-histories
     - git pull
-    - git stash list
     - |-
         if [[ `git stash list` ]];then
           git stash pop
         fi
-#    - mkdir -p validation/${CI_COMMIT_BRANCH}/
-#    - mv validation_by_* ./validation/${CI_COMMIT_BRANCH}/
     - mv validation_by_* ./validation/
     - git add -A
     - git diff-index --quiet HEAD || git commit -m 'updating validation reports'
@@ -102,6 +83,7 @@ update_validation_report:
 
   except:
     - server_working_copy
+
   only:
     changes:
       - .gitlab-ci.yml
