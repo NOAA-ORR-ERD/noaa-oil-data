@@ -5,7 +5,8 @@
 # This is intended to be run from inside the oil database
 # web_api Docker container.
 #
-
+#
+#
 echo "Current directory:" $(pwd)
 
 oil_db_backup --config /config/config_oil_db.ini 

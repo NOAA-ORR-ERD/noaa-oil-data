@@ -36,6 +36,7 @@ test:
 
   script:
     - echo "running the scripts"
+    - git status
     - pwd
     - echo "cloning ${BRANCH}"
 #    - git clone https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.orr.noaa.gov/gnome/oil_database/oildb-deploy.gi
@@ -79,6 +80,7 @@ update_validation_report:
     # - git remote -v
     # - git remote set-url origin ssh://git@gitlab.orr.noaa.gov:9933/${CI_PROJECT_PATH}.git
     - git remote -v
+    - git stash clear
     - git stash
     - git checkout ${CI_COMMIT_BRANCH}
     - git log | head -n 10
