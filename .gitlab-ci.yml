@@ -24,15 +24,14 @@ test:
 
   before_script:
     - echo "ip_resolve=4" >> /etc/yum.conf
-    # - yum update -y
-    # - conda install -y python=3.9
-    # - conda update -y conda
-    - |-
-        if [[ $CI_COMMIT_BRANCH = "production" ]]; then
-          BRANCH="production"
-        else
-          BRANCH="develop"
-        fi
+    # - |-
+    #     if [[ $CI_COMMIT_BRANCH = "production" ]]; then
+    #       BRANCH="production"
+    #     else
+    #       BRANCH="develop"
+    #     fi
+    # It was too confusing to have different adios_db code used for different branches
+    BRANCH="production"
 
 
   script:
