@@ -76,8 +76,8 @@ update_validation_report:
     - echo "$SSH_PRIVATE_KEY_CI_WIKI" | tr -d '\r' | ssh-add - > /dev/null
     - git status
     - git log | head -n 10
-    - git remote -v
-    - git remote set-url origin ssh://git@gitlab.orr.noaa.gov:9933/${CI_PROJECT_PATH}.git
+    # - git remote -v
+    # - git remote set-url origin ssh://git@gitlab.orr.noaa.gov:9933/${CI_PROJECT_PATH}.git
     - git remote -v
     - git stash
     - git checkout ${CI_COMMIT_BRANCH}
