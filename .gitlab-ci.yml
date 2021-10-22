@@ -24,23 +24,20 @@ test:
 
   before_script:
     - echo "ip_resolve=4" >> /etc/yum.conf
-    # - yum update -y
-    # - conda install -y python=3.9
-    # - conda update -y conda
-    - |-
-        if [[ $CI_COMMIT_BRANCH = "production" ]]; then
-          BRANCH="production"
-        else
-          BRANCH="develop"
-        fi
+    # - |-
+    #     if [[ $CI_COMMIT_BRANCH = "production" ]]; then
+    #       BRANCH="production"
+    #     else
+    #       BRANCH="develop"
+    #     fi
+    # It was too confusing to have different adios_db code used for different branches
+    - BRANCH="production"
 
 
   script:
     - echo "running the scripts"
     - pwd
     - echo "cloning ${BRANCH}"
-#    - git clone https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.orr.noaa.gov/gnome/oil_database/oildb-deploy.gi
-#   note: this should be master, once things settle down.
     - git clone --depth 1 -b ${BRANCH} https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.orr.noaa.gov/gnome/oil_database/oil_database.git
     - pwd
     - ls
@@ -51,9 +48,8 @@ test:
     - cd adios_db
     - pip install -e ./
     - cd ../../
-    - adios_db_process_json ./data/oil/ save
     # we are saving the status list inside the records.
-    - git status
+    - adios_db_process_json ./data/oil/ save
     - adios_db_validate ./data/oil save
     - rst2html.py validation_by_record.rst > validation_by_record.html
     - rst2html.py validation_by_error.rst > validation_by_error.html
@@ -78,13 +74,14 @@ update_validation_report:
         if [[ `git stash list` ]];then
           git stash pop
         fi
-#    - mkdir -p validation/${CI_COMMIT_BRANCH}/
-#    - mv validation_by_* ./validation/${CI_COMMIT_BRANCH}/
     - mv validation_by_* ./validation/
     - git add -A
     - git diff-index --quiet HEAD || git commit -m 'updating validation reports'
     - git push
     - eval $(ssh-agent -k)
+
+  except:
+    - server_working_copy
 
   only:
     changes:
