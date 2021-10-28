@@ -7,7 +7,7 @@ Validation of data in:
 
 ``/builds/gnome/oil_database/noaa-oil-data/data/oil``
 
-**Generated:** Oct 22, 2021 -- 2200
+**Generated:** Oct 28, 2021 -- 1600
 
 
 ``AD00010``: ABU SAFAH, ARAMCO
@@ -15,10 +15,6 @@ Validation of data in:
 
 ``AD00017``: ADGO
  |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
-
-``AD00020``: ALASKA NORTH SLOPE
- |    E044: Value: 0.0 for tension is not valid
- |    W000: Warning: Dynamic and Kinematic Viscosity may be out of sync
 
 ``AD00024``: ALBERTA (1992)
  |    W009: Distillation fraction recovered is missing or invalid
@@ -43,7 +39,7 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00042``: ARABIAN HEAVY
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
+ |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00044``: ARABIAN HEAVY, CITGO
  |    W009: Distillation fraction recovered is missing or invalid
@@ -61,8 +57,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00051``: ARABIAN LIGHT
- |    E044: Value: 0.0 for viscosity is not valid
- |    E050: Duplicate Temperatures in DynamicViscosityList
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00053``: ARABIAN LIGHT, CITGO
@@ -317,9 +311,6 @@ Validation of data in:
 
 ``AD00393``: FORTIES
  |    W009: Distillation fraction recovered is missing or invalid
-
-``AD00397``: FOSTERTON
- |    E050: Duplicate Temperatures in KinematicViscosityList
 
 ``AD00403``: FUEL OIL NO.1 (AVJET A), STAR ENTERPRISE
  |    W009: Distillation fraction recovered is missing or invalid
@@ -736,9 +727,6 @@ Validation of data in:
 ``AD01084``: THEVENARD ISLAND
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD01093``: TIA JUANA LIGHT
- |    E050: Duplicate Temperatures in KinematicViscosityList
-
 ``AD01094``: TIA JUANA LIGHT, CITGO
  |    W009: Distillation fraction recovered is missing or invalid
 
@@ -1150,7 +1138,6 @@ Validation of data in:
  |    E040: Value for distillation vapor temp: -134.00 C is out of range: unit error?
  |    E040: Value for distillation vapor temp: -158.00 C is out of range: unit error?
  |    E040: Value for distillation vapor temp: -188.00 C is out of range: unit error?
- |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01670``: HIGH VISCOSITY FUEL OIL
@@ -1246,7 +1233,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01759``: ALASKA NORTH SLOPE (MIDDLE PIPELINE, 1997)
- |    E044: Value: 0.0 for tension is not valid
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01760``: ALASKA NORTH SLOPE (NORTHERN PIPELINE, 1997)
@@ -1465,14 +1451,12 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01994``: ALBERTA SWEET MIXED BLEND (REFERENCE #2, 1999)
- |    E044: Value: 0.0 for tension is not valid
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01995``: ALBERTA SWEET MIXED BLEND (REFERENCE #3, 1999)
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01996``: ALBERTA SWEET MIXED BLEND (REFERENCE #4, 1999)
- |    E044: Value: 0.0 for tension is not valid
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01998``: AMAULIGAK (1999)
@@ -1540,10 +1524,6 @@ Validation of data in:
 ``AD02061``: CARPINTERIA
  |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
-
-``AD02062``: CASTOR OIL
- |    E050: Duplicate Temperatures in DensityList
- |    E050: Duplicate Temperatures in DynamicViscosityList
 
 ``AD02063``: CATALYTIC CRACKING FEED
  |    W009: Distillation fraction recovered is missing or invalid
@@ -1731,8 +1711,7 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02201``: KOAKOAK
- |    E050: Duplicate Temperatures in DensityList
- |    E050: Duplicate Temperatures in DynamicViscosityList
+ |    E043: API, 28.1 does not match density at 60F. API should be: 27.9
 
 ``AD02203``: KOMINEFT (1999)
  |    W009: Distillation fraction recovered is missing or invalid
@@ -1918,9 +1897,6 @@ Validation of data in:
 
 ``AD02347``: SOUTH TIMBALIER BLOCK 130
  |    W009: Distillation fraction recovered is missing or invalid
-
-``AD02348``: SOYBEAN OIL
- |    E050: Duplicate Temperatures in DynamicViscosityList
 
 ``AD02350``: SPRAY OIL
  |    W002: Record has no product type
@@ -2208,7 +2184,6 @@ Validation of data in:
  |    E044: Value: Too Viscous for tension is not valid
 
 ``EC00647``: Mississippi Canyon Block 807 [2002]
- |    E030: Oils must have an API
  |    E044: Value: Too Viscous for tension is not valid
  |    W006: No density values provided
 
@@ -2324,6 +2299,10 @@ Validation of data in:
 
 ``EC03288``: Husky Energy SGS
  |    E044: Value: Too Viscous for tension is not valid
+
+``EC04002``: Alberta Sweet Mixed Blend #6
+ |    E032: Distillation type is "None", it must be one of: ['mass fraction', 'volume fraction']
+ |    W009: Distillation fraction recovered is missing or invalid
 
 ``EC14852``: Biodiesel Tallow B100
  |    E030: Oils must have an API

@@ -7,16 +7,12 @@ Validation of data in:
 
 ``/builds/gnome/oil_database/noaa-oil-data/data/oil``
 
-**Generated:** Oct 22, 2021 -- 2200
+**Generated:** Oct 28, 2021 -- 1600
 
 
 
-E030: (4 records affected)
+E030: (3 records affected)
 ==========================
-
-``EC00647`` -- Mississippi Canyon Block 807 [2002]:
-
-    E030: Oils must have an API
 
 ``EC01655`` -- Deep Water Horizon Riser:
 
@@ -29,6 +25,14 @@ E030: (4 records affected)
 ``EC14852`` -- Biodiesel Tallow B100:
 
     E030: Oils must have an API
+
+
+E032: (1 records affected)
+==========================
+
+``EC04002`` -- Alberta Sweet Mixed Blend #6:
+
+    E032: Distillation type is "None", it must be one of: ['mass fraction', 'volume fraction']
 
 
 E040: (4 records affected)
@@ -71,28 +75,16 @@ E042: (1 records affected)
     E042: Must have a value for InterfacialTensionList reference temp
 
 
-E044: (49 records affected)
+E043: (1 records affected)
+==========================
+
+``AD02201`` -- KOAKOAK:
+
+    E043: API, 28.1 does not match density at 60F. API should be: 27.9
+
+
+E044: (44 records affected)
 ===========================
-
-``AD00020`` -- ALASKA NORTH SLOPE:
-
-    E044: Value: 0.0 for tension is not valid
-
-``AD00051`` -- ARABIAN LIGHT:
-
-    E044: Value: 0.0 for viscosity is not valid
-
-``AD01759`` -- ALASKA NORTH SLOPE (MIDDLE PIPELINE, 1997):
-
-    E044: Value: 0.0 for tension is not valid
-
-``AD01994`` -- ALBERTA SWEET MIXED BLEND (REFERENCE #2, 1999):
-
-    E044: Value: 0.0 for tension is not valid
-
-``AD01996`` -- ALBERTA SWEET MIXED BLEND (REFERENCE #4, 1999):
-
-    E044: Value: 0.0 for tension is not valid
 
 ``EC00506`` -- Alaminos Canyon Block 25:
 
@@ -271,54 +263,10 @@ E044: (49 records affected)
     E044: Value: NM for density is not valid
 
 
-E050: (8 records affected)
-==========================
-
-``AD00051`` -- ARABIAN LIGHT:
-
-    E050: Duplicate Temperatures in DynamicViscosityList
-
-``AD00397`` -- FOSTERTON:
-
-    E050: Duplicate Temperatures in KinematicViscosityList
-
-``AD01093`` -- TIA JUANA LIGHT:
-
-    E050: Duplicate Temperatures in KinematicViscosityList
-
-``AD02062`` -- CASTOR OIL:
-
-    E050: Duplicate Temperatures in DensityList
-
-``AD02062`` -- CASTOR OIL:
-
-    E050: Duplicate Temperatures in DynamicViscosityList
-
-``AD02201`` -- KOAKOAK:
-
-    E050: Duplicate Temperatures in DensityList
-
-``AD02201`` -- KOAKOAK:
-
-    E050: Duplicate Temperatures in DynamicViscosityList
-
-``AD02348`` -- SOYBEAN OIL:
-
-    E050: Duplicate Temperatures in DynamicViscosityList
-
-
-W000: (54 records affected)
+W000: (51 records affected)
 ===========================
 
 ``AD00017`` -- ADGO:
-
-    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
-
-``AD00020`` -- ALASKA NORTH SLOPE:
-
-    W000: Warning: Dynamic and Kinematic Viscosity may be out of sync
-
-``AD00042`` -- ARABIAN HEAVY:
 
     W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
@@ -367,10 +315,6 @@ W000: (54 records affected)
     W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
 ``AD01665`` -- GREEN CANYON BLOCK 109:
-
-    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
-
-``AD01669`` -- HIBERNIA (EPA 86):
 
     W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
 
@@ -619,7 +563,7 @@ W006: (3 records affected)
     W006: No density values provided
 
 
-W009: (784 records affected)
+W009: (786 records affected)
 ============================
 
 ``AD00010`` -- ABU SAFAH, ARAMCO:
@@ -651,6 +595,10 @@ W009: (784 records affected)
     W009: Distillation fraction recovered is missing or invalid
 
 ``AD00041`` -- ARABIAN EXTRA LIGHT, ARAMCO:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``AD00042`` -- ARABIAN HEAVY:
 
     W009: Distillation fraction recovered is missing or invalid
 
@@ -3343,6 +3291,10 @@ W009: (784 records affected)
     W009: Distillation fraction recovered is missing or invalid
 
 ``AD02578`` -- POINT ARGUELLO HEAVY:
+
+    W009: Distillation fraction recovered is missing or invalid
+
+``EC04002`` -- Alberta Sweet Mixed Blend #6:
 
     W009: Distillation fraction recovered is missing or invalid
 

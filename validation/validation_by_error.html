@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<meta name="generator" content="Docutils 0.16: http://docutils.sourceforge.net/" />
 <title>validation_by_error.rst</title>
 <style type="text/css">
 
@@ -367,12 +367,9 @@ ul.auto-toc {
 <h1>ADIOS Oil Database Validation Report</h1>
 <p>Validation of data in:</p>
 <p><tt class="docutils literal"><span class="pre">/builds/gnome/oil_database/noaa-oil-data/data/oil</span></tt></p>
-<p><strong>Generated:</strong> Oct 22, 2021 -- 2200</p>
-<div class="section" id="e030-4-records-affected">
-<h2>E030: (4 records affected)</h2>
-<p><tt class="docutils literal">EC00647</tt> -- Mississippi Canyon Block 807 [2002]:</p>
-<blockquote>
-E030: Oils must have an API</blockquote>
+<p><strong>Generated:</strong> Oct 28, 2021 -- 1600</p>
+<div class="section" id="e030-3-records-affected">
+<h2>E030: (3 records affected)</h2>
 <p><tt class="docutils literal">EC01655</tt> -- Deep Water Horizon Riser:</p>
 <blockquote>
 E030: Oils must have an API</blockquote>
@@ -382,6 +379,12 @@ E030: Oils must have an API</blockquote>
 <p><tt class="docutils literal">EC14852</tt> -- Biodiesel Tallow B100:</p>
 <blockquote>
 E030: Oils must have an API</blockquote>
+</div>
+<div class="section" id="e032-1-records-affected">
+<h2>E032: (1 records affected)</h2>
+<p><tt class="docutils literal">EC04002</tt> -- Alberta Sweet Mixed Blend #6:</p>
+<blockquote>
+E032: Distillation type is &quot;None&quot;, it must be one of: ['mass fraction', 'volume fraction']</blockquote>
 </div>
 <div class="section" id="e040-4-records-affected">
 <h2>E040: (4 records affected)</h2>
@@ -413,23 +416,14 @@ E041: Value for distillation fraction: 3.0 must be between 0 and 1</blockquote>
 <blockquote>
 E042: Must have a value for InterfacialTensionList reference temp</blockquote>
 </div>
-<div class="section" id="e044-49-records-affected">
-<h2>E044: (49 records affected)</h2>
-<p><tt class="docutils literal">AD00020</tt> -- ALASKA NORTH SLOPE:</p>
+<div class="section" id="e043-1-records-affected">
+<h2>E043: (1 records affected)</h2>
+<p><tt class="docutils literal">AD02201</tt> -- KOAKOAK:</p>
 <blockquote>
-E044: Value: 0.0 for tension is not valid</blockquote>
-<p><tt class="docutils literal">AD00051</tt> -- ARABIAN LIGHT:</p>
-<blockquote>
-E044: Value: 0.0 for viscosity is not valid</blockquote>
-<p><tt class="docutils literal">AD01759</tt> -- ALASKA NORTH SLOPE (MIDDLE PIPELINE, 1997):</p>
-<blockquote>
-E044: Value: 0.0 for tension is not valid</blockquote>
-<p><tt class="docutils literal">AD01994</tt> -- ALBERTA SWEET MIXED BLEND (REFERENCE #2, 1999):</p>
-<blockquote>
-E044: Value: 0.0 for tension is not valid</blockquote>
-<p><tt class="docutils literal">AD01996</tt> -- ALBERTA SWEET MIXED BLEND (REFERENCE #4, 1999):</p>
-<blockquote>
-E044: Value: 0.0 for tension is not valid</blockquote>
+E043: API, 28.1 does not match density at 60F. API should be: 27.9</blockquote>
+</div>
+<div class="section" id="e044-44-records-affected">
+<h2>E044: (44 records affected)</h2>
 <p><tt class="docutils literal">EC00506</tt> -- Alaminos Canyon Block 25:</p>
 <blockquote>
 E044: Value: Too Viscous for tension is not valid</blockquote>
@@ -563,42 +557,9 @@ E044: Value: Too Viscous for tension is not valid</blockquote>
 <blockquote>
 E044: Value: NM for density is not valid</blockquote>
 </div>
-<div class="section" id="e050-8-records-affected">
-<h2>E050: (8 records affected)</h2>
-<p><tt class="docutils literal">AD00051</tt> -- ARABIAN LIGHT:</p>
-<blockquote>
-E050: Duplicate Temperatures in DynamicViscosityList</blockquote>
-<p><tt class="docutils literal">AD00397</tt> -- FOSTERTON:</p>
-<blockquote>
-E050: Duplicate Temperatures in KinematicViscosityList</blockquote>
-<p><tt class="docutils literal">AD01093</tt> -- TIA JUANA LIGHT:</p>
-<blockquote>
-E050: Duplicate Temperatures in KinematicViscosityList</blockquote>
-<p><tt class="docutils literal">AD02062</tt> -- CASTOR OIL:</p>
-<blockquote>
-E050: Duplicate Temperatures in DensityList</blockquote>
-<p><tt class="docutils literal">AD02062</tt> -- CASTOR OIL:</p>
-<blockquote>
-E050: Duplicate Temperatures in DynamicViscosityList</blockquote>
-<p><tt class="docutils literal">AD02201</tt> -- KOAKOAK:</p>
-<blockquote>
-E050: Duplicate Temperatures in DensityList</blockquote>
-<p><tt class="docutils literal">AD02201</tt> -- KOAKOAK:</p>
-<blockquote>
-E050: Duplicate Temperatures in DynamicViscosityList</blockquote>
-<p><tt class="docutils literal">AD02348</tt> -- SOYBEAN OIL:</p>
-<blockquote>
-E050: Duplicate Temperatures in DynamicViscosityList</blockquote>
-</div>
-<div class="section" id="w000-54-records-affected">
-<h2>W000: (54 records affected)</h2>
+<div class="section" id="w000-51-records-affected">
+<h2>W000: (51 records affected)</h2>
 <p><tt class="docutils literal">AD00017</tt> -- ADGO:</p>
-<blockquote>
-W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct</blockquote>
-<p><tt class="docutils literal">AD00020</tt> -- ALASKA NORTH SLOPE:</p>
-<blockquote>
-W000: Warning: Dynamic and Kinematic Viscosity may be out of sync</blockquote>
-<p><tt class="docutils literal">AD00042</tt> -- ARABIAN HEAVY:</p>
 <blockquote>
 W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct</blockquote>
 <p><tt class="docutils literal">AD00059</tt> -- ARABIAN MEDIUM:</p>
@@ -635,9 +596,6 @@ W000: Warning: ADIOS2 data had a value for water content, but min and max emulsi
 <blockquote>
 W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct</blockquote>
 <p><tt class="docutils literal">AD01665</tt> -- GREEN CANYON BLOCK 109:</p>
-<blockquote>
-W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct</blockquote>
-<p><tt class="docutils literal">AD01669</tt> -- HIBERNIA (EPA 86):</p>
 <blockquote>
 W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct</blockquote>
 <p><tt class="docutils literal">AD01683</tt> -- KOMINEFT:</p>
@@ -824,8 +782,8 @@ W006: No density values provided</blockquote>
 <blockquote>
 W006: No density values provided</blockquote>
 </div>
-<div class="section" id="w009-784-records-affected">
-<h2>W009: (784 records affected)</h2>
+<div class="section" id="w009-786-records-affected">
+<h2>W009: (786 records affected)</h2>
 <p><tt class="docutils literal">AD00010</tt> -- ABU SAFAH, ARAMCO:</p>
 <blockquote>
 W009: Distillation fraction recovered is missing or invalid</blockquote>
@@ -848,6 +806,9 @@ W009: Distillation fraction recovered is missing or invalid</blockquote>
 <blockquote>
 W009: Distillation fraction recovered is missing or invalid</blockquote>
 <p><tt class="docutils literal">AD00041</tt> -- ARABIAN EXTRA LIGHT, ARAMCO:</p>
+<blockquote>
+W009: Distillation fraction recovered is missing or invalid</blockquote>
+<p><tt class="docutils literal">AD00042</tt> -- ARABIAN HEAVY:</p>
 <blockquote>
 W009: Distillation fraction recovered is missing or invalid</blockquote>
 <p><tt class="docutils literal">AD00044</tt> -- ARABIAN HEAVY, CITGO:</p>
@@ -2867,6 +2828,9 @@ W009: Distillation fraction recovered is missing or invalid</blockquote>
 <blockquote>
 W009: Distillation fraction recovered is missing or invalid</blockquote>
 <p><tt class="docutils literal">AD02578</tt> -- POINT ARGUELLO HEAVY:</p>
+<blockquote>
+W009: Distillation fraction recovered is missing or invalid</blockquote>
+<p><tt class="docutils literal">EC04002</tt> -- Alberta Sweet Mixed Blend #6:</p>
 <blockquote>
 W009: Distillation fraction recovered is missing or invalid</blockquote>
 <p><tt class="docutils literal">EX00058</tt> -- Liza:</p>
