@@ -17,7 +17,7 @@
             "Crude Oil"
         ],
         "model_completeness": 20,
-        "gnome_suitable": false
+        "gnome_suitable": true
     },
     "sub_samples": [
         {
@@ -50,36 +50,12 @@
                             "unit": "C",
                             "unit_type": "temperature"
                         }
-                    },
-                    {
-                        "density": {
-                            "value": 879.0,
-                            "unit": "kg/m^3",
-                            "unit_type": "density"
-                        },
-                        "ref_temp": {
-                            "value": 16.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
                     }
                 ],
                 "dynamic_viscosities": [
                     {
                         "viscosity": {
                             "value": 0.022,
-                            "unit": "kg/(m s)",
-                            "unit_type": "dynamicviscosity"
-                        },
-                        "ref_temp": {
-                            "value": 20.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
-                    },
-                    {
-                        "viscosity": {
-                            "value": 0.01,
                             "unit": "kg/(m s)",
                             "unit_type": "dynamicviscosity"
                         },
@@ -103,31 +79,7 @@
                     },
                     {
                         "viscosity": {
-                            "value": 0.006,
-                            "unit": "kg/(m s)",
-                            "unit_type": "dynamicviscosity"
-                        },
-                        "ref_temp": {
-                            "value": 30.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
-                    },
-                    {
-                        "viscosity": {
                             "value": 0.009,
-                            "unit": "kg/(m s)",
-                            "unit_type": "dynamicviscosity"
-                        },
-                        "ref_temp": {
-                            "value": 40.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
-                    },
-                    {
-                        "viscosity": {
-                            "value": 0.004,
                             "unit": "kg/(m s)",
                             "unit_type": "dynamicviscosity"
                         },
@@ -145,8 +97,7 @@
         }
     ],
     "status": [
-        "E050: Duplicate Temperatures in DensityList",
-        "E050: Duplicate Temperatures in DynamicViscosityList"
+        "E043: API, 28.1 does not match density at 60F. API should be: 27.9"
     ],
     "review_status": {
         "status": "Not Reviewed"

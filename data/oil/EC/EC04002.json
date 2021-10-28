@@ -16,7 +16,7 @@
         "labels": [
             "Crude Oil"
         ],
-        "model_completeness": 10,
+        "model_completeness": 26,
         "gnome_suitable": false
     },
     "sub_samples": [
@@ -101,6 +101,46 @@
                     "replicates": 3,
                     "unit_type": "massfraction"
                 }
+            },
+            "distillation_data": {
+                "cuts": [
+                    {
+                        "fraction": {
+                            "value": 2,
+                            "unit": "%",
+                            "unit_type": "massfraction"
+                        },
+                        "vapor_temp": {
+                            "value": 55.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 20,
+                            "unit": "%",
+                            "unit_type": "massfraction"
+                        },
+                        "vapor_temp": {
+                            "value": 100.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 55,
+                            "unit": "%",
+                            "unit_type": "massfraction"
+                        },
+                        "vapor_temp": {
+                            "value": 200.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
             },
             "compounds": [
                 {
@@ -1401,6 +1441,10 @@
                 "method": "ESTS 5.03/x.x/M"
             }
         }
+    ],
+    "status": [
+        "E032: Distillation type is \"None\", it must be one of: ['mass fraction', 'volume fraction']",
+        "W009: Distillation fraction recovered is missing or invalid"
     ],
     "review_status": {
         "status": "Not Reviewed"
