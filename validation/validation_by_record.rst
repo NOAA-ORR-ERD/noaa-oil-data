@@ -230,7 +230,7 @@ Validation of data in:
  |    E044: Value: None for tension is not valid
 
 ``EC04002``: Alberta Sweet Mixed Blend #6
- |    E032: Distillation type is "None", it must be one of: ['volume fraction', 'mass fraction']
+ |    E032: Distillation type is "None", it must be one of: ['mass fraction', 'volume fraction']
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``EC14852``: Biodiesel Tallow B100
