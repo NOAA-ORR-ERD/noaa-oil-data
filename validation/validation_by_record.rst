@@ -7,8 +7,243 @@ Validation of data in:
 
 ``/builds/gnome/oil_database/noaa-oil-data/data/oil``
 
-**Generated:** Oct 28, 2021 -- 1600
+**Generated:** Oct 30, 2021 - 04:00
 
+
+``AD00031``: AMAULIGAK (1996)
+ |    W005: API value: 2256.95 seems unlikely
+ |    W009: Distillation fraction recovered is missing or invalid
+
+``AD00198``: BRIGHT STOCK 145, STAR ENTERPRISE
+ |    W002: Record has no product type
+ |    W009: Distillation fraction recovered is missing or invalid
+
+``AD00199``: BRIGHT STOCK 150, STAR ENTERPRISE
+ |    W002: Record has no product type
+ |    W009: Distillation fraction recovered is missing or invalid
+
+``AD00376``: FAO, CITGO
+ |    W002: Record has no product type
+ |    W009: Distillation fraction recovered is missing or invalid
+
+``AD00474``: GASOLINE: POLYMER
+ |    W002: Record has no product type
+
+``AD00769``: MINERAL SEAL OIL
+ |    W002: Record has no product type
+
+``AD00915``: PRIMER ASPHALT
+ |    W002: Record has no product type
+
+``AD01012``: SNO 200, STAR ENTERPRISE
+ |    W002: Record has no product type
+ |    W009: Distillation fraction recovered is missing or invalid
+
+``AD01036``: SPRAY OIL
+ |    W002: Record has no product type
+
+``AD01669``: HIBERNIA (EPA 86)
+ |    E040: Value for distillation vapor temp: -113.00 C is out of range: unit error?
+ |    E040: Value for distillation vapor temp: -134.00 C is out of range: unit error?
+ |    E040: Value for distillation vapor temp: -158.00 C is out of range: unit error?
+ |    E040: Value for distillation vapor temp: -188.00 C is out of range: unit error?
+ |    W009: Distillation fraction recovered is missing or invalid
+
+``AD01712``: PROPYLENE TETRAMER
+ |    W002: Record has no product type
+ |    W009: Distillation fraction recovered is missing or invalid
+
+``AD01775``: DESTIN DOME CIS, MMS
+ |    E042: Must have a value for InterfacialTensionList reference temp
+ |    W009: Distillation fraction recovered is missing or invalid
+
+``AD01799``: MINERAL TURPS, SHELL REFINING PTY 
+ |    W002: Record has no product type
+ |    W009: Distillation fraction recovered is missing or invalid
+
+``AD02185``: IPAR 3
+ |    W002: Record has no product type
+
+``AD02201``: KOAKOAK
+ |    E043: API, 28.1 does not match density at 60F. API should be: 27.9
+
+``AD02303``: PROPYLENE TETRAMER
+ |    W002: Record has no product type
+ |    W009: Distillation fraction recovered is missing or invalid
+
+``AD02350``: SPRAY OIL
+ |    W002: Record has no product type
+
+``AD02400``: FUEL OIL N0.1 (JP-8)
+ |    E041: Value for distillation fraction: 2.05 must be between 0 and 1
+ |    E041: Value for distillation fraction: 3.0 must be between 0 and 1
+ |    W009: Distillation fraction recovered is missing or invalid
+
+``AD02437``: STAR 4, EQUILON
+ |    W002: Record has no product type
+ |    W009: Distillation fraction recovered is missing or invalid
+
+``AD02438``: STAR 5, EQUILON
+ |    W002: Record has no product type
+ |    W009: Distillation fraction recovered is missing or invalid
+
+``AD02439``: STAR 12, EQUILON
+ |    W002: Record has no product type
+ |    W009: Distillation fraction recovered is missing or invalid
+
+``EC00506``: Alaminos Canyon Block 25
+ |    E044: Value: None for tension is not valid
+
+``EC00511``: Alberta Sweet Mixed Blend #4
+ |    E044: Value: None for tension is not valid
+
+``EC00540``: Bunker C - IFO-300 [1994]
+ |    E044: Value: None for tension is not valid
+
+``EC00586``: Fuel Oil # 5
+ |    E044: Value: None for tension is not valid
+
+``EC00601``: HFO 6303 [2002]
+ |    E044: Value: None for tension is not valid
+
+``EC00616``: Issungnak
+ |    E044: Value: None for tension is not valid
+
+``EC00643``: Maya [2004]
+ |    E044: Value: None for tension is not valid
+
+``EC00647``: Mississippi Canyon Block 807 [2002]
+ |    E044: Value: None for tension is not valid
+ |    W006: No density values provided
+
+``EC00648``: Morpeth Block EW921
+ |    E044: Value: None for tension is not valid
+
+``EC00654``: Norman Wells
+ |    E044: Value: None for tension is not valid
+
+``EC00679``: Prudhoe Bay [2004]
+ |    E044: Value: None for tension is not valid
+
+``EC00734``: West Delta Block 143
+ |    E044: Value: None for tension is not valid
+
+``EC01346``: Wabiska Heavy
+ |    E044: Value: None for tension is not valid
+
+``EC01464``: Platform Irene
+ |    E044: Value: None for tension is not valid
+
+``EC01465``: Platform Irene Comingled
+ |    E044: Value: None for tension is not valid
+
+``EC01466``: Gail Well E010
+ |    E044: Value: None for tension is not valid
+
+``EC01467``: Gail Well E019
+ |    E044: Value: None for tension is not valid
+
+``EC01482``: Platform Ellen A038
+ |    E044: Value: None for tension is not valid
+
+``EC01483``: Platform Ellen A040
+ |    E044: Value: None for tension is not valid
+
+``EC01499``: Heritage HE 05
+ |    E044: Value: None for tension is not valid
+
+``EC01500``: Heritage HE 26
+ |    E044: Value: None for tension is not valid
+
+``EC01655``: Deep Water Horizon Riser
+ |    E030: Oils must have an API
+ |    W006: No density values provided
+
+``EC01803``: IFO 380
+ |    E030: Oils must have an API
+ |    W006: No density values provided
+
+``EC01822``: Dos Cuadros HE-05 [2011]
+ |    E044: Value: None for tension is not valid
+
+``EC01950``: Alaska North Slope [2011]
+ |    E044: Value: None for tension is not valid
+
+``EC01951``: DOBA
+ |    E044: Value: None for tension is not valid
+
+``EC01952``: Endicott
+ |    E044: Value: None for tension is not valid
+
+``EC01953``: Harmony
+ |    E044: Value: None for tension is not valid
+
+``EC01954``: IFO 120
+ |    E044: Value: None for tension is not valid
+
+``EC01955``: IFO 180
+ |    E044: Value: None for tension is not valid
+
+``EC01956``: North Star
+ |    E044: Value: None for tension is not valid
+
+``EC01957``: Rock
+ |    E044: Value: None for tension is not valid
+
+``EC01958``: Terra Nova [2011]
+ |    E044: Value: None for tension is not valid
+
+``EC02152``: Alaska North Slope [2012]
+ |    E044: Value: None for tension is not valid
+
+``EC02234``: Access West Blend Winter
+ |    E044: Value: None for tension is not valid
+
+``EC02235``: Cold Lake Blend Winter [2013]
+ |    E044: Value: None for tension is not valid
+
+``EC02427``: Cold Lake Blend Summer [2014]
+ |    E044: Value: None for tension is not valid
+
+``EC02542``: Bunker C MV Manolis
+ |    E044: Value: None for tension is not valid
+
+``EC02664``: Synthetic Bitumen Blend
+ |    E044: Value: None for tension is not valid
+
+``EC02709``: Western Canadian Select
+ |    E044: Value: None for tension is not valid
+
+``EC02712``: Cold Lake Blend Winter [2015]
+ |    E044: Value: None for tension is not valid
+
+``EC02713``: Alaska North Slope [2015]
+ |    E044: Value: None for tension is not valid
+
+``EC02714``: Bunker C Zalinski
+ |    E044: Value: None for tension is not valid
+
+``EC03126``: Rail Bitumen
+ |    E044: Value: None for tension is not valid
+
+``EC03288``: Husky Energy SGS
+ |    E044: Value: None for tension is not valid
+
+``EC04002``: Alberta Sweet Mixed Blend #6
+ |    E032: Distillation type is "None", it must be one of: ['volume fraction', 'mass fraction']
+ |    W009: Distillation fraction recovered is missing or invalid
+
+``EC14852``: Biodiesel Tallow B100
+ |    E030: Oils must have an API
+ |    E044: Value: NM for density is not valid
+
+
+############
+Known Issues
+############
+
+The rest of these are records that have been reviewed, but still 
+have issues that are known and may never be resolved
 
 ``AD00010``: ABU SAFAH, ARAMCO
  |    W009: Distillation fraction recovered is missing or invalid
@@ -23,10 +258,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00028``: ALGERIAN CONDENSATE, CITGO
- |    W009: Distillation fraction recovered is missing or invalid
-
-``AD00031``: AMAULIGAK (1996)
- |    W005: API value: 2256.95 seems unlikely
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00038``: ARABIAN (1996)
@@ -183,14 +414,6 @@ Validation of data in:
 ``AD00197``: BRENT SPAR
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD00198``: BRIGHT STOCK 145, STAR ENTERPRISE
- |    W002: Record has no product type
- |    W009: Distillation fraction recovered is missing or invalid
-
-``AD00199``: BRIGHT STOCK 150, STAR ENTERPRISE
- |    W002: Record has no product type
- |    W009: Distillation fraction recovered is missing or invalid
-
 ``AD00208``: BUNKER C FUEL OIL
  |    W009: Distillation fraction recovered is missing or invalid
 
@@ -281,10 +504,6 @@ Validation of data in:
 ``AD00365``: ESCRAVOS, AMOCO
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD00376``: FAO, CITGO
- |    W002: Record has no product type
- |    W009: Distillation fraction recovered is missing or invalid
-
 ``AD00377``: FCC HEAVY CYCLE OIL
  |    W009: Distillation fraction recovered is missing or invalid
 
@@ -359,9 +578,6 @@ Validation of data in:
 
 ``AD00470``: GASOLINE BLENDING STOCK (REFORMATE), EXXON
  |    W009: Distillation fraction recovered is missing or invalid
-
-``AD00474``: GASOLINE: POLYMER
- |    W002: Record has no product type
 
 ``AD00486``: GIPPSLAND, EXXON
  |    W009: Distillation fraction recovered is missing or invalid
@@ -533,9 +749,6 @@ Validation of data in:
 ``AD00760``: MIDDLE GROUND SHOAL
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD00769``: MINERAL SEAL OIL
- |    W002: Record has no product type
-
 ``AD00784``: MOUSSE MIX (PETAWAWA)
  |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
@@ -629,9 +842,6 @@ Validation of data in:
 ``AD00913``: PREMIUM UNLEADED GASOLINE, STAR ENTERPRISE
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD00915``: PRIMER ASPHALT
- |    W002: Record has no product type
-
 ``AD00917``: PRUDHOE BAY
  |    W009: Distillation fraction recovered is missing or invalid
 
@@ -662,10 +872,6 @@ Validation of data in:
 ``AD01009``: SMI 66, PHILLIPS
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD01012``: SNO 200, STAR ENTERPRISE
- |    W002: Record has no product type
- |    W009: Distillation fraction recovered is missing or invalid
-
 ``AD01020``: SOCKEYE
  |    W009: Distillation fraction recovered is missing or invalid
 
@@ -678,9 +884,6 @@ Validation of data in:
 
 ``AD01031``: SOYO
  |    W009: Distillation fraction recovered is missing or invalid
-
-``AD01036``: SPRAY OIL
- |    W002: Record has no product type
 
 ``AD01040``: STATFJORD
  |    W009: Distillation fraction recovered is missing or invalid
@@ -1133,13 +1336,6 @@ Validation of data in:
  |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD01669``: HIBERNIA (EPA 86)
- |    E040: Value for distillation vapor temp: -113.00 C is out of range: unit error?
- |    E040: Value for distillation vapor temp: -134.00 C is out of range: unit error?
- |    E040: Value for distillation vapor temp: -158.00 C is out of range: unit error?
- |    E040: Value for distillation vapor temp: -188.00 C is out of range: unit error?
- |    W009: Distillation fraction recovered is missing or invalid
-
 ``AD01670``: HIGH VISCOSITY FUEL OIL
  |    W009: Distillation fraction recovered is missing or invalid
 
@@ -1185,10 +1381,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01711``: POINT ARGUELLO LIGHT
- |    W009: Distillation fraction recovered is missing or invalid
-
-``AD01712``: PROPYLENE TETRAMER
- |    W002: Record has no product type
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01713``: PRUDHOE BAY (1995)
@@ -1244,10 +1436,6 @@ Validation of data in:
 ``AD01774``: DIESEL/HEATING OIL NO.2, CHEVRON
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD01775``: DESTIN DOME CIS, MMS
- |    E042: Must have a value for InterfacialTensionList reference temp
- |    W009: Distillation fraction recovered is missing or invalid
-
 ``AD01776``: MOTOR GASOLINE-PREMIUM UNLEADED, SHELL REFINING PTY 
  |    W009: Distillation fraction recovered is missing or invalid
 
@@ -1261,10 +1449,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01786``: AVIATION TURBINE FUEL, SHELL REFINING PTY 
- |    W009: Distillation fraction recovered is missing or invalid
-
-``AD01799``: MINERAL TURPS, SHELL REFINING PTY 
- |    W002: Record has no product type
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01800``: WHITE SPIRIT, SHELL REFINING PTY 
@@ -1695,9 +1879,6 @@ Validation of data in:
 ``AD02184``: INTERMEDIATE FUEL OIL 300 (SOCSEX)
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD02185``: IPAR 3
- |    W002: Record has no product type
-
 ``AD02186``: IRANIAN HEAVY (1999)
  |    W009: Distillation fraction recovered is missing or invalid
 
@@ -1709,9 +1890,6 @@ Validation of data in:
 
 ``AD02195``: JET B (ALASKA)
  |    W009: Distillation fraction recovered is missing or invalid
-
-``AD02201``: KOAKOAK
- |    E043: API, 28.1 does not match density at 60F. API should be: 27.9
 
 ``AD02203``: KOMINEFT (1999)
  |    W009: Distillation fraction recovered is missing or invalid
@@ -1838,10 +2016,6 @@ Validation of data in:
 ``AD02302``: PORT HUENEME
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD02303``: PROPYLENE TETRAMER
- |    W002: Record has no product type
- |    W009: Distillation fraction recovered is missing or invalid
-
 ``AD02304``: PRUDHOE BAY
  |    W009: Distillation fraction recovered is missing or invalid
 
@@ -1897,9 +2071,6 @@ Validation of data in:
 
 ``AD02347``: SOUTH TIMBALIER BLOCK 130
  |    W009: Distillation fraction recovered is missing or invalid
-
-``AD02350``: SPRAY OIL
- |    W002: Record has no product type
 
 ``AD02351``: STATFJORD
  |    W009: Distillation fraction recovered is missing or invalid
@@ -1977,11 +2148,6 @@ Validation of data in:
 ``AD02394``: ZAIRE (1999)
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD02400``: FUEL OIL N0.1 (JP-8)
- |    E041: Value for distillation fraction: 2.05 must be between 0 and 1
- |    E041: Value for distillation fraction: 3.0 must be between 0 and 1
- |    W009: Distillation fraction recovered is missing or invalid
-
 ``AD02405``: ARAB EXTRA LIGHT, AMSA
  |    W009: Distillation fraction recovered is missing or invalid
 
@@ -2043,18 +2209,6 @@ Validation of data in:
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02436``: DIESEL FUEL OIL NO.2 (BONDED), TESORO
- |    W009: Distillation fraction recovered is missing or invalid
-
-``AD02437``: STAR 4, EQUILON
- |    W002: Record has no product type
- |    W009: Distillation fraction recovered is missing or invalid
-
-``AD02438``: STAR 5, EQUILON
- |    W002: Record has no product type
- |    W009: Distillation fraction recovered is missing or invalid
-
-``AD02439``: STAR 12, EQUILON
- |    W002: Record has no product type
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02440``: SAKHALIN II
@@ -2161,152 +2315,6 @@ Validation of data in:
 
 ``AD02578``: POINT ARGUELLO HEAVY
  |    W009: Distillation fraction recovered is missing or invalid
-
-``EC00506``: Alaminos Canyon Block 25
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC00511``: Alberta Sweet Mixed Blend #4
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC00540``: Bunker C - IFO-300 [1994]
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC00586``: Fuel Oil # 5
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC00601``: HFO 6303 [2002]
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC00616``: Issungnak
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC00643``: Maya [2004]
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC00647``: Mississippi Canyon Block 807 [2002]
- |    E044: Value: Too Viscous for tension is not valid
- |    W006: No density values provided
-
-``EC00648``: Morpeth Block EW921
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC00654``: Norman Wells
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC00679``: Prudhoe Bay [2004]
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC00734``: West Delta Block 143
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC01346``: Wabiska Heavy
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC01464``: Platform Irene
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC01465``: Platform Irene Comingled
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC01466``: Gail Well E010
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC01467``: Gail Well E019
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC01482``: Platform Ellen A038
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC01483``: Platform Ellen A040
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC01499``: Heritage HE 05
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC01500``: Heritage HE 26
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC01655``: Deep Water Horizon Riser
- |    E030: Oils must have an API
- |    W006: No density values provided
-
-``EC01803``: IFO 380
- |    E030: Oils must have an API
- |    W006: No density values provided
-
-``EC01822``: Dos Cuadros HE-05 [2011]
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC01950``: Alaska North Slope [2011]
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC01951``: DOBA
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC01952``: Endicott
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC01953``: Harmony
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC01954``: IFO 120
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC01955``: IFO 180
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC01956``: North Star
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC01957``: Rock
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC01958``: Terra Nova [2011]
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC02152``: Alaska North Slope [2012]
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC02234``: Access West Blend Winter
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC02235``: Cold Lake Blend Winter [2013]
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC02427``: Cold Lake Blend Summer [2014]
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC02542``: Bunker C MV Manolis
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC02664``: Synthetic Bitumen Blend
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC02709``: Western Canadian Select
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC02712``: Cold Lake Blend Winter [2015]
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC02713``: Alaska North Slope [2015]
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC02714``: Bunker C Zalinski
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC03126``: Rail Bitumen
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC03288``: Husky Energy SGS
- |    E044: Value: Too Viscous for tension is not valid
-
-``EC04002``: Alberta Sweet Mixed Blend #6
- |    E032: Distillation type is "None", it must be one of: ['mass fraction', 'volume fraction']
- |    W009: Distillation fraction recovered is missing or invalid
-
-``EC14852``: Biodiesel Tallow B100
- |    E030: Oils must have an API
- |    E044: Value: NM for density is not valid
 
 ``EX00058``: Liza
  |    W009: Distillation fraction recovered is missing or invalid
@@ -2616,11 +2624,3 @@ Validation of data in:
 
 ``NO00127``: OSEBERG C 2013
  |    W009: Distillation fraction recovered is missing or invalid
-
-
-################
-Reviewed Records
-################
-
-The rest of these are records that have been reviewed,
-but still have issues that will probably never be resolved
