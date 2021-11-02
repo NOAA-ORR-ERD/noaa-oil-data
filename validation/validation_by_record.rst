@@ -7,10 +7,11 @@ Validation of data in:
 
 ``/builds/gnome/oil_database/noaa-oil-data/data/oil``
 
-**Generated:** Oct 30, 2021 - 05:00
+**Generated:** Nov 02, 2021 - 22:00
 
 
 ``AD00031``: AMAULIGAK (1996)
+ |    E043: API, 2256.95 does not match density at 60F. API should be: 27.4
  |    W005: API value: 2256.95 seems unlikely
  |    W009: Distillation fraction recovered is missing or invalid
 
@@ -103,7 +104,7 @@ Validation of data in:
  |    W006: No density values provided
 
 ``EC04002``: Alberta Sweet Mixed Blend #6
- |    E032: Distillation type is "None", it must be one of: ['mass fraction', 'volume fraction']
+ |    E032: Distillation type is "None", it must be one of: ['volume fraction', 'mass fraction']
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``EC14852``: Biodiesel Tallow B100
