@@ -10,11 +10,6 @@ Validation of data in:
 **Generated:** Nov 02, 2021 - 22:00
 
 
-``AD00031``: AMAULIGAK (1996)
- |    E043: API, 2256.95 does not match density at 60F. API should be: 27.4
- |    W005: API value: 2256.95 seems unlikely
- |    W009: Distillation fraction recovered is missing or invalid
-
 ``AD00198``: BRIGHT STOCK 145, STAR ENTERPRISE
  |    W002: Record has no product type
  |    W009: Distillation fraction recovered is missing or invalid
@@ -104,7 +99,7 @@ Validation of data in:
  |    W006: No density values provided
 
 ``EC04002``: Alberta Sweet Mixed Blend #6
- |    E032: Distillation type is "None", it must be one of: ['volume fraction', 'mass fraction']
+ |    E032: Distillation type is "None", it must be one of: ['mass fraction', 'volume fraction']
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``EC14852``: Biodiesel Tallow B100
@@ -132,6 +127,9 @@ have issues that are known and may never be resolved
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00028``: ALGERIAN CONDENSATE, CITGO
+ |    W009: Distillation fraction recovered is missing or invalid
+
+``AD00031``: AMAULIGAK (1996)
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00038``: ARABIAN (1996)

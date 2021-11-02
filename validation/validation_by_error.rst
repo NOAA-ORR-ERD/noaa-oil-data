@@ -32,7 +32,7 @@ E032: (1 records affected)
 
 ``EC04002`` -- Alberta Sweet Mixed Blend #6:
 
-    Distillation type is "None", it must be one of: ['volume fraction', 'mass fraction']
+    Distillation type is "None", it must be one of: ['mass fraction', 'volume fraction']
 
 
 E040: (1 records affected)
@@ -79,12 +79,8 @@ E042: (1 records affected)
     Must have a value for InterfacialTensionList reference temp
 
 
-E043: (2 records affected)
+E043: (1 records affected)
 ==========================
-
-``AD00031`` -- AMAULIGAK (1996):
-
-    API, 2256.95 does not match density at 60F. API should be: 27.4
 
 ``AD02201`` -- KOAKOAK:
 
@@ -165,14 +161,6 @@ W002: (16 records affected)
 ``AD02439`` -- STAR 12, EQUILON:
 
     Record has no product type
-
-
-W005: (1 records affected)
-==========================
-
-``AD00031`` -- AMAULIGAK (1996):
-
-    API value: 2256.95 seems unlikely
 
 
 W006: (3 records affected)
