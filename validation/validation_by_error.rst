@@ -7,7 +7,7 @@ Validation of data in:
 
 ``/builds/gnome/oil_database/noaa-oil-data/data/oil``
 
-**Generated:** Oct 30, 2021 - 05:00
+**Generated:** Nov 02, 2021 - 22:00
 
 
 
@@ -32,7 +32,7 @@ E032: (1 records affected)
 
 ``EC04002`` -- Alberta Sweet Mixed Blend #6:
 
-    Distillation type is "None", it must be one of: ['mass fraction', 'volume fraction']
+    Distillation type is "None", it must be one of: ['volume fraction', 'mass fraction']
 
 
 E040: (1 records affected)
@@ -79,8 +79,12 @@ E042: (1 records affected)
     Must have a value for InterfacialTensionList reference temp
 
 
-E043: (1 records affected)
+E043: (2 records affected)
 ==========================
+
+``AD00031`` -- AMAULIGAK (1996):
+
+    API, 2256.95 does not match density at 60F. API should be: 27.4
 
 ``AD02201`` -- KOAKOAK:
 
