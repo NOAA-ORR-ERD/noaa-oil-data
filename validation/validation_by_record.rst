@@ -7,7 +7,7 @@ Validation of data in:
 
 ``/builds/gnome/oil_database/noaa-oil-data/data/oil``
 
-**Generated:** Nov 02, 2021 - 22:00
+**Generated:** Nov 05, 2021 - 22:00
 
 
 ``AD00198``: BRIGHT STOCK 145, STAR ENTERPRISE
@@ -90,21 +90,13 @@ Validation of data in:
 ``EC00647``: Mississippi Canyon Block 807 [2002]
  |    W006: No density values provided
 
-``EC01655``: Deep Water Horizon Riser
- |    E030: Oils must have an API
- |    W006: No density values provided
-
 ``EC01803``: IFO 380
  |    E030: Oils must have an API
  |    W006: No density values provided
 
 ``EC04002``: Alberta Sweet Mixed Blend #6
- |    E032: Distillation type is "None", it must be one of: ['mass fraction', 'volume fraction']
+ |    E032: Distillation type is "None", it must be one of: ['volume fraction', 'mass fraction']
  |    W009: Distillation fraction recovered is missing or invalid
-
-``EC14852``: Biodiesel Tallow B100
- |    E030: Oils must have an API
- |    E044: Value: NM for density is not valid
 
 
 ############
@@ -2187,6 +2179,10 @@ have issues that are known and may never be resolved
 
 ``AD02578``: POINT ARGUELLO HEAVY
  |    W009: Distillation fraction recovered is missing or invalid
+
+``EC01655``: Deep Water Horizon Riser
+ |    E030: Oils must have an API
+ |    W006: No density values provided
 
 ``EX00058``: Liza
  |    W009: Distillation fraction recovered is missing or invalid
