@@ -7,22 +7,14 @@ Validation of data in:
 
 ``/builds/gnome/oil_database/noaa-oil-data/data/oil``
 
-**Generated:** Nov 02, 2021 - 22:00
+**Generated:** Nov 05, 2021 - 22:00
 
 
 
-E030: (3 records affected)
+E030: (1 records affected)
 ==========================
 
-``EC01655`` -- Deep Water Horizon Riser:
-
-    Oils must have an API
-
 ``EC01803`` -- IFO 380:
-
-    Oils must have an API
-
-``EC14852`` -- Biodiesel Tallow B100:
 
     Oils must have an API
 
@@ -85,14 +77,6 @@ E043: (1 records affected)
 ``AD02201`` -- KOAKOAK:
 
     API, 28.1 does not match density at 60F. API should be: 27.9
-
-
-E044: (1 records affected)
-==========================
-
-``EC14852`` -- Biodiesel Tallow B100:
-
-    Value: NM for density is not valid
 
 
 W002: (16 records affected)
@@ -163,14 +147,10 @@ W002: (16 records affected)
     Record has no product type
 
 
-W006: (3 records affected)
+W006: (2 records affected)
 ==========================
 
 ``EC00647`` -- Mississippi Canyon Block 807 [2002]:
-
-    No density values provided
-
-``EC01655`` -- Deep Water Horizon Riser:
 
     No density values provided
 
@@ -185,6 +165,14 @@ Known Issues
 
 The rest of these are records that have been reviewed, but still 
 have issues that are known and may never be resolved
+
+
+E030: (1 records affected)
+==========================
+
+``EC01655`` -- Deep Water Horizon Riser:
+
+    Oils must have an API
 
 
 W000: (51 records affected)
@@ -393,6 +381,14 @@ W000: (51 records affected)
 ``AD02387`` -- WAXY LIGHT HEAVY BLEND:
 
     Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
+
+
+W006: (1 records affected)
+==========================
+
+``EC01655`` -- Deep Water Horizon Riser:
+
+    No density values provided
 
 
 W009: (786 records affected)
