@@ -24,7 +24,7 @@ E032: (1 records affected)
 
 ``EC04002`` -- Alberta Sweet Mixed Blend #6:
 
-    Distillation type is "None", it must be one of: ['mass fraction', 'volume fraction']
+    Distillation type is "None", it must be one of: ['volume fraction', 'mass fraction']
 
 
 E040: (1 records affected)
