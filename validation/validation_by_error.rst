@@ -7,7 +7,7 @@ Validation of data in:
 
 ``/builds/gnome/oil_database/noaa-oil-data/data/oil``
 
-**Generated:** Nov 08, 2021 - 18:00
+**Generated:** Nov 09, 2021 - 00:00
 
 
 
@@ -1874,11 +1874,11 @@ W009: (786 records affected)
 
     Distillation fraction recovered is missing or invalid
 
-``AD01690`` -- LOW SULPHUR WAXY GAS OIL:
+``AD01690`` -- LOW SULFUR WAXY GAS OIL:
 
     Distillation fraction recovered is missing or invalid
 
-``AD01691`` -- LOW SULPHUR WAXY RESIDUUM:
+``AD01691`` -- LOW SULFUR WAXY RESIDUUM:
 
     Distillation fraction recovered is missing or invalid
 
@@ -2602,7 +2602,7 @@ W009: (786 records affected)
 
     Distillation fraction recovered is missing or invalid
 
-``AD02219`` -- LOW SULPHUR WAXY RESIDUUM:
+``AD02219`` -- LOW SULFUR WAXY RESIDUUM:
 
     Distillation fraction recovered is missing or invalid
 
@@ -2910,7 +2910,7 @@ W009: (786 records affected)
 
     Distillation fraction recovered is missing or invalid
 
-``AD02413`` -- LOW SULPHUR WAXY RESIDUE, AMSA:
+``AD02413`` -- LOW SULFUR WAXY RESIDUE, AMSA:
 
     Distillation fraction recovered is missing or invalid
 
