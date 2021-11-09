@@ -7,7 +7,7 @@ Validation of data in:
 
 ``/builds/gnome/oil_database/noaa-oil-data/data/oil``
 
-**Generated:** Nov 08, 2021 - 18:00
+**Generated:** Nov 09, 2021 - 00:00
 
 
 ``AD00198``: BRIGHT STOCK 145, STAR ENTERPRISE
@@ -1219,10 +1219,10 @@ have issues that are known and may never be resolved
 ``AD01689``: LOUISIANA
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD01690``: LOW SULPHUR WAXY GAS OIL
+``AD01690``: LOW SULFUR WAXY GAS OIL
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD01691``: LOW SULPHUR WAXY RESIDUUM
+``AD01691``: LOW SULFUR WAXY RESIDUUM
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01693``: MAIN PASS BLOCK 37
@@ -1776,7 +1776,7 @@ have issues that are known and may never be resolved
 ``AD02217``: LOUISIANA (1999)
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD02219``: LOW SULPHUR WAXY RESIDUUM
+``AD02219``: LOW SULFUR WAXY RESIDUUM
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02220``: LUBRICATING OIL (AIR COMPRESSOR) NEW
@@ -2030,7 +2030,7 @@ have issues that are known and may never be resolved
 ``AD02412``: KUTUBU LIGHT, AMSA
  |    W009: Distillation fraction recovered is missing or invalid
 
-``AD02413``: LOW SULPHUR WAXY RESIDUE, AMSA
+``AD02413``: LOW SULFUR WAXY RESIDUE, AMSA
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02414``: QATAR LAND, AMSA
