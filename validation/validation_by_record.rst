@@ -7,83 +7,13 @@ Validation of data in:
 
 ``/builds/gnome/oil_database/noaa-oil-data/data/oil``
 
-**Generated:** Nov 09, 2021 - 00:00
+**Generated:** Dec 03, 2021 - 00:00
 
-
-``AD00198``: BRIGHT STOCK 145, STAR ENTERPRISE
- |    W002: Record has no product type
- |    W009: Distillation fraction recovered is missing or invalid
-
-``AD00199``: BRIGHT STOCK 150, STAR ENTERPRISE
- |    W002: Record has no product type
- |    W009: Distillation fraction recovered is missing or invalid
-
-``AD00376``: FAO, CITGO
- |    W002: Record has no product type
- |    W009: Distillation fraction recovered is missing or invalid
-
-``AD00474``: GASOLINE: POLYMER
- |    W002: Record has no product type
-
-``AD00769``: MINERAL SEAL OIL
- |    W002: Record has no product type
-
-``AD00915``: PRIMER ASPHALT
- |    W002: Record has no product type
-
-``AD01012``: SNO 200, STAR ENTERPRISE
- |    W002: Record has no product type
- |    W009: Distillation fraction recovered is missing or invalid
-
-``AD01036``: SPRAY OIL
- |    W002: Record has no product type
-
-``AD01669``: HIBERNIA (EPA 86)
- |    E040: Value for distillation vapor temp: -113.00 C is out of range: unit error?
- |    E040: Value for distillation vapor temp: -134.00 C is out of range: unit error?
- |    E040: Value for distillation vapor temp: -158.00 C is out of range: unit error?
- |    E040: Value for distillation vapor temp: -188.00 C is out of range: unit error?
- |    W009: Distillation fraction recovered is missing or invalid
-
-``AD01712``: PROPYLENE TETRAMER
- |    W002: Record has no product type
- |    W009: Distillation fraction recovered is missing or invalid
-
-``AD01775``: DESTIN DOME CIS, MMS
- |    E042: Must have a value for InterfacialTensionList reference temp
- |    W009: Distillation fraction recovered is missing or invalid
-
-``AD01799``: MINERAL TURPS, SHELL REFINING PTY 
- |    W002: Record has no product type
- |    W009: Distillation fraction recovered is missing or invalid
-
-``AD02185``: IPAR 3
- |    W002: Record has no product type
 
 ``AD02201``: KOAKOAK
  |    E043: API, 28.1 does not match density at 60F. API should be: 27.9
 
 ``AD02303``: PROPYLENE TETRAMER
- |    W002: Record has no product type
- |    W009: Distillation fraction recovered is missing or invalid
-
-``AD02350``: SPRAY OIL
- |    W002: Record has no product type
-
-``AD02400``: FUEL OIL N0.1 (JP-8)
- |    E041: Value for distillation fraction: 2.05 must be between 0 and 1
- |    E041: Value for distillation fraction: 3.0 must be between 0 and 1
- |    W009: Distillation fraction recovered is missing or invalid
-
-``AD02437``: STAR 4, EQUILON
- |    W002: Record has no product type
- |    W009: Distillation fraction recovered is missing or invalid
-
-``AD02438``: STAR 5, EQUILON
- |    W002: Record has no product type
- |    W009: Distillation fraction recovered is missing or invalid
-
-``AD02439``: STAR 12, EQUILON
  |    W002: Record has no product type
  |    W009: Distillation fraction recovered is missing or invalid
 
@@ -95,7 +25,7 @@ Validation of data in:
  |    W006: No density values provided
 
 ``EC04002``: Alberta Sweet Mixed Blend #6
- |    E032: Distillation type is "None", it must be one of: ['volume fraction', 'mass fraction']
+ |    E032: Distillation type is "None", it must be one of: ['mass fraction', 'volume fraction']
  |    W009: Distillation fraction recovered is missing or invalid
 
 
@@ -278,6 +208,12 @@ have issues that are known and may never be resolved
 ``AD00197``: BRENT SPAR
  |    W009: Distillation fraction recovered is missing or invalid
 
+``AD00198``: BRIGHT STOCK 145, STAR ENTERPRISE
+ |    W009: Distillation fraction recovered is missing or invalid
+
+``AD00199``: BRIGHT STOCK 150, STAR ENTERPRISE
+ |    W009: Distillation fraction recovered is missing or invalid
+
 ``AD00208``: BUNKER C FUEL OIL
  |    W009: Distillation fraction recovered is missing or invalid
 
@@ -366,6 +302,9 @@ have issues that are known and may never be resolved
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00365``: ESCRAVOS, AMOCO
+ |    W009: Distillation fraction recovered is missing or invalid
+
+``AD00376``: FAO, CITGO
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD00377``: FCC HEAVY CYCLE OIL
@@ -734,6 +673,9 @@ have issues that are known and may never be resolved
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01009``: SMI 66, PHILLIPS
+ |    W009: Distillation fraction recovered is missing or invalid
+
+``AD01012``: SNO 200, STAR ENTERPRISE
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01020``: SOCKEYE
@@ -1200,6 +1142,9 @@ have issues that are known and may never be resolved
  |    W000: Warning: ADIOS2 data had a value for water content, but min and max emulsification constant were blank. 0.0 has been assumed, but that may not  be correct
  |    W009: Distillation fraction recovered is missing or invalid
 
+``AD01669``: HIBERNIA (EPA 86)
+ |    W009: Distillation fraction recovered is missing or invalid
+
 ``AD01670``: HIGH VISCOSITY FUEL OIL
  |    W009: Distillation fraction recovered is missing or invalid
 
@@ -1245,6 +1190,9 @@ have issues that are known and may never be resolved
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01711``: POINT ARGUELLO LIGHT
+ |    W009: Distillation fraction recovered is missing or invalid
+
+``AD01712``: PROPYLENE TETRAMER
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01713``: PRUDHOE BAY (1995)
@@ -1300,6 +1248,9 @@ have issues that are known and may never be resolved
 ``AD01774``: DIESEL/HEATING OIL NO.2, CHEVRON
  |    W009: Distillation fraction recovered is missing or invalid
 
+``AD01775``: DESTIN DOME CIS, MMS
+ |    W009: Distillation fraction recovered is missing or invalid
+
 ``AD01776``: MOTOR GASOLINE-PREMIUM UNLEADED, SHELL REFINING PTY 
  |    W009: Distillation fraction recovered is missing or invalid
 
@@ -1313,6 +1264,9 @@ have issues that are known and may never be resolved
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01786``: AVIATION TURBINE FUEL, SHELL REFINING PTY 
+ |    W009: Distillation fraction recovered is missing or invalid
+
+``AD01799``: MINERAL TURPS, SHELL REFINING PTY 
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD01800``: WHITE SPIRIT, SHELL REFINING PTY 
@@ -2073,6 +2027,15 @@ have issues that are known and may never be resolved
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02436``: DIESEL FUEL OIL NO.2 (BONDED), TESORO
+ |    W009: Distillation fraction recovered is missing or invalid
+
+``AD02437``: STAR 4, EQUILON
+ |    W009: Distillation fraction recovered is missing or invalid
+
+``AD02438``: STAR 5, EQUILON
+ |    W009: Distillation fraction recovered is missing or invalid
+
+``AD02439``: STAR 12, EQUILON
  |    W009: Distillation fraction recovered is missing or invalid
 
 ``AD02440``: SAKHALIN II

@@ -7,7 +7,7 @@ Validation of data in:
 
 ``/builds/gnome/oil_database/noaa-oil-data/data/oil``
 
-**Generated:** Nov 09, 2021 - 00:00
+**Generated:** Dec 03, 2021 - 00:00
 
 
 
@@ -24,51 +24,7 @@ E032: (1 records affected)
 
 ``EC04002`` -- Alberta Sweet Mixed Blend #6:
 
-    Distillation type is "None", it must be one of: ['volume fraction', 'mass fraction']
-
-
-E040: (1 records affected)
-==========================
-
-``AD01669`` -- HIBERNIA (EPA 86):
-
-    Value for distillation vapor temp: -113.00 C is out of range: unit error?
-
-
-``AD01669`` -- HIBERNIA (EPA 86):
-
-    Value for distillation vapor temp: -134.00 C is out of range: unit error?
-
-
-``AD01669`` -- HIBERNIA (EPA 86):
-
-    Value for distillation vapor temp: -158.00 C is out of range: unit error?
-
-
-``AD01669`` -- HIBERNIA (EPA 86):
-
-    Value for distillation vapor temp: -188.00 C is out of range: unit error?
-
-
-E041: (1 records affected)
-==========================
-
-``AD02400`` -- FUEL OIL N0.1 (JP-8):
-
-    Value for distillation fraction: 2.05 must be between 0 and 1
-
-
-``AD02400`` -- FUEL OIL N0.1 (JP-8):
-
-    Value for distillation fraction: 3.0 must be between 0 and 1
-
-
-E042: (1 records affected)
-==========================
-
-``AD01775`` -- DESTIN DOME CIS, MMS:
-
-    Must have a value for InterfacialTensionList reference temp
+    Distillation type is "None", it must be one of: ['mass fraction', 'volume fraction']
 
 
 E043: (1 records affected)
@@ -79,70 +35,10 @@ E043: (1 records affected)
     API, 28.1 does not match density at 60F. API should be: 27.9
 
 
-W002: (16 records affected)
-===========================
-
-``AD00198`` -- BRIGHT STOCK 145, STAR ENTERPRISE:
-
-    Record has no product type
-
-``AD00199`` -- BRIGHT STOCK 150, STAR ENTERPRISE:
-
-    Record has no product type
-
-``AD00376`` -- FAO, CITGO:
-
-    Record has no product type
-
-``AD00474`` -- GASOLINE: POLYMER:
-
-    Record has no product type
-
-``AD00769`` -- MINERAL SEAL OIL:
-
-    Record has no product type
-
-``AD00915`` -- PRIMER ASPHALT:
-
-    Record has no product type
-
-``AD01012`` -- SNO 200, STAR ENTERPRISE:
-
-    Record has no product type
-
-``AD01036`` -- SPRAY OIL:
-
-    Record has no product type
-
-``AD01712`` -- PROPYLENE TETRAMER:
-
-    Record has no product type
-
-``AD01799`` -- MINERAL TURPS, SHELL REFINING PTY :
-
-    Record has no product type
-
-``AD02185`` -- IPAR 3:
-
-    Record has no product type
+W002: (1 records affected)
+==========================
 
 ``AD02303`` -- PROPYLENE TETRAMER:
-
-    Record has no product type
-
-``AD02350`` -- SPRAY OIL:
-
-    Record has no product type
-
-``AD02437`` -- STAR 4, EQUILON:
-
-    Record has no product type
-
-``AD02438`` -- STAR 5, EQUILON:
-
-    Record has no product type
-
-``AD02439`` -- STAR 12, EQUILON:
 
     Record has no product type
 
@@ -391,7 +287,7 @@ W006: (1 records affected)
     No density values provided
 
 
-W009: (786 records affected)
+W009: (785 records affected)
 ============================
 
 ``AD00010`` -- ABU SAFAH, ARAMCO:
@@ -2879,10 +2775,6 @@ W009: (786 records affected)
     Distillation fraction recovered is missing or invalid
 
 ``AD02394`` -- ZAIRE (1999):
-
-    Distillation fraction recovered is missing or invalid
-
-``AD02400`` -- FUEL OIL N0.1 (JP-8):
 
     Distillation fraction recovered is missing or invalid
 
