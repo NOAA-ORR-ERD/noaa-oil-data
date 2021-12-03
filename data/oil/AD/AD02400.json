@@ -16,7 +16,7 @@
             "Fuel Oil",
             "Refined Product"
         ],
-        "model_completeness": 44,
+        "model_completeness": 15,
         "gnome_suitable": true
     },
     "sub_samples": [
@@ -74,35 +74,6 @@
                     "unit_type": "massfraction"
                 }
             },
-            "distillation_data": {
-                "type": "volume fraction",
-                "cuts": [
-                    {
-                        "fraction": {
-                            "value": 2.05,
-                            "unit": "fraction",
-                            "unit_type": "volumefraction"
-                        },
-                        "vapor_temp": {
-                            "value": 10.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
-                    },
-                    {
-                        "fraction": {
-                            "value": 3.0,
-                            "unit": "fraction",
-                            "unit_type": "volumefraction"
-                        },
-                        "vapor_temp": {
-                            "value": 99.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
-                    }
-                ]
-            },
             "bulk_composition": [
                 {
                     "name": "sulfur",
@@ -114,11 +85,6 @@
                 }
             ]
         }
-    ],
-    "status": [
-        "E041: Value for distillation fraction: 2.05 must be between 0 and 1",
-        "E041: Value for distillation fraction: 3.0 must be between 0 and 1",
-        "W009: Distillation fraction recovered is missing or invalid"
     ],
     "review_status": {
         "status": "Not Reviewed"
