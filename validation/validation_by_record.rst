@@ -25,7 +25,7 @@ Validation of data in:
  |    W006: No density values provided
 
 ``EC04002``: Alberta Sweet Mixed Blend #6
- |    E032: Distillation type is "None", it must be one of: ['mass fraction', 'volume fraction']
+ |    E032: Distillation type is "None", it must be one of: ['volume fraction', 'mass fraction']
  |    W009: Distillation fraction recovered is missing or invalid
 
 
