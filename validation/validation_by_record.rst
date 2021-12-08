@@ -7,7 +7,7 @@ Validation of data in:
 
 ``/builds/gnome/oil_database/noaa-oil-data/data/oil``
 
-**Generated:** Dec 03, 2021 - 00:00
+**Generated:** Dec 08, 2021 - 02:00
 
 
 ``AD02201``: KOAKOAK
@@ -25,7 +25,7 @@ Validation of data in:
  |    W006: No density values provided
 
 ``EC04002``: Alberta Sweet Mixed Blend #6
- |    E032: Distillation type is "None", it must be one of: ['volume fraction', 'mass fraction']
+ |    E032: Distillation type is "None", it must be one of: ['mass fraction', 'volume fraction']
  |    W009: Distillation fraction recovered is missing or invalid
 
 
