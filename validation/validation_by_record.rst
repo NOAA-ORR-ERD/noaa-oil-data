@@ -7,7 +7,7 @@ Validation of data in:
 
 ``/builds/gnome/oil_database/noaa-oil-data/data/oil``
 
-**Generated:** Dec 08, 2021 - 02:00
+**Generated:** Feb 03, 2022 - 20:00
 
 
 ``AD02201``: KOAKOAK
@@ -33,8 +33,8 @@ Validation of data in:
 Known Issues
 ############
 
-The rest of these are records that have been reviewed, but still 
-have issues that are known and may never be resolved
+The rest of these are records that have been reviewed, 
+but still have issues that are known and may never be resolved
 
 ``AD00010``: ABU SAFAH, ARAMCO
  |    W009: Distillation fraction recovered is missing or invalid
