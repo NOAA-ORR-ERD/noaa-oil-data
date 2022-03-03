@@ -80,6 +80,8 @@ update_validation_report:
     - git diff-index --quiet HEAD || git commit -m 'updating validation reports'
     - git push
     - eval $(ssh-agent -k)
+    - git clone https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.orr.noaa.gov/gnome/oil_database/noaa-oil-data.wiki.git
+    - ls -la
 
   except:
     - server_working_copy
