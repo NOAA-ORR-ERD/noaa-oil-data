@@ -7,7 +7,7 @@ Validation of data in:
 
 ``/builds/gnome/oil_database/noaa-oil-data/data/oil``
 
-**Generated:** Feb 09, 2022 - 18:00
+**Generated:** Mar 03, 2022 - 01:00
 
 
 ``AD02201``: KOAKOAK
@@ -23,6 +23,9 @@ Validation of data in:
 ``EC01803``: IFO 380
  |    E030: Oils must have an API
  |    W006: No density values provided
+
+``EC02709``: Western Canadian Select
+ |    E033: Visual Stability is "mesostable", it must be one of: ['Did not form', 'Entrained', 'Mesostable', 'Stable', 'Unstable']
 
 ``EC04002``: Alberta Sweet Mixed Blend #6
  |    E032: Distillation type is "None", it must be one of: ['mass fraction', 'volume fraction']

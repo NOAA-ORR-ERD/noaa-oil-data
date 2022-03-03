@@ -7,7 +7,7 @@ Validation of data in:
 
 ``/builds/gnome/oil_database/noaa-oil-data/data/oil``
 
-**Generated:** Feb 09, 2022 - 18:00
+**Generated:** Mar 03, 2022 - 01:00
 
 
 
@@ -25,6 +25,14 @@ E032: (1 records affected)
 ``EC04002`` -- Alberta Sweet Mixed Blend #6:
 
     Distillation type is "None", it must be one of: ['mass fraction', 'volume fraction']
+
+
+E033: (1 records affected)
+==========================
+
+``EC02709`` -- Western Canadian Select:
+
+    Visual Stability is "mesostable", it must be one of: ['Did not form', 'Entrained', 'Mesostable', 'Stable', 'Unstable']
 
 
 E043: (1 records affected)
