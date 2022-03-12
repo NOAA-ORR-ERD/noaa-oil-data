@@ -16,10 +16,8 @@ test:
 
   artifacts:
     paths:
-      - validation_by_record.rst
-      - validation_by_error.rst
-      - validation_by_error.html
-      - validation_by_record.html
+      - validation_by_record.md
+      - validation_by_error.md
       - data
 
   before_script:
@@ -32,7 +30,8 @@ test:
     #     fi
     # It was too confusing to have different adios_db code used for different
     # branches
-    - BRANCH="production"
+    # but this should be switeched to production when things settle down
+    - BRANCH="develop"
 
 
   script:
@@ -43,7 +42,7 @@ test:
     - pwd
     - ls
     - cd oil_database
-    - conda install -y --file adios_db/conda_requirements.txt docutils
+    - conda install -y --file adios_db/conda_requirements.txt
 
     # Install the adios_db package
     - cd adios_db
@@ -52,8 +51,6 @@ test:
     # we are saving the status list inside the records.
     - adios_db_process_json ./data/oil/ save
     - adios_db_validate ./data/oil save
-    - rst2html.py validation_by_record.rst > validation_by_record.html
-    - rst2html.py validation_by_error.rst > validation_by_error.html
   only:
     changes:
       - .gitlab-ci.yml
@@ -75,16 +72,19 @@ update_validation_report:
         if [[ `git stash list` ]];then
           git stash pop
         fi
-    - mv validation_by_* ./validation/
+    - git clone ssh://git@gitlab.orr.noaa.gov:9933/${CI_PROJECT_PATH}.wiki.git
+    - mkdir -p ${CI_PROJECT_NAME}.wiki/validation_reports/${CI_COMMIT_BRANCH} && cp validation_by_* $_
+    - ls -la ${CI_PROJECT_NAME}.wiki/validation_reports/${CI_COMMIT_BRANCH}
+    - cd ${CI_PROJECT_NAME}.wiki
     - git add -A
-    - git diff-index --quiet HEAD || git commit -m 'updating validation reports'
+    - git diff-index --quiet HEAD || git commit -m 'updating validation reports on wiki'
     - git push
+    - cd -
     - eval $(ssh-agent -k)
-    - git clone https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.orr.noaa.gov/gnome/oil_database/noaa-oil-data.wiki.git
-    - ls -la
 
   except:
     - server_working_copy
+    - /^\d{4}/\d{2}/\d{2}_\d{2};\d{2}$/
 
   only:
     changes:
