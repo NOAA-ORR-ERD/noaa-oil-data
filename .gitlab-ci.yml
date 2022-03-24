@@ -64,6 +64,8 @@ update_validation_report:
   script:
     - eval $(ssh-agent -s)
     - echo "$SSH_PRIVATE_KEY_CI_WIKI" | tr -d '\r' | ssh-add - > /dev/null
+    - git config user.email "adios-validation-script@noaa.gov"
+    - git config user.name "Adios Validation Script"
     - git remote set-url origin ssh://git@gitlab.orr.noaa.gov:9933/${CI_PROJECT_PATH}.git
     - git stash
     - git checkout ${CI_COMMIT_BRANCH}
