@@ -8,10 +8,18 @@
             "year": 1999,
             "reference": "Jokuty, P., Whiticar, S., Wang, Z., Fingas, M., Fieldhouse, B., Lambert, P., Mullen, J. 1999. Properties of Crude Oils and Oil Products.  Manuscript Report EE-165, Environmental Protection Service, Environment Canada, Ottawa, Ontario."
         },
+        "product_type": "Other",
         "API": 51.1,
-        "comments": "The data in this record may have been compiled from multiple sources and reflect samples of varying age and composition.",
-        "model_completeness": 58,
-        "gnome_suitable": true
+        "comments": "Propylene tetramer (PTM), also known as dodecene, is an alkene.  It is a C12 rich C11-13 olefin produced by the oligomerisation of propylene. (from: https://www.janex.ch/en/products/propylene-tetramer-ptm?qs=products/propylene-tetramer-ptm)",
+        "model_completeness": 67,
+        "gnome_suitable": true,
+        "change_log": [
+            {
+                "name": "Chris",
+                "date": "2022-03-25T16:00:39.598-07:00",
+                "comment": "filled in some inferred data from the web."
+            }
+        ]
     },
     "sub_samples": [
         {
@@ -127,6 +135,11 @@
             },
             "distillation_data": {
                 "type": "mass fraction",
+                "fraction_recovered": {
+                    "value": 100.0,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                },
                 "cuts": [
                     {
                         "fraction": {
@@ -230,10 +243,6 @@
                 ]
             }
         }
-    ],
-    "status": [
-        "W002: Record has no product type",
-        "W009: Distillation fraction recovered is missing or invalid"
     ],
     "review_status": {
         "status": "Not Reviewed"
