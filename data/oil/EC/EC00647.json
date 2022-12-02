@@ -4,7 +4,7 @@
     "metadata": {
         "name": "Mississippi Canyon Block 807 [2002]",
         "source_id": "647",
-        "location": "Gulf of Mexico, USA",
+        "location": "USA, Gulf of Mexico",
         "reference": {
             "year": 2021,
             "reference": "Environment and Climate Change Canada, Environment Canada Crude Oil and Petroleum Product Database, Environment and Climate Change Canada, 2021.\n\nurl: https://open.canada.ca/data/en/dataset/53c38f91-35c8-49a6-a437-b311703db8c5"
@@ -16,8 +16,20 @@
             "Crude Oil",
             "Medium Crude"
         ],
-        "model_completeness": 86,
-        "gnome_suitable": false
+        "model_completeness": 96,
+        "gnome_suitable": true,
+        "change_log": [
+            {
+                "name": "R",
+                "date": "2022-11-28T11:00:52.962-08:00",
+                "comment": "Issue #27 - Normalize Location"
+            },
+            {
+                "name": "Rin",
+                "date": "2022-11-28T14:25:47.409-08:00",
+                "comment": "Issue #43"
+            }
+        ]
     },
     "sub_samples": [
         {
@@ -51,6 +63,20 @@
                     },
                     "method": "ASTM D7094"
                 },
+                "densities": [
+                    {
+                        "density": {
+                            "value": 0.9563,
+                            "unit": "g/cm^3",
+                            "unit_type": "density"
+                        },
+                        "ref_temp": {
+                            "value": 0.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
                 "dynamic_viscosities": [
                     {
                         "viscosity": {
@@ -6964,7 +6990,7 @@
         }
     ],
     "status": [
-        "W006: No density values provided"
+        "E043: API, 27.5 does not match density at 60F. API should be: 16.3"
     ],
     "review_status": {
         "status": "Not Reviewed"
