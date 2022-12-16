@@ -11,13 +11,13 @@
         },
         "sample_date": "2002-01-26",
         "product_type": "Crude Oil NOS",
-        "API": 27.5,
+        "comments": "NOTE from ESTS: Density data missing due to Quality issues with measurements",
         "labels": [
             "Crude Oil",
             "Medium Crude"
         ],
-        "model_completeness": 96,
-        "gnome_suitable": true,
+        "model_completeness": 88,
+        "gnome_suitable": false,
         "change_log": [
             {
                 "name": "R",
@@ -28,6 +28,11 @@
                 "name": "Rin",
                 "date": "2022-11-28T14:25:47.409-08:00",
                 "comment": "Issue #43"
+            },
+            {
+                "name": "Chris Barker",
+                "date": "2022-12-15T16:20:17.299-08:00",
+                "comment": "Removed incorrect density data, and added note."
             }
         ]
     },
@@ -63,20 +68,6 @@
                     },
                     "method": "ASTM D7094"
                 },
-                "densities": [
-                    {
-                        "density": {
-                            "value": 0.9563,
-                            "unit": "g/cm^3",
-                            "unit_type": "density"
-                        },
-                        "ref_temp": {
-                            "value": 0.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
-                    }
-                ],
                 "dynamic_viscosities": [
                     {
                         "viscosity": {
@@ -1816,9 +1807,7 @@
                     {
                         "density": {
                             "value": 0.9563,
-                            "unit": "g/mL",
-                            "standard_deviation": 0.0003,
-                            "replicates": 3,
+                            "unit": "g/cm^3",
                             "unit_type": "density"
                         },
                         "ref_temp": {
@@ -6990,7 +6979,8 @@
         }
     ],
     "status": [
-        "E043: API, 27.5 does not match density at 60F. API should be: 16.3"
+        "E030: Oils must have an API",
+        "W006: No density values provided"
     ],
     "review_status": {
         "status": "Not Reviewed"
