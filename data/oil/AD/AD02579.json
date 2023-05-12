@@ -17,7 +17,7 @@
         "labels": [
             "Crude Oil"
         ],
-        "model_completeness": 63,
+        "model_completeness": 79,
         "gnome_suitable": true,
         "change_log": [
             {
@@ -74,6 +74,11 @@
                 "name": "Rin",
                 "date": "2022-11-28T10:06:48.778-08:00",
                 "comment": "Issue #27 -- Normalize Location"
+            },
+            {
+                "name": "Chris",
+                "date": "2023-01-13T10:34:20.351-08:00",
+                "comment": "Added fraction recovered"
             }
         ]
     },
@@ -180,6 +185,11 @@
             },
             "distillation_data": {
                 "type": "mass fraction",
+                "fraction_recovered": {
+                    "value": 100.0,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                },
                 "cuts": [
                     {
                         "fraction": {
@@ -703,9 +713,6 @@
                 }
             }
         }
-    ],
-    "status": [
-        "W009: Distillation fraction recovered is missing or invalid"
     ],
     "review_status": {
         "status": "Not Reviewed"
