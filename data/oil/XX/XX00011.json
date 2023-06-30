@@ -1,0 +1,137 @@
+{
+    "oil_id": "XX00011",
+    "adios_data_model_version": "0.12.0",
+    "metadata": {
+        "name": "RMK 500",
+        "reference": {
+            "year": 2021,
+            "reference": "LSU analysis as part of MPRI project, 2021"
+        },
+        "sample_date": "2021",
+        "product_type": "Residual Fuel Oil",
+        "API": 10.3,
+        "labels": [
+            "HFO",
+            "Heavy Fuel Oil",
+            "Residual Fuel"
+        ],
+        "model_completeness": 16,
+        "gnome_suitable": false,
+        "change_log": [
+            {
+                "name": "RM",
+                "date": "2023-06-06T14:02:34.057-07:00",
+                "comment": "LSU Oil"
+            },
+            {
+                "name": "RM",
+                "date": "2023-06-20T11:26:40.928-07:00",
+                "comment": "added density"
+            },
+            {
+                "name": "RM",
+                "date": "2023-06-21T14:28:00.973-07:00",
+                "comment": "Product type added and title change"
+            },
+            {
+                "name": "RM",
+                "date": "2023-06-21T14:53:59.914-07:00",
+                "comment": "sulfur method added"
+            },
+            {
+                "name": "RM",
+                "date": "2023-06-21T15:04:04.472-07:00",
+                "comment": "sample received date added"
+            },
+            {
+                "name": "RM",
+                "date": "2023-06-21T15:12:17.013-07:00",
+                "comment": "labels added"
+            }
+        ]
+    },
+    "sub_samples": [
+        {
+            "metadata": {
+                "name": "Fresh Oil Sample",
+                "short_name": "Fresh Oil",
+                "fraction_evaporated": {
+                    "value": 0.0,
+                    "unit": "1",
+                    "unit_type": "massfraction"
+                }
+            },
+            "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": -2.78,
+                        "unit": "C",
+                        "unit_type": "temperature"
+                    }
+                },
+                "densities": [
+                    {
+                        "density": {
+                            "value": 0.997,
+                            "unit": "g/cm^3",
+                            "unit_type": "density"
+                        },
+                        "ref_temp": {
+                            "value": 15.6,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
+                "kinematic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 7.37,
+                            "unit": "cSt",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 37.78,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
+            },
+            "SARA": {
+                "asphaltenes": {
+                    "value": 17.83,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                }
+            },
+            "bulk_composition": [
+                {
+                    "name": "Sulfur",
+                    "groups": [
+                        "Ungrouped"
+                    ],
+                    "method": "ASTM D4294",
+                    "measurement": {
+                        "value": 2.4676,
+                        "unit": "%",
+                        "unit_type": "massfraction"
+                    }
+                }
+            ],
+            "industry_properties": [
+                {
+                    "name": "Reid Vapor Pressure",
+                    "measurement": {
+                        "value": 0.2,
+                        "unit": "1",
+                        "unit_type": "dimensionless"
+                    }
+                }
+            ]
+        }
+    ],
+    "review_status": {
+        "status": "Not Reviewed"
+    }
+}
