@@ -1,0 +1,121 @@
+{
+    "oil_id": "XX00013",
+    "adios_data_model_version": "0.12.0",
+    "metadata": {
+        "name": "VLSFO",
+        "reference": {
+            "year": 2021,
+            "reference": "LSU analysis as part of MPRI project, 2021"
+        },
+        "sample_date": "2021",
+        "product_type": "Residual Fuel Oil",
+        "API": 17.2,
+        "labels": [
+            "HFO",
+            "Heavy Fuel Oil",
+            "LSFO",
+            "Residual Fuel",
+            "VLSFO"
+        ],
+        "model_completeness": 8,
+        "gnome_suitable": false,
+        "change_log": [
+            {
+                "name": "RM",
+                "date": "2023-06-06T14:07:38.367-07:00",
+                "comment": "LSU 2021"
+            },
+            {
+                "name": "RM",
+                "date": "2023-06-20T11:27:52.430-07:00",
+                "comment": "added density"
+            },
+            {
+                "name": "Chris",
+                "date": "2023-06-21T14:27:52.012-07:00",
+                "comment": "update name and product type and labels"
+            },
+            {
+                "name": "RM",
+                "date": "2023-06-21T15:03:36.969-07:00",
+                "comment": "sample received date added"
+            }
+        ]
+    },
+    "sub_samples": [
+        {
+            "metadata": {
+                "name": "Fresh Oil Sample",
+                "short_name": "Fresh Oil",
+                "fraction_evaporated": {
+                    "value": 0.0,
+                    "unit": "1",
+                    "unit_type": "massfraction"
+                }
+            },
+            "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": -3.89,
+                        "unit": "C",
+                        "unit_type": "temperature"
+                    }
+                },
+                "flash_point": {
+                    "measurement": {
+                        "value": 98.89,
+                        "unit": "C",
+                        "unit_type": "temperature"
+                    }
+                },
+                "densities": [
+                    {
+                        "density": {
+                            "value": 0.951,
+                            "unit": "g/cm^3",
+                            "unit_type": "density"
+                        },
+                        "ref_temp": {
+                            "value": 15.6,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
+            },
+            "SARA": {
+                "asphaltenes": {
+                    "value": 0.42,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                }
+            },
+            "bulk_composition": [
+                {
+                    "name": "Sulfur",
+                    "groups": [
+                        "Ungrouped"
+                    ],
+                    "measurement": {
+                        "value": 0.4824,
+                        "unit": "%",
+                        "unit_type": "massfraction"
+                    }
+                }
+            ],
+            "industry_properties": [
+                {
+                    "name": "Reid Vapor Pressure",
+                    "measurement": {
+                        "value": 0.4,
+                        "unit": "1",
+                        "unit_type": "dimensionless"
+                    }
+                }
+            ]
+        }
+    ],
+    "review_status": {
+        "status": "Not Reviewed"
+    }
+}
