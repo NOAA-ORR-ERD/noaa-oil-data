@@ -1,56 +1,61 @@
 {
-    "oil_id": "XX00014",
+    "oil_id": "LS00016",
     "adios_data_model_version": "0.12.0",
     "metadata": {
-        "name": "Marine Gas Oil",
-        "alternate_names": [
-            "Marine Gasoil, MGO"
-        ],
+        "name": "Light Reformate",
         "reference": {
             "year": 2021,
             "reference": "LSU analysis as part of MPRI project, 2021"
         },
         "sample_date": "2021",
-        "product_type": "Distillate Fuel Oil",
-        "API": 37.4,
+        "product_type": "Refinery Intermediate",
+        "API": 89.7,
         "labels": [
-            "Diesel",
-            "Distillate Fuel",
-            "Fuel Oil",
-            "LSFO"
+            "Refined Product",
+            "Refinery Intermediate"
         ],
-        "model_completeness": 56,
-        "gnome_suitable": true,
+        "model_completeness": 48,
+        "gnome_suitable": false,
         "change_log": [
             {
                 "name": "RM",
-                "date": "2023-06-06T14:14:11.124-07:00",
+                "date": "2023-06-06T14:29:39.180-07:00",
                 "comment": "LSU Oil"
             },
             {
-                "name": "Dalina",
-                "date": "2023-06-14T14:57:39.118-07:00",
-                "comment": "Made edits to labels, density, product type, sulfur"
-            },
-            {
-                "name": "Chris Barker",
-                "date": "2023-06-21T14:10:17.730-07:00",
-                "comment": "change to full name"
+                "name": "RM",
+                "date": "2023-06-06T14:30:06.498-07:00",
+                "comment": "LSU Oil"
             },
             {
                 "name": "RM",
-                "date": "2023-06-21T14:35:03.881-07:00",
-                "comment": "LSU removed from the title"
+                "date": "2023-06-20T11:20:15.217-07:00",
+                "comment": "added density"
             },
             {
                 "name": "RM",
-                "date": "2023-06-21T14:48:44.059-07:00",
-                "comment": "sulfur and method added"
+                "date": "2023-06-21T14:30:03.917-07:00",
+                "comment": "Title changed and product type added"
             },
             {
                 "name": "RM",
-                "date": "2023-06-21T15:05:21.940-07:00",
+                "date": "2023-06-21T14:47:52.393-07:00",
+                "comment": "sulfur added"
+            },
+            {
+                "name": "RM",
+                "date": "2023-06-21T15:00:27.632-07:00",
+                "comment": "frac recovered changed to 100"
+            },
+            {
+                "name": "RM",
+                "date": "2023-06-21T15:05:36.333-07:00",
                 "comment": "sample received date added"
+            },
+            {
+                "name": "Chris",
+                "date": "2023-06-21T15:10:46.993-07:00",
+                "comment": "added labels"
             }
         ]
     },
@@ -66,22 +71,22 @@
                 },
                 "boiling_point_range": {
                     "unit": "C",
-                    "min_value": 158.89,
-                    "max_value": 357.78,
+                    "min_value": 24.44,
+                    "max_value": 60.0,
                     "unit_type": "temperature"
                 }
             },
             "physical_properties": {
                 "pour_point": {
                     "measurement": {
-                        "value": -13.33,
+                        "value": -62.22,
                         "unit": "C",
                         "unit_type": "temperature"
                     }
                 },
                 "flash_point": {
                     "measurement": {
-                        "value": 64.44,
+                        "value": 7.22,
                         "unit": "C",
                         "unit_type": "temperature"
                     }
@@ -89,7 +94,7 @@
                 "densities": [
                     {
                         "density": {
-                            "value": 0.837,
+                            "value": 0.639,
                             "unit": "g/cm^3",
                             "unit_type": "density"
                         },
@@ -99,27 +104,19 @@
                             "unit_type": "temperature"
                         }
                     }
-                ],
-                "kinematic_viscosities": [
-                    {
-                        "viscosity": {
-                            "value": 3.28,
-                            "unit": "cSt",
-                            "unit_type": "kinematicviscosity"
-                        },
-                        "ref_temp": {
-                            "value": 37.78,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
-                    }
                 ]
+            },
+            "SARA": {
+                "asphaltenes": {
+                    "value": 0.01,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                }
             },
             "distillation_data": {
                 "type": "mass fraction",
-                "method": "ASTM D86",
                 "end_point": {
-                    "value": 354.44,
+                    "value": 60.0,
                     "unit": "C",
                     "unit_type": "temperature"
                 },
@@ -136,7 +133,7 @@
                             "unit_type": "concentration"
                         },
                         "vapor_temp": {
-                            "value": 193.33000000000004,
+                            "value": 26.670000000000016,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -148,7 +145,7 @@
                             "unit_type": "concentration"
                         },
                         "vapor_temp": {
-                            "value": 210.0,
+                            "value": 27.779999999999973,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -160,7 +157,7 @@
                             "unit_type": "concentration"
                         },
                         "vapor_temp": {
-                            "value": 226.66999999999996,
+                            "value": 28.560000000000002,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -172,7 +169,7 @@
                             "unit_type": "concentration"
                         },
                         "vapor_temp": {
-                            "value": 250.0,
+                            "value": 33.329999999999984,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -184,7 +181,7 @@
                             "unit_type": "concentration"
                         },
                         "vapor_temp": {
-                            "value": 265.56000000000006,
+                            "value": 35.579999999999984,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -196,7 +193,7 @@
                             "unit_type": "concentration"
                         },
                         "vapor_temp": {
-                            "value": 282.22,
+                            "value": 37.77999999999997,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -208,7 +205,7 @@
                             "unit_type": "concentration"
                         },
                         "vapor_temp": {
-                            "value": 296.66999999999996,
+                            "value": 40.56,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -220,7 +217,7 @@
                             "unit_type": "concentration"
                         },
                         "vapor_temp": {
-                            "value": 310.0,
+                            "value": 44.44,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -232,19 +229,31 @@
                             "unit_type": "concentration"
                         },
                         "vapor_temp": {
-                            "value": 326.66999999999996,
+                            "value": 47.77999999999997,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
                     },
                     {
                         "fraction": {
-                            "value": 85.0,
+                            "value": 90.0,
                             "unit": "%",
                             "unit_type": "concentration"
                         },
                         "vapor_temp": {
-                            "value": 354.43999999999994,
+                            "value": 54.44,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 94.0,
+                            "unit": "%",
+                            "unit_type": "concentration"
+                        },
+                        "vapor_temp": {
+                            "value": 60.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -253,15 +262,25 @@
             },
             "bulk_composition": [
                 {
-                    "name": "sulfur",
+                    "name": "Sulfur",
                     "groups": [
                         "Ungrouped"
                     ],
                     "method": "ASTM D4294",
                     "measurement": {
-                        "value": 0.0538,
+                        "value": 0.0443,
                         "unit": "%",
                         "unit_type": "massfraction"
+                    }
+                }
+            ],
+            "industry_properties": [
+                {
+                    "name": "Reid Vapor Pressure",
+                    "measurement": {
+                        "value": 23,
+                        "unit": "1",
+                        "unit_type": "dimensionless"
                     }
                 }
             ]
