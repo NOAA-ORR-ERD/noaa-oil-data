@@ -1,13 +1,14 @@
-# variables:
+variables:
 #   CS_MAJOR_VERSION: 3
+  PYTHON_VER: "3.10"
 
 stages:
-  - test
-  - update
+  - validate
+  - update_wiki
 
-test:
-  stage: test
-  image: registry.orr.noaa.gov/erd/centos-conda/centos7-python3.9
+validate:
+  stage: validate
+  image: registry.orr.noaa.gov/erd/centos-conda/centos7-python$PYTHON_VER
   tags:
     - docker
     - linux
@@ -20,6 +21,7 @@ test:
       - validation_by_record.md
       - validation_by_error.md
       - data
+      - conda_listing.txt
 
   before_script:
     - echo "ip_resolve=4" >> /etc/yum.conf
@@ -32,10 +34,13 @@ test:
     # It was too confusing to have different adios_db code used for different
     # branches
     # but this should be switeched to production when things settle down
-    - BRANCH="develop"
+    # - BRANCH="develop"
+    - BRANCH="production"
 
 
   script:
+    - echo "Starting conda listing"
+    - conda list
     - echo "running the scripts"
     - pwd
     - echo "cloning ${BRANCH}"
@@ -45,6 +50,7 @@ test:
     - cd oil_database
     - conda install -y --file adios_db/conda_requirements.txt
 
+    - conda list > conda_listing.txt
     # Install the adios_db package
     - cd adios_db
     - pip install -e ./
@@ -58,7 +64,7 @@ test:
       - data/**/*
 
 update_validation_report:
-  stage: update
+  stage: update_wiki
   tags:
     - build
     - shell
