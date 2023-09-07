@@ -26,7 +26,7 @@
             "ULSFO",
             "VLSFO"
         ],
-        "model_completeness": 60,
+        "model_completeness": 75,
         "gnome_suitable": true,
         "change_log": [
             {
@@ -68,6 +68,16 @@
                 "name": "RM",
                 "date": "2023-08-02T13:49:16.610-07:00",
                 "comment": "name change"
+            },
+            {
+                "name": "RM",
+                "date": "2023-08-30T06:28:58.104-07:00",
+                "comment": "I've gone back and deleted the Dynamic Visc. at 50 C since it was measured using a different method"
+            },
+            {
+                "name": "RM",
+                "date": "2023-08-31T08:39:12.787-07:00",
+                "comment": "added evaporated"
             }
         ]
     },
@@ -137,23 +147,6 @@
                         },
                         "ref_temp": {
                             "value": 13.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        },
-                        "shear_rate": {
-                            "value": 10.0,
-                            "unit": "1/s",
-                            "unit_type": "angularvelocity"
-                        }
-                    },
-                    {
-                        "viscosity": {
-                            "value": 3.7,
-                            "unit": "cP",
-                            "unit_type": "dynamicviscosity"
-                        },
-                        "ref_temp": {
-                            "value": 50.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         },
@@ -326,6 +319,103 @@
                     ],
                     "measurement": {
                         "value": 0.81,
+                        "unit": "%",
+                        "unit_type": "massfraction"
+                    }
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "name": "30.6% Evaporated",
+                "short_name": "30.6% Evaporated",
+                "fraction_evaporated": {
+                    "value": 30.6,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                }
+            },
+            "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "unit": "C",
+                        "max_value": -36.0,
+                        "unit_type": "temperature"
+                    }
+                },
+                "flash_point": {
+                    "measurement": {
+                        "value": 110.0,
+                        "unit": "C",
+                        "unit_type": "temperature"
+                    }
+                },
+                "densities": [
+                    {
+                        "density": {
+                            "value": 0.868,
+                            "unit": "g/cm^3",
+                            "unit_type": "density"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
+                "dynamic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 20.0,
+                            "unit": "cP",
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 2.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "shear_rate": {
+                            "value": 10.0,
+                            "unit": "1/s",
+                            "unit_type": "angularvelocity"
+                        }
+                    },
+                    {
+                        "viscosity": {
+                            "value": 12.0,
+                            "unit": "cP",
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 13.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "shear_rate": {
+                            "value": 10.0,
+                            "unit": "1/s",
+                            "unit_type": "angularvelocity"
+                        }
+                    }
+                ]
+            },
+            "SARA": {
+                "asphaltenes": {
+                    "value": 0.03,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                }
+            },
+            "bulk_composition": [
+                {
+                    "name": "Wax",
+                    "groups": [
+                        "Ungrouped"
+                    ],
+                    "measurement": {
+                        "value": 1.14,
                         "unit": "%",
                         "unit_type": "massfraction"
                     }

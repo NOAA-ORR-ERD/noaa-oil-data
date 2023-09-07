@@ -13,16 +13,14 @@
         "product_type": "Distillate Fuel Oil",
         "API": 30.6,
         "labels": [
-            "Diesel",
             "Distillate Fuel",
             "Fuel Oil",
-            "Gas Oil",
             "LSFO",
             "Refined Product",
             "ULSFO",
             "VLSFO"
         ],
-        "model_completeness": 60,
+        "model_completeness": 75,
         "gnome_suitable": true,
         "change_log": [
             {
@@ -64,6 +62,16 @@
                 "name": "RM",
                 "date": "2023-07-25T12:20:25.563-07:00",
                 "comment": "ULSFO"
+            },
+            {
+                "name": "Chris",
+                "date": "2023-08-10T13:51:46.470-07:00",
+                "comment": "Removed diesel label"
+            },
+            {
+                "name": "RM",
+                "date": "2023-08-31T08:48:32.222-07:00",
+                "comment": "added evaporated"
             }
         ]
     },
@@ -133,23 +141,6 @@
                         },
                         "ref_temp": {
                             "value": 13.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        },
-                        "shear_rate": {
-                            "value": 10.0,
-                            "unit": "1/s",
-                            "unit_type": "angularvelocity"
-                        }
-                    },
-                    {
-                        "viscosity": {
-                            "value": 11.0,
-                            "unit": "cP",
-                            "unit_type": "dynamicviscosity"
-                        },
-                        "ref_temp": {
-                            "value": 50.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         },
@@ -327,6 +318,83 @@
                     }
                 }
             ]
+        },
+        {
+            "metadata": {
+                "name": "14.6% Evaporated",
+                "short_name": "14.6% Evaporated",
+                "fraction_evaporated": {
+                    "value": 14.6,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                }
+            },
+            "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": 30.0,
+                        "unit": "C",
+                        "unit_type": "temperature"
+                    }
+                },
+                "flash_point": {
+                    "measurement": {
+                        "value": 112.0,
+                        "unit": "C",
+                        "unit_type": "temperature"
+                    }
+                },
+                "densities": [
+                    {
+                        "density": {
+                            "value": 0.878,
+                            "unit": "g/cm^3",
+                            "unit_type": "density"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
+                "dynamic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 77782.0,
+                            "unit": "cP",
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 2.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "shear_rate": {
+                            "value": 10.0,
+                            "unit": "1/s",
+                            "unit_type": "angularvelocity"
+                        }
+                    },
+                    {
+                        "viscosity": {
+                            "value": 33169.0,
+                            "unit": "cP",
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 13.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "shear_rate": {
+                            "value": 10.0,
+                            "unit": "1/s",
+                            "unit_type": "angularvelocity"
+                        }
+                    }
+                ]
+            }
         }
     ],
     "review_status": {
