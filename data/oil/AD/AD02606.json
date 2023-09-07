@@ -28,7 +28,7 @@
             "ULSFO",
             "VLSFO"
         ],
-        "model_completeness": 60,
+        "model_completeness": 76,
         "gnome_suitable": true,
         "change_log": [
             {
@@ -60,6 +60,16 @@
                 "name": "RM",
                 "date": "2023-08-02T13:25:15.256-07:00",
                 "comment": "Name change to SINTEF"
+            },
+            {
+                "name": "RM",
+                "date": "2023-08-31T08:34:07.134-07:00",
+                "comment": "added evaporated"
+            },
+            {
+                "name": "RM",
+                "date": "2023-08-31T08:40:34.476-07:00",
+                "comment": "added evaporated"
             }
         ]
     },
@@ -294,6 +304,103 @@
                         "unit_type": "massfraction"
                     }
                 },
+                {
+                    "name": "Wax",
+                    "groups": [
+                        "Ungrouped"
+                    ],
+                    "measurement": {
+                        "value": 0.01,
+                        "unit": "%",
+                        "unit_type": "massfraction"
+                    }
+                }
+            ]
+        },
+        {
+            "metadata": {
+                "name": "59.5% Evaporated",
+                "short_name": "59.5% Evaporated",
+                "fraction_evaporated": {
+                    "value": 59.5,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                }
+            },
+            "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": -33.0,
+                        "unit": "C",
+                        "unit_type": "temperature"
+                    }
+                },
+                "flash_point": {
+                    "measurement": {
+                        "value": 107.5,
+                        "unit": "C",
+                        "unit_type": "temperature"
+                    }
+                },
+                "densities": [
+                    {
+                        "density": {
+                            "value": 0.846,
+                            "unit": "g/cm^3",
+                            "unit_type": "density"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
+                "dynamic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 10.0,
+                            "unit": "cP",
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 2.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "shear_rate": {
+                            "value": 10.0,
+                            "unit": "1/s",
+                            "unit_type": "angularvelocity"
+                        }
+                    },
+                    {
+                        "viscosity": {
+                            "value": 7.0,
+                            "unit": "cP",
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 13.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "shear_rate": {
+                            "value": 10.0,
+                            "unit": "1/s",
+                            "unit_type": "angularvelocity"
+                        }
+                    }
+                ]
+            },
+            "SARA": {
+                "asphaltenes": {
+                    "value": 0.03,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                }
+            },
+            "bulk_composition": [
                 {
                     "name": "Wax",
                     "groups": [
