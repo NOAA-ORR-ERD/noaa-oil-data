@@ -9,6 +9,7 @@
             "year": 2010,
             "reference": "Sorheim K. R., 2010, Weathering properties of Volund crude oil, SINTEF F16176"
         },
+        "sample_date": "2010",
         "product_type": "Crude Oil NOS",
         "API": 32.89,
         "labels": [
@@ -27,6 +28,11 @@
                 "name": "R",
                 "date": "2022-11-28T13:08:59.576-08:00",
                 "comment": "Issue #27 - Normalize Location"
+            },
+            {
+                "name": "Knut-Frode Dagestad",
+                "date": "2023-11-19T05:15:18.044792",
+                "comment": "Added sample_date and fraction_recovered. Fixed .15 C/K issues"
             }
         ]
     },
@@ -57,7 +63,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 289.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -99,6 +105,11 @@
             },
             "distillation_data": {
                 "type": "volume fraction",
+                "fraction_recovered": {
+                    "unit": "fraction",
+                    "max_value": 1.0,
+                    "unit_type": "concentration"
+                },
                 "cuts": [
                     {
                         "fraction": {
@@ -274,7 +285,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 289.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -294,6 +305,13 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "unit": "fraction",
+                    "max_value": 1.0,
+                    "unit_type": "concentration"
+                }
             }
         },
         {
@@ -315,7 +333,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 289.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -335,6 +353,13 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "unit": "fraction",
+                    "max_value": 1.0,
+                    "unit_type": "concentration"
+                }
             }
         },
         {
@@ -356,7 +381,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 289.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -388,11 +413,15 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "unit": "fraction",
+                    "max_value": 1.0,
+                    "unit_type": "concentration"
+                }
             }
         }
-    ],
-    "status": [
-        "W009: Distillation fraction recovered is missing or invalid"
     ],
     "review_status": {
         "status": "Not Reviewed"

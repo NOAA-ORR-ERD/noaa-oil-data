@@ -9,6 +9,7 @@
             "year": 2014,
             "reference": "Hellstrom K. C., Johnsen M., 2014, Luno II crude oil - properties and weathering at sea, SINTEF A26115"
         },
+        "sample_date": "2014",
         "product_type": "Crude Oil NOS",
         "API": 34.63,
         "labels": [
@@ -27,6 +28,11 @@
                 "name": "R",
                 "date": "2022-11-28T12:32:25.729-08:00",
                 "comment": "Issue #27 - Normalize Location"
+            },
+            {
+                "name": "Knut-Frode Dagestad",
+                "date": "2023-11-19T05:15:19.216152",
+                "comment": "Added sample_date and fraction_recovered. Fixed .15 C/K issues"
             }
         ]
     },
@@ -57,7 +63,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 289.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -99,6 +105,11 @@
             },
             "distillation_data": {
                 "type": "volume fraction",
+                "fraction_recovered": {
+                    "unit": "fraction",
+                    "max_value": 1.0,
+                    "unit_type": "concentration"
+                },
                 "cuts": [
                     {
                         "fraction": {
@@ -250,7 +261,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 289.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -270,6 +281,13 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "unit": "fraction",
+                    "max_value": 1.0,
+                    "unit_type": "concentration"
+                }
             }
         },
         {
@@ -291,7 +309,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 289.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -311,6 +329,13 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "unit": "fraction",
+                    "max_value": 1.0,
+                    "unit_type": "concentration"
+                }
             }
         },
         {
@@ -332,7 +357,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 289.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -364,11 +389,15 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "unit": "fraction",
+                    "max_value": 1.0,
+                    "unit_type": "concentration"
+                }
             }
         }
-    ],
-    "status": [
-        "W009: Distillation fraction recovered is missing or invalid"
     ],
     "review_status": {
         "status": "Not Reviewed"

@@ -9,6 +9,7 @@
             "year": 2015,
             "reference": "Hellstrom K. C., Brandvik P. J., 2015, Comparison of predicted properties of Ekofisk oils based on crude assay data, SINTEF A27361"
         },
+        "sample_date": "2015",
         "product_type": "Crude Oil NOS",
         "API": 34.05,
         "labels": [
@@ -27,6 +28,11 @@
                 "name": "R",
                 "date": "2022-11-28T12:14:28.161-08:00",
                 "comment": "Issue #27 - Normalize Location"
+            },
+            {
+                "name": "Knut-Frode Dagestad",
+                "date": "2023-11-19T05:15:18.407309",
+                "comment": "Added sample_date and fraction_recovered. Fixed .15 C/K issues"
             }
         ]
     },
@@ -57,7 +63,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 289.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -87,6 +93,11 @@
             },
             "distillation_data": {
                 "type": "volume fraction",
+                "fraction_recovered": {
+                    "unit": "fraction",
+                    "max_value": 1.0,
+                    "unit_type": "concentration"
+                },
                 "cuts": [
                     {
                         "fraction": {
@@ -264,7 +275,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 289.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -284,11 +295,15 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "unit": "fraction",
+                    "max_value": 1.0,
+                    "unit_type": "concentration"
+                }
             }
         }
-    ],
-    "status": [
-        "W009: Distillation fraction recovered is missing or invalid"
     ],
     "review_status": {
         "status": "Not Reviewed"

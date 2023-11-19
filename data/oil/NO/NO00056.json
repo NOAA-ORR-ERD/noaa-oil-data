@@ -9,6 +9,7 @@
             "year": 1997,
             "reference": "Singsaas I. et al., 1997, Forvitringsegenskaper Lavrans og Kristin kondensat. Stokastiske drivbaneberegninger ved overflate- og undervannsutslipp for Kristin kondensat, STF66 F97086"
         },
+        "sample_date": "1997",
         "product_type": "Crude Oil NOS",
         "API": 47.68,
         "comments": "Dynamic viscosity measured at shear rate 100/s.",
@@ -28,6 +29,11 @@
                 "name": "R",
                 "date": "2022-11-28T12:28:09.531-08:00",
                 "comment": "Issue #27 - Normalize Location"
+            },
+            {
+                "name": "Knut-Frode Dagestad",
+                "date": "2023-11-19T05:15:18.151057",
+                "comment": "Added sample_date and fraction_recovered. Fixed .15 C/K issues"
             }
         ]
     },
@@ -58,7 +64,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 289.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -87,7 +93,12 @@
                 }
             },
             "distillation_data": {
-                "type": "mass fraction"
+                "type": "mass fraction",
+                "fraction_recovered": {
+                    "unit": "fraction",
+                    "max_value": 1.0,
+                    "unit_type": "concentration"
+                }
             },
             "bulk_composition": [
                 {
@@ -119,12 +130,19 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 289.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "unit": "fraction",
+                    "max_value": 1.0,
+                    "unit_type": "concentration"
+                }
             }
         },
         {
@@ -146,12 +164,19 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 289.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "unit": "fraction",
+                    "max_value": 1.0,
+                    "unit_type": "concentration"
+                }
             }
         },
         {
@@ -173,12 +198,19 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 289.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "unit": "fraction",
+                    "max_value": 1.0,
+                    "unit_type": "concentration"
+                }
             }
         }
     ],

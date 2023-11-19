@@ -9,6 +9,7 @@
             "year": 2014,
             "reference": "Guyomarch J. (2014), Weathering and dispersibility study of the Svalin M & svalin C crude oils in simulated local weather conditions. Statoil report."
         },
+        "sample_date": "2014",
         "product_type": "Crude Oil NOS",
         "API": 22.67,
         "labels": [
@@ -27,6 +28,11 @@
                 "name": "R",
                 "date": "2022-11-28T13:00:57.496-08:00",
                 "comment": "Issue #27 - Normalize Location"
+            },
+            {
+                "name": "Knut-Frode Dagestad",
+                "date": "2023-11-19T05:15:17.991845",
+                "comment": "Added sample_date and fraction_recovered. Fixed .15 C/K issues"
             }
         ]
     },
@@ -51,7 +57,7 @@
                 },
                 "flash_point": {
                     "measurement": {
-                        "value": 253.65,
+                        "value": 254.15,
                         "unit": "K",
                         "unit_type": "temperature"
                     }
@@ -94,6 +100,11 @@
             },
             "distillation_data": {
                 "type": "volume fraction",
+                "fraction_recovered": {
+                    "unit": "fraction",
+                    "max_value": 1.0,
+                    "unit_type": "concentration"
+                },
                 "cuts": [
                     {
                         "fraction": {
@@ -151,30 +162,6 @@
                         },
                         "vapor_temp": {
                             "value": 90.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
-                    },
-                    {
-                        "fraction": {
-                            "value": 0.048,
-                            "unit": "fraction",
-                            "unit_type": "volumefraction"
-                        },
-                        "vapor_temp": {
-                            "value": 100.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
-                    },
-                    {
-                        "fraction": {
-                            "value": 0.046,
-                            "unit": "fraction",
-                            "unit_type": "volumefraction"
-                        },
-                        "vapor_temp": {
-                            "value": 115.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -327,6 +314,13 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "unit": "fraction",
+                    "max_value": 1.0,
+                    "unit_type": "concentration"
+                }
             }
         },
         {
@@ -368,6 +362,13 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "unit": "fraction",
+                    "max_value": 1.0,
+                    "unit_type": "concentration"
+                }
             }
         },
         {
@@ -409,12 +410,15 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "unit": "fraction",
+                    "max_value": 1.0,
+                    "unit_type": "concentration"
+                }
             }
         }
-    ],
-    "status": [
-        "E060: Oil fraction in distillation cuts is not accumulative",
-        "W009: Distillation fraction recovered is missing or invalid"
     ],
     "review_status": {
         "status": "Not Reviewed"

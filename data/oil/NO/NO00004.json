@@ -9,6 +9,7 @@
             "year": 2009,
             "reference": "Leirvik F., Myrhaug J. L., 2009, Weathering properties of the Alvheim crude oils Kneler, Boa, Kameleon, and the Alvheim blend, SINTEF A11170"
         },
+        "sample_date": "2009",
         "product_type": "Crude Oil NOS",
         "API": 34.83,
         "labels": [
@@ -27,6 +28,11 @@
                 "name": "Rin",
                 "date": "2022-11-25T13:16:54.936-08:00",
                 "comment": "Issue #27 - Normalize Location"
+            },
+            {
+                "name": "Knut-Frode Dagestad",
+                "date": "2023-11-19T05:15:18.442528",
+                "comment": "Added sample_date and fraction_recovered. Fixed .15 C/K issues"
             }
         ]
     },
@@ -57,7 +63,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 289.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -87,6 +93,11 @@
             },
             "distillation_data": {
                 "type": "volume fraction",
+                "fraction_recovered": {
+                    "unit": "fraction",
+                    "max_value": 1.0,
+                    "unit_type": "concentration"
+                },
                 "cuts": [
                     {
                         "fraction": {
@@ -95,7 +106,7 @@
                             "unit_type": "volumefraction"
                         },
                         "vapor_temp": {
-                            "value": 60.5,
+                            "value": 60.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -107,7 +118,7 @@
                             "unit_type": "volumefraction"
                         },
                         "vapor_temp": {
-                            "value": 103.20000000000005,
+                            "value": 103.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -119,7 +130,7 @@
                             "unit_type": "volumefraction"
                         },
                         "vapor_temp": {
-                            "value": 139.90000000000003,
+                            "value": 140.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -131,7 +142,7 @@
                             "unit_type": "volumefraction"
                         },
                         "vapor_temp": {
-                            "value": 184.10000000000002,
+                            "value": 184.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -143,7 +154,7 @@
                             "unit_type": "volumefraction"
                         },
                         "vapor_temp": {
-                            "value": 230.40000000000003,
+                            "value": 230.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -155,7 +166,7 @@
                             "unit_type": "volumefraction"
                         },
                         "vapor_temp": {
-                            "value": 286.1,
+                            "value": 286.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -167,7 +178,7 @@
                             "unit_type": "volumefraction"
                         },
                         "vapor_temp": {
-                            "value": 355.1,
+                            "value": 355.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -179,7 +190,7 @@
                             "unit_type": "volumefraction"
                         },
                         "vapor_temp": {
-                            "value": 511.20000000000005,
+                            "value": 511.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -228,7 +239,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 289.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -248,6 +259,13 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "unit": "fraction",
+                    "max_value": 1.0,
+                    "unit_type": "concentration"
+                }
             }
         },
         {
@@ -269,7 +287,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 289.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -289,6 +307,13 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "unit": "fraction",
+                    "max_value": 1.0,
+                    "unit_type": "concentration"
+                }
             }
         },
         {
@@ -310,7 +335,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 289.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -330,11 +355,15 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "unit": "fraction",
+                    "max_value": 1.0,
+                    "unit_type": "concentration"
+                }
             }
         }
-    ],
-    "status": [
-        "W009: Distillation fraction recovered is missing or invalid"
     ],
     "review_status": {
         "status": "Not Reviewed"
