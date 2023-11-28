@@ -9,6 +9,7 @@
             "year": 2003,
             "reference": "Leirvik F., Wang U. M., Moldestad M. O., 2003, Aasgard A, Smorbukk, Smorbukk Sor, Smorbukk kondensat/lettolje og Midgard - Egenskaper og forvitring paa sjoen relatert til beredskap, STF66 A03053"
         },
+        "sample_date": "2003",
         "product_type": "Crude Oil NOS",
         "API": 39.04,
         "labels": [
@@ -27,6 +28,11 @@
                 "name": "R",
                 "date": "2022-11-28T12:27:58.737-08:00",
                 "comment": "Issue #27 - Normalize Location"
+            },
+            {
+                "name": "Knut-Frode Dagestad",
+                "date": "2023-11-23T17:07:11.557519",
+                "comment": "Added sample_date and fraction_recovered. Fixed .15 C/K issues"
             }
         ]
     },
@@ -57,7 +63,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 288.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -86,7 +92,12 @@
                 }
             },
             "distillation_data": {
-                "type": "mass fraction"
+                "type": "mass fraction",
+                "fraction_recovered": {
+                    "unit": "fraction",
+                    "max_value": 1.0,
+                    "unit_type": "concentration"
+                }
             },
             "bulk_composition": [
                 {
@@ -118,7 +129,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 288.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -138,6 +149,13 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "unit": "fraction",
+                    "max_value": 1.0,
+                    "unit_type": "concentration"
+                }
             }
         }
     ],

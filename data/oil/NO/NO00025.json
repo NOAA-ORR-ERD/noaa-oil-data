@@ -9,6 +9,7 @@
             "year": 2013,
             "reference": "Guyomarch J., 2013, Weathering and dispersibility study of the Fossekall crude oil from Skuld field in simulated local weather conditions, Cedre R.13.50.C/5273"
         },
+        "sample_date": "2013",
         "product_type": "Crude Oil NOS",
         "API": 34.05,
         "comments": "The report states that dynamic viscosity is measured at shear rate 100/s, I am not 100% convinced when comparing to other waxy crudes.",
@@ -28,6 +29,11 @@
                 "name": "R",
                 "date": "2022-11-28T12:25:35.620-08:00",
                 "comment": "Issue #27 - Normalize Location"
+            },
+            {
+                "name": "Knut-Frode Dagestad",
+                "date": "2023-11-23T17:07:11.867967",
+                "comment": "Added sample_date and fraction_recovered. Fixed .15 C/K issues"
             }
         ]
     },
@@ -107,6 +113,11 @@
             },
             "distillation_data": {
                 "type": "volume fraction",
+                "fraction_recovered": {
+                    "unit": "fraction",
+                    "max_value": 1.0,
+                    "unit_type": "concentration"
+                },
                 "cuts": [
                     {
                         "fraction": {
@@ -328,6 +339,13 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "unit": "fraction",
+                    "max_value": 1.0,
+                    "unit_type": "concentration"
+                }
             }
         },
         {
@@ -369,6 +387,13 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "unit": "fraction",
+                    "max_value": 1.0,
+                    "unit_type": "concentration"
+                }
             }
         },
         {
@@ -422,11 +447,15 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "unit": "fraction",
+                    "max_value": 1.0,
+                    "unit_type": "concentration"
+                }
             }
         }
-    ],
-    "status": [
-        "W009: Distillation fraction recovered is missing or invalid"
     ],
     "review_status": {
         "status": "Not Reviewed"
