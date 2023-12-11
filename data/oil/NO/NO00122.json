@@ -9,6 +9,7 @@
             "year": 2017,
             "reference": "Hellstrom et al, 2017, Memo report no OC2017-A123, Version 1, SINTEF"
         },
+        "sample_date": "2017",
         "product_type": "Distillate Fuel Oil",
         "API": 28.23,
         "labels": [
@@ -30,9 +31,14 @@
                 "comment": "Issue #27 - Normalize Location"
             },
             {
-                "name": "RM",
-                "date": "2024-01-16T15:02:31.898-08:00",
-                "comment": "Frac Rec 100"
+                "name": "Knut-Frode Dagestad",
+                "date": "2023-11-23T17:07:11.697353",
+                "comment": "Added sample_date and fraction_recovered. Fixed .15 C/K issues"
+            },
+            {
+                "name": "Knut-Frode Dagestad",
+                "date": "2023-12-11T18:51:33.627002",
+                "comment": "Changed *max_value* to *value* for fraction_recovered."
             }
         ]
     },
@@ -59,8 +65,8 @@
                 "flash_point": {
                     "measurement": {
                         "unit": "K",
-                        "min_value": 355.5,
-                        "max_value": 383.5,
+                        "min_value": 355.15,
+                        "max_value": 383.15,
                         "unit_type": "temperature"
                     }
                 },
@@ -81,36 +87,12 @@
                 "dynamic_viscosities": [
                     {
                         "viscosity": {
-                            "value": 0.043,
-                            "unit": "kg/(m s)",
-                            "unit_type": "dynamicviscosity"
-                        },
-                        "ref_temp": {
-                            "value": 275.15,
-                            "unit": "K",
-                            "unit_type": "temperature"
-                        }
-                    },
-                    {
-                        "viscosity": {
                             "value": 0.012,
                             "unit": "kg/(m s)",
                             "unit_type": "dynamicviscosity"
                         },
                         "ref_temp": {
                             "value": 286.15,
-                            "unit": "K",
-                            "unit_type": "temperature"
-                        }
-                    },
-                    {
-                        "viscosity": {
-                            "value": 0.0306,
-                            "unit": "kg/(m s)",
-                            "unit_type": "dynamicviscosity"
-                        },
-                        "ref_temp": {
-                            "value": 323.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -155,9 +137,9 @@
             "distillation_data": {
                 "type": "volume fraction",
                 "fraction_recovered": {
-                    "value": 100.0,
-                    "unit": "%",
-                    "unit_type": "massfraction"
+                    "value": 1.0,
+                    "unit": "fraction",
+                    "unit_type": "concentration"
                 },
                 "cuts": [
                     {
@@ -251,7 +233,7 @@
                             "unit_type": "volumefraction"
                         },
                         "vapor_temp": {
-                            "value": 435.35,
+                            "value": 435.4,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -294,6 +276,13 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "value": 1.0,
+                    "unit": "fraction",
+                    "unit_type": "concentration"
+                }
             }
         },
         {
@@ -321,6 +310,13 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "value": 1.0,
+                    "unit": "fraction",
+                    "unit_type": "concentration"
+                }
             }
         },
         {
@@ -348,12 +344,15 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "value": 1.0,
+                    "unit": "fraction",
+                    "unit_type": "concentration"
+                }
             }
         }
-    ],
-    "status": [
-        "E062: Viscosity data is not strictly decreasing",
-        "W100: Not GNOME compatible: Viscosities must be decreasing with temperature"
     ],
     "review_status": {
         "status": "Not Reviewed"
