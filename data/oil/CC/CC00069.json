@@ -1,0 +1,87 @@
+{
+    "oil_id": "CC00069",
+    "adios_data_model_version": "0.12.0",
+    "metadata": {
+        "name": "Barrow Island",
+        "source_id": "ODB00-70",
+        "alternate_names": [
+            "Unknown"
+        ],
+        "location": "Australia",
+        "reference": {
+            "year": 1999,
+            "reference": "Oil & Gas Journal Databook, Tulsa, OK, PennWell, 1999"
+        },
+        "product_type": "Crude Oil NOS",
+        "API": 36.8,
+        "comments": "Data from OGJ 99 were originally published sometime between 1984 and 1992.",
+        "model_completeness": 12,
+        "gnome_suitable": false
+    },
+    "sub_samples": [
+        {
+            "metadata": {
+                "name": "Fresh Oil Sample",
+                "short_name": "Fresh Oil",
+                "sample_id": "ODB00-70",
+                "fraction_evaporated": {
+                    "value": 0.0,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                }
+            },
+            "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": -30.0,
+                        "unit": "C",
+                        "unit_type": "temperature"
+                    }
+                },
+                "kinematic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 3.0,
+                            "unit": "mm^2/s",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 10.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "viscosity": {
+                            "value": 2.0,
+                            "unit": "mm^2/s",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 100.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
+            },
+            "bulk_composition": [
+                {
+                    "name": "Sulphur Content",
+                    "measurement": {
+                        "value": 0.05,
+                        "unit": "%",
+                        "unit_type": "massfraction"
+                    }
+                }
+            ]
+        }
+    ],
+    "status": [
+        "W006: No density values provided",
+        "W100: Not GNOME compatible: Cannot initialize a Density object with no data"
+    ],
+    "review_status": {
+        "status": "Not Reviewed"
+    }
+}

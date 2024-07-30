@@ -1,0 +1,138 @@
+{
+    "oil_id": "CC00105",
+    "adios_data_model_version": "0.12.0",
+    "metadata": {
+        "name": "Brent Blend",
+        "source_id": "ODB00-106",
+        "alternate_names": [
+            "Unknown"
+        ],
+        "location": "North Sea, UK",
+        "reference": {
+            "year": 1995,
+            "reference": "Rhodes, A.K., \"Brent blend, U.K. North Sea marker crude, assayed\", Oil& Gas Journal, February 6, pp. 63-64, 1995"
+        },
+        "product_type": "Crude Oil NOS",
+        "API": 38.3,
+        "comments": "Data from OGJ 95b were originally published in 1995.",
+        "model_completeness": 19,
+        "gnome_suitable": false
+    },
+    "sub_samples": [
+        {
+            "metadata": {
+                "name": "Fresh Oil Sample",
+                "short_name": "Fresh Oil",
+                "sample_id": "ODB00-106",
+                "fraction_evaporated": {
+                    "value": 0.0,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                }
+            },
+            "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": -42.0,
+                        "unit": "C",
+                        "unit_type": "temperature"
+                    }
+                },
+                "densities": [
+                    {
+                        "density": {
+                            "value": 0.8334,
+                            "unit": "g/mL",
+                            "unit_type": "density"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
+                "kinematic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 6.0,
+                            "unit": "mm^2/s",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 20.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "viscosity": {
+                            "value": 15.0,
+                            "unit": "mm^2/s",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 30.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
+            },
+            "SARA": {
+                "asphaltenes": {
+                    "value": 0.0,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                }
+            },
+            "bulk_composition": [
+                {
+                    "name": "Sulphur Content",
+                    "measurement": {
+                        "value": 0.4,
+                        "unit": "%",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Water Content",
+                    "measurement": {
+                        "value": 0.38,
+                        "unit": "%",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Nickel",
+                    "groups": [
+                        "Metals"
+                    ],
+                    "measurement": {
+                        "value": 1.0,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Vanadium",
+                    "groups": [
+                        "Metals"
+                    ],
+                    "measurement": {
+                        "value": 6.0,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                }
+            ]
+        }
+    ],
+    "status": [
+        "E062: Viscosity data is not strictly decreasing",
+        "W100: Not GNOME compatible: Viscosities must be decreasing with temperature"
+    ],
+    "review_status": {
+        "status": "Not Reviewed"
+    }
+}

@@ -1,0 +1,115 @@
+{
+    "oil_id": "CC00256",
+    "adios_data_model_version": "0.12.0",
+    "metadata": {
+        "name": "Fuel Oil No. 2",
+        "source_id": "ODB00-259",
+        "alternate_names": [
+            "Diesel Fuel Oil, Furnace Oil, Home Heating Oil; Combustible diesel, Mazout de chauffage, Mazout domestique"
+        ],
+        "location": "Unknown",
+        "reference": {
+            "year": 1996,
+            "reference": "American Society for Testing and Materials, \"Standard Specification for Fuel Oils\", Annual Book of AVM Standards - Section 5 Petroleum Products, Lubricants, and Fossil Fuels, West Conshohocken, Pennsylvania, 1996"
+        },
+        "product_type": "Refined Product NOS",
+        "API": 30.0,
+        "comments": "For additional fuel specifications refer to ASTM D396.",
+        "model_completeness": 17,
+        "gnome_suitable": false
+    },
+    "sub_samples": [
+        {
+            "metadata": {
+                "name": "Fresh Oil Sample",
+                "short_name": "Fresh Oil",
+                "sample_id": "ODB00-259",
+                "fraction_evaporated": {
+                    "value": 0.0,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                }
+            },
+            "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": -6.0,
+                        "unit": "C",
+                        "unit_type": "temperature"
+                    }
+                },
+                "flash_point": {
+                    "measurement": {
+                        "value": 38.0,
+                        "unit": "C",
+                        "unit_type": "temperature"
+                    }
+                },
+                "densities": [
+                    {
+                        "density": {
+                            "value": 0.876,
+                            "unit": "g/mL",
+                            "unit_type": "density"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
+                "kinematic_viscosities": [
+                    {
+                        "viscosity": {
+                            "unit": "mm^2/s",
+                            "max_value": 3.6,
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 38.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "viscosity": {
+                            "unit": "mm^2/s",
+                            "max_value": 3.4,
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 40.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
+            },
+            "bulk_composition": [
+                {
+                    "name": "Sulphur Content",
+                    "measurement": {
+                        "value": 0.5,
+                        "unit": "%",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Water Content",
+                    "measurement": {
+                        "value": 0.05,
+                        "unit": "%",
+                        "unit_type": "massfraction"
+                    }
+                }
+            ]
+        }
+    ],
+    "status": [
+        "W100: Not GNOME compatible: '<=' not supported between instances of 'NoneType' and 'NoneType'"
+    ],
+    "review_status": {
+        "status": "Not Reviewed"
+    }
+}

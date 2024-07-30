@@ -1,0 +1,180 @@
+{
+    "oil_id": "CC00658",
+    "adios_data_model_version": "0.12.0",
+    "metadata": {
+        "name": "Tarsiut",
+        "source_id": "ODB00-668",
+        "alternate_names": [
+            "Unknown"
+        ],
+        "location": "Beaufort Sea, Canada",
+        "reference": {
+            "year": 1983,
+            "reference": "Gulf Canada Resources Inc., East Tarsiut Crude Oil Analysis, File No. 187-80-29, 1983"
+        },
+        "product_type": "Crude Oil NOS",
+        "model_completeness": 40,
+        "gnome_suitable": false
+    },
+    "sub_samples": [
+        {
+            "metadata": {
+                "name": "Fresh Oil Sample",
+                "short_name": "Fresh Oil",
+                "sample_id": "ODB00-668",
+                "fraction_evaporated": {
+                    "value": 0.0,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                }
+            },
+            "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "unit": "C",
+                        "max_value": -61.0,
+                        "unit_type": "temperature"
+                    }
+                },
+                "densities": [
+                    {
+                        "density": {
+                            "value": 0.895,
+                            "unit": "g/mL",
+                            "unit_type": "density"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
+                "dynamic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 12.0,
+                            "unit": "mPas",
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 0.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
+            },
+            "distillation_data": {
+                "type": "mass fraction",
+                "cuts": [
+                    {
+                        "fraction": {
+                            "value": 0.0,
+                            "unit": "%",
+                            "unit_type": "massfraction"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 10.0,
+                            "unit": "%",
+                            "unit_type": "massfraction"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 30.0,
+                            "unit": "%",
+                            "unit_type": "massfraction"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 50.0,
+                            "unit": "%",
+                            "unit_type": "massfraction"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 70.0,
+                            "unit": "%",
+                            "unit_type": "massfraction"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 90.0,
+                            "unit": "%",
+                            "unit_type": "massfraction"
+                        }
+                    }
+                ]
+            },
+            "bulk_composition": [
+                {
+                    "name": "Sulphur Content",
+                    "measurement": {
+                        "unit": "%",
+                        "max_value": 0.15,
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Copper",
+                    "groups": [
+                        "Metals"
+                    ],
+                    "measurement": {
+                        "value": 1.57,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Iron",
+                    "groups": [
+                        "Metals"
+                    ],
+                    "measurement": {
+                        "value": 9.57,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Nickel",
+                    "groups": [
+                        "Metals"
+                    ],
+                    "measurement": {
+                        "value": 0.5,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Vanadium",
+                    "groups": [
+                        "Metals"
+                    ],
+                    "measurement": {
+                        "value": 0.34,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                }
+            ]
+        }
+    ],
+    "status": [
+        "E030: Oils must have an API",
+        "E042: Must have a value for Distillation vapor temp",
+        "W009: Distillation fraction recovered is missing or invalid",
+        "W100: Not GNOME compatible: unsupported operand type(s) for -: 'NoneType' and 'NoneType'"
+    ],
+    "review_status": {
+        "status": "Not Reviewed"
+    }
+}

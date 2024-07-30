@@ -1,0 +1,85 @@
+{
+    "oil_id": "CC00199",
+    "adios_data_model_version": "0.12.0",
+    "metadata": {
+        "name": "Electrical Insulating Oil (Transformer, Electrical Oil C-50)",
+        "source_id": "ODB00-200",
+        "alternate_names": [
+            "Unknown"
+        ],
+        "location": "Unknown",
+        "reference": {
+            "year": 1997,
+            "reference": "Lubricants Handbook, Mississauga, ON, Petro-Canada, 1997"
+        },
+        "product_type": "Crude Oil NOS",
+        "model_completeness": 8,
+        "gnome_suitable": false
+    },
+    "sub_samples": [
+        {
+            "metadata": {
+                "name": "Fresh Oil Sample",
+                "short_name": "Fresh Oil",
+                "sample_id": "ODB00-200",
+                "fraction_evaporated": {
+                    "value": 0.0,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                }
+            },
+            "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": -51.0,
+                        "unit": "C",
+                        "unit_type": "temperature"
+                    }
+                },
+                "flash_point": {
+                    "measurement": {
+                        "value": 150.0,
+                        "unit": "C",
+                        "unit_type": "temperature"
+                    }
+                },
+                "kinematic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 8.0,
+                            "unit": "mm^2/s",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 40.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
+                "interfacial_tension_water": [
+                    {
+                        "tension": {
+                            "value": 45.0,
+                            "unit": "mN/m",
+                            "unit_type": "interfacialtension"
+                        },
+                        "ref_temp": {
+                            "value": 25.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "status": [
+        "E030: Oils must have an API",
+        "W006: No density values provided",
+        "W100: Not GNOME compatible: Cannot initialize a Density object with no data"
+    ],
+    "review_status": {
+        "status": "Not Reviewed"
+    }
+}

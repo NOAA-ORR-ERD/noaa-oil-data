@@ -1,0 +1,84 @@
+{
+    "oil_id": "CC00430",
+    "adios_data_model_version": "0.12.0",
+    "metadata": {
+        "name": "Lubricating Oil (Engine, Two Stroke)",
+        "source_id": "ODB00-438",
+        "alternate_names": [
+            "Unknown"
+        ],
+        "location": "Unknown",
+        "reference": {
+            "year": 1997,
+            "reference": "Lubricants Handbook, Mississauga, ON, Petro-Canada, 1997"
+        },
+        "product_type": "Crude Oil NOS",
+        "comments": "Data from PetroCan 97 are for '2 Cycle Motor Oil'.",
+        "model_completeness": 12,
+        "gnome_suitable": false
+    },
+    "sub_samples": [
+        {
+            "metadata": {
+                "name": "Fresh Oil Sample",
+                "short_name": "Fresh Oil",
+                "sample_id": "ODB00-438",
+                "fraction_evaporated": {
+                    "value": 0.0,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                }
+            },
+            "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": -42.0,
+                        "unit": "C",
+                        "unit_type": "temperature"
+                    }
+                },
+                "flash_point": {
+                    "measurement": {
+                        "value": 130.0,
+                        "unit": "C",
+                        "unit_type": "temperature"
+                    }
+                },
+                "kinematic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 18.0,
+                            "unit": "mm^2/s",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 40.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "viscosity": {
+                            "value": 4.0,
+                            "unit": "mm^2/s",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 100.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "status": [
+        "E030: Oils must have an API",
+        "W006: No density values provided",
+        "W100: Not GNOME compatible: Cannot initialize a Density object with no data"
+    ],
+    "review_status": {
+        "status": "Not Reviewed"
+    }
+}

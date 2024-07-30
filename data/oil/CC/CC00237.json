@@ -1,0 +1,84 @@
+{
+    "oil_id": "CC00237",
+    "adios_data_model_version": "0.12.0",
+    "metadata": {
+        "name": "Fuel Oil No. 1 (Jet B)",
+        "source_id": "ODB00-240",
+        "alternate_names": [
+            "Turbo Fuel B, Jet B Wide-cut; Carburant B de turbo-moteur, Carbur\u00e9acteur \u00e0 large gamme de points d\u2019\u00e9bullition"
+        ],
+        "location": "Unknown",
+        "reference": {
+            "year": 1999,
+            "reference": "Material Safety Data Sheet, Shell Canada Ltd., Calgary, AB, 1999"
+        },
+        "product_type": "Refined Product NOS",
+        "comments": "A wide boiling-range petroleum distillate blended from gasoline and kerosene fractions.  Operational fuel for many commercial turboprop and turbojet aircraft. Data from Shell 1999 were taken from MSDS Number 141-012. For additional fuel specifications refer to ASTM D1655.",
+        "model_completeness": 0,
+        "gnome_suitable": false
+    },
+    "sub_samples": [
+        {
+            "metadata": {
+                "name": "Fresh Oil Sample",
+                "short_name": "Fresh Oil",
+                "sample_id": "ODB00-240",
+                "fraction_evaporated": {
+                    "value": 0.0,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                }
+            },
+            "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "unit": "C",
+                        "max_value": -51.0,
+                        "unit_type": "temperature"
+                    }
+                },
+                "flash_point": {
+                    "measurement": {
+                        "value": "'-23 to -1",
+                        "unit": "C",
+                        "unit_type": "temperature"
+                    }
+                },
+                "densities": [
+                    {
+                        "density": {
+                            "unit": "g/mL",
+                            "max_value": 0.801,
+                            "unit_type": "density"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
+            },
+            "compounds": [
+                {
+                    "name": "Benzene",
+                    "groups": [
+                        "Volatile Organic Compounds (VOCs)"
+                    ],
+                    "measurement": {
+                        "unit": "\u00b5g/g",
+                        "max_value": 15000.0,
+                        "unit_type": "massfraction"
+                    }
+                }
+            ]
+        }
+    ],
+    "status": [
+        "E044: Value: ''-23 to -1' for 'Temperature(value=\"'-23 to -1\", unit='C', unit_type='temperature')' is not valid",
+        "W100: Not GNOME compatible: '<' not supported between instances of 'NoneType' and 'int'"
+    ],
+    "review_status": {
+        "status": "Not Reviewed"
+    }
+}

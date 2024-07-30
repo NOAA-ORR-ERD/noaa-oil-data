@@ -1,0 +1,179 @@
+{
+    "oil_id": "CC00537",
+    "adios_data_model_version": "0.12.0",
+    "metadata": {
+        "name": "Northwest Shelf Condensate",
+        "source_id": "ODB00-546",
+        "alternate_names": [
+            "Unknown"
+        ],
+        "location": "Australia",
+        "reference": {
+            "year": 1999,
+            "reference": "Oil & Gas Journal Databook, Tulsa, OK, PennWell, 1999"
+        },
+        "product_type": "Crude Oil NOS",
+        "API": 53.1,
+        "comments": "Data from OGJ 99 were originally published sometime between 1984 and 1992.",
+        "model_completeness": 20,
+        "gnome_suitable": false
+    },
+    "sub_samples": [
+        {
+            "metadata": {
+                "name": "Fresh Oil Sample",
+                "short_name": "Fresh Oil",
+                "sample_id": "ODB00-546",
+                "fraction_evaporated": {
+                    "value": 0.0,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                }
+            },
+            "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": -36.0,
+                        "unit": "C",
+                        "unit_type": "temperature"
+                    }
+                },
+                "densities": [
+                    {
+                        "density": {
+                            "value": 0.766,
+                            "unit": "g/mL",
+                            "unit_type": "density"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
+                "kinematic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 1.0,
+                            "unit": "mm^2/s",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 20.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "viscosity": {
+                            "value": 1.0,
+                            "unit": "mm^2/s",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 40.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
+            },
+            "SARA": {
+                "aromatics": {
+                    "value": 11.0,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                }
+            },
+            "bulk_composition": [
+                {
+                    "name": "Sulphur Content",
+                    "measurement": {
+                        "value": 0.01,
+                        "unit": "%",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Waxes",
+                    "measurement": {
+                        "value": 0.0,
+                        "unit": "%",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Copper",
+                    "groups": [
+                        "Metals"
+                    ],
+                    "measurement": {
+                        "value": 1.0,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Iron",
+                    "groups": [
+                        "Metals"
+                    ],
+                    "measurement": {
+                        "value": 1.0,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Nickel",
+                    "groups": [
+                        "Metals"
+                    ],
+                    "measurement": {
+                        "value": 0.2,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Sodium",
+                    "groups": [
+                        "Metals"
+                    ],
+                    "measurement": {
+                        "value": 0.5,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Vanadium",
+                    "groups": [
+                        "Metals"
+                    ],
+                    "measurement": {
+                        "unit": "\u00b5g/g",
+                        "max_value": 0.1,
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Nitrogen",
+                    "measurement": {
+                        "value": 0.01,
+                        "unit": "%",
+                        "unit_type": "massfraction"
+                    }
+                }
+            ]
+        }
+    ],
+    "status": [
+        "E062: Viscosity data is not strictly decreasing",
+        "W100: Not GNOME compatible: Viscosities must be decreasing with temperature"
+    ],
+    "review_status": {
+        "status": "Not Reviewed"
+    }
+}

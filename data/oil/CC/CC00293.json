@@ -1,0 +1,96 @@
+{
+    "oil_id": "CC00293",
+    "adios_data_model_version": "0.12.0",
+    "metadata": {
+        "name": "Gasoline (Leaded)",
+        "source_id": "ODB00-296",
+        "alternate_names": [
+            "Straight Run, Motor Spirit, Automotive Fuel, Petrol; Essence de distillation directe, Carburant pour automobile, P\u00e9trole"
+        ],
+        "location": "Unknown",
+        "reference": {
+            "year": 1984,
+            "reference": "Maijanen, A., A. Ng, W.Y. Shiu, and D. Mackay, The Preparation and Composition of Aqueous Solutions of Crude Oils and Petroleum Products, Petroleum Association for the Conservation of the Canadian Environment, 1984"
+        },
+        "product_type": "Crude Oil NOS",
+        "comments": "For additional fuel specifications refer to ASTM D 4814.",
+        "model_completeness": 23,
+        "gnome_suitable": false
+    },
+    "sub_samples": [
+        {
+            "metadata": {
+                "name": "Fresh Oil Sample",
+                "short_name": "Fresh Oil",
+                "sample_id": "ODB00-296",
+                "fraction_evaporated": {
+                    "value": 0.0,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                }
+            },
+            "physical_properties": {
+                "densities": [
+                    {
+                        "density": {
+                            "value": 0.7501,
+                            "unit": "g/mL",
+                            "unit_type": "density"
+                        },
+                        "ref_temp": {
+                            "value": 5.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "density": {
+                            "value": 0.734,
+                            "unit": "g/mL",
+                            "unit_type": "density"
+                        },
+                        "ref_temp": {
+                            "value": 20.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
+                "dynamic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 0.5,
+                            "unit": "mPas",
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 5.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "viscosity": {
+                            "value": 0.5,
+                            "unit": "mPas",
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 20.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "status": [
+        "E030: Oils must have an API",
+        "E062: Viscosity data is not strictly decreasing",
+        "W100: Not GNOME compatible: Viscosities must be decreasing with temperature"
+    ],
+    "review_status": {
+        "status": "Not Reviewed"
+    }
+}

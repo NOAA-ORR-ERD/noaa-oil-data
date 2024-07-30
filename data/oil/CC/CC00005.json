@@ -1,0 +1,96 @@
+{
+    "oil_id": "CC00005",
+    "adios_data_model_version": "0.12.0",
+    "metadata": {
+        "name": "Alaska North Slope (1989)",
+        "source_id": "ODB00-5",
+        "alternate_names": [
+            "ANS, North Slope"
+        ],
+        "location": "Alaska, USA",
+        "reference": {
+            "year": 1989,
+            "reference": "American Petroleum Institute, API-EPA Sample Analysis of Standard Reference Oils, Ref. #71271, Washington, D.C., 1981"
+        },
+        "product_type": "Crude Oil NOS",
+        "model_completeness": 8,
+        "gnome_suitable": false
+    },
+    "sub_samples": [
+        {
+            "metadata": {
+                "name": "Fresh Oil Sample",
+                "short_name": "Fresh Oil",
+                "sample_id": "ODB00-5",
+                "fraction_evaporated": {
+                    "value": 0.0,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                }
+            },
+            "physical_properties": {
+                "densities": [
+                    {
+                        "density": {
+                            "value": 0.893,
+                            "unit": "g/mL",
+                            "unit_type": "density"
+                        },
+                        "ref_temp": {
+                            "value": 16.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
+            },
+            "bulk_composition": [
+                {
+                    "name": "Sulphur Content",
+                    "measurement": {
+                        "value": 1.04,
+                        "unit": "%",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Nickel",
+                    "groups": [
+                        "Metals"
+                    ],
+                    "measurement": {
+                        "value": 21.0,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Vanadium",
+                    "groups": [
+                        "Metals"
+                    ],
+                    "measurement": {
+                        "unit": "\u00b5g/g",
+                        "max_value": 9.7,
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Nitrogen",
+                    "measurement": {
+                        "value": 0.2,
+                        "unit": "%",
+                        "unit_type": "massfraction"
+                    }
+                }
+            ]
+        }
+    ],
+    "status": [
+        "E030: Oils must have an API",
+        "W100: Not GNOME compatible: Gnome oil needs at least one viscosity value"
+    ],
+    "review_status": {
+        "status": "Not Reviewed"
+    }
+}

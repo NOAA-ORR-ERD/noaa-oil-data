@@ -1,0 +1,115 @@
+{
+    "oil_id": "CC00234",
+    "adios_data_model_version": "0.12.0",
+    "metadata": {
+        "name": "Fuel Oil No. 1 (Jet B)",
+        "source_id": "ODB00-237",
+        "alternate_names": [
+            "Turbo Fuel B, Jet B Wide-cut; Carburant B de turbo-moteur, Carbur\u00e9acteur \u00e0 large gamme de points d\u2019\u00e9bullition"
+        ],
+        "location": "Unknown",
+        "reference": {
+            "year": 1996,
+            "reference": "American Society for Testing and Materials, \"Standard Specification for Aviation Turbine Fuels\", Annual Book of ASTM Standards - Section 5 Petroleum Products, Lubricants, and Fossil Fuels, American Society for Testing and Materials, West Conshohocken, Pennsylvania, 1996"
+        },
+        "product_type": "Refined Product NOS",
+        "comments": "A wide boiling-range petroleum blended from gasoline and kerosene fractions. Operational fuel for many commercial turboprop and turbojet aircraft.",
+        "model_completeness": 24,
+        "gnome_suitable": false
+    },
+    "sub_samples": [
+        {
+            "metadata": {
+                "name": "Fresh Oil Sample",
+                "short_name": "Fresh Oil",
+                "sample_id": "ODB00-237",
+                "fraction_evaporated": {
+                    "value": 0.0,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                }
+            },
+            "physical_properties": {
+                "densities": [
+                    {
+                        "density": {
+                            "unit": "g/mL",
+                            "max_value": 0.802,
+                            "unit_type": "density"
+                        },
+                        "ref_temp": {
+                            "value": 0.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
+                "kinematic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 8.0,
+                            "unit": "mm^2/s",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 20.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
+            },
+            "SARA": {
+                "aromatics": {
+                    "value": 22.0,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                }
+            },
+            "distillation_data": {
+                "type": "mass fraction",
+                "cuts": [
+                    {
+                        "fraction": {
+                            "value": 20.0,
+                            "unit": "%",
+                            "unit_type": "massfraction"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 50.0,
+                            "unit": "%",
+                            "unit_type": "massfraction"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 90.0,
+                            "unit": "%",
+                            "unit_type": "massfraction"
+                        }
+                    }
+                ]
+            },
+            "bulk_composition": [
+                {
+                    "name": "Sulphur Content",
+                    "measurement": {
+                        "value": 0.3,
+                        "unit": "%",
+                        "unit_type": "massfraction"
+                    }
+                }
+            ]
+        }
+    ],
+    "status": [
+        "E042: Must have a value for Distillation vapor temp",
+        "W009: Distillation fraction recovered is missing or invalid",
+        "W100: Not GNOME compatible: Cannot cast array data from dtype('O') to dtype('float64') according to the rule 'safe'"
+    ],
+    "review_status": {
+        "status": "Not Reviewed"
+    }
+}

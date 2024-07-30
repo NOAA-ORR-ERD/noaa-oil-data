@@ -1,0 +1,98 @@
+{
+    "oil_id": "CC00429",
+    "adios_data_model_version": "0.12.0",
+    "metadata": {
+        "name": "Lubricating Oil (Engine, Outboard Motor)",
+        "source_id": "ODB00-437",
+        "alternate_names": [
+            "Unknown"
+        ],
+        "location": "Unknown",
+        "reference": {
+            "year": 1999,
+            "reference": "Shell Lubricants Handbook, Shell Canada Ltd., Calgary, AB, 1999"
+        },
+        "product_type": "Crude Oil NOS",
+        "comments": "Data from Shell 99b are for 'Nautilus Premium Outboard Motor Oil'.",
+        "model_completeness": 12,
+        "gnome_suitable": false
+    },
+    "sub_samples": [
+        {
+            "metadata": {
+                "name": "Fresh Oil Sample",
+                "short_name": "Fresh Oil",
+                "sample_id": "ODB00-437",
+                "fraction_evaporated": {
+                    "value": 0.0,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                }
+            },
+            "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": -51.0,
+                        "unit": "C",
+                        "unit_type": "temperature"
+                    }
+                },
+                "flash_point": {
+                    "measurement": {
+                        "value": 77.0,
+                        "unit": "C",
+                        "unit_type": "temperature"
+                    }
+                },
+                "kinematic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 28.0,
+                            "unit": "mm^2/s",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 40.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "viscosity": {
+                            "value": 6.0,
+                            "unit": "mm^2/s",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 100.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
+                "dynamic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 11600.0,
+                            "unit": "mPas",
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 40.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "status": [
+        "E030: Oils must have an API",
+        "W006: No density values provided",
+        "W100: Not GNOME compatible: Cannot initialize a Density object with no data"
+    ],
+    "review_status": {
+        "status": "Not Reviewed"
+    }
+}

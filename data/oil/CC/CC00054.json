@@ -1,0 +1,96 @@
+{
+    "oil_id": "CC00054",
+    "adios_data_model_version": "0.12.0",
+    "metadata": {
+        "name": "Aviation Gasoline 100",
+        "source_id": "ODB00-54",
+        "alternate_names": [
+            "Avgas 101"
+        ],
+        "location": "Unknown",
+        "reference": {
+            "year": 1996,
+            "reference": "American Society for Testing and Materials, \"Standard Specification for Aviation Gasolines\", Annual Book of ASTM Standards - Section 5 Petroleum Products, Lubricants, and Fossil Fuels, West Conshohocken, Pennsylvania, 1996"
+        },
+        "product_type": "Crude Oil NOS",
+        "comments": "Blend of catalytically cracked naphthas, alkylates, and isopentanes. Operational fuel for most commercial piston engine aircraft. For additional fuel specifications refer to ASTM D910.",
+        "model_completeness": 24,
+        "gnome_suitable": false
+    },
+    "sub_samples": [
+        {
+            "metadata": {
+                "name": "Fresh Oil Sample",
+                "short_name": "Fresh Oil",
+                "sample_id": "ODB00-54",
+                "fraction_evaporated": {
+                    "value": 0.0,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                }
+            },
+            "physical_properties": {
+                "appearance": {
+                    "measurement": {
+                        "unit": null,
+                        "unit_type": "unitless",
+                        "value": "Green"
+                    }
+                }
+            },
+            "distillation_data": {
+                "type": "mass fraction",
+                "cuts": [
+                    {
+                        "fraction": {
+                            "value": 10.0,
+                            "unit": "%",
+                            "unit_type": "massfraction"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 40.0,
+                            "unit": "%",
+                            "unit_type": "massfraction"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 50.0,
+                            "unit": "%",
+                            "unit_type": "massfraction"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 90.0,
+                            "unit": "%",
+                            "unit_type": "massfraction"
+                        }
+                    }
+                ]
+            },
+            "bulk_composition": [
+                {
+                    "name": "Sulphur Content",
+                    "measurement": {
+                        "unit": "%",
+                        "max_value": 0.05,
+                        "unit_type": "massfraction"
+                    }
+                }
+            ]
+        }
+    ],
+    "status": [
+        "E030: Oils must have an API",
+        "E042: Must have a value for Distillation vapor temp",
+        "W006: No density values provided",
+        "W009: Distillation fraction recovered is missing or invalid",
+        "W100: Not GNOME compatible: Cannot initialize a Density object with no data"
+    ],
+    "review_status": {
+        "status": "Not Reviewed"
+    }
+}
