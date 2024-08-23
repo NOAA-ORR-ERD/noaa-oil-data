@@ -15,7 +15,7 @@
             "Heavy Fuel Oil",
             "Residual Fuel"
         ],
-        "model_completeness": 16,
+        "model_completeness": 8,
         "gnome_suitable": false,
         "change_log": [
             {
@@ -47,6 +47,11 @@
                 "name": "RM",
                 "date": "2023-06-21T15:12:17.013-07:00",
                 "comment": "labels added"
+            },
+            {
+                "name": "Dalina",
+                "date": "2024-08-22T14:38:15.749-07:00",
+                "comment": "Removed an incorrectly reported viscosity data point. There was originally no viscosity reported for this record."
             }
         ]
     },
@@ -78,20 +83,6 @@
                         },
                         "ref_temp": {
                             "value": 15.6,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
-                    }
-                ],
-                "kinematic_viscosities": [
-                    {
-                        "viscosity": {
-                            "value": 7.37,
-                            "unit": "cSt",
-                            "unit_type": "kinematicviscosity"
-                        },
-                        "ref_temp": {
-                            "value": 37.78,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -132,7 +123,7 @@
         }
     ],
     "status": [
-        "W100: Not GNOME compatible: Distillation data required for Residual Fuel Oil. Oil not suitable for use in Gnome"
+        "W100: Not GNOME compatible: Gnome oil needs at least one viscosity value"
     ],
     "review_status": {
         "status": "Not Reviewed"

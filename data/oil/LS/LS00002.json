@@ -22,7 +22,7 @@
             "VLSFO"
         ],
         "model_completeness": 56,
-        "gnome_suitable": true,
+        "gnome_suitable": false,
         "change_log": [
             {
                 "name": "RM",
@@ -83,6 +83,16 @@
                 "name": "RM",
                 "date": "2023-11-22T10:27:22.697-08:00",
                 "comment": "Removed Problem TBP"
+            },
+            {
+                "name": "Dalina",
+                "date": "2024-08-22T15:32:18.194-07:00",
+                "comment": "Added Initial BP to the distillation data"
+            },
+            {
+                "name": "Dalina",
+                "date": "2024-08-22T15:35:14.679-07:00",
+                "comment": "Adding terminal BP to distillation"
             }
         ]
     },
@@ -155,18 +165,35 @@
                 }
             },
             "distillation_data": {
-                "type": "mass fraction",
+                "type": "volume fraction",
+                "end_point": {
+                    "value": 339.0,
+                    "unit": "C",
+                    "unit_type": "temperature"
+                },
                 "fraction_recovered": {
-                    "value": 100.0,
+                    "value": 97.0,
                     "unit": "%",
                     "unit_type": "massfraction"
                 },
                 "cuts": [
                     {
                         "fraction": {
+                            "value": 1.0,
+                            "unit": "%",
+                            "unit_type": "volumefraction"
+                        },
+                        "vapor_temp": {
+                            "value": 153.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
                             "value": 5.0,
                             "unit": "%",
-                            "unit_type": "massfraction"
+                            "unit_type": "volumefraction"
                         },
                         "vapor_temp": {
                             "value": 201.11,
@@ -178,7 +205,7 @@
                         "fraction": {
                             "value": 10.0,
                             "unit": "%",
-                            "unit_type": "massfraction"
+                            "unit_type": "volumefraction"
                         },
                         "vapor_temp": {
                             "value": 240.0,
@@ -190,7 +217,7 @@
                         "fraction": {
                             "value": 20.0,
                             "unit": "%",
-                            "unit_type": "massfraction"
+                            "unit_type": "volumefraction"
                         },
                         "vapor_temp": {
                             "value": 264.43999999999994,
@@ -202,7 +229,7 @@
                         "fraction": {
                             "value": 30.0,
                             "unit": "%",
-                            "unit_type": "massfraction"
+                            "unit_type": "volumefraction"
                         },
                         "vapor_temp": {
                             "value": 275.65999999999997,
@@ -214,7 +241,7 @@
                         "fraction": {
                             "value": 40.0,
                             "unit": "%",
-                            "unit_type": "massfraction"
+                            "unit_type": "volumefraction"
                         },
                         "vapor_temp": {
                             "value": 283.33000000000004,
@@ -226,7 +253,7 @@
                         "fraction": {
                             "value": 50.0,
                             "unit": "%",
-                            "unit_type": "massfraction"
+                            "unit_type": "volumefraction"
                         },
                         "vapor_temp": {
                             "value": 291.11,
@@ -238,7 +265,7 @@
                         "fraction": {
                             "value": 60.0,
                             "unit": "%",
-                            "unit_type": "massfraction"
+                            "unit_type": "volumefraction"
                         },
                         "vapor_temp": {
                             "value": 297.78,
@@ -250,7 +277,7 @@
                         "fraction": {
                             "value": 70.0,
                             "unit": "%",
-                            "unit_type": "massfraction"
+                            "unit_type": "volumefraction"
                         },
                         "vapor_temp": {
                             "value": 305.56000000000006,
@@ -262,7 +289,7 @@
                         "fraction": {
                             "value": 80.0,
                             "unit": "%",
-                            "unit_type": "massfraction"
+                            "unit_type": "volumefraction"
                         },
                         "vapor_temp": {
                             "value": 313.33000000000004,
@@ -274,7 +301,7 @@
                         "fraction": {
                             "value": 90.0,
                             "unit": "%",
-                            "unit_type": "massfraction"
+                            "unit_type": "volumefraction"
                         },
                         "vapor_temp": {
                             "value": 326.66999999999996,
@@ -286,7 +313,7 @@
                         "fraction": {
                             "value": 95.0,
                             "unit": "%",
-                            "unit_type": "massfraction"
+                            "unit_type": "volumefraction"
                         },
                         "vapor_temp": {
                             "value": 337.78,
@@ -321,6 +348,9 @@
                 }
             ]
         }
+    ],
+    "status": [
+        "W100: Not GNOME compatible: Fraction recovered less than 1 for Distillate Fuel Oil. Oil not suitable for use in Gnome"
     ],
     "review_status": {
         "status": "Not Reviewed"
