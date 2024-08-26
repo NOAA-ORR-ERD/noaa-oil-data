@@ -3,6 +3,7 @@
     "adios_data_model_version": "0.12.0",
     "metadata": {
         "name": "Pyrolysis Gasoline",
+        "source_id": "LSU-16, RPI-17",
         "reference": {
             "year": 2021,
             "reference": "LSU analysis as part of MPRI project, 2021"
@@ -51,6 +52,21 @@
                 "name": "Chris",
                 "date": "2023-06-21T15:12:31.861-07:00",
                 "comment": "added labels"
+            },
+            {
+                "name": "Dalina",
+                "date": "2024-08-23T13:56:42.025-07:00",
+                "comment": "Added initial BP to distillation data and QA-ed physical properties"
+            },
+            {
+                "name": "Dalina",
+                "date": "2024-08-23T14:06:22.559-07:00",
+                "comment": "distillation method"
+            },
+            {
+                "name": "Dalina",
+                "date": "2024-08-23T14:25:59.469-07:00",
+                "comment": "Source IDs"
             }
         ]
     },
@@ -74,15 +90,15 @@
             "physical_properties": {
                 "pour_point": {
                     "measurement": {
-                        "value": -62.22,
                         "unit": "C",
+                        "max_value": -62.22,
                         "unit_type": "temperature"
                     }
                 },
                 "flash_point": {
                     "measurement": {
-                        "value": 7.22,
                         "unit": "C",
+                        "max_value": 7.22,
                         "unit_type": "temperature"
                     }
                 },
@@ -124,8 +140,9 @@
             },
             "distillation_data": {
                 "type": "mass fraction",
+                "method": "ASTM D86",
                 "end_point": {
-                    "value": 122.0,
+                    "value": 178.0,
                     "unit": "C",
                     "unit_type": "temperature"
                 },
@@ -135,6 +152,18 @@
                     "unit_type": "massfraction"
                 },
                 "cuts": [
+                    {
+                        "fraction": {
+                            "value": 1.0,
+                            "unit": "%",
+                            "unit_type": "massfraction"
+                        },
+                        "vapor_temp": {
+                            "value": 65.60000000000002,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
                     {
                         "fraction": {
                             "value": 5.0,
@@ -262,7 +291,7 @@
                             "unit_type": "massfraction"
                         },
                         "vapor_temp": {
-                            "value": 122.0,
+                            "value": 178.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -296,7 +325,6 @@
         }
     ],
     "status": [
-        "E061: Boiling points in distillation cuts are not strictly increasing",
         "W100: Not GNOME compatible: name 'oil' is not defined"
     ],
     "review_status": {

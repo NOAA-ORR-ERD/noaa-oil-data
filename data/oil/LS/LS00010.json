@@ -3,6 +3,7 @@
     "adios_data_model_version": "0.12.0",
     "metadata": {
         "name": "DMB (ULSFO)",
+        "source_id": "LSU-27, RPI-09",
         "alternate_names": [
             ""
         ],
@@ -76,6 +77,21 @@
                 "name": "Dalina",
                 "date": "2024-08-22T15:11:59.999-07:00",
                 "comment": "QA-ing record from original data"
+            },
+            {
+                "name": "Dalina",
+                "date": "2024-08-23T13:39:34.222-07:00",
+                "comment": "Added initial and final BP to distillation data"
+            },
+            {
+                "name": "Dalina",
+                "date": "2024-08-23T14:01:51.979-07:00",
+                "comment": "Distillation method"
+            },
+            {
+                "name": "Dalina",
+                "date": "2024-08-23T14:19:15.273-07:00",
+                "comment": "Source IDs"
             }
         ]
     },
@@ -149,12 +165,30 @@
             },
             "distillation_data": {
                 "type": "mass fraction",
+                "method": "ASTM D86",
+                "end_point": {
+                    "value": 365.56,
+                    "unit": "C",
+                    "unit_type": "temperature"
+                },
                 "fraction_recovered": {
                     "value": 100.0,
                     "unit": "%",
                     "unit_type": "massfraction"
                 },
                 "cuts": [
+                    {
+                        "fraction": {
+                            "value": 1.0,
+                            "unit": "%",
+                            "unit_type": "concentration"
+                        },
+                        "vapor_temp": {
+                            "value": 198.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
                     {
                         "fraction": {
                             "value": 5.0,

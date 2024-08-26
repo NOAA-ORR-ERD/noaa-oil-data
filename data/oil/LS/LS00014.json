@@ -3,6 +3,7 @@
     "adios_data_model_version": "0.12.0",
     "metadata": {
         "name": "Marine Gas Oil (ULSFO)",
+        "source_id": "LSU-01, RPI-13",
         "alternate_names": [
             "Marine Gasoil, MGO"
         ],
@@ -23,7 +24,7 @@
             "VLSFO"
         ],
         "model_completeness": 56,
-        "gnome_suitable": true,
+        "gnome_suitable": false,
         "change_log": [
             {
                 "name": "RM",
@@ -74,6 +75,26 @@
                 "name": "Dalina",
                 "date": "2024-08-22T15:22:49.233-07:00",
                 "comment": "Added RVP data from original record"
+            },
+            {
+                "name": "Dalina",
+                "date": "2024-08-23T13:44:31.852-07:00",
+                "comment": "Added initial and final BP to distillation data"
+            },
+            {
+                "name": "Dalina",
+                "date": "2024-08-23T13:44:53.707-07:00",
+                "comment": "Distillation is volume fraction"
+            },
+            {
+                "name": "Dalina",
+                "date": "2024-08-23T14:05:57.727-07:00",
+                "comment": "Distillation method"
+            },
+            {
+                "name": "Dalina",
+                "date": "2024-08-23T14:22:26.595-07:00",
+                "comment": "Source IDs"
             }
         ]
     },
@@ -141,17 +162,34 @@
             "distillation_data": {
                 "type": "mass fraction",
                 "method": "ASTM D86",
+                "end_point": {
+                    "value": 358.0,
+                    "unit": "C",
+                    "unit_type": "temperature"
+                },
                 "fraction_recovered": {
-                    "value": 100.0,
+                    "value": 88.0,
                     "unit": "%",
                     "unit_type": "massfraction"
                 },
                 "cuts": [
                     {
                         "fraction": {
+                            "value": 1.0,
+                            "unit": "%",
+                            "unit_type": "massfraction"
+                        },
+                        "vapor_temp": {
+                            "value": 159.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
                             "value": 5.0,
                             "unit": "%",
-                            "unit_type": "concentration"
+                            "unit_type": "massfraction"
                         },
                         "vapor_temp": {
                             "value": 193.33000000000004,
@@ -163,7 +201,7 @@
                         "fraction": {
                             "value": 10.0,
                             "unit": "%",
-                            "unit_type": "concentration"
+                            "unit_type": "massfraction"
                         },
                         "vapor_temp": {
                             "value": 210.0,
@@ -175,7 +213,7 @@
                         "fraction": {
                             "value": 20.0,
                             "unit": "%",
-                            "unit_type": "concentration"
+                            "unit_type": "massfraction"
                         },
                         "vapor_temp": {
                             "value": 226.66999999999996,
@@ -187,7 +225,7 @@
                         "fraction": {
                             "value": 30.0,
                             "unit": "%",
-                            "unit_type": "concentration"
+                            "unit_type": "massfraction"
                         },
                         "vapor_temp": {
                             "value": 250.0,
@@ -199,7 +237,7 @@
                         "fraction": {
                             "value": 40.0,
                             "unit": "%",
-                            "unit_type": "concentration"
+                            "unit_type": "massfraction"
                         },
                         "vapor_temp": {
                             "value": 265.56000000000006,
@@ -211,7 +249,7 @@
                         "fraction": {
                             "value": 50.0,
                             "unit": "%",
-                            "unit_type": "concentration"
+                            "unit_type": "massfraction"
                         },
                         "vapor_temp": {
                             "value": 282.22,
@@ -223,7 +261,7 @@
                         "fraction": {
                             "value": 60.0,
                             "unit": "%",
-                            "unit_type": "concentration"
+                            "unit_type": "massfraction"
                         },
                         "vapor_temp": {
                             "value": 296.66999999999996,
@@ -235,7 +273,7 @@
                         "fraction": {
                             "value": 70.0,
                             "unit": "%",
-                            "unit_type": "concentration"
+                            "unit_type": "massfraction"
                         },
                         "vapor_temp": {
                             "value": 310.0,
@@ -247,7 +285,7 @@
                         "fraction": {
                             "value": 80.0,
                             "unit": "%",
-                            "unit_type": "concentration"
+                            "unit_type": "massfraction"
                         },
                         "vapor_temp": {
                             "value": 326.66999999999996,
@@ -259,7 +297,7 @@
                         "fraction": {
                             "value": 85.0,
                             "unit": "%",
-                            "unit_type": "concentration"
+                            "unit_type": "massfraction"
                         },
                         "vapor_temp": {
                             "value": 354.43999999999994,
@@ -294,6 +332,9 @@
                 }
             ]
         }
+    ],
+    "status": [
+        "W100: Not GNOME compatible: Fraction recovered less than 1 for Distillate Fuel Oil. Oil not suitable for use in Gnome"
     ],
     "review_status": {
         "status": "Not Reviewed"

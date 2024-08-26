@@ -3,6 +3,7 @@
     "adios_data_model_version": "0.12.0",
     "metadata": {
         "name": "Heavy Reformate",
+        "source_id": "LSU-15, RPI-18",
         "reference": {
             "year": 2021,
             "reference": "LSU analysis as part of MPRI project, 2021"
@@ -46,6 +47,21 @@
                 "name": "RM",
                 "date": "2023-06-21T15:06:43.536-07:00",
                 "comment": "sample received date added"
+            },
+            {
+                "name": "Dalina",
+                "date": "2024-08-23T14:00:36.242-07:00",
+                "comment": "Added initial BP to distillation data and QA-ed physical properties"
+            },
+            {
+                "name": "Dalina",
+                "date": "2024-08-23T14:02:46.716-07:00",
+                "comment": "Distillation method"
+            },
+            {
+                "name": "Dalina",
+                "date": "2024-08-23T14:26:59.573-07:00",
+                "comment": "Source IDs"
             }
         ]
     },
@@ -69,8 +85,8 @@
             "physical_properties": {
                 "pour_point": {
                     "measurement": {
-                        "value": -62.22,
                         "unit": "C",
+                        "max_value": -62.22,
                         "unit_type": "temperature"
                     }
                 },
@@ -119,6 +135,7 @@
             },
             "distillation_data": {
                 "type": "mass fraction",
+                "method": "ASTM D86",
                 "end_point": {
                     "value": 215.56,
                     "unit": "C",
@@ -130,6 +147,18 @@
                     "unit_type": "massfraction"
                 },
                 "cuts": [
+                    {
+                        "fraction": {
+                            "value": 1.0,
+                            "unit": "%",
+                            "unit_type": "concentration"
+                        },
+                        "vapor_temp": {
+                            "value": 103.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
                     {
                         "fraction": {
                             "value": 5.0,
