@@ -15,8 +15,15 @@
         "product_type": "Refined Product NOS",
         "API": 31.3,
         "comments": "Marine diesel is a heavy gas oil usually used for marine purposes only. Typically used by medium speed and medium/high speed marine diesel engines. Also used in the larger slow speed and medium speed propulsion engine which normally burn residual fuel. Data from Burnet 85 are mean values for worldwide samples of commercial marine fuels.",
-        "model_completeness": 8,
-        "gnome_suitable": false
+        "model_completeness": 16,
+        "gnome_suitable": false,
+        "change_log": [
+            {
+                "name": "RM",
+                "date": "2024-09-05T10:52:51.387-07:00",
+                "comment": "Change to CC"
+            }
+        ]
     },
     "sub_samples": [
         {
@@ -45,6 +52,20 @@
                         "unit_type": "temperature"
                     }
                 },
+                "densities": [
+                    {
+                        "density": {
+                            "value": 0.869,
+                            "unit": "g/cm^3",
+                            "unit_type": "density"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
                 "kinematic_viscosities": [
                     {
                         "viscosity": {
@@ -129,8 +150,7 @@
         }
     ],
     "status": [
-        "W006: No density values provided",
-        "W100: Not GNOME compatible: Cannot initialize a Density object with no data"
+        "W100: Not GNOME compatible: name 'oil' is not defined"
     ],
     "review_status": {
         "status": "Not Reviewed"

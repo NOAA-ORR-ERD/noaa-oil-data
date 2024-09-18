@@ -15,7 +15,14 @@
         "product_type": "Crude Oil NOS",
         "API": 9.8,
         "model_completeness": 48,
-        "gnome_suitable": false
+        "gnome_suitable": true,
+        "change_log": [
+            {
+                "name": "RM",
+                "date": "2024-09-03T09:54:03.481-07:00",
+                "comment": "change to CC"
+            }
+        ]
     },
     "sub_samples": [
         {
@@ -125,6 +132,32 @@
                         },
                         "ref_temp": {
                             "value": 30.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
+                "kinematic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 1060.0,
+                            "unit": "cSt",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 40.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "viscosity": {
+                            "value": 98.0,
+                            "unit": "cSt",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 80.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -767,8 +800,7 @@
         }
     ],
     "status": [
-        "W009: Distillation fraction recovered is missing or invalid",
-        "W100: Not GNOME compatible: unsupported operand type(s) for /: 'NoneType' and 'float'"
+        "W009: Distillation fraction recovered is missing or invalid"
     ],
     "review_status": {
         "status": "Not Reviewed"

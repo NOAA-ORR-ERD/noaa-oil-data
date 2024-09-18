@@ -15,7 +15,14 @@
         "product_type": "Crude Oil NOS",
         "API": 53.2,
         "model_completeness": 40,
-        "gnome_suitable": false
+        "gnome_suitable": true,
+        "change_log": [
+            {
+                "name": "RM",
+                "date": "2024-09-05T15:04:36.089-07:00",
+                "comment": "Change to CC"
+            }
+        ]
     },
     "sub_samples": [
         {
@@ -103,18 +110,6 @@
                         },
                         "ref_temp": {
                             "value": 15.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
-                    },
-                    {
-                        "viscosity": {
-                            "value": 1.0,
-                            "unit": "mPas",
-                            "unit_type": "dynamicviscosity"
-                        },
-                        "ref_temp": {
-                            "value": 25.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -425,18 +420,6 @@
                             "unit": "C",
                             "unit_type": "temperature"
                         }
-                    },
-                    {
-                        "viscosity": {
-                            "value": 2.0,
-                            "unit": "mPas",
-                            "unit_type": "dynamicviscosity"
-                        },
-                        "ref_temp": {
-                            "value": 25.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
                     }
                 ],
                 "interfacial_tension_air": [
@@ -737,18 +720,6 @@
                         },
                         "ref_temp": {
                             "value": 15.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
-                    },
-                    {
-                        "viscosity": {
-                            "value": 2.0,
-                            "unit": "mPas",
-                            "unit_type": "dynamicviscosity"
-                        },
-                        "ref_temp": {
-                            "value": 25.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -1282,10 +1253,6 @@
                 }
             ]
         }
-    ],
-    "status": [
-        "E062: Viscosity data is not strictly decreasing",
-        "W100: Not GNOME compatible: Viscosities must be decreasing with temperature"
     ],
     "review_status": {
         "status": "Not Reviewed"

@@ -15,8 +15,15 @@
         "product_type": "Refined Product NOS",
         "API": 37.6,
         "comments": "This diesel fuel oil was used during the 1997 fireboom tests carried out on Little Sand Island offshore of Mobile, Alabama, USA._x000D_ For additional fuel specifications refer to ASTM D975.",
-        "model_completeness": 64,
-        "gnome_suitable": false
+        "model_completeness": 80,
+        "gnome_suitable": true,
+        "change_log": [
+            {
+                "name": "RM",
+                "date": "2024-09-03T14:31:40.405-07:00",
+                "comment": "CHange to CC"
+            }
+        ]
     },
     "sub_samples": [
         {
@@ -104,18 +111,6 @@
                         },
                         "ref_temp": {
                             "value": 15.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
-                    },
-                    {
-                        "viscosity": {
-                            "value": 4.0,
-                            "unit": "mPas",
-                            "unit_type": "dynamicviscosity"
-                        },
-                        "ref_temp": {
-                            "value": 25.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -271,6 +266,11 @@
             },
             "distillation_data": {
                 "type": "mass fraction",
+                "fraction_recovered": {
+                    "value": 100.0,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                },
                 "cuts": [
                     {
                         "fraction": {
@@ -729,6 +729,11 @@
             },
             "distillation_data": {
                 "type": "mass fraction",
+                "fraction_recovered": {
+                    "value": 100.0,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                },
                 "cuts": [
                     {
                         "fraction": {
@@ -1150,6 +1155,11 @@
             },
             "distillation_data": {
                 "type": "mass fraction",
+                "fraction_recovered": {
+                    "value": 100.0,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                },
                 "cuts": [
                     {
                         "fraction": {
@@ -1312,11 +1322,6 @@
                 }
             ]
         }
-    ],
-    "status": [
-        "E062: Viscosity data is not strictly decreasing",
-        "W009: Distillation fraction recovered is missing or invalid",
-        "W100: Not GNOME compatible: Viscosities must be decreasing with temperature"
     ],
     "review_status": {
         "status": "Not Reviewed"

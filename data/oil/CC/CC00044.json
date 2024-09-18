@@ -14,8 +14,15 @@
         },
         "product_type": "Crude Oil NOS",
         "API": 23.7,
-        "model_completeness": 79,
-        "gnome_suitable": true
+        "model_completeness": 83,
+        "gnome_suitable": true,
+        "change_log": [
+            {
+                "name": "RM",
+                "date": "2024-08-28T15:14:37.761-07:00",
+                "comment": "Changes to CC"
+            }
+        ]
     },
     "sub_samples": [
         {
@@ -55,6 +62,32 @@
                             "value": 0.911,
                             "unit": "g/mL",
                             "unit_type": "density"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
+                "kinematic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 136.0,
+                            "unit": "cSt",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 0.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "viscosity": {
+                            "value": 57.3,
+                            "unit": "cSt",
+                            "unit_type": "kinematicviscosity"
                         },
                         "ref_temp": {
                             "value": 15.0,
@@ -213,9 +246,9 @@
                 "cuts": [
                     {
                         "fraction": {
-                            "value": 0.0,
+                            "value": 1.0,
                             "unit": "%",
-                            "unit_type": "massfraction"
+                            "unit_type": "concentration"
                         },
                         "vapor_temp": {
                             "value": 58.0,
@@ -343,6 +376,17 @@
                     "name": "Waxes",
                     "measurement": {
                         "value": 1.0,
+                        "unit": "%",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Water",
+                    "groups": [
+                        "Ungrouped"
+                    ],
+                    "measurement": {
+                        "value": 0.83,
                         "unit": "%",
                         "unit_type": "massfraction"
                     }

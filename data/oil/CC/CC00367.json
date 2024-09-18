@@ -15,7 +15,14 @@
         "product_type": "Crude Oil NOS",
         "API": 28.0,
         "model_completeness": 44,
-        "gnome_suitable": false
+        "gnome_suitable": true,
+        "change_log": [
+            {
+                "name": "RM",
+                "date": "2024-09-04T14:17:50.732-07:00",
+                "comment": "Change to CC"
+            }
+        ]
     },
     "sub_samples": [
         {
@@ -67,18 +74,6 @@
                         },
                         "ref_temp": {
                             "value": 10.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
-                    },
-                    {
-                        "viscosity": {
-                            "value": 21.0,
-                            "unit": "mm^2/s",
-                            "unit_type": "kinematicviscosity"
-                        },
-                        "ref_temp": {
-                            "value": 27.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -429,9 +424,7 @@
         }
     ],
     "status": [
-        "E062: Viscosity data is not strictly decreasing",
-        "W009: Distillation fraction recovered is missing or invalid",
-        "W100: Not GNOME compatible: Viscosities must be decreasing with temperature"
+        "W009: Distillation fraction recovered is missing or invalid"
     ],
     "review_status": {
         "status": "Not Reviewed"

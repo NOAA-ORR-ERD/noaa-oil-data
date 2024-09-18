@@ -13,9 +13,21 @@
             "reference": "Environmental Emergencies Technology Division, experimental data, Environment Canada, Ottawa, Ontario, 1983-1989; and Emergencies Science Division, experimental data, Environment Canada, Ottawa, Ontario, 1990- 1996. Presently referred to as the Emergencies Science and Technology Section (ESTS) of Environment and Climate Change Canada (ECCC)"
         },
         "product_type": "Crude Oil NOS",
-        "API": 43.8,
+        "API": 43.5,
         "model_completeness": 44,
-        "gnome_suitable": true
+        "gnome_suitable": true,
+        "change_log": [
+            {
+                "name": "RM",
+                "date": "2024-09-05T09:51:54.674-07:00",
+                "comment": "Change to CC"
+            },
+            {
+                "name": "RM",
+                "date": "2024-09-06T16:33:54.050-07:00",
+                "comment": "Change to CC"
+            }
+        ]
     },
     "sub_samples": [
         {
@@ -33,12 +45,14 @@
                 "pour_point": {
                     "measurement": {
                         "unit": "C",
+                        "min_value": 50.0,
                         "unit_type": "temperature"
                     }
                 },
                 "flash_point": {
                     "measurement": {
                         "unit": "C",
+                        "min_value": 95.0,
                         "unit_type": "temperature"
                     }
                 },
@@ -453,7 +467,6 @@
         }
     ],
     "status": [
-        "E043: API, 43.8 does not match density at 60F. API should be: 43.5",
         "W009: Distillation fraction recovered is missing or invalid"
     ],
     "review_status": {

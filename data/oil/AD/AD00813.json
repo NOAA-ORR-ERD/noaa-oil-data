@@ -17,7 +17,7 @@
             "Medium Crude"
         ],
         "model_completeness": 20,
-        "gnome_suitable": false,
+        "gnome_suitable": true,
         "change_log": [
             {
                 "name": "R",
@@ -28,6 +28,11 @@
                 "name": "R",
                 "date": "2022-11-28T10:31:55.528-08:00",
                 "comment": "Issue #27 - Generalize Location"
+            },
+            {
+                "name": "RM",
+                "date": "2024-09-05T11:49:57.478-07:00",
+                "comment": "Change to CC"
             }
         ]
     },
@@ -72,8 +77,8 @@
                     },
                     {
                         "viscosity": {
-                            "value": 0.09,
-                            "unit": "kg/(m s)",
+                            "value": 9.0,
+                            "unit": "cP",
                             "unit_type": "dynamicviscosity"
                         },
                         "ref_temp": {
@@ -100,10 +105,6 @@
                 "type": "mass fraction"
             }
         }
-    ],
-    "status": [
-        "E062: Viscosity data is not strictly decreasing",
-        "W100: Not GNOME compatible: Viscosities must be decreasing with temperature"
     ],
     "review_status": {
         "status": "Not Reviewed"

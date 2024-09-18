@@ -15,8 +15,15 @@
         "product_type": "Crude Oil NOS",
         "API": 53.1,
         "comments": "Data from OGJ 99 were originally published sometime between 1984 and 1992.",
-        "model_completeness": 20,
-        "gnome_suitable": false
+        "model_completeness": 16,
+        "gnome_suitable": true,
+        "change_log": [
+            {
+                "name": "RM",
+                "date": "2024-09-05T13:39:41.856-07:00",
+                "comment": "Change to CC"
+            }
+        ]
     },
     "sub_samples": [
         {
@@ -61,18 +68,6 @@
                         },
                         "ref_temp": {
                             "value": 20.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
-                    },
-                    {
-                        "viscosity": {
-                            "value": 1.0,
-                            "unit": "mm^2/s",
-                            "unit_type": "kinematicviscosity"
-                        },
-                        "ref_temp": {
-                            "value": 40.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -168,10 +163,6 @@
                 }
             ]
         }
-    ],
-    "status": [
-        "E062: Viscosity data is not strictly decreasing",
-        "W100: Not GNOME compatible: Viscosities must be decreasing with temperature"
     ],
     "review_status": {
         "status": "Not Reviewed"

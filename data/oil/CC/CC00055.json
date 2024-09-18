@@ -15,8 +15,30 @@
         "product_type": "Crude Oil NOS",
         "API": 66.2,
         "comments": "Blend of catalytically cracked naphthas, alkylates, and isopentanes. Operational fuel for most commercial piston engine aircraft. For additional fuel specifications refer to ASTM D910.",
-        "model_completeness": 47,
-        "gnome_suitable": false
+        "model_completeness": 43,
+        "gnome_suitable": true,
+        "change_log": [
+            {
+                "name": "RM",
+                "date": "2024-08-28T15:28:12.318-07:00",
+                "comment": "CC changes"
+            },
+            {
+                "name": "RM",
+                "date": "2024-08-28T15:29:13.183-07:00",
+                "comment": "CC Changes"
+            },
+            {
+                "name": "RM",
+                "date": "2024-08-28T15:29:32.745-07:00",
+                "comment": "CC changes"
+            },
+            {
+                "name": "RM",
+                "date": "2024-08-28T15:30:49.742-07:00",
+                "comment": "CC changes"
+            }
+        ]
     },
     "sub_samples": [
         {
@@ -66,18 +88,6 @@
                         },
                         "ref_temp": {
                             "value": 0.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
-                    },
-                    {
-                        "viscosity": {
-                            "value": 1.0,
-                            "unit": "mPas",
-                            "unit_type": "dynamicviscosity"
-                        },
-                        "ref_temp": {
-                            "value": 15.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -187,9 +197,9 @@
                 "cuts": [
                     {
                         "fraction": {
-                            "value": 0.0,
+                            "value": 1.0,
                             "unit": "%",
-                            "unit_type": "massfraction"
+                            "unit_type": "concentration"
                         },
                         "vapor_temp": {
                             "value": 25.0,
@@ -307,6 +317,19 @@
                     }
                 ]
             },
+            "compounds": [
+                {
+                    "name": "Benzene",
+                    "groups": [
+                        "Ungrouped"
+                    ],
+                    "measurement": {
+                        "value": 0.05,
+                        "unit": "1",
+                        "unit_type": "massfraction"
+                    }
+                }
+            ],
             "bulk_composition": [
                 {
                     "name": "Sulphur Content",
@@ -399,6 +422,7 @@
                         "Metals"
                     ],
                     "measurement": {
+                        "value": 1.0,
                         "unit": "\u00b5g/g",
                         "max_value": 1.0,
                         "unit_type": "massfraction"
@@ -421,6 +445,7 @@
                         "Metals"
                     ],
                     "measurement": {
+                        "value": 0.6,
                         "unit": "\u00b5g/g",
                         "max_value": 0.6,
                         "unit_type": "massfraction"
@@ -441,9 +466,7 @@
         }
     ],
     "status": [
-        "E062: Viscosity data is not strictly decreasing",
-        "W009: Distillation fraction recovered is missing or invalid",
-        "W100: Not GNOME compatible: Viscosities must be decreasing with temperature"
+        "W009: Distillation fraction recovered is missing or invalid"
     ],
     "review_status": {
         "status": "Not Reviewed"

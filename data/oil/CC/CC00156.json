@@ -15,8 +15,15 @@
         "product_type": "Crude Oil NOS",
         "API": 36.4,
         "comments": "Data from OGJ 95d were originally published in 1995.",
-        "model_completeness": 36,
-        "gnome_suitable": false
+        "model_completeness": 44,
+        "gnome_suitable": true,
+        "change_log": [
+            {
+                "name": "RM",
+                "date": "2024-09-03T11:54:27.848-07:00",
+                "comment": "Change to CC"
+            }
+        ]
     },
     "sub_samples": [
         {
@@ -38,6 +45,20 @@
                         "unit_type": "temperature"
                     }
                 },
+                "densities": [
+                    {
+                        "density": {
+                            "value": 0.842,
+                            "unit": "g/cm^3",
+                            "unit_type": "density"
+                        },
+                        "ref_temp": {
+                            "value": 15.01,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
                 "kinematic_viscosities": [
                     {
                         "viscosity": {
@@ -348,9 +369,7 @@
         }
     ],
     "status": [
-        "W006: No density values provided",
-        "W009: Distillation fraction recovered is missing or invalid",
-        "W100: Not GNOME compatible: Cannot initialize a Density object with no data"
+        "W009: Distillation fraction recovered is missing or invalid"
     ],
     "review_status": {
         "status": "Not Reviewed"

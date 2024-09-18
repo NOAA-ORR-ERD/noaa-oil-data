@@ -13,8 +13,21 @@
             "reference": "Chemical Hazards Response Information System (CHRIS), United States Coast Guard, Department of Transportation, Washington, D.C., 1991"
         },
         "product_type": "Crude Oil NOS",
+        "API": 26.0,
         "model_completeness": 21,
-        "gnome_suitable": true
+        "gnome_suitable": true,
+        "change_log": [
+            {
+                "name": "RM",
+                "date": "2024-09-05T14:08:02.573-07:00",
+                "comment": "Change to CC"
+            },
+            {
+                "name": "RM",
+                "date": "2024-09-05T14:08:36.406-07:00",
+                "comment": "Change to CC"
+            }
+        ]
     },
     "sub_samples": [
         {
@@ -46,8 +59,8 @@
                 "densities": [
                     {
                         "density": {
-                            "value": 0.91,
-                            "unit": "g/mL",
+                            "value": 0.901,
+                            "unit": "g/cm^3",
                             "unit_type": "density"
                         },
                         "ref_temp": {
@@ -76,6 +89,20 @@
                         },
                         "ref_temp": {
                             "value": 38.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
+                "kinematic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 28.6,
+                            "unit": "cSt",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 20.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -137,9 +164,6 @@
                 ]
             }
         }
-    ],
-    "status": [
-        "E030: Oils must have an API"
     ],
     "review_status": {
         "status": "Not Reviewed"
