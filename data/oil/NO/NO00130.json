@@ -24,6 +24,11 @@
                 "name": "Knut-Frode Dagestad",
                 "date": "2023-12-11T18:51:33.671773",
                 "comment": "Changed *max_value* to *value* for fraction_recovered."
+            },
+            {
+                "name": "Knut-Frode Dagestad",
+                "date": "2024-11-08T14:16:00",
+                "comment": "Fixed erroneous viscosity value."
             }
         ]
     },
@@ -71,7 +76,7 @@
                 "dynamic_viscosities": [
                     {
                         "viscosity": {
-                            "value": 0.009,
+                            "value": 0.001,
                             "unit": "kg/(m s)",
                             "unit_type": "dynamicviscosity"
                         },
@@ -382,6 +387,20 @@
                             "value": 842.0,
                             "unit": "kg/m^3",
                             "unit_type": "density"
+                        },
+                        "ref_temp": {
+                            "value": 286.15,
+                            "unit": "K",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
+                "dynamic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 0.009,
+                            "unit": "kg/(m s)",
+                            "unit_type": "dynamicviscosity"
                         },
                         "ref_temp": {
                             "value": 286.15,
