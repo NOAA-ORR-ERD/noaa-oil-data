@@ -4,7 +4,7 @@
     "metadata": {
         "name": "VEGA CONDENSATE",
         "source_id": "NO00128",
-        "location": "NORWAY",
+        "location": "Norway",
         "reference": {
             "year": 2015,
             "reference": "Guyomarch, J. and Chever, F, 2015. Weathering and dispersibility study of the VEGA condensate in simulated local weather conditions. R.15.35.C/5205"
@@ -12,8 +12,8 @@
         "sample_date": "2015",
         "product_type": "Condensate",
         "API": 51.14,
-        "model_completeness": 64,
-        "gnome_suitable": false,
+        "model_completeness": 62,
+        "gnome_suitable": true,
         "change_log": [
             {
                 "name": "Knut-Frode Dagestad",
@@ -21,9 +21,9 @@
                 "comment": "Added sample_date and fraction_recovered. Fixed .15 C/K issues"
             },
             {
-                "name": "Dalina",
-                "date": "2024-03-18T14:05:04.488-07:00",
-                "comment": "Changing product type"
+                "name": "Knut-Frode Dagestad",
+                "date": "2023-12-11T18:51:33.860386",
+                "comment": "Changed *max_value* to *value* for fraction_recovered."
             }
         ]
     },
@@ -93,8 +93,8 @@
             "distillation_data": {
                 "type": "volume fraction",
                 "fraction_recovered": {
+                    "value": 1.0,
                     "unit": "fraction",
-                    "max_value": 1.0,
                     "unit_type": "concentration"
                 },
                 "cuts": [
@@ -259,8 +259,8 @@
             },
             "distillation_data": {
                 "fraction_recovered": {
+                    "value": 1.0,
                     "unit": "fraction",
-                    "max_value": 1.0,
                     "unit_type": "concentration"
                 }
             }
@@ -307,8 +307,8 @@
             },
             "distillation_data": {
                 "fraction_recovered": {
+                    "value": 1.0,
                     "unit": "fraction",
-                    "max_value": 1.0,
                     "unit_type": "concentration"
                 }
             }
@@ -355,15 +355,12 @@
             },
             "distillation_data": {
                 "fraction_recovered": {
+                    "value": 1.0,
                     "unit": "fraction",
-                    "max_value": 1.0,
                     "unit_type": "concentration"
                 }
             }
         }
-    ],
-    "status": [
-        "W100: Not GNOME compatible: Fraction recovered less than 1 for Condensate. Oil not suitable for use in Gnome"
     ],
     "review_status": {
         "status": "Not Reviewed"

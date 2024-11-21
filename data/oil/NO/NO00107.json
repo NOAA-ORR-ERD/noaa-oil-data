@@ -7,8 +7,9 @@
         "location": "Norway",
         "reference": {
             "year": 2015,
-            "reference": "Torske L., Wasbotten I., 2015, Oil Weathering Studies of Wisting oil at 1\u2248\u00ed\u221a\u00c5C and 5\u2248\u00ed\u221a\u00c5C, Akvaplan-niva report no 7428 \u221a\u00a7\u221a\u2265\u221a\u00b1 02"
+            "reference": "Torske L., Wasbotten I., 2015, Oil Weathering Studies of Wisting oil at 1C and 5C, Akvaplan-niva report no 7428 02"
         },
+        "sample_date": "2015",
         "product_type": "Crude Oil NOS",
         "API": 35.81,
         "labels": [
@@ -29,9 +30,14 @@
                 "comment": "Issue #27 - Normalize Location"
             },
             {
-                "name": "RM",
-                "date": "2024-03-13T13:50:10.081-07:00",
-                "comment": "Removed 1206 cP from Fresh Oil Dynamic Viscosity at 1 C since it is likely a typo even though that is what is reported in the original source."
+                "name": "Knut-Frode Dagestad",
+                "date": "2023-11-23T17:07:11.508117",
+                "comment": "Added sample_date and fraction_recovered. Fixed .15 C/K issues"
+            },
+            {
+                "name": "Knut-Frode Dagestad",
+                "date": "2023-12-11T18:51:33.491500",
+                "comment": "Changed *max_value* to *value* for fraction_recovered."
             }
         ]
     },
@@ -69,7 +75,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 288.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -86,45 +92,18 @@
                             "value": 278.15,
                             "unit": "K",
                             "unit_type": "temperature"
-                        },
-                        "shear_rate": {
-                            "value": 10.0,
-                            "unit": "1/s",
-                            "unit_type": "angularvelocity"
                         }
                     },
                     {
                         "viscosity": {
-                            "value": 38.0,
-                            "unit": "cP",
+                            "value": 1.233,
+                            "unit": "kg/(m s)",
                             "unit_type": "dynamicviscosity"
                         },
                         "ref_temp": {
-                            "value": 5.0,
-                            "unit": "C",
+                            "value": 274.15,
+                            "unit": "K",
                             "unit_type": "temperature"
-                        },
-                        "shear_rate": {
-                            "value": 100.0,
-                            "unit": "1/s",
-                            "unit_type": "angularvelocity"
-                        }
-                    },
-                    {
-                        "viscosity": {
-                            "value": 206.0,
-                            "unit": "cP",
-                            "unit_type": "dynamicviscosity"
-                        },
-                        "ref_temp": {
-                            "value": 1.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        },
-                        "shear_rate": {
-                            "value": 100.0,
-                            "unit": "1/s",
-                            "unit_type": "angularvelocity"
                         }
                     }
                 ],
@@ -143,11 +122,6 @@
                     }
                 ]
             },
-            "environmental_behavior": {
-                "emulsions": [
-                    {}
-                ]
-            },
             "SARA": {
                 "asphaltenes": {
                     "value": 0.0003,
@@ -157,6 +131,11 @@
             },
             "distillation_data": {
                 "type": "volume fraction",
+                "fraction_recovered": {
+                    "value": 1.0,
+                    "unit": "fraction",
+                    "unit_type": "concentration"
+                },
                 "cuts": [
                     {
                         "fraction": {
@@ -234,263 +213,10 @@
             },
             "compounds": [
                 {
-                    "name": "C1-C4",
-                    "groups": [
-                        "Ungrouped"
-                    ],
-                    "measurement": {
-                        "value": 0.004,
-                        "unit": "1",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C5-saturates (n-/iso-/cyclo)",
-                    "groups": [
-                        "Ungrouped"
-                    ],
-                    "measurement": {
-                        "value": 0.0049,
-                        "unit": "1",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C6-saturates (n-/iso-/cyclo)",
-                    "groups": [
-                        "Ungrouped"
-                    ],
-                    "measurement": {
-                        "value": 0.0174,
-                        "unit": "1",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C7-saturates (n-/iso-/cyclo)",
-                    "groups": [
-                        "Ungrouped"
-                    ],
-                    "measurement": {
-                        "value": 0.032,
-                        "unit": "1",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C8-saturates (n-/iso-/cyclo)",
-                    "groups": [
-                        "Ungrouped"
-                    ],
-                    "measurement": {
-                        "value": 0.002,
-                        "unit": "1",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C9-saturates (n-/iso-/cyclo)",
-                    "groups": [
-                        "Ungrouped"
-                    ],
-                    "measurement": {
-                        "value": 0.0017,
-                        "unit": "1",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
                     "name": "benzene",
                     "measurement": {
                         "value": 0.001,
                         "unit": "fraction",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C1-Benzene (Toluene, Ethylbenzene)",
-                    "groups": [
-                        "Ungrouped"
-                    ],
-                    "measurement": {
-                        "value": 0.0026,
-                        "unit": "1",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C2-Benzenes (Xylenes)",
-                    "groups": [
-                        "Ungrouped"
-                    ],
-                    "measurement": {
-                        "value": 0.0075,
-                        "unit": "1",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C3-Benzenes",
-                    "groups": [
-                        "Ungrouped"
-                    ],
-                    "measurement": {
-                        "value": 0.0103,
-                        "unit": "1",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C4 and C5-Benzenes",
-                    "groups": [
-                        "Ungrouped"
-                    ],
-                    "measurement": {
-                        "value": 0.0012,
-                        "unit": "1",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C10-saturates (n-/iso-/cyclo)",
-                    "groups": [
-                        "Ungrouped"
-                    ],
-                    "measurement": {
-                        "value": 0.0015,
-                        "unit": "1",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C11-C12 (total sat + aro)",
-                    "groups": [
-                        "Ungrouped"
-                    ],
-                    "measurement": {
-                        "value": 0.0464,
-                        "unit": "1",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C13-C14 (total sat + aro)",
-                    "groups": [
-                        "Ungrouped"
-                    ],
-                    "measurement": {
-                        "value": 0.0327,
-                        "unit": "1",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C15-C16 (total sat + aro)",
-                    "groups": [
-                        "Ungrouped"
-                    ],
-                    "measurement": {
-                        "value": 0.0864,
-                        "unit": "1",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C17-C18 (total sat + aro)",
-                    "groups": [
-                        "Ungrouped"
-                    ],
-                    "measurement": {
-                        "value": 0.0889,
-                        "unit": "1",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C19-C20 (total sat + aro)",
-                    "groups": [
-                        "Ungrouped"
-                    ],
-                    "measurement": {
-                        "value": 0.0482,
-                        "unit": "1",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C21-C25 (total sat + aro)",
-                    "groups": [
-                        "Ungrouped"
-                    ],
-                    "measurement": {
-                        "value": 0.0902,
-                        "unit": "1",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "C25+ (total)",
-                    "groups": [
-                        "Ungrouped"
-                    ],
-                    "measurement": {
-                        "value": 0.4856,
-                        "unit": "1",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "Naphtalenes 1 (C0-C1-alkylated)",
-                    "groups": [
-                        "Ungrouped"
-                    ],
-                    "measurement": {
-                        "value": 0.0048,
-                        "unit": "1",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "Naphtalenes 2 (C2-C3-alkylated)",
-                    "groups": [
-                        "Ungrouped"
-                    ],
-                    "measurement": {
-                        "value": 0.0012,
-                        "unit": "1",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "PAHs 1 (Medium soluble polyaromatic hydrocarbons - 3 rings-non-alkylated, < 4 rings)",
-                    "groups": [
-                        "Ungrouped"
-                    ],
-                    "measurement": {
-                        "value": 0.0145,
-                        "unit": "1",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "PAHs 2 (Low soluble polyaromatic hydrocarbons \u2013 3 rings-alkylated, 4-5+ rings)",
-                    "groups": [
-                        "Ungrouped"
-                    ],
-                    "measurement": {
-                        "value": 0.0151,
-                        "unit": "1",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "Phenols (C0-C4)",
-                    "groups": [
-                        "Ungrouped"
-                    ],
-                    "measurement": {
-                        "value": 0.0,
-                        "unit": "1",
                         "unit_type": "massfraction"
                     }
                 }
@@ -525,7 +251,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 288.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -534,99 +260,25 @@
                 "dynamic_viscosities": [
                     {
                         "viscosity": {
-                            "value": 74.0,
-                            "unit": "cP",
+                            "value": 0.074,
+                            "unit": "kg/(m s)",
                             "unit_type": "dynamicviscosity"
                         },
                         "ref_temp": {
-                            "value": 5.0,
-                            "unit": "C",
+                            "value": 278.15,
+                            "unit": "K",
                             "unit_type": "temperature"
-                        },
-                        "shear_rate": {
-                            "value": 10.0,
-                            "unit": "1/s",
-                            "unit_type": "angularvelocity"
-                        }
-                    },
-                    {
-                        "viscosity": {
-                            "value": 455.0,
-                            "unit": "cP",
-                            "unit_type": "dynamicviscosity"
-                        },
-                        "ref_temp": {
-                            "value": 1.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        },
-                        "shear_rate": {
-                            "value": 10.0,
-                            "unit": "1/s",
-                            "unit_type": "angularvelocity"
-                        }
-                    },
-                    {
-                        "viscosity": {
-                            "value": 51.0,
-                            "unit": "cP",
-                            "unit_type": "dynamicviscosity"
-                        },
-                        "ref_temp": {
-                            "value": 5.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        },
-                        "shear_rate": {
-                            "value": 100.0,
-                            "unit": "1/s",
-                            "unit_type": "angularvelocity"
-                        }
-                    },
-                    {
-                        "viscosity": {
-                            "value": 172.0,
-                            "unit": "cP",
-                            "unit_type": "dynamicviscosity"
-                        },
-                        "ref_temp": {
-                            "value": 1.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        },
-                        "shear_rate": {
-                            "value": 100.0,
-                            "unit": "1/s",
-                            "unit_type": "angularvelocity"
                         }
                     }
                 ]
             },
-            "environmental_behavior": {
-                "emulsions": [
-                    {}
-                ]
-            },
-            "SARA": {
-                "asphaltenes": {
-                    "value": 0.03,
-                    "unit": "%",
-                    "unit_type": "massfraction"
+            "distillation_data": {
+                "fraction_recovered": {
+                    "value": 1.0,
+                    "unit": "fraction",
+                    "unit_type": "concentration"
                 }
-            },
-            "bulk_composition": [
-                {
-                    "name": "wax_content",
-                    "groups": [
-                        "Ungrouped"
-                    ],
-                    "measurement": {
-                        "value": 0.037,
-                        "unit": "1",
-                        "unit_type": "massfraction"
-                    }
-                }
-            ]
+            }
         },
         {
             "metadata": {
@@ -647,7 +299,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 288.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -664,86 +316,17 @@
                             "value": 278.15,
                             "unit": "K",
                             "unit_type": "temperature"
-                        },
-                        "shear_rate": {
-                            "value": 10.0,
-                            "unit": "1/s",
-                            "unit_type": "angularvelocity"
-                        }
-                    },
-                    {
-                        "viscosity": {
-                            "value": 1313.0,
-                            "unit": "cP",
-                            "unit_type": "dynamicviscosity"
-                        },
-                        "ref_temp": {
-                            "value": 1.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        },
-                        "shear_rate": {
-                            "value": 10.0,
-                            "unit": "1/s",
-                            "unit_type": "angularvelocity"
-                        }
-                    },
-                    {
-                        "viscosity": {
-                            "value": 112.0,
-                            "unit": "cP",
-                            "unit_type": "dynamicviscosity"
-                        },
-                        "ref_temp": {
-                            "value": 5.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        },
-                        "shear_rate": {
-                            "value": 100.0,
-                            "unit": "1/s",
-                            "unit_type": "angularvelocity"
-                        }
-                    },
-                    {
-                        "viscosity": {
-                            "value": 344.0,
-                            "unit": "cP",
-                            "unit_type": "dynamicviscosity"
-                        },
-                        "ref_temp": {
-                            "value": 1.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        },
-                        "shear_rate": {
-                            "value": 100.0,
-                            "unit": "1/s",
-                            "unit_type": "angularvelocity"
                         }
                     }
                 ]
             },
-            "SARA": {
-                "asphaltenes": {
-                    "value": 0.03,
-                    "unit": "%",
-                    "unit_type": "massfraction"
+            "distillation_data": {
+                "fraction_recovered": {
+                    "value": 1.0,
+                    "unit": "fraction",
+                    "unit_type": "concentration"
                 }
-            },
-            "bulk_composition": [
-                {
-                    "name": "wax_content",
-                    "groups": [
-                        "Ungrouped"
-                    ],
-                    "measurement": {
-                        "value": 0.041,
-                        "unit": "1",
-                        "unit_type": "massfraction"
-                    }
-                }
-            ]
+            }
         },
         {
             "metadata": {
@@ -764,7 +347,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 288.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -781,11 +364,6 @@
                             "value": 278.15,
                             "unit": "K",
                             "unit_type": "temperature"
-                        },
-                        "shear_rate": {
-                            "value": 10.0,
-                            "unit": "1/s",
-                            "unit_type": "angularvelocity"
                         }
                     },
                     {
@@ -798,73 +376,18 @@
                             "value": 274.15,
                             "unit": "K",
                             "unit_type": "temperature"
-                        },
-                        "shear_rate": {
-                            "value": 10.0,
-                            "unit": "1/s",
-                            "unit_type": "angularvelocity"
-                        }
-                    },
-                    {
-                        "viscosity": {
-                            "value": 188.0,
-                            "unit": "cP",
-                            "unit_type": "dynamicviscosity"
-                        },
-                        "ref_temp": {
-                            "value": 5.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        },
-                        "shear_rate": {
-                            "value": 100.0,
-                            "unit": "1/s",
-                            "unit_type": "angularvelocity"
-                        }
-                    },
-                    {
-                        "viscosity": {
-                            "value": 766.0,
-                            "unit": "cP",
-                            "unit_type": "dynamicviscosity"
-                        },
-                        "ref_temp": {
-                            "value": 1.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        },
-                        "shear_rate": {
-                            "value": 100.0,
-                            "unit": "1/s",
-                            "unit_type": "angularvelocity"
                         }
                     }
                 ]
             },
-            "SARA": {
-                "asphaltenes": {
-                    "value": 0.04,
-                    "unit": "%",
-                    "unit_type": "massfraction"
+            "distillation_data": {
+                "fraction_recovered": {
+                    "value": 1.0,
+                    "unit": "fraction",
+                    "unit_type": "concentration"
                 }
-            },
-            "bulk_composition": [
-                {
-                    "name": "wax_content",
-                    "groups": [
-                        "Ungrouped"
-                    ],
-                    "measurement": {
-                        "value": 0.046,
-                        "unit": "1",
-                        "unit_type": "massfraction"
-                    }
-                }
-            ]
+            }
         }
-    ],
-    "status": [
-        "W009: Distillation fraction recovered is missing or invalid"
     ],
     "review_status": {
         "status": "Not Reviewed"

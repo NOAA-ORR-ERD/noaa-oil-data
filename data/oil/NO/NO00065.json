@@ -2,13 +2,14 @@
     "oil_id": "NO00065",
     "adios_data_model_version": "0.12.0",
     "metadata": {
-        "name": "NORNE 1997",
+        "name": "NORNE",
         "source_id": "NO00065",
         "location": "Norway",
         "reference": {
             "year": 2010,
             "reference": "Sorheim K. R. et al., 2010, Kartlegging av forvitringsegenskaper av Norne Blend, Staer, Svale og Alve samt effekt av voksinihibitor paa Norne Blend, SINTEF A16808"
         },
+        "sample_date": "1997",
         "product_type": "Crude Oil NOS",
         "API": 32.32,
         "labels": [
@@ -22,6 +23,16 @@
                 "name": "R",
                 "date": "2022-11-28T12:31:33.746-08:00",
                 "comment": "Issue #27 - Normalize Location"
+            },
+            {
+                "name": "Knut-Frode Dagestad",
+                "date": "2023-11-23T17:07:11.993258",
+                "comment": "Added sample_date and fraction_recovered. Fixed .15 C/K issues"
+            },
+            {
+                "name": "Knut-Frode Dagestad",
+                "date": "2023-12-11T18:51:33.838881",
+                "comment": "Changed *max_value* to *value* for fraction_recovered."
             }
         ]
     },
@@ -52,7 +63,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 288.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -93,7 +104,12 @@
                 }
             },
             "distillation_data": {
-                "type": "mass fraction"
+                "type": "mass fraction",
+                "fraction_recovered": {
+                    "value": 1.0,
+                    "unit": "fraction",
+                    "unit_type": "concentration"
+                }
             },
             "bulk_composition": [
                 {
@@ -125,7 +141,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 288.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -145,6 +161,13 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "value": 1.0,
+                    "unit": "fraction",
+                    "unit_type": "concentration"
+                }
             }
         },
         {
@@ -166,7 +189,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 288.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -186,6 +209,13 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "value": 1.0,
+                    "unit": "fraction",
+                    "unit_type": "concentration"
+                }
             }
         },
         {
@@ -207,7 +237,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 288.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -239,6 +269,13 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "value": 1.0,
+                    "unit": "fraction",
+                    "unit_type": "concentration"
+                }
             }
         }
     ],
