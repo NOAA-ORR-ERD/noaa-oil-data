@@ -9,6 +9,7 @@
             "year": 2002,
             "reference": "Moldestad M. O. et al., 2002, Ekofiskoljene, Gyda og Valhall - Egenskaper og forvitring paa sjoen, karakterisering av vannloselige komponenter relatert til beredskap, STF66 A01090 "
         },
+        "sample_date": "2002",
         "product_type": "Crude Oil NOS",
         "API": 36.55,
         "labels": [
@@ -26,6 +27,16 @@
                 "name": "R",
                 "date": "2022-11-28T13:01:21.966-08:00",
                 "comment": "Issue #27 - Normalize Location"
+            },
+            {
+                "name": "Knut-Frode Dagestad",
+                "date": "2023-11-23T17:07:12.684617",
+                "comment": "Added sample_date and fraction_recovered. Fixed .15 C/K issues"
+            },
+            {
+                "name": "Knut-Frode Dagestad",
+                "date": "2023-12-11T18:51:34.382203",
+                "comment": "Changed *max_value* to *value* for fraction_recovered."
             }
         ]
     },
@@ -56,7 +67,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 288.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -86,6 +97,11 @@
             },
             "distillation_data": {
                 "type": "volume fraction",
+                "fraction_recovered": {
+                    "value": 1.0,
+                    "unit": "fraction",
+                    "unit_type": "concentration"
+                },
                 "cuts": [
                     {
                         "fraction": {
@@ -277,7 +293,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 288.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -297,6 +313,13 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "value": 1.0,
+                    "unit": "fraction",
+                    "unit_type": "concentration"
+                }
             }
         },
         {
@@ -318,7 +341,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 288.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -338,6 +361,13 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "value": 1.0,
+                    "unit": "fraction",
+                    "unit_type": "concentration"
+                }
             }
         },
         {
@@ -359,7 +389,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 288.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -379,6 +409,13 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "value": 1.0,
+                    "unit": "fraction",
+                    "unit_type": "concentration"
+                }
             }
         }
     ],

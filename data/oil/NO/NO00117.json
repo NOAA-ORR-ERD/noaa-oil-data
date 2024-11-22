@@ -9,6 +9,7 @@
             "year": 2017,
             "reference": "Oksenvag J. et al. 2017, Sigyn condensate \u201a\u00c4\u00ec properties and behaviour at sea, SINTEF report."
         },
+        "sample_date": "2017",
         "product_type": "Condensate",
         "API": 59.79,
         "labels": [
@@ -26,6 +27,16 @@
                 "name": "R",
                 "date": "2022-11-28T13:10:23.008-08:00",
                 "comment": "Issue #27 - Normalize Location"
+            },
+            {
+                "name": "Knut-Frode Dagestad",
+                "date": "2023-11-23T17:07:12.721861",
+                "comment": "Added sample_date and fraction_recovered. Fixed .15 C/K issues"
+            },
+            {
+                "name": "Knut-Frode Dagestad",
+                "date": "2023-12-11T18:51:34.404346",
+                "comment": "Changed *max_value* to *value* for fraction_recovered."
             }
         ]
     },
@@ -86,6 +97,11 @@
             },
             "distillation_data": {
                 "type": "mass fraction",
+                "fraction_recovered": {
+                    "value": 1.0,
+                    "unit": "fraction",
+                    "unit_type": "concentration"
+                },
                 "cuts": [
                     {
                         "fraction": {
@@ -94,7 +110,7 @@
                             "unit_type": "massfraction"
                         },
                         "vapor_temp": {
-                            "value": -59.99999999999997,
+                            "value": -60.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -293,6 +309,13 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "value": 1.0,
+                    "unit": "fraction",
+                    "unit_type": "concentration"
+                }
             }
         },
         {
@@ -320,6 +343,13 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "value": 1.0,
+                    "unit": "fraction",
+                    "unit_type": "concentration"
+                }
             }
         },
         {
@@ -347,6 +377,13 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "value": 1.0,
+                    "unit": "fraction",
+                    "unit_type": "concentration"
+                }
             }
         },
         {
@@ -388,6 +425,13 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "value": 1.0,
+                    "unit": "fraction",
+                    "unit_type": "concentration"
+                }
             }
         }
     ],

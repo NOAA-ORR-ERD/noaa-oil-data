@@ -9,6 +9,7 @@
             "year": 2011,
             "reference": "Sorheim K. R. et al., 2011, Gjoa crude oil - Weathering properties related to oil spill response, and chemical and toxicological characterization of WAF, SINTEF A20859"
         },
+        "sample_date": "2011",
         "product_type": "Crude Oil NOS",
         "API": 37.61,
         "labels": [
@@ -26,6 +27,16 @@
                 "name": "R",
                 "date": "2022-11-28T12:12:53.296-08:00",
                 "comment": "Issue #27 - Normalize Location"
+            },
+            {
+                "name": "Knut-Frode Dagestad",
+                "date": "2023-11-23T17:07:12.190040",
+                "comment": "Added sample_date and fraction_recovered. Fixed .15 C/K issues"
+            },
+            {
+                "name": "Knut-Frode Dagestad",
+                "date": "2023-12-11T18:51:33.995704",
+                "comment": "Changed *max_value* to *value* for fraction_recovered."
             }
         ]
     },
@@ -56,7 +67,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 288.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -98,6 +109,11 @@
             },
             "distillation_data": {
                 "type": "volume fraction",
+                "fraction_recovered": {
+                    "value": 1.0,
+                    "unit": "fraction",
+                    "unit_type": "concentration"
+                },
                 "cuts": [
                     {
                         "fraction": {
@@ -273,7 +289,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 288.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -293,6 +309,13 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "value": 1.0,
+                    "unit": "fraction",
+                    "unit_type": "concentration"
+                }
             }
         },
         {
@@ -314,7 +337,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 288.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -334,6 +357,13 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "value": 1.0,
+                    "unit": "fraction",
+                    "unit_type": "concentration"
+                }
             }
         },
         {
@@ -355,7 +385,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 288.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -387,6 +417,13 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "value": 1.0,
+                    "unit": "fraction",
+                    "unit_type": "concentration"
+                }
             }
         }
     ],

@@ -9,6 +9,7 @@
             "year": 2009,
             "reference": "Sorheim K. R., 2009, Visund - Egenskaper og forvitring paa sjoen relatert til beredskap, SINTEF F10361"
         },
+        "sample_date": "2009",
         "product_type": "Crude Oil NOS",
         "API": 47.21,
         "labels": [
@@ -26,6 +27,16 @@
                 "name": "R",
                 "date": "2022-11-28T13:11:36.113-08:00",
                 "comment": "Issue #27 - Normalize Location"
+            },
+            {
+                "name": "Knut-Frode Dagestad",
+                "date": "2023-11-23T17:07:12.231078",
+                "comment": "Added sample_date and fraction_recovered. Fixed .15 C/K issues"
+            },
+            {
+                "name": "Knut-Frode Dagestad",
+                "date": "2023-12-11T18:51:34.027382",
+                "comment": "Changed *max_value* to *value* for fraction_recovered."
             }
         ]
     },
@@ -63,25 +74,13 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 288.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
                     }
                 ],
                 "dynamic_viscosities": [
-                    {
-                        "viscosity": {
-                            "value": 0.002,
-                            "unit": "kg/(m s)",
-                            "unit_type": "dynamicviscosity"
-                        },
-                        "ref_temp": {
-                            "value": 286.15,
-                            "unit": "K",
-                            "unit_type": "temperature"
-                        }
-                    },
                     {
                         "viscosity": {
                             "value": 0.002,
@@ -105,6 +104,11 @@
             },
             "distillation_data": {
                 "type": "volume fraction",
+                "fraction_recovered": {
+                    "value": 1.0,
+                    "unit": "fraction",
+                    "unit_type": "concentration"
+                },
                 "cuts": [
                     {
                         "fraction": {
@@ -304,7 +308,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 288.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -324,6 +328,13 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "value": 1.0,
+                    "unit": "fraction",
+                    "unit_type": "concentration"
+                }
             }
         },
         {
@@ -345,7 +356,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 288.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -365,6 +376,13 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "value": 1.0,
+                    "unit": "fraction",
+                    "unit_type": "concentration"
+                }
             }
         },
         {
@@ -386,25 +404,13 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 288.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
                     }
                 ],
                 "dynamic_viscosities": [
-                    {
-                        "viscosity": {
-                            "value": 0.28,
-                            "unit": "kg/(m s)",
-                            "unit_type": "dynamicviscosity"
-                        },
-                        "ref_temp": {
-                            "value": 286.15,
-                            "unit": "K",
-                            "unit_type": "temperature"
-                        }
-                    },
                     {
                         "viscosity": {
                             "value": 1.252,
@@ -418,6 +424,13 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "value": 1.0,
+                    "unit": "fraction",
+                    "unit_type": "concentration"
+                }
             }
         }
     ],

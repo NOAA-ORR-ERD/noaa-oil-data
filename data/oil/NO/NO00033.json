@@ -9,6 +9,7 @@
             "year": 2008,
             "reference": "Sorheim K. R., Moldestad M. O., 2008, Weathering properties of the Goliat Kobbe and two Goliat Blend of Kobbe and Realgrunnen crude oils, SINTEF F3959"
         },
+        "sample_date": "2008",
         "product_type": "Crude Oil NOS",
         "API": 40.41,
         "comments": "70/30 Kobbe/Realgrunnen.",
@@ -29,9 +30,14 @@
                 "comment": "Issue #27 - Normalize Location"
             },
             {
-                "name": "RM",
-                "date": "2024-03-13T14:05:15.256-07:00",
-                "comment": "added phys properties and bulk comp data"
+                "name": "Knut-Frode Dagestad",
+                "date": "2023-11-23T17:07:12.650969",
+                "comment": "Added sample_date and fraction_recovered. Fixed .15 C/K issues"
+            },
+            {
+                "name": "Knut-Frode Dagestad",
+                "date": "2023-12-11T18:51:34.362558",
+                "comment": "Changed *max_value* to *value* for fraction_recovered."
             }
         ]
     },
@@ -62,7 +68,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 288.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -79,11 +85,6 @@
                             "value": 278.15,
                             "unit": "K",
                             "unit_type": "temperature"
-                        },
-                        "shear_rate": {
-                            "value": 10.0,
-                            "unit": "1/s",
-                            "unit_type": "angularvelocity"
                         }
                     }
                 ]
@@ -96,7 +97,12 @@
                 }
             },
             "distillation_data": {
-                "type": "mass fraction"
+                "type": "mass fraction",
+                "fraction_recovered": {
+                    "value": 1.0,
+                    "unit": "fraction",
+                    "unit_type": "concentration"
+                }
             },
             "bulk_composition": [
                 {
@@ -120,13 +126,6 @@
                 }
             },
             "physical_properties": {
-                "pour_point": {
-                    "measurement": {
-                        "value": 15.0,
-                        "unit": "C",
-                        "unit_type": "temperature"
-                    }
-                },
                 "densities": [
                     {
                         "density": {
@@ -135,7 +134,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 288.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -152,35 +151,17 @@
                             "value": 278.15,
                             "unit": "K",
                             "unit_type": "temperature"
-                        },
-                        "shear_rate": {
-                            "value": 10.0,
-                            "unit": "1/s",
-                            "unit_type": "angularvelocity"
                         }
                     }
                 ]
             },
-            "SARA": {
-                "asphaltenes": {
-                    "value": 0.11,
-                    "unit": "%",
-                    "unit_type": "massfraction"
+            "distillation_data": {
+                "fraction_recovered": {
+                    "value": 1.0,
+                    "unit": "fraction",
+                    "unit_type": "concentration"
                 }
-            },
-            "bulk_composition": [
-                {
-                    "name": "wax_content",
-                    "groups": [
-                        "Ungrouped"
-                    ],
-                    "measurement": {
-                        "value": 0.046,
-                        "unit": "1",
-                        "unit_type": "massfraction"
-                    }
-                }
-            ]
+            }
         },
         {
             "metadata": {
@@ -193,13 +174,6 @@
                 }
             },
             "physical_properties": {
-                "pour_point": {
-                    "measurement": {
-                        "value": 21.0,
-                        "unit": "C",
-                        "unit_type": "temperature"
-                    }
-                },
                 "densities": [
                     {
                         "density": {
@@ -208,7 +182,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 288.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -225,35 +199,17 @@
                             "value": 278.15,
                             "unit": "K",
                             "unit_type": "temperature"
-                        },
-                        "shear_rate": {
-                            "value": 10.0,
-                            "unit": "1/s",
-                            "unit_type": "angularvelocity"
                         }
                     }
                 ]
             },
-            "SARA": {
-                "asphaltenes": {
-                    "value": 0.12,
-                    "unit": "%",
-                    "unit_type": "massfraction"
+            "distillation_data": {
+                "fraction_recovered": {
+                    "value": 1.0,
+                    "unit": "fraction",
+                    "unit_type": "concentration"
                 }
-            },
-            "bulk_composition": [
-                {
-                    "name": "wax_content",
-                    "groups": [
-                        "Ungrouped"
-                    ],
-                    "measurement": {
-                        "value": 0.053,
-                        "unit": "1",
-                        "unit_type": "massfraction"
-                    }
-                }
-            ]
+            }
         },
         {
             "metadata": {
@@ -266,13 +222,6 @@
                 }
             },
             "physical_properties": {
-                "pour_point": {
-                    "measurement": {
-                        "value": 30.0,
-                        "unit": "C",
-                        "unit_type": "temperature"
-                    }
-                },
                 "densities": [
                     {
                         "density": {
@@ -281,7 +230,7 @@
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.65,
+                            "value": 288.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -298,35 +247,17 @@
                             "value": 278.15,
                             "unit": "K",
                             "unit_type": "temperature"
-                        },
-                        "shear_rate": {
-                            "value": 10.0,
-                            "unit": "1/s",
-                            "unit_type": "angularvelocity"
                         }
                     }
                 ]
             },
-            "SARA": {
-                "asphaltenes": {
-                    "value": 0.15,
-                    "unit": "%",
-                    "unit_type": "massfraction"
+            "distillation_data": {
+                "fraction_recovered": {
+                    "value": 1.0,
+                    "unit": "fraction",
+                    "unit_type": "concentration"
                 }
-            },
-            "bulk_composition": [
-                {
-                    "name": "wax_content",
-                    "groups": [
-                        "Ungrouped"
-                    ],
-                    "measurement": {
-                        "value": 0.066,
-                        "unit": "1",
-                        "unit_type": "massfraction"
-                    }
-                }
-            ]
+            }
         }
     ],
     "review_status": {

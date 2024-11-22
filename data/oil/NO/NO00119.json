@@ -9,6 +9,7 @@
             "year": 2017,
             "reference": "Hellstrom et al, 2017, Memo report no OC2017-A123, Version 1, SINTEF"
         },
+        "sample_date": "2017",
         "product_type": "Distillate Fuel Oil",
         "API": 34.42,
         "labels": [
@@ -30,9 +31,14 @@
                 "comment": "Issue #27 - Normalize Location"
             },
             {
-                "name": "RM",
-                "date": "2024-01-16T15:00:48.499-08:00",
-                "comment": "Frac Rec 100"
+                "name": "Knut-Frode Dagestad",
+                "date": "2023-11-23T17:07:12.388852",
+                "comment": "Added sample_date and fraction_recovered. Fixed .15 C/K issues"
+            },
+            {
+                "name": "Knut-Frode Dagestad",
+                "date": "2023-12-11T18:51:34.161316",
+                "comment": "Changed *max_value* to *value* for fraction_recovered."
             }
         ]
     },
@@ -58,7 +64,7 @@
                 "flash_point": {
                     "measurement": {
                         "unit": "C",
-                        "min_value": 62.35000000000002,
+                        "min_value": 62.0,
                         "max_value": 110.0,
                         "unit_type": "temperature"
                     }
@@ -98,18 +104,6 @@
                         },
                         "ref_temp": {
                             "value": 288.15,
-                            "unit": "K",
-                            "unit_type": "temperature"
-                        }
-                    },
-                    {
-                        "viscosity": {
-                            "value": 0.0037,
-                            "unit": "kg/(m s)",
-                            "unit_type": "dynamicviscosity"
-                        },
-                        "ref_temp": {
-                            "value": 323.15,
                             "unit": "K",
                             "unit_type": "temperature"
                         }
@@ -154,9 +148,9 @@
             "distillation_data": {
                 "type": "volume fraction",
                 "fraction_recovered": {
-                    "value": 100.0,
-                    "unit": "%",
-                    "unit_type": "massfraction"
+                    "value": 1.0,
+                    "unit": "fraction",
+                    "unit_type": "concentration"
                 },
                 "cuts": [
                     {
@@ -305,6 +299,13 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "value": 1.0,
+                    "unit": "fraction",
+                    "unit_type": "concentration"
+                }
             }
         },
         {
@@ -332,6 +333,13 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "value": 1.0,
+                    "unit": "fraction",
+                    "unit_type": "concentration"
+                }
             }
         },
         {
@@ -359,6 +367,13 @@
                         }
                     }
                 ]
+            },
+            "distillation_data": {
+                "fraction_recovered": {
+                    "value": 1.0,
+                    "unit": "fraction",
+                    "unit_type": "concentration"
+                }
             }
         }
     ],
