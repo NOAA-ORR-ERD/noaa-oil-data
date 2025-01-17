@@ -2,43 +2,34 @@
     "oil_id": "AD02197",
     "adios_data_model_version": "0.12.0",
     "metadata": {
-        "name": "KHALDA",
-        "source_id": "AD02197",
+        "name": "Khalda",
+        "source_id": "ODB00-377",
+        "alternate_names": [
+            "Unknown"
+        ],
         "location": "Egypt",
         "reference": {
-            "year": 1999,
-            "reference": "Jokuty, P., Whiticar, S., Wang, Z., Fingas, M., Fieldhouse, B., Lambert, P., Mullen, J. 1999. Properties of Crude Oils and Oil Products.  Manuscript Report EE-165, Environmental Protection Service, Environment Canada, Ottawa, Ontario."
+            "year": 1993,
+            "reference": "EI-Emarn, N.A., A.W.A. Bayoumi, I.M. EI-Gamal, and A. Abu-Zied, \"Choosing how to boost waxy crude line flow depends on oil's qualities\", Oil& Gas Journal, April 26, pp. 70-72, 1993\nJokuty, P., Whiticar, S., Wang, Z., Fingas, M., Fieldhouse, B., Lambert, P., Mullen, J. 1999. Properties of Crude Oils and Oil Products.  Manuscript Report EE-165, Environmental Protection Service, Environment Canada, Ottawa, Ontario.\n\nAs published in: Environment and Climate Change Canada, A Catalogue of Crude Oil and Oil Product Properties (1999)- Revised 2022, Environment and Climate Change Canada, 2022."
         },
         "product_type": "Crude Oil NOS",
         "API": 38.0,
-        "comments": "The data in this record may have been compiled from multiple sources and reflect samples of varying age and composition.",
+        "comments": "A waxy crude, The data in this record may have been compiled from multiple sources and reflect samples of varying age and composition.",
         "labels": [
             "Crude Oil",
             "Light Crude"
         ],
-        "model_completeness": 16,
-        "gnome_suitable": true,
-        "change_log": [
-            {
-                "name": "Rin",
-                "date": "2022-11-25T12:16:05.120-08:00",
-                "comment": "Issue #25 - Name with Reference Year"
-            },
-            {
-                "name": "R",
-                "date": "2022-11-25T15:26:47.950-08:00",
-                "comment": "Issue #27 -- Normalize Location"
-            }
-        ]
+        "model_completeness": 16
     },
     "sub_samples": [
         {
             "metadata": {
                 "name": "Fresh Oil Sample",
                 "short_name": "Fresh Oil",
+                "sample_id": "ODB00-377",
                 "fraction_evaporated": {
                     "value": 0.0,
-                    "unit": "fraction",
+                    "unit": "%",
                     "unit_type": "massfraction"
                 }
             },
@@ -53,23 +44,22 @@
                 "densities": [
                     {
                         "density": {
-                            "value": 834.08,
-                            "unit": "kg/m^3",
+                            "value": 0.8344,
+                            "unit": "g/mL",
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.16,
-                            "unit": "K",
+                            "value": 15.0,
+                            "unit": "C",
                             "unit_type": "temperature"
-                        },
-                        "method": "Converted from API"
+                        }
                     }
                 ],
                 "kinematic_viscosities": [
                     {
                         "viscosity": {
-                            "value": 5e-06,
-                            "unit": "m^2/s",
+                            "value": 5.0,
+                            "unit": "mm^2/s",
                             "unit_type": "kinematicviscosity"
                         },
                         "ref_temp": {
@@ -82,28 +72,33 @@
             },
             "SARA": {
                 "asphaltenes": {
-                    "value": 0.01,
-                    "unit": "fraction",
+                    "value": 1.0,
+                    "unit": "%",
                     "unit_type": "massfraction"
                 }
             },
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "bulk_composition": [
                 {
-                    "name": "wax_content",
+                    "name": "Sulphur Content",
                     "measurement": {
-                        "value": 0.2,
-                        "unit": "fraction",
+                        "value": 0.42,
+                        "unit": "%",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "sulfur",
+                    "name": "Water Content",
                     "measurement": {
-                        "value": 0.0042,
-                        "unit": "fraction",
+                        "value": 0.2,
+                        "unit": "%",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Waxes",
+                    "measurement": {
+                        "value": 20.0,
+                        "unit": "%",
                         "unit_type": "massfraction"
                     }
                 }

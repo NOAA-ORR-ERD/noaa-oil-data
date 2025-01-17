@@ -2,74 +2,64 @@
     "oil_id": "AD02065",
     "adios_data_model_version": "0.12.0",
     "metadata": {
-        "name": "CHAMPION EXPORT",
-        "source_id": "AD02065",
+        "name": "Champion Export",
+        "source_id": "ODB00-138",
+        "alternate_names": [
+            "Unknown"
+        ],
         "location": "Brunei",
         "reference": {
-            "year": 1999,
-            "reference": "Jokuty, P., Whiticar, S., Wang, Z., Fingas, M., Fieldhouse, B., Lambert, P., Mullen, J. 1999. Properties of Crude Oils and Oil Products.  Manuscript Report EE-165, Environmental Protection Service, Environment Canada, Ottawa, Ontario."
+            "year": 1983,
+            "reference": "Aalund, L.R., \"Guide to Export Crudes for the '80s - 8: Quality crudes hallmark of Asian production\", Oil& Gas Journal, August 22, pp. 124-133, 1983\nJokuty, P., Whiticar, S., Wang, Z., Fingas, M., Fieldhouse, B., Lambert, P., Mullen, J. 1999. Properties of Crude Oils and Oil Products.  Manuscript Report EE-165, Environmental Protection Service, Environment Canada, Ottawa, Ontario.\n\nAs published in: Environment and Climate Change Canada, A Catalogue of Crude Oil and Oil Product Properties (1999)- Revised 2022, Environment and Climate Change Canada, 2022."
         },
         "product_type": "Crude Oil NOS",
         "API": 23.9,
-        "comments": "The data in this record may have been compiled from multiple sources and reflect samples of varying age and composition.",
+        "comments": "Data from OGJ 83h were originally published in 1983 as part of a series entitled \"Guide to Export Crudes for the '80s\".  The data in this record may have been compiled from multiple sources and reflect samples of varying age and composition.",
         "labels": [
             "Crude Oil",
             "Medium Crude"
         ],
-        "model_completeness": 16,
-        "gnome_suitable": true,
-        "change_log": [
-            {
-                "name": "Rin",
-                "date": "2022-11-25T11:47:24.246-08:00",
-                "comment": "Issue #25 - Name with Reference Year"
-            },
-            {
-                "name": "R",
-                "date": "2022-11-25T14:49:01.433-08:00",
-                "comment": "Issue #27 - Normalize Location"
-            }
-        ]
+        "model_completeness": 16
     },
     "sub_samples": [
         {
             "metadata": {
                 "name": "Fresh Oil Sample",
                 "short_name": "Fresh Oil",
+                "sample_id": "ODB00-138",
                 "fraction_evaporated": {
                     "value": 0.0,
-                    "unit": "fraction",
+                    "unit": "%",
                     "unit_type": "massfraction"
                 }
             },
             "physical_properties": {
                 "pour_point": {
                     "measurement": {
-                        "value": -36.0,
                         "unit": "C",
+                        "max_value": -36.0,
                         "unit_type": "temperature"
                     }
                 },
                 "densities": [
                     {
                         "density": {
-                            "value": 909.76,
-                            "unit": "kg/m^3",
+                            "value": 0.9097,
+                            "unit": "g/mL",
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.16,
-                            "unit": "K",
+                            "value": 15.0,
+                            "unit": "C",
                             "unit_type": "temperature"
-                        },
-                        "method": "Converted from API"
+                        }
                     }
                 ],
                 "kinematic_viscosities": [
                     {
                         "viscosity": {
-                            "value": 2.1e-05,
-                            "unit": "m^2/s",
+                            "value": 21.0,
+                            "unit": "mm^2/s",
                             "unit_type": "kinematicviscosity"
                         },
                         "ref_temp": {
@@ -80,15 +70,20 @@
                     }
                 ]
             },
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "bulk_composition": [
                 {
-                    "name": "sulfur",
+                    "name": "Sulphur Content",
                     "measurement": {
-                        "value": 0.0012,
-                        "unit": "fraction",
+                        "value": 0.12,
+                        "unit": "%",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Waxes",
+                    "measurement": {
+                        "value": 0.0,
+                        "unit": "%",
                         "unit_type": "massfraction"
                     }
                 }

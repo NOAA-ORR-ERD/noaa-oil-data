@@ -2,43 +2,33 @@
     "oil_id": "AD02277",
     "adios_data_model_version": "0.12.0",
     "metadata": {
-        "name": "NEWFOUNDLAND OFFSHORE BURN EXP SAMPLE #15",
-        "source_id": "AD02277",
-        "location": "Canada, Alberta",
+        "name": "Newfoundland Offshore Burn Experiment Sample #15",
+        "source_id": "ODB00-535",
+        "alternate_names": [
+            "Unknown"
+        ],
+        "location": "Alberta, Canada",
         "reference": {
-            "year": 1999,
-            "reference": "Jokuty, P., Whiticar, S., Wang, Z., Fingas, M., Fieldhouse, B., Lambert, P., Mullen, J. 1999. Properties of Crude Oils and Oil Products.  Manuscript Report EE-165, Environmental Protection Service, Environment Canada, Ottawa, Ontario."
+            "year": 1996,
+            "reference": "Environmental Emergencies Technology Division, experimental data, Environment Canada, Ottawa, Ontario, 1983-1989; and Emergencies Science Division, experimental data, Environment Canada, Ottawa, Ontario, 1990- 1996. Presently referred to as the Emergencies Science and Technology Section (ESTS) of Environment and Climate Change Canada (ECCC)\nJokuty, P., Whiticar, S., Wang, Z., Fingas, M., Fieldhouse, B., Lambert, P., Mullen, J. 1999. Properties of Crude Oils and Oil Products.  Manuscript Report EE-165, Environmental Protection Service, Environment Canada, Ottawa, Ontario.\n\nAs published in: Environment and Climate Change Canada, A Catalogue of Crude Oil and Oil Product Properties (1999)- Revised 2022, Environment and Climate Change Canada, 2022."
         },
         "product_type": "Crude Oil NOS",
-        "API": 19.5,
-        "comments": "Sample consist of residue collected from the apex of the fire boom after burn 2.\n\nThe data in this record may have been compiled from multiple sources and reflect samples of varying age and composition.",
+        "comments": "This sample was collected as part of the Newfoundland Offshore Burn Experiment (NOBE), which took place August 12, 1993. This sample consists of residue collected from the apex of the backup boom after burn 2.  Sample consist of residue collected from the apex of the fire boom after burn 2.\n\nThe data in this record may have been compiled from multiple sources and reflect samples of varying age and composition.",
         "labels": [
             "Crude Oil",
             "Heavy Crude"
         ],
-        "model_completeness": 16,
-        "gnome_suitable": true,
-        "change_log": [
-            {
-                "name": "R",
-                "date": "2022-11-25T14:15:05.404-08:00",
-                "comment": "Issue #27 - Normalize Location"
-            },
-            {
-                "name": "R",
-                "date": "2022-11-28T10:20:42.439-08:00",
-                "comment": "Issue #27 -- Normalize Location"
-            }
-        ]
+        "model_completeness": 8
     },
     "sub_samples": [
         {
             "metadata": {
-                "name": "Fresh Oil Sample",
-                "short_name": "Fresh Oil",
+                "name": "Environmental Sample",
+                "short_name": "Env. Sample",
+                "sample_id": "ODB00-535",
                 "fraction_evaporated": {
-                    "value": 0.0,
-                    "unit": "fraction",
+                    "unit": "%",
+                    "min_value": 0.0,
                     "unit_type": "massfraction"
                 }
             },
@@ -52,7 +42,6 @@
                 },
                 "flash_point": {
                     "measurement": {
-                        "value": 90.0,
                         "unit": "C",
                         "unit_type": "temperature"
                     }
@@ -60,8 +49,8 @@
                 "densities": [
                     {
                         "density": {
-                            "value": 937.0,
-                            "unit": "kg/m^3",
+                            "value": 0.9365,
+                            "unit": "g/mL",
                             "unit_type": "density"
                         },
                         "ref_temp": {
@@ -74,58 +63,202 @@
                 "dynamic_viscosities": [
                     {
                         "viscosity": {
-                            "value": 30.1,
-                            "unit": "kg/(m s)",
+                            "value": 30080.0,
+                            "unit": "mPas",
                             "unit_type": "dynamicviscosity"
                         },
                         "ref_temp": {
                             "value": 15.0,
                             "unit": "C",
                             "unit_type": "temperature"
+                        },
+                        "shear_rate": {
+                            "value": 10.0,
+                            "unit": "1/s",
+                            "unit_type": "angularvelocity"
                         }
+                    },
+                    {
+                        "viscosity": {
+                            "value": 130500.0,
+                            "unit": "mPas",
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "shear_rate": {
+                            "value": 1.0,
+                            "unit": "1/s",
+                            "unit_type": "angularvelocity"
+                        }
+                    }
+                ]
+            },
+            "environmental_behavior": {
+                "emulsions": [
+                    {
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "visual_stability": "Did not form"
                     }
                 ]
             },
             "SARA": {
                 "asphaltenes": {
-                    "value": 0.02,
-                    "unit": "fraction",
+                    "value": 2.0,
+                    "unit": "%",
                     "unit_type": "massfraction"
                 }
             },
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "bulk_composition": [
                 {
-                    "name": "wax_content",
+                    "name": "Sulphur Content",
                     "measurement": {
-                        "value": 0.14,
-                        "unit": "fraction",
+                        "value": 0.45,
+                        "unit": "%",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "sulfur",
+                    "name": "Water Content",
                     "measurement": {
-                        "value": 0.0045,
-                        "unit": "fraction",
+                        "value": 14.0,
+                        "unit": "%",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "nickel",
+                    "name": "Waxes",
                     "measurement": {
-                        "value": 2.0,
-                        "unit": "ppm",
+                        "value": 14.0,
+                        "unit": "%",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "vanadium",
+                    "name": "Barium",
+                    "groups": [
+                        "Metals"
+                    ],
                     "measurement": {
-                        "value": 3.0,
-                        "unit": "ppm",
+                        "unit": "\u00b5g/g",
+                        "max_value": 0.05,
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Chromium",
+                    "groups": [
+                        "Metals"
+                    ],
+                    "measurement": {
+                        "unit": "\u00b5g/g",
+                        "max_value": 0.9,
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Copper",
+                    "groups": [
+                        "Metals"
+                    ],
+                    "measurement": {
+                        "unit": "\u00b5g/g",
+                        "max_value": 0.3,
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Iron",
+                    "groups": [
+                        "Metals"
+                    ],
+                    "measurement": {
+                        "value": 3.1,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Lead",
+                    "groups": [
+                        "Metals"
+                    ],
+                    "measurement": {
+                        "unit": "\u00b5g/g",
+                        "max_value": 5.1,
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Magnesium",
+                    "groups": [
+                        "Metals"
+                    ],
+                    "measurement": {
+                        "value": 354.3,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Molybdenum",
+                    "groups": [
+                        "Metals"
+                    ],
+                    "measurement": {
+                        "unit": "\u00b5g/g",
+                        "max_value": 2.4,
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Nickel",
+                    "groups": [
+                        "Metals"
+                    ],
+                    "measurement": {
+                        "unit": "\u00b5g/g",
+                        "max_value": 2.3,
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Titanium",
+                    "groups": [
+                        "Metals"
+                    ],
+                    "measurement": {
+                        "unit": "\u00b5g/g",
+                        "max_value": 0.5,
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Vanadium",
+                    "groups": [
+                        "Metals"
+                    ],
+                    "measurement": {
+                        "value": 2.8,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Zinc",
+                    "groups": [
+                        "Metals"
+                    ],
+                    "measurement": {
+                        "unit": "\u00b5g/g",
+                        "max_value": 0.6,
                         "unit_type": "massfraction"
                     }
                 }

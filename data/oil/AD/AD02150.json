@@ -2,46 +2,57 @@
     "oil_id": "AD02150",
     "adios_data_model_version": "0.12.0",
     "metadata": {
-        "name": "GASOLINE (CASINGHEAD)",
-        "source_id": "AD02150",
+        "name": "Gasoline (Casinghead)",
+        "source_id": "ODB00-290",
+        "alternate_names": [
+            "Natural Gasoline; Essence naturelle"
+        ],
+        "location": "Unknown",
         "reference": {
-            "year": 1999,
-            "reference": "Jokuty, P., Whiticar, S., Wang, Z., Fingas, M., Fieldhouse, B., Lambert, P., Mullen, J. 1999. Properties of Crude Oils and Oil Products.  Manuscript Report EE-165, Environmental Protection Service, Environment Canada, Ottawa, Ontario."
+            "year": 1991,
+            "reference": "Chemical Hazards Response Information System (CHRIS), United States Coast Guard, Department of Transportation, Washington, D.C., 1991,\nJokuty, P., Whiticar, S., Wang, Z., Fingas, M., Fieldhouse, B., Lambert, P., Mullen, J. 1999. Properties of Crude Oils and Oil Products.  Manuscript Report EE-165, Environmental Protection Service, Environment Canada, Ottawa, Ontario.\n\nAs published in: Environment and Climate Change Canada, A Catalogue of Crude Oil and Oil Product Properties (1999)- Revised 2022, Environment and Climate Change Canada, 2022."
         },
-        "product_type": "Condensate",
-        "API": 78.57,
+        "product_type": "Crude Oil NOS",
+        "API": 78.75,
         "comments": "WARNING: Benzene content of product is only an estimate and not a measured value.\n\nThe data in this record may have been compiled from multiple sources and reflect samples of varying age and composition.\n\nNOTE this is likely \"Casinghead Gas\", and thus similar to a condensate:\nhttps://www.merriam-webster.com/dictionary/casinghead%20gas\n",
         "labels": [
             "Condensate",
             "Crude Oil"
         ],
-        "model_completeness": 20,
-        "gnome_suitable": false
+        "model_completeness": 24
     },
     "sub_samples": [
         {
             "metadata": {
                 "name": "Fresh Oil Sample",
                 "short_name": "Fresh Oil",
+                "sample_id": "ODB00-290",
                 "fraction_evaporated": {
                     "value": 0.0,
-                    "unit": "fraction",
+                    "unit": "%",
                     "unit_type": "massfraction"
                 }
             },
             "physical_properties": {
                 "flash_point": {
                     "measurement": {
-                        "value": -18.0,
                         "unit": "C",
+                        "max_value": -18.0,
                         "unit_type": "temperature"
+                    }
+                },
+                "appearance": {
+                    "measurement": {
+                        "unit": null,
+                        "unit_type": "unitless",
+                        "value": "Colourless"
                     }
                 },
                 "densities": [
                     {
                         "density": {
-                            "value": 686.0,
-                            "unit": "kg/m^3",
+                            "value": 0.6855,
+                            "unit": "g/mL",
                             "unit_type": "density"
                         },
                         "ref_temp": {
@@ -52,8 +63,8 @@
                     },
                     {
                         "density": {
-                            "value": 673.0,
-                            "unit": "kg/m^3",
+                            "value": 0.673,
+                            "unit": "g/mL",
                             "unit_type": "density"
                         },
                         "ref_temp": {
@@ -64,8 +75,8 @@
                     },
                     {
                         "density": {
-                            "value": 653.0,
-                            "unit": "kg/m^3",
+                            "value": 0.653,
+                            "unit": "g/mL",
                             "unit_type": "density"
                         },
                         "ref_temp": {
@@ -78,8 +89,8 @@
                 "dynamic_viscosities": [
                     {
                         "viscosity": {
-                            "value": 0.001,
-                            "unit": "kg/(m s)",
+                            "value": 0.5,
+                            "unit": "mPas",
                             "unit_type": "dynamicviscosity"
                         },
                         "ref_temp": {
@@ -87,26 +98,62 @@
                             "unit": "C",
                             "unit_type": "temperature"
                         }
+                    },
+                    {
+                        "viscosity": {
+                            "value": 0.4,
+                            "unit": "mPas",
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "viscosity": {
+                            "value": 0.3,
+                            "unit": "mPas",
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 38.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
+                "interfacial_tension_air": [
+                    {
+                        "tension": {
+                            "unit": "mN/m",
+                            "max_value": 23.0,
+                            "unit_type": "interfacialtension"
+                        },
+                        "ref_temp": {
+                            "value": 20.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
+                "interfacial_tension_water": [
+                    {
+                        "tension": {
+                            "unit": "mN/m",
+                            "max_value": 51.0,
+                            "unit_type": "interfacialtension"
+                        },
+                        "ref_temp": {
+                            "value": 20.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
                     }
                 ]
-            },
-            "distillation_data": {
-                "type": "mass fraction"
-            },
-            "compounds": [
-                {
-                    "name": "benzene",
-                    "measurement": {
-                        "value": 0.05,
-                        "unit": "fraction",
-                        "unit_type": "massfraction"
-                    }
-                }
-            ]
+            }
         }
-    ],
-    "status": [
-        "W100: Not GNOME compatible: Distillation data required for Condensate. Oil not suitable for use in Gnome"
     ],
     "review_status": {
         "status": "Not Reviewed"

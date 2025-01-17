@@ -2,12 +2,15 @@
     "oil_id": "AD00573",
     "adios_data_model_version": "0.12.0",
     "metadata": {
-        "name": "ISSUNGNAK",
-        "source_id": "AD00573",
-        "location": "Canada, Northwest Territories",
+        "name": "Issungnak",
+        "source_id": "ODB00-362",
+        "alternate_names": [
+            "Unknown"
+        ],
+        "location": "Beaufort Sea, Canada",
         "reference": {
             "year": 1996,
-            "reference": "Jokuty, P., Whiticar, S., Wang, Z., Fingas, M., Lambert, P., Fieldhouse, B., Mullen, J. 1996. A Catalogue of Crude Oil and Oil Product Properties (1996 Edition). Prepared for Environment Canada, EE-157, Ottawa, Ontario."
+            "reference": "Environmental Emergencies Technology Division, experimental data, Environment Canada, Ottawa, Ontario, 1983-1989; and Emergencies Science Division, experimental data, Environment Canada, Ottawa, Ontario, 1990- 1996. Presently referred to as the Emergencies Science and Technology Section (ESTS) of Environment and Climate Change Canada (ECCC)\nJokuty, P., Whiticar, S., Wang, Z., Fingas, M., Lambert, P., Fieldhouse, B., Mullen, J. 1996. A Catalogue of Crude Oil and Oil Product Properties (1996 Edition). Prepared for Environment Canada, EE-157, Ottawa, Ontario.\n\nAs published in: Environment and Climate Change Canada, A Catalogue of Crude Oil and Oil Product Properties (1999)- Revised 2022, Environment and Climate Change Canada, 2022."
         },
         "product_type": "Crude Oil NOS",
         "API": 35.0,
@@ -16,47 +19,26 @@
             "Crude Oil",
             "Light Crude"
         ],
-        "model_completeness": 67,
-        "gnome_suitable": true,
-        "change_log": [
-            {
-                "name": "R",
-                "date": "2022-11-28T12:04:03.872-08:00",
-                "comment": "Issue #27 - Normalize Location"
-            }
-        ]
+        "model_completeness": 63
     },
     "sub_samples": [
         {
             "metadata": {
                 "name": "Fresh Oil Sample",
                 "short_name": "Fresh Oil",
+                "sample_id": "ODB00-362.0",
                 "fraction_evaporated": {
                     "value": 0.0,
-                    "unit": "fraction",
+                    "unit": "%",
                     "unit_type": "massfraction"
                 }
             },
             "physical_properties": {
-                "pour_point": {
-                    "measurement": {
-                        "value": 11.0,
-                        "unit": "C",
-                        "unit_type": "temperature"
-                    }
-                },
-                "flash_point": {
-                    "measurement": {
-                        "value": -10.0,
-                        "unit": "C",
-                        "unit_type": "temperature"
-                    }
-                },
                 "densities": [
                     {
                         "density": {
-                            "value": 864.0,
-                            "unit": "kg/m^3",
+                            "value": 0.8636,
+                            "unit": "g/mL",
                             "unit_type": "density"
                         },
                         "ref_temp": {
@@ -67,8 +49,8 @@
                     },
                     {
                         "density": {
-                            "value": 849.0,
-                            "unit": "kg/m^3",
+                            "value": 0.849,
+                            "unit": "g/mL",
                             "unit_type": "density"
                         },
                         "ref_temp": {
@@ -78,12 +60,12 @@
                         }
                     }
                 ],
-                "kinematic_viscosities": [
+                "interfacial_tension_air": [
                     {
-                        "viscosity": {
-                            "value": 0.000199,
-                            "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity"
+                        "tension": {
+                            "value": 31.3,
+                            "unit": "mN/m",
+                            "unit_type": "interfacialtension"
                         },
                         "ref_temp": {
                             "value": 0.0,
@@ -92,10 +74,10 @@
                         }
                     },
                     {
-                        "viscosity": {
-                            "value": 3.65e-06,
-                            "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity"
+                        "tension": {
+                            "value": 26.2,
+                            "unit": "mN/m",
+                            "unit_type": "interfacialtension"
                         },
                         "ref_temp": {
                             "value": 15.0,
@@ -107,12 +89,24 @@
                 "interfacial_tension_water": [
                     {
                         "tension": {
-                            "value": 0.0307,
-                            "unit": "N/m",
+                            "value": 30.7,
+                            "unit": "mN/m",
                             "unit_type": "interfacialtension"
                         },
                         "ref_temp": {
                             "value": 0.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "tension": {
+                            "value": 16.7,
+                            "unit": "mN/m",
+                            "unit_type": "interfacialtension"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -121,8 +115,8 @@
                 "interfacial_tension_seawater": [
                     {
                         "tension": {
-                            "value": 0.0282,
-                            "unit": "N/m",
+                            "value": 28.2,
+                            "unit": "mN/m",
                             "unit_type": "interfacialtension"
                         },
                         "ref_temp": {
@@ -130,23 +124,79 @@
                             "unit": "C",
                             "unit_type": "temperature"
                         }
+                    },
+                    {
+                        "tension": {
+                            "value": 16.8,
+                            "unit": "mN/m",
+                            "unit_type": "interfacialtension"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
                     }
                 ]
             },
+            "environmental_behavior": {
+                "dispersibilities": [
+                    {
+                        "dispersant": "Enersperse 700 dispersant",
+                        "effectiveness": {
+                            "value": 50.0,
+                            "unit": "%",
+                            "unit_type": "massfraction"
+                        }
+                    }
+                ],
+                "emulsions": [
+                    {
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "visual_stability": "Did not form"
+                    },
+                    {
+                        "water_content": {
+                            "value": 90.0,
+                            "unit": "%",
+                            "unit_type": "massfraction"
+                        },
+                        "ref_temp": {
+                            "value": 0.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "visual_stability": "Unknown stability"
+                    }
+                ],
+                "ests_evaporation_test": {
+                    "a_for_ev_a_b_ln_t": 1.56,
+                    "b_for_ev_a_b_ln_t": 0.045
+                }
+            },
             "SARA": {
                 "saturates": {
-                    "value": 0.92,
-                    "unit": "fraction",
+                    "value": 92.0,
+                    "unit": "%",
                     "unit_type": "massfraction"
                 },
                 "aromatics": {
-                    "value": 0.03,
-                    "unit": "fraction",
+                    "value": 3.0,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                },
+                "resins": {
+                    "value": 0.0,
+                    "unit": "%",
                     "unit_type": "massfraction"
                 },
                 "asphaltenes": {
-                    "value": 0.004,
-                    "unit": "fraction",
+                    "value": 0.0,
+                    "unit": "%",
                     "unit_type": "massfraction"
                 }
             },
@@ -155,8 +205,8 @@
                 "cuts": [
                     {
                         "fraction": {
-                            "value": 0.05,
-                            "unit": "fraction",
+                            "value": 5.0,
+                            "unit": "%",
                             "unit_type": "massfraction"
                         },
                         "vapor_temp": {
@@ -167,8 +217,8 @@
                     },
                     {
                         "fraction": {
-                            "value": 0.1,
-                            "unit": "fraction",
+                            "value": 10.0,
+                            "unit": "%",
                             "unit_type": "massfraction"
                         },
                         "vapor_temp": {
@@ -179,8 +229,20 @@
                     },
                     {
                         "fraction": {
-                            "value": 0.2,
-                            "unit": "fraction",
+                            "value": 15.0,
+                            "unit": "%",
+                            "unit_type": "massfraction"
+                        },
+                        "vapor_temp": {
+                            "value": 175.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 20.0,
+                            "unit": "%",
                             "unit_type": "massfraction"
                         },
                         "vapor_temp": {
@@ -191,8 +253,20 @@
                     },
                     {
                         "fraction": {
-                            "value": 0.3,
-                            "unit": "fraction",
+                            "value": 25.0,
+                            "unit": "%",
+                            "unit_type": "massfraction"
+                        },
+                        "vapor_temp": {
+                            "value": 220.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 30.0,
+                            "unit": "%",
                             "unit_type": "massfraction"
                         },
                         "vapor_temp": {
@@ -203,8 +277,20 @@
                     },
                     {
                         "fraction": {
-                            "value": 0.4,
-                            "unit": "fraction",
+                            "value": 35.0,
+                            "unit": "%",
+                            "unit_type": "massfraction"
+                        },
+                        "vapor_temp": {
+                            "value": 251.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 40.0,
+                            "unit": "%",
                             "unit_type": "massfraction"
                         },
                         "vapor_temp": {
@@ -215,8 +301,20 @@
                     },
                     {
                         "fraction": {
-                            "value": 0.5,
-                            "unit": "fraction",
+                            "value": 45.0,
+                            "unit": "%",
+                            "unit_type": "massfraction"
+                        },
+                        "vapor_temp": {
+                            "value": 275.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 50.0,
+                            "unit": "%",
                             "unit_type": "massfraction"
                         },
                         "vapor_temp": {
@@ -227,8 +325,20 @@
                     },
                     {
                         "fraction": {
-                            "value": 0.6,
-                            "unit": "fraction",
+                            "value": 55.0,
+                            "unit": "%",
+                            "unit_type": "massfraction"
+                        },
+                        "vapor_temp": {
+                            "value": 303.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 60.0,
+                            "unit": "%",
                             "unit_type": "massfraction"
                         },
                         "vapor_temp": {
@@ -239,8 +349,20 @@
                     },
                     {
                         "fraction": {
-                            "value": 0.7,
-                            "unit": "fraction",
+                            "value": 65.0,
+                            "unit": "%",
+                            "unit_type": "massfraction"
+                        },
+                        "vapor_temp": {
+                            "value": 331.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 70.0,
+                            "unit": "%",
                             "unit_type": "massfraction"
                         },
                         "vapor_temp": {
@@ -251,8 +373,20 @@
                     },
                     {
                         "fraction": {
-                            "value": 0.8,
-                            "unit": "fraction",
+                            "value": 75.0,
+                            "unit": "%",
+                            "unit_type": "massfraction"
+                        },
+                        "vapor_temp": {
+                            "value": 367.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 80.0,
+                            "unit": "%",
                             "unit_type": "massfraction"
                         },
                         "vapor_temp": {
@@ -263,8 +397,20 @@
                     },
                     {
                         "fraction": {
-                            "value": 0.9,
-                            "unit": "fraction",
+                            "value": 85.0,
+                            "unit": "%",
+                            "unit_type": "massfraction"
+                        },
+                        "vapor_temp": {
+                            "value": 413.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 90.0,
+                            "unit": "%",
                             "unit_type": "massfraction"
                         },
                         "vapor_temp": {
@@ -275,8 +421,8 @@
                     },
                     {
                         "fraction": {
-                            "value": 0.95,
-                            "unit": "fraction",
+                            "value": 95.0,
+                            "unit": "%",
                             "unit_type": "massfraction"
                         },
                         "vapor_temp": {
@@ -287,8 +433,8 @@
                     },
                     {
                         "fraction": {
-                            "value": 1.0,
-                            "unit": "fraction",
+                            "value": 100.0,
+                            "unit": "%",
                             "unit_type": "massfraction"
                         },
                         "vapor_temp": {
@@ -299,28 +445,80 @@
                     }
                 ]
             },
+            "compounds": [
+                {
+                    "name": "Benzene",
+                    "groups": [
+                        "Volatile Organic Compounds (VOCs)"
+                    ],
+                    "measurement": {
+                        "value": 390.0,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Toluene",
+                    "groups": [
+                        "Volatile Organic Compounds (VOCs)"
+                    ],
+                    "measurement": {
+                        "value": 1460.0,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Ethylbenzene",
+                    "groups": [
+                        "Volatile Organic Compounds (VOCs)"
+                    ],
+                    "measurement": {
+                        "value": 730.0,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Xylenes",
+                    "groups": [
+                        "Volatile Organic Compounds (VOCs)"
+                    ],
+                    "measurement": {
+                        "value": 3930.0,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "C3-Benzenes",
+                    "groups": [
+                        "Volatile Organic Compounds (VOCs)"
+                    ],
+                    "measurement": {
+                        "value": 6650.0,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Total BTEX",
+                    "groups": [
+                        "Volatile Organic Compounds (VOCs)"
+                    ],
+                    "measurement": {
+                        "value": 6500.0,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                }
+            ],
             "bulk_composition": [
                 {
-                    "name": "water_content",
+                    "name": "Sulphur Content",
                     "measurement": {
-                        "value": 0.9,
-                        "unit": "fraction",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "sulfur",
-                    "measurement": {
-                        "value": 0.0008,
-                        "unit": "fraction",
-                        "unit_type": "massfraction"
-                    }
-                },
-                {
-                    "name": "polars",
-                    "measurement": {
-                        "value": 0.003,
-                        "unit": "fraction",
+                        "value": 0.08,
+                        "unit": "%",
                         "unit_type": "massfraction"
                     }
                 }
@@ -328,53 +526,252 @@
         },
         {
             "metadata": {
-                "name": "Weathered sample that did not form an emulsion",
-                "short_name": "Didn't Emulsify",
-                "description": "Partially weathered sample that did not form an emulsion.\n\nSee record reference for details",
+                "name": "15% Evaporated",
+                "short_name": "15% Evaporated",
+                "sample_id": "ODB00-362.1",
                 "fraction_evaporated": {
-                    "value": 0.25,
-                    "unit": "fraction",
+                    "value": 15.0,
+                    "unit": "%",
                     "unit_type": "massfraction"
                 }
+            },
+            "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": 11.0,
+                        "unit": "C",
+                        "unit_type": "temperature"
+                    }
+                },
+                "densities": [
+                    {
+                        "density": {
+                            "value": 0.8806,
+                            "unit": "g/mL",
+                            "unit_type": "density"
+                        },
+                        "ref_temp": {
+                            "value": 0.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "density": {
+                            "value": 0.8682,
+                            "unit": "g/mL",
+                            "unit_type": "density"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
+                "interfacial_tension_air": [
+                    {
+                        "tension": {
+                            "value": 27.7,
+                            "unit": "mN/m",
+                            "unit_type": "interfacialtension"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
+                "interfacial_tension_water": [
+                    {
+                        "tension": {
+                            "value": 23.4,
+                            "unit": "mN/m",
+                            "unit_type": "interfacialtension"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
+                "interfacial_tension_seawater": [
+                    {
+                        "tension": {
+                            "value": 17.0,
+                            "unit": "mN/m",
+                            "unit_type": "interfacialtension"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
             },
             "environmental_behavior": {
                 "emulsions": [
                     {
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "visual_stability": "Did not form"
+                    },
+                    {
                         "water_content": {
-                            "value": 0.0,
-                            "unit": "fraction",
+                            "value": 64.0,
+                            "unit": "%",
                             "unit_type": "massfraction"
-                        }
+                        },
+                        "ref_temp": {
+                            "value": 0.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "visual_stability": "Unknown stability"
                     }
                 ]
-            }
+            },
+            "bulk_composition": [
+                {
+                    "name": "Sulphur Content",
+                    "measurement": {
+                        "value": 0.07,
+                        "unit": "%",
+                        "unit_type": "massfraction"
+                    }
+                }
+            ]
         },
         {
             "metadata": {
-                "name": "Weathered sample that formed an emulsion",
-                "short_name": "Emulsified",
-                "description": "Partially weathered sample that formed an emulsion.\n\nSee record reference for details",
+                "name": "25% Evaporated",
+                "short_name": "25% Evaporated",
+                "sample_id": "ODB00-362.2",
                 "fraction_evaporated": {
-                    "value": 1.0,
-                    "unit": "fraction",
+                    "value": 25.0,
+                    "unit": "%",
                     "unit_type": "massfraction"
                 }
+            },
+            "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": 13.0,
+                        "unit": "C",
+                        "unit_type": "temperature"
+                    }
+                },
+                "densities": [
+                    {
+                        "density": {
+                            "value": 0.8897,
+                            "unit": "g/mL",
+                            "unit_type": "density"
+                        },
+                        "ref_temp": {
+                            "value": 0.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "density": {
+                            "value": 0.8773,
+                            "unit": "g/mL",
+                            "unit_type": "density"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
+                "interfacial_tension_air": [
+                    {
+                        "tension": {
+                            "value": 28.5,
+                            "unit": "mN/m",
+                            "unit_type": "interfacialtension"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
+                "interfacial_tension_water": [
+                    {
+                        "tension": {
+                            "value": 21.5,
+                            "unit": "mN/m",
+                            "unit_type": "interfacialtension"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
+                "interfacial_tension_seawater": [
+                    {
+                        "tension": {
+                            "value": 12.5,
+                            "unit": "mN/m",
+                            "unit_type": "interfacialtension"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
             },
             "environmental_behavior": {
                 "emulsions": [
                     {
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "visual_stability": "Did not form"
+                    },
+                    {
                         "water_content": {
-                            "value": 0.9,
-                            "unit": "fraction",
+                            "value": 87.0,
+                            "unit": "%",
                             "unit_type": "massfraction"
-                        }
+                        },
+                        "ref_temp": {
+                            "value": 0.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        },
+                        "visual_stability": "Unknown stability"
                     }
                 ]
-            }
+            },
+            "bulk_composition": [
+                {
+                    "name": "Sulphur Content",
+                    "measurement": {
+                        "value": 0.1,
+                        "unit": "%",
+                        "unit_type": "massfraction"
+                    }
+                }
+            ]
         }
-    ],
-    "status": [
-        "W009: Distillation fraction recovered is missing or invalid"
     ],
     "review_status": {
         "status": "Not Reviewed"

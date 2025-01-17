@@ -2,46 +2,35 @@
     "oil_id": "AD02090",
     "adios_data_model_version": "0.12.0",
     "metadata": {
-        "name": "DUKHAN",
-        "source_id": "AD02090",
+        "name": "Dukhan",
+        "source_id": "ODB00-187",
         "alternate_names": [
+            "Qatar Land",
             "Qatar Land"
         ],
         "location": "Qatar",
         "reference": {
-            "year": 1999,
-            "reference": "Jokuty, P., Whiticar, S., Wang, Z., Fingas, M., Fieldhouse, B., Lambert, P., Mullen, J. 1999. Properties of Crude Oils and Oil Products.  Manuscript Report EE-165, Environmental Protection Service, Environment Canada, Ottawa, Ontario."
+            "year": 1983,
+            "reference": "Aalund, L.R., \"Guide to Export Crudes for the '80s - 1: Assay series begins with Mideast crudes\", Oil& Gas Journal, April 11, pp. 71-77, 1983\nJokuty, P., Whiticar, S., Wang, Z., Fingas, M., Fieldhouse, B., Lambert, P., Mullen, J. 1999. Properties of Crude Oils and Oil Products.  Manuscript Report EE-165, Environmental Protection Service, Environment Canada, Ottawa, Ontario.\n\nAs published in: Environment and Climate Change Canada, A Catalogue of Crude Oil and Oil Product Properties (1999)- Revised 2022, Environment and Climate Change Canada, 2022."
         },
         "product_type": "Crude Oil NOS",
         "API": 41.7,
-        "comments": "The data in this record may have been compiled from multiple sources and reflect samples of varying age and composition.",
+        "comments": "Data from OGJ 83a were originally published in 1983 as part of a series entitled \"Guide to Export Crudes for the '80s\".  The data in this record may have been compiled from multiple sources and reflect samples of varying age and composition.",
         "labels": [
             "Crude Oil",
             "Light Crude"
         ],
-        "model_completeness": 16,
-        "gnome_suitable": true,
-        "change_log": [
-            {
-                "name": "Rin",
-                "date": "2022-11-25T11:53:29.179-08:00",
-                "comment": "Issue #25 - Name with Reference Year"
-            },
-            {
-                "name": "R",
-                "date": "2022-11-28T13:23:50.239-08:00",
-                "comment": "Issue #27 - Normalize Location"
-            }
-        ]
+        "model_completeness": 16
     },
     "sub_samples": [
         {
             "metadata": {
                 "name": "Fresh Oil Sample",
                 "short_name": "Fresh Oil",
+                "sample_id": "ODB00-187",
                 "fraction_evaporated": {
                     "value": 0.0,
-                    "unit": "fraction",
+                    "unit": "%",
                     "unit_type": "massfraction"
                 }
             },
@@ -56,23 +45,22 @@
                 "densities": [
                     {
                         "density": {
-                            "value": 816.26,
-                            "unit": "kg/m^3",
+                            "value": 0.8166,
+                            "unit": "g/mL",
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.16,
-                            "unit": "K",
+                            "value": 15.0,
+                            "unit": "C",
                             "unit_type": "temperature"
-                        },
-                        "method": "Converted from API"
+                        }
                     }
                 ],
                 "kinematic_viscosities": [
                     {
                         "viscosity": {
-                            "value": 5.27e-06,
-                            "unit": "m^2/s",
+                            "value": 43.0,
+                            "unit": "sus",
                             "unit_type": "kinematicviscosity"
                         },
                         "ref_temp": {
@@ -83,26 +71,13 @@
                     }
                 ]
             },
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "bulk_composition": [
                 {
-                    "name": "sulfur",
+                    "name": "Sulphur Content",
                     "measurement": {
-                        "value": 0.0128,
-                        "unit": "fraction",
+                        "value": 1.28,
+                        "unit": "%",
                         "unit_type": "massfraction"
-                    }
-                }
-            ],
-            "industry_properties": [
-                {
-                    "name": "Reid Vapor Pressure",
-                    "measurement": {
-                        "value": 0.81,
-                        "unit": "bar",
-                        "unit_type": "pressure"
                     }
                 }
             ]

@@ -2,37 +2,34 @@
     "oil_id": "AD01189",
     "adios_data_model_version": "0.12.0",
     "metadata": {
-        "name": "ZAIRE, API",
-        "source_id": "AD01189",
+        "name": "Zaire",
+        "source_id": "ODB00-716",
+        "alternate_names": [
+            "Unknown"
+        ],
         "location": "Zaire",
         "reference": {
-            "year": 1986,
-            "reference": "Yeager, John. 1986. U.S. Crude and Products Import 1985.  Prepared for the American Petroleum Institute, Washington, D.C. 14pp."
+            "year": 1983,
+            "reference": "Aalund, L.R., \"Guide to Export Crudes for the '80s - 6: Ten additional West African assays\", Oil& Gas Journal, July 4, pp. 96-99, 1983\nYeager, John. 1986. U.S. Crude and Products Import 1985.  Prepared for the American Petroleum Institute, Washington, D.C. 14pp.\n\nAs published in: Environment and Climate Change Canada, A Catalogue of Crude Oil and Oil Product Properties (1999)- Revised 2022, Environment and Climate Change Canada, 2022."
         },
         "product_type": "Crude Oil NOS",
         "API": 31.7,
+        "comments": "Off shore production. Data from OGJ 83f were originally published in 1983 as part of a series entitled \"Guide to Export Crudes for the '80s\".",
         "labels": [
             "Crude Oil",
             "Medium Crude"
         ],
-        "model_completeness": 16,
-        "gnome_suitable": true,
-        "change_log": [
-            {
-                "name": "R",
-                "date": "2022-11-28T14:10:33.869-08:00",
-                "comment": "Issue #27 - Normalize Location"
-            }
-        ]
+        "model_completeness": 16
     },
     "sub_samples": [
         {
             "metadata": {
                 "name": "Fresh Oil Sample",
                 "short_name": "Fresh Oil",
+                "sample_id": "ODB00-716",
                 "fraction_evaporated": {
                     "value": 0.0,
-                    "unit": "fraction",
+                    "unit": "%",
                     "unit_type": "massfraction"
                 }
             },
@@ -47,23 +44,22 @@
                 "densities": [
                     {
                         "density": {
-                            "value": 866.28,
-                            "unit": "kg/m^3",
+                            "value": 0.8666,
+                            "unit": "g/mL",
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.16,
-                            "unit": "K",
+                            "value": 15.0,
+                            "unit": "C",
                             "unit_type": "temperature"
-                        },
-                        "method": "Converted from API"
+                        }
                     }
                 ],
                 "kinematic_viscosities": [
                     {
                         "viscosity": {
-                            "value": 2e-05,
-                            "unit": "m^2/s",
+                            "value": 98.0,
+                            "unit": "sus",
                             "unit_type": "kinematicviscosity"
                         },
                         "ref_temp": {
@@ -74,9 +70,38 @@
                     }
                 ]
             },
-            "distillation_data": {
-                "type": "mass fraction"
-            }
+            "bulk_composition": [
+                {
+                    "name": "Sulphur Content",
+                    "measurement": {
+                        "value": 0.13,
+                        "unit": "%",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Nickel",
+                    "groups": [
+                        "Metals"
+                    ],
+                    "measurement": {
+                        "value": 17.8,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Vanadium",
+                    "groups": [
+                        "Metals"
+                    ],
+                    "measurement": {
+                        "value": 1.5,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                }
+            ]
         }
     ],
     "review_status": {

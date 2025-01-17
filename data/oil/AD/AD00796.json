@@ -2,29 +2,33 @@
     "oil_id": "AD00796",
     "adios_data_model_version": "0.12.0",
     "metadata": {
-        "name": "NAPHTHA (COAL TAR)",
-        "source_id": "AD00796",
+        "name": "Naphtha (Coal Tar)",
+        "source_id": "ODB00-513",
+        "alternate_names": [
+            "Unknown"
+        ],
+        "location": "Unknown",
         "reference": {
-            "year": 1996,
-            "reference": "Jokuty, P., Whiticar, S., Wang, Z., Fingas, M., Lambert, P., Fieldhouse, B., Mullen, J. 1996. A Catalogue of Crude Oil and Oil Product Properties (1996 Edition). Prepared for Environment Canada, EE-157, Ottawa, Ontario."
+            "year": 1991,
+            "reference": "Chemical Hazards Response Information System (CHRIS), United States Coast Guard, Department of Transportation, Washington, D.C., 1991\nJokuty, P., Whiticar, S., Wang, Z., Fingas, M., Lambert, P., Fieldhouse, B., Mullen, J. 1996. A Catalogue of Crude Oil and Oil Product Properties (1996 Edition). Prepared for Environment Canada, EE-157, Ottawa, Ontario.\n\nAs published in: Environment and Climate Change Canada, A Catalogue of Crude Oil and Oil Product Properties (1999)- Revised 2022, Environment and Climate Change Canada, 2022."
         },
-        "product_type": "Solvent",
-        "comments": "Product is a mixture of benzene, toluene, and xylene.  Color ranges from colorless to pale yellow.\nThe data in this record may have been compiled from multiple sources and reflect samples of varying age and composition.",
+        "product_type": "Crude Oil NOS",
+        "comments": "Mixture of benzene, toluene, and xylenes.  Product is a mixture of benzene, toluene, and xylene.  Color ranges from colorless to pale yellow.\nThe data in this record may have been compiled from multiple sources and reflect samples of varying age and composition.",
         "labels": [
             "Refined Product",
             "Solvent"
         ],
-        "model_completeness": 16,
-        "gnome_suitable": false
+        "model_completeness": 17
     },
     "sub_samples": [
         {
             "metadata": {
                 "name": "Fresh Oil Sample",
                 "short_name": "Fresh Oil",
+                "sample_id": "ODB00-513",
                 "fraction_evaporated": {
                     "value": 0.0,
-                    "unit": "fraction",
+                    "unit": "%",
                     "unit_type": "massfraction"
                 }
             },
@@ -36,26 +40,19 @@
                         "unit_type": "temperature"
                     }
                 },
+                "appearance": {
+                    "measurement": {
+                        "unit": null,
+                        "unit_type": "unitless",
+                        "value": "Colourless to pale yellow"
+                    }
+                },
                 "densities": [
                     {
                         "density": {
-                            "value": 860.0,
-                            "unit": "kg/m^3",
+                            "value": 0.86,
+                            "unit": "g/mL",
                             "unit_type": "density"
-                        },
-                        "ref_temp": {
-                            "value": 20.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
-                    }
-                ],
-                "kinematic_viscosities": [
-                    {
-                        "viscosity": {
-                            "value": 6.72e-07,
-                            "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity"
                         },
                         "ref_temp": {
                             "value": 20.0,
@@ -67,8 +64,8 @@
                 "dynamic_viscosities": [
                     {
                         "viscosity": {
-                            "value": 0.007,
-                            "unit": "kg/(m s)",
+                            "value": 7.0,
+                            "unit": "mPas",
                             "unit_type": "dynamicviscosity"
                         },
                         "ref_temp": {
@@ -79,9 +76,23 @@
                     },
                     {
                         "viscosity": {
-                            "value": 0.006,
-                            "unit": "kg/(m s)",
+                            "value": 6.0,
+                            "unit": "mPas",
                             "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 20.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
+                "interfacial_tension_air": [
+                    {
+                        "tension": {
+                            "value": 20.0,
+                            "unit": "mN/m",
+                            "unit_type": "interfacialtension"
                         },
                         "ref_temp": {
                             "value": 20.0,
@@ -93,8 +104,8 @@
                 "interfacial_tension_water": [
                     {
                         "tension": {
-                            "value": 0.045,
-                            "unit": "N/m",
+                            "value": 45.0,
+                            "unit": "mN/m",
                             "unit_type": "interfacialtension"
                         },
                         "ref_temp": {
@@ -105,23 +116,10 @@
                     }
                 ]
             },
-            "distillation_data": {
-                "type": "mass fraction"
-            },
             "industry_properties": [
-                {
-                    "name": "Reid Vapor Pressure",
-                    "measurement": {
-                        "value": 0.01,
-                        "unit": "bar",
-                        "unit_type": "pressure"
-                    }
-                }
+                {}
             ]
         }
-    ],
-    "status": [
-        "W100: Not GNOME compatible: Distillation data required for Solvent. Oil not suitable for use in Gnome"
     ],
     "review_status": {
         "status": "Not Reviewed"

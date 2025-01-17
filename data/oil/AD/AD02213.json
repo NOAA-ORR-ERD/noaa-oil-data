@@ -2,43 +2,33 @@
     "oil_id": "AD02213",
     "adios_data_model_version": "0.12.0",
     "metadata": {
-        "name": "LEONA",
-        "source_id": "AD02213",
+        "name": "Leona",
+        "source_id": "ODB00-405",
+        "alternate_names": [
+            "Unknown"
+        ],
         "location": "Venezuela",
         "reference": {
-            "year": 1999,
-            "reference": "Jokuty, P., Whiticar, S., Wang, Z., Fingas, M., Fieldhouse, B., Lambert, P., Mullen, J. 1999. Properties of Crude Oils and Oil Products.  Manuscript Report EE-165, Environmental Protection Service, Environment Canada, Ottawa, Ontario."
+            "reference": "OGJ 97\nJokuty, P., Whiticar, S., Wang, Z., Fingas, M., Fieldhouse, B., Lambert, P., Mullen, J. 1999. Properties of Crude Oils and Oil Products.  Manuscript Report EE-165, Environmental Protection Service, Environment Canada, Ottawa, Ontario.\n\nAs published in: Environment and Climate Change Canada, A Catalogue of Crude Oil and Oil Product Properties (1999)- Revised 2022, Environment and Climate Change Canada, 2022."
         },
         "product_type": "Crude Oil NOS",
         "API": 24.0,
-        "comments": "The data in this record may have been compiled from multiple sources and reflect samples of varying age and composition.",
+        "comments": "Data from OGJ 97 were originally published in 1997.  The data in this record may have been compiled from multiple sources and reflect samples of varying age and composition.",
         "labels": [
             "Crude Oil",
             "Medium Crude"
         ],
-        "model_completeness": 20,
-        "gnome_suitable": true,
-        "change_log": [
-            {
-                "name": "Rin",
-                "date": "2022-11-25T12:20:13.339-08:00",
-                "comment": "Issue #25 - Name with Reference Year"
-            },
-            {
-                "name": "R",
-                "date": "2022-11-28T14:03:04.325-08:00",
-                "comment": "Issue #27 - Normalize Location"
-            }
-        ]
+        "model_completeness": 20
     },
     "sub_samples": [
         {
             "metadata": {
                 "name": "Fresh Oil Sample",
                 "short_name": "Fresh Oil",
+                "sample_id": "ODB00-405",
                 "fraction_evaporated": {
                     "value": 0.0,
-                    "unit": "fraction",
+                    "unit": "%",
                     "unit_type": "massfraction"
                 }
             },
@@ -60,8 +50,8 @@
                 "densities": [
                     {
                         "density": {
-                            "value": 910.0,
-                            "unit": "kg/m^3",
+                            "value": 0.91,
+                            "unit": "g/mL",
                             "unit_type": "density"
                         },
                         "ref_temp": {
@@ -74,8 +64,8 @@
                 "kinematic_viscosities": [
                     {
                         "viscosity": {
-                            "value": 3.1e-05,
-                            "unit": "m^2/s",
+                            "value": 31.0,
+                            "unit": "mm^2/s",
                             "unit_type": "kinematicviscosity"
                         },
                         "ref_temp": {
@@ -86,8 +76,8 @@
                     },
                     {
                         "viscosity": {
-                            "value": 1.9e-05,
-                            "unit": "m^2/s",
+                            "value": 19.0,
+                            "unit": "mm^2/s",
                             "unit_type": "kinematicviscosity"
                         },
                         "ref_temp": {
@@ -98,8 +88,8 @@
                     },
                     {
                         "viscosity": {
-                            "value": 1.3e-05,
-                            "unit": "m^2/s",
+                            "value": 13.0,
+                            "unit": "mm^2/s",
                             "unit_type": "kinematicviscosity"
                         },
                         "ref_temp": {
@@ -110,42 +100,72 @@
                     }
                 ]
             },
-            "distillation_data": {
-                "type": "mass fraction"
+            "SARA": {
+                "asphaltenes": {
+                    "value": 5.0,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                }
             },
             "bulk_composition": [
                 {
-                    "name": "sulfur",
+                    "name": "Sulphur Content",
                     "measurement": {
-                        "value": 0.0152,
-                        "unit": "fraction",
+                        "value": 1.52,
+                        "unit": "%",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "nickel",
+                    "name": "Aluminum",
+                    "groups": [
+                        "Metals"
+                    ],
+                    "measurement": {
+                        "unit": "\u00b5g/g",
+                        "max_value": 5.0,
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Nickel",
+                    "groups": [
+                        "Metals"
+                    ],
                     "measurement": {
                         "value": 42.0,
-                        "unit": "ppm",
+                        "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
                 },
                 {
-                    "name": "vanadium",
+                    "name": "Sodium",
+                    "groups": [
+                        "Metals"
+                    ],
                     "measurement": {
-                        "value": 139.0,
-                        "unit": "ppm",
+                        "value": 5.0,
+                        "unit": "\u00b5g/g",
                         "unit_type": "massfraction"
                     }
-                }
-            ],
-            "industry_properties": [
+                },
                 {
-                    "name": "Reid Vapor Pressure",
+                    "name": "Vanadium",
+                    "groups": [
+                        "Metals"
+                    ],
                     "measurement": {
-                        "value": 0.25,
-                        "unit": "bar",
-                        "unit_type": "pressure"
+                        "value": 139.0,
+                        "unit": "\u00b5g/g",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Nitrogen",
+                    "measurement": {
+                        "value": 0.32,
+                        "unit": "%",
+                        "unit_type": "massfraction"
                     }
                 }
             ]

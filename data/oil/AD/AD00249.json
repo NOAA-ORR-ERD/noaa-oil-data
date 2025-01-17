@@ -2,56 +2,54 @@
     "oil_id": "AD00249",
     "adios_data_model_version": "0.12.0",
     "metadata": {
-        "name": "CLARIFIED OIL",
-        "source_id": "AD00249",
+        "name": "Clarified Oil",
+        "source_id": "ODB00-140",
+        "alternate_names": [
+            "Unknown"
+        ],
+        "location": "Unknown",
         "reference": {
-            "year": 1992,
-            "reference": "Whiticar, S. Bobra, M., Fingas, M., Jokuty, P., Liuzzo, P., Callaghan, S., Ackerman, F., and Coa, J. 1992. A Catalogue of Crude Oil and Oil Product Properties (1992 Edition). Prepared for Environment Canada, EE-144, Ottawa, Ontario. 643pp."
+            "year": 1991,
+            "reference": "Chemical Hazards Response Information System (CHRIS), United States Coast Guard, Department of Transportation, Washington, D.C., 1991\nWhiticar, S. Bobra, M., Fingas, M., Jokuty, P., Liuzzo, P., Callaghan, S., Ackerman, F., and Coa, J. 1992. A Catalogue of Crude Oil and Oil Product Properties (1992 Edition). Prepared for Environment Canada, EE-144, Ottawa, Ontario. 643pp.\n\nAs published in: Environment and Climate Change Canada, A Catalogue of Crude Oil and Oil Product Properties (1999)- Revised 2022, Environment and Climate Change Canada, 2022."
         },
-        "product_type": "Refinery Intermediate",
+        "product_type": "Crude Oil NOS",
+        "API": 34.97,
         "comments": "The data in this record may have been compiled from multiple sources and reflect samples of varying age and composition.",
         "labels": [
             "Refined Product",
             "Refinery Intermediate"
         ],
-        "model_completeness": 16,
-        "gnome_suitable": false
+        "model_completeness": 20
     },
     "sub_samples": [
         {
             "metadata": {
                 "name": "Fresh Oil Sample",
                 "short_name": "Fresh Oil",
+                "sample_id": "ODB00-140",
                 "fraction_evaporated": {
                     "value": 0.0,
-                    "unit": "fraction",
+                    "unit": "%",
                     "unit_type": "massfraction"
                 }
             },
             "physical_properties": {
+                "appearance": {
+                    "measurement": {
+                        "unit": null,
+                        "unit_type": "unitless",
+                        "value": "Colourless"
+                    }
+                },
                 "densities": [
                     {
                         "density": {
-                            "value": 848.0,
-                            "unit": "kg/m^3",
+                            "value": 0.85,
+                            "unit": "g/mL",
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 20.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
-                    }
-                ],
-                "kinematic_viscosities": [
-                    {
-                        "viscosity": {
-                            "value": 6.8e-06,
-                            "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity"
-                        },
-                        "ref_temp": {
-                            "value": 20.0,
+                            "value": 15.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -60,8 +58,20 @@
                 "dynamic_viscosities": [
                     {
                         "viscosity": {
-                            "value": 0.00712,
-                            "unit": "kg/(m s)",
+                            "value": 9.0,
+                            "unit": "mPas",
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 10.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "viscosity": {
+                            "value": 7.0,
+                            "unit": "mPas",
                             "unit_type": "dynamicviscosity"
                         },
                         "ref_temp": {
@@ -72,9 +82,49 @@
                     },
                     {
                         "viscosity": {
-                            "value": 0.00577,
-                            "unit": "kg/(m s)",
+                            "value": 6.0,
+                            "unit": "mPas",
                             "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 20.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "viscosity": {
+                            "value": 4.0,
+                            "unit": "mPas",
+                            "unit_type": "dynamicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 25.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
+                "interfacial_tension_air": [
+                    {
+                        "tension": {
+                            "value": 25.0,
+                            "unit": "mN/m",
+                            "unit_type": "interfacialtension"
+                        },
+                        "ref_temp": {
+                            "value": 20.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
+                "interfacial_tension_water": [
+                    {
+                        "tension": {
+                            "value": 50.0,
+                            "unit": "mN/m",
+                            "unit_type": "interfacialtension"
                         },
                         "ref_temp": {
                             "value": 20.0,
@@ -83,14 +133,8 @@
                         }
                     }
                 ]
-            },
-            "distillation_data": {
-                "type": "mass fraction"
             }
         }
-    ],
-    "status": [
-        "W100: Not GNOME compatible: Distillation data required for Refinery Intermediate. Oil not suitable for use in Gnome"
     ],
     "review_status": {
         "status": "Not Reviewed"

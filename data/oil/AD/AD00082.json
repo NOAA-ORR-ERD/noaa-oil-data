@@ -16,8 +16,7 @@
             "Crude Oil",
             "Light Crude"
         ],
-        "model_completeness": 44,
-        "gnome_suitable": false,
+        "model_completeness": 40,
         "change_log": [
             {
                 "name": "Rin",
@@ -28,6 +27,11 @@
                 "name": "R",
                 "date": "2022-11-28T12:00:25.073-08:00",
                 "comment": "Issue #27 - Normalize Location"
+            },
+            {
+                "name": "RM",
+                "date": "2024-08-28T15:23:08.797-07:00",
+                "comment": "CC changes"
             }
         ]
     },
@@ -65,18 +69,6 @@
                     }
                 ],
                 "kinematic_viscosities": [
-                    {
-                        "viscosity": {
-                            "value": 3.65e-06,
-                            "unit": "m^2/s",
-                            "unit_type": "kinematicviscosity"
-                        },
-                        "ref_temp": {
-                            "value": 15.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
-                    },
                     {
                         "viscosity": {
                             "value": 4.38e-06,
@@ -146,10 +138,21 @@
             },
             "bulk_composition": [
                 {
+                    "name": "Sulfur Content",
+                    "groups": [
+                        "Ungrouped"
+                    ],
+                    "measurement": {
+                        "value": 0.45,
+                        "unit": "%",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
                     "name": "wax_content",
                     "measurement": {
-                        "value": 0.065,
-                        "unit": "fraction",
+                        "value": 6.5,
+                        "unit": "%",
                         "unit_type": "massfraction"
                     }
                 }
@@ -165,11 +168,6 @@
                 }
             ]
         }
-    ],
-    "status": [
-        "E062: Viscosity data is not strictly decreasing",
-        "W009: Distillation fraction recovered is missing or invalid",
-        "W100: Not GNOME compatible: Viscosities must be decreasing with temperature"
     ],
     "review_status": {
         "status": "Not Reviewed"

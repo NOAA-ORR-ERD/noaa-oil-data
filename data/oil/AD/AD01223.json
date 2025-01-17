@@ -2,37 +2,34 @@
     "oil_id": "AD01223",
     "adios_data_model_version": "0.12.0",
     "metadata": {
-        "name": "WEST TEXAS INTERMEDIATE, OIL & GAS",
-        "source_id": "AD01223",
-        "location": "USA, Oklahoma",
+        "name": "West Texas Intermediate",
+        "source_id": "ODB00-711",
+        "alternate_names": [
+            "Unknown"
+        ],
+        "location": "Texas, USA",
         "reference": {
             "year": 1994,
-            "reference": "Rhodes, A.K., Benchmark West Texas Intermediate Crude Assay, Oil and Gas Journal, August 15, 1994, pp. 88."
+            "reference": "Rhodes, A.K., \"Benchmark West Texas Intermediate crude assayed\", Oil & Gas Journal, August 15, p. 88, 1994\nRhodes, A.K., Benchmark West Texas Intermediate Crude Assay, Oil and Gas Journal, August 15, 1994, pp. 88.\n\nAs published in: Environment and Climate Change Canada, A Catalogue of Crude Oil and Oil Product Properties (1999)- Revised 2022, Environment and Climate Change Canada, 2022."
         },
         "product_type": "Crude Oil NOS",
         "API": 40.8,
+        "comments": "The price of this crude, known as WTI, is used as a benchmark for pricing other U.S. crude oils. Data from OGJ 94c were originally published in 1994.",
         "labels": [
             "Crude Oil",
             "Light Crude"
         ],
-        "model_completeness": 16,
-        "gnome_suitable": true,
-        "change_log": [
-            {
-                "name": "R",
-                "date": "2022-11-28T13:17:00.054-08:00",
-                "comment": "Issue #27 - Normalize Location"
-            }
-        ]
+        "model_completeness": 16
     },
     "sub_samples": [
         {
             "metadata": {
                 "name": "Fresh Oil Sample",
                 "short_name": "Fresh Oil",
+                "sample_id": "ODB00-711",
                 "fraction_evaporated": {
                     "value": 0.0,
-                    "unit": "fraction",
+                    "unit": "%",
                     "unit_type": "massfraction"
                 }
             },
@@ -47,23 +44,22 @@
                 "densities": [
                     {
                         "density": {
-                            "value": 820.53,
-                            "unit": "kg/m^3",
+                            "value": 0.8208,
+                            "unit": "g/mL",
                             "unit_type": "density"
                         },
                         "ref_temp": {
-                            "value": 288.16,
-                            "unit": "K",
+                            "value": 15.0,
+                            "unit": "C",
                             "unit_type": "temperature"
-                        },
-                        "method": "Converted from API"
+                        }
                     }
                 ],
                 "kinematic_viscosities": [
                     {
                         "viscosity": {
-                            "value": 5.24e-06,
-                            "unit": "m^2/s",
+                            "value": 5.0,
+                            "unit": "mm^2/s",
                             "unit_type": "kinematicviscosity"
                         },
                         "ref_temp": {
@@ -74,9 +70,24 @@
                     }
                 ]
             },
-            "distillation_data": {
-                "type": "mass fraction"
-            }
+            "bulk_composition": [
+                {
+                    "name": "Sulphur Content",
+                    "measurement": {
+                        "value": 0.34,
+                        "unit": "%",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Nitrogen",
+                    "measurement": {
+                        "value": 0.08,
+                        "unit": "%",
+                        "unit_type": "massfraction"
+                    }
+                }
+            ]
         }
     ],
     "review_status": {
