@@ -11,11 +11,13 @@
         },
         "sample_date": "2022-02-04",
         "product_type": "Crude Oil NOS",
-        "comments": "These files were shared by Tomas Lastra at YPF, February 2025. ",
+        "API": 42.0,
+        "comments": "These files were shared by Tomas Lastra at YPF, February 2025.  Oil properties were provided in a file named \"2022-DRPK-000960 Medanito Crude Final Report.pdf\" and distillation data was provided in a file named \"Medanito PR Assay.pdf\"",
         "labels": [
-            "Crude Oil"
+            "Crude Oil",
+            "Light Crude"
         ],
-        "model_completeness": 40,
+        "model_completeness": 60,
         "change_log": [
             {
                 "name": "Rachael Mueller",
@@ -31,6 +33,21 @@
                 "name": "Rachael Mueller",
                 "date": "2025-02-13T14:23:16.697-08:00",
                 "comment": "changed reference year"
+            },
+            {
+                "name": "Rachael Mueller",
+                "date": "2025-02-14T09:31:17.096-08:00",
+                "comment": "Added more physical properties from \"2022-DRPK-000960 Medanito Crude Final Report.pdf\""
+            },
+            {
+                "name": "Rachael Mueller",
+                "date": "2025-02-14T09:45:57.090-08:00",
+                "comment": "minor corrections"
+            },
+            {
+                "name": "Rachael Mueller",
+                "date": "2025-02-14T16:16:32.998-08:00",
+                "comment": "Minor tweaks to align values with page 4 (aggregated results from 5 samples)"
             }
         ]
     },
@@ -44,6 +61,67 @@
                     "unit": "1",
                     "unit_type": "massfraction"
                 }
+            },
+            "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": -18.0,
+                        "unit": "C",
+                        "unit_type": "temperature"
+                    }
+                },
+                "densities": [
+                    {
+                        "density": {
+                            "value": 0.815,
+                            "unit": "g/cm^3",
+                            "unit_type": "density"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
+                "kinematic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 5.35,
+                            "unit": "cSt",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 20.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "viscosity": {
+                            "value": 3.244,
+                            "unit": "cSt",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 40.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "viscosity": {
+                            "value": 2.8399,
+                            "unit": "cSt",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 50.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
             },
             "distillation_data": {
                 "type": "mass fraction",
@@ -199,7 +277,20 @@
                         }
                     }
                 ]
-            }
+            },
+            "bulk_composition": [
+                {
+                    "name": "sulfur",
+                    "groups": [
+                        "Ungrouped"
+                    ],
+                    "measurement": {
+                        "value": 0.145,
+                        "unit": "%",
+                        "unit_type": "massfraction"
+                    }
+                }
+            ]
         }
     ],
     "review_status": {
