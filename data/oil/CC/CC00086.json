@@ -4,9 +4,6 @@
     "metadata": {
         "name": "Bent Horn A-02",
         "source_id": "ODB00-87",
-        "alternate_names": [
-            "Unknown"
-        ],
         "location": "Northwest Territories, Canada",
         "reference": {
             "year": 1996,
@@ -15,7 +12,28 @@
         "product_type": "Crude Oil NOS",
         "API": 41.5,
         "comments": "Data from EETD 1985 are for drill stem testing sample of A-02 well, 1985.",
-        "model_completeness": 55
+        "labels": [
+            "Crude Oil",
+            "Light Crude"
+        ],
+        "model_completeness": 55,
+        "change_log": [
+            {
+                "name": "Dalin",
+                "date": "2025-03-07T17:19:02.294-08:00",
+                "comment": "Merged data from matching record AD00138"
+            },
+            {
+                "name": "Dalina",
+                "date": "2025-03-07T17:19:29.991-08:00",
+                "comment": "Removed alternate name \"unknown\""
+            },
+            {
+                "name": "Dalina",
+                "date": "2025-03-07T17:20:50.336-08:00",
+                "comment": "Merged SARA data from matching AD record"
+            }
+        ]
     },
     "sub_samples": [
         {
@@ -85,8 +103,8 @@
                     },
                     {
                         "viscosity": {
-                            "value": 12.0,
-                            "unit": "mPas",
+                            "value": 12.1,
+                            "unit": "cP",
                             "unit_type": "dynamicviscosity"
                         },
                         "ref_temp": {
@@ -182,8 +200,18 @@
                 }
             },
             "SARA": {
+                "saturates": {
+                    "value": 95.0,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                },
+                "aromatics": {
+                    "value": 4.3,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                },
                 "asphaltenes": {
-                    "value": 0.0,
+                    "value": 0.1,
                     "unit": "%",
                     "unit_type": "massfraction"
                 }
