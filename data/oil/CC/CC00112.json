@@ -15,12 +15,39 @@
         "product_type": "Residual Fuel Oil",
         "API": 12.3,
         "comments": "For additional fuel specifications refer to ASTM D396.",
+        "labels": [
+            "Fuel Oil",
+            "HFO",
+            "Heavy Fuel Oil",
+            "Refined Product",
+            "Residual Fuel"
+        ],
         "model_completeness": 68,
         "change_log": [
             {
                 "name": "Dalina",
                 "date": "2025-03-06T13:25:20.015-08:00",
                 "comment": "Set Product Type"
+            },
+            {
+                "name": "Dalina",
+                "date": "2025-03-17T17:07:24.788-07:00",
+                "comment": "Added Labels"
+            },
+            {
+                "name": "Dalina",
+                "date": "2025-03-17T17:07:51.561-07:00",
+                "comment": "Added labels"
+            },
+            {
+                "name": "Dalina",
+                "date": "2025-03-17T17:09:15.947-07:00",
+                "comment": "Added Kinematic Viscosity from matching record AD02431"
+            },
+            {
+                "name": "Dalina",
+                "date": "2025-03-17T17:15:19.295-07:00",
+                "comment": "Merged Distillation and Composition data from matching record AD02431"
             }
         ]
     },
@@ -137,6 +164,20 @@
                         }
                     }
                 ],
+                "kinematic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 211.0,
+                            "unit": "cSt",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 50.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
                 "dynamic_viscosities": [
                     {
                         "viscosity": {
@@ -240,8 +281,23 @@
                 }
             },
             "SARA": {
+                "saturates": {
+                    "value": 24.0,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                },
+                "aromatics": {
+                    "value": 5.5,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                },
+                "resins": {
+                    "value": 15.0,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                },
                 "asphaltenes": {
-                    "value": 7.0,
+                    "value": 6.0,
                     "unit": "%",
                     "unit_type": "massfraction"
                 }
@@ -249,6 +305,30 @@
             "distillation_data": {
                 "type": "mass fraction",
                 "cuts": [
+                    {
+                        "fraction": {
+                            "value": 1.0,
+                            "unit": "%",
+                            "unit_type": "concentration"
+                        },
+                        "vapor_temp": {
+                            "value": 160.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 2.0,
+                            "unit": "%",
+                            "unit_type": "concentration"
+                        },
+                        "vapor_temp": {
+                            "value": 200.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
                     {
                         "fraction": {
                             "value": 5.0,
@@ -263,12 +343,36 @@
                     },
                     {
                         "fraction": {
+                            "value": 8.0,
+                            "unit": "%",
+                            "unit_type": "concentration"
+                        },
+                        "vapor_temp": {
+                            "value": 300.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
                             "value": 10.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
                         "vapor_temp": {
                             "value": 324.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 13.0,
+                            "unit": "%",
+                            "unit_type": "concentration"
+                        },
+                        "vapor_temp": {
+                            "value": 350.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -311,6 +415,18 @@
                     },
                     {
                         "fraction": {
+                            "value": 28.0,
+                            "unit": "%",
+                            "unit_type": "concentration"
+                        },
+                        "vapor_temp": {
+                            "value": 450.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
                             "value": 30.0,
                             "unit": "%",
                             "unit_type": "massfraction"
@@ -323,12 +439,36 @@
                     },
                     {
                         "fraction": {
+                            "value": 33.0,
+                            "unit": "%",
+                            "unit_type": "concentration"
+                        },
+                        "vapor_temp": {
+                            "value": 500.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
                             "value": 35.0,
                             "unit": "%",
                             "unit_type": "massfraction"
                         },
                         "vapor_temp": {
                             "value": 528.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 38.0,
+                            "unit": "%",
+                            "unit_type": "concentration"
+                        },
+                        "vapor_temp": {
+                            "value": 550.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -371,6 +511,18 @@
                     },
                     {
                         "fraction": {
+                            "value": 51.0,
+                            "unit": "%",
+                            "unit_type": "concentration"
+                        },
+                        "vapor_temp": {
+                            "value": 600.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
                             "value": 55.0,
                             "unit": "%",
                             "unit_type": "massfraction"
@@ -401,6 +553,18 @@
                         },
                         "vapor_temp": {
                             "value": 640.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 68.0,
+                            "unit": "%",
+                            "unit_type": "concentration"
+                        },
+                        "vapor_temp": {
+                            "value": 650.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -443,6 +607,18 @@
                     },
                     {
                         "fraction": {
+                            "value": 81.0,
+                            "unit": "%",
+                            "unit_type": "concentration"
+                        },
+                        "vapor_temp": {
+                            "value": 700.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
                             "value": 85.0,
                             "unit": "%",
                             "unit_type": "massfraction"
@@ -468,6 +644,17 @@
                     "name": "Waxes",
                     "measurement": {
                         "value": 12.0,
+                        "unit": "%",
+                        "unit_type": "massfraction"
+                    }
+                },
+                {
+                    "name": "Sulfur",
+                    "groups": [
+                        "Ungrouped"
+                    ],
+                    "measurement": {
+                        "value": 2.4,
                         "unit": "%",
                         "unit_type": "massfraction"
                     }
