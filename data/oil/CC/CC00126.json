@@ -4,9 +4,6 @@
     "metadata": {
         "name": "California (API 11)",
         "source_id": "ODB00-127",
-        "alternate_names": [
-            "Unknown"
-        ],
         "location": "California, USA",
         "reference": {
             "year": 1996,
@@ -14,7 +11,29 @@
         },
         "product_type": "Crude Oil NOS",
         "API": 11.6,
-        "model_completeness": 68
+        "comments": "The data in this record may have been compiled from multiple sources and reflect samples of varying age and composition.",
+        "labels": [
+            "Crude Oil",
+            "Heavy Crude"
+        ],
+        "model_completeness": 68,
+        "change_log": [
+            {
+                "name": "Dalina",
+                "date": "2025-03-20T15:11:20.656-07:00",
+                "comment": "Added labels"
+            },
+            {
+                "name": "Dalina",
+                "date": "2025-03-20T15:13:46.364-07:00",
+                "comment": "Merged data from duplicate record AD02057"
+            },
+            {
+                "name": "Dalina",
+                "date": "2025-03-20T15:14:16.990-07:00",
+                "comment": "Removed alternate name \"unknown\""
+            }
+        ]
     },
     "sub_samples": [
         {
@@ -243,18 +262,6 @@
             "distillation_data": {
                 "type": "mass fraction",
                 "cuts": [
-                    {
-                        "fraction": {
-                            "value": 1.0,
-                            "unit": "%",
-                            "unit_type": "massfraction"
-                        },
-                        "vapor_temp": {
-                            "value": 100.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
-                    },
                     {
                         "fraction": {
                             "value": 1.0,
