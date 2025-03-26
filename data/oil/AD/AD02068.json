@@ -4,9 +4,6 @@
     "metadata": {
         "name": "Cohasset",
         "source_id": "ODB00-143",
-        "alternate_names": [
-            "Unknown"
-        ],
         "location": "Nova Scotia, Canada",
         "reference": {
             "year": 1996,
@@ -14,12 +11,24 @@
         },
         "product_type": "Crude Oil NOS",
         "API": 47.5,
-        "comments": "Data for equilibrium liquid of separator flash test.  The data in this record may have been compiled from multiple sources and reflect samples of varying age and composition.",
+        "comments": "Data for equilibrium liquid of separator flash test.  The data in this record may have been compiled from multiple sources and reflect samples of varying age and composition. ",
         "labels": [
             "Crude Oil",
             "Light Crude"
         ],
-        "model_completeness": 27
+        "model_completeness": 51,
+        "change_log": [
+            {
+                "name": "Dalina",
+                "date": "2025-03-25T17:20:02.366-07:00",
+                "comment": "Merged distillation cuts from duplicate record AD00257"
+            },
+            {
+                "name": "Dalina",
+                "date": "2025-03-25T17:22:04.439-07:00",
+                "comment": "Added composition data from duplicate record AD00257"
+            }
+        ]
     },
     "sub_samples": [
         {
@@ -77,8 +86,8 @@
                 "kinematic_viscosities": [
                     {
                         "viscosity": {
-                            "value": 3.0,
-                            "unit": "mm^2/s",
+                            "value": 2.79,
+                            "unit": "cSt",
                             "unit_type": "kinematicviscosity"
                         },
                         "ref_temp": {
@@ -89,8 +98,8 @@
                     },
                     {
                         "viscosity": {
-                            "value": 2.0,
-                            "unit": "mm^2/s",
+                            "value": 2.06,
+                            "unit": "cSt",
                             "unit_type": "kinematicviscosity"
                         },
                         "ref_temp": {
@@ -193,10 +202,183 @@
             },
             "SARA": {
                 "asphaltenes": {
-                    "value": 0.0,
+                    "value": 0.35,
                     "unit": "%",
                     "unit_type": "massfraction"
                 }
+            },
+            "distillation_data": {
+                "type": "volume fraction",
+                "cuts": [
+                    {
+                        "fraction": {
+                            "value": 1.0,
+                            "unit": "%",
+                            "unit_type": "volumefraction"
+                        },
+                        "vapor_temp": {
+                            "value": 87.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 5.0,
+                            "unit": "%",
+                            "unit_type": "volumefraction"
+                        },
+                        "vapor_temp": {
+                            "value": 134.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 10.0,
+                            "unit": "%",
+                            "unit_type": "concentration"
+                        },
+                        "vapor_temp": {
+                            "value": 143.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 15.0,
+                            "unit": "%",
+                            "unit_type": "concentration"
+                        },
+                        "vapor_temp": {
+                            "value": 157.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 20.0,
+                            "unit": "%",
+                            "unit_type": "concentration"
+                        },
+                        "vapor_temp": {
+                            "value": 166.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 25.0,
+                            "unit": "%",
+                            "unit_type": "concentration"
+                        },
+                        "vapor_temp": {
+                            "value": 176.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 30.0,
+                            "unit": "%",
+                            "unit_type": "concentration"
+                        },
+                        "vapor_temp": {
+                            "value": 187.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 35.0,
+                            "unit": "%",
+                            "unit_type": "concentration"
+                        },
+                        "vapor_temp": {
+                            "value": 197.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 40.0,
+                            "unit": "%",
+                            "unit_type": "concentration"
+                        },
+                        "vapor_temp": {
+                            "value": 207.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 45.0,
+                            "unit": "%",
+                            "unit_type": "concentration"
+                        },
+                        "vapor_temp": {
+                            "value": 215.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 50.0,
+                            "unit": "%",
+                            "unit_type": "concentration"
+                        },
+                        "vapor_temp": {
+                            "value": 222.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 55.0,
+                            "unit": "%",
+                            "unit_type": "concentration"
+                        },
+                        "vapor_temp": {
+                            "value": 230.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 60.0,
+                            "unit": "%",
+                            "unit_type": "concentration"
+                        },
+                        "vapor_temp": {
+                            "value": 233.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "fraction": {
+                            "value": 65.0,
+                            "unit": "%",
+                            "unit_type": "concentration"
+                        },
+                        "vapor_temp": {
+                            "value": 235.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ]
             },
             "bulk_composition": [
                 {
@@ -282,6 +464,7 @@
                         "Metals"
                     ],
                     "measurement": {
+                        "value": 1.0,
                         "unit": "\u00b5g/g",
                         "max_value": 1.0,
                         "unit_type": "massfraction"
