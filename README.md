@@ -3,7 +3,7 @@
 Data repository for the NOAA oil database records
 
 These are the data NOAA ORR ERD uses in the
-`ADIOS\ :sup:`®` Oil Database <http://adios.orr.noaa.gov>`_
+`ADIOS<sup>s®</sup> Oil Database <http://adios.orr.noaa.gov>`_
 
 This is part of the NOAA
 
