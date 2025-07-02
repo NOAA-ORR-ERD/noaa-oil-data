@@ -2,12 +2,13 @@
 
 Data repository for the NOAA oil database records
 
-These are the data NOAA ORR ERD uses in the
-`ADIOS<sup>®</sup> Oil Database <http://adios.orr.noaa.gov>`_
+These are the data NOAA ORR ERD uses in the ADIOS<sup>®</sup> Oil Database web service:
 
-This is part of the NOAA
+http://adios.orr.noaa.gov>
 
-`GNOME Suite for oil spill modeling <https://response.restoration.noaa.gov/oil-and-chemical-spills/oil-spills/response-tools/gnome-suite-oil-spill-modeling.html>`_
+This is part of the GNOME Suite for oil spill modeling:
+
+https://response.restoration.noaa.gov/oil-and-chemical-spills/oil-spills/response-tools/gnome-suite-oil-spill-modeling.html
 
 This repo holds all the data used in the web service, in the same JSON format provided by that system.
 
