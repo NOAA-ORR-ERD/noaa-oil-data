@@ -1,10 +1,10 @@
 variables:
-#   CS_MAJOR_VERSION: 3
-  PYTHON_VER: "3.12"
+  #   CS_MAJOR_VERSION: 3
+  PYTHON_VER: '3.12'
 
 stages:
   - validate
-  - update_wiki
+  - update
 
 validate:
   stage: validate
@@ -38,14 +38,14 @@ validate:
     # - BRANCH="develop"
     - BRANCH="production"
 
-
   script:
     - echo "Starting conda listing"
     - conda list
     - echo "running the scripts"
     - pwd
     - echo "cloning ${BRANCH}"
-    - git clone --depth 1 -b ${BRANCH} https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.orr.noaa.gov/gnome/oil_database/oil_database.git
+    - git clone --depth 1 -b ${BRANCH}
+      https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.orr.noaa.gov/gnome/oil_database/oil_database.git
     - pwd
     - ls
     - cd oil_database
@@ -64,10 +64,36 @@ validate:
       - .gitlab-ci.yml
       - data/**/*
 
+normalize json formatting:
+  stage: update
+  tags:
+    - shell
+    - linux
+  script:
+    - git config --global user.email "adios-validation-script@noaa.gov"
+    - git config --global user.name "Adios Validation Script"
+    - git remote set-url origin
+      https://oil-db:${WRITABLE_TOKEN}@gitlab.orr.noaa.gov/${CI_PROJECT_PATH}.git
+    - git stash
+    - git checkout ${CI_COMMIT_BRANCH}
+    - git pull
+    - |-
+      if [[ `git stash list` ]];then
+        git stash pop
+      fi
+    - git add data
+    - git commit -m "normalize json formatting"
+    - git push
+
+  only:
+    changes:
+      - .gitlab-ci.yml
+      - data/**/*
+
 update_validation_report:
   variables:
     GIT_STRATEGY: clone
-  stage: update_wiki
+  stage: update
   tags:
     - build
     - shell
@@ -75,15 +101,16 @@ update_validation_report:
   script:
     - git config --global user.email "adios-validation-script@noaa.gov"
     - git config --global user.name "Adios Validation Script"
-    - git clone https://oil-db:${WRITABLE_TOKEN}@gitlab.orr.noaa.gov/${CI_PROJECT_PATH}.wiki.git
-    - mkdir -p ${CI_PROJECT_NAME}.wiki/validation_reports/${CI_COMMIT_BRANCH} && cp validation_by_* $_
+    - git clone
+      https://oil-db:${WRITABLE_TOKEN}@gitlab.orr.noaa.gov/${CI_PROJECT_PATH}.wiki.git
+    - mkdir -p ${CI_PROJECT_NAME}.wiki/validation_reports/${CI_COMMIT_BRANCH} &&
+      cp validation_by_* $_
     - ls -la ${CI_PROJECT_NAME}.wiki/validation_reports/${CI_COMMIT_BRANCH}
     - cd ${CI_PROJECT_NAME}.wiki
     - git add -A
-    - git diff-index --quiet HEAD || git commit -m 'updating validation reports on wiki'
+    - git diff-index --quiet HEAD || git commit -m 'updating validation reports
+      on wiki'
     - git push
-    - cd -
-    - eval $(ssh-agent -k)
 
   except:
     - server_working_copy
