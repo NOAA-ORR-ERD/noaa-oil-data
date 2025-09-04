@@ -58,7 +58,7 @@ validate:
     - cd ../../
     # we are saving the status list inside the records.
     - adios_db_process_json ./data/oil/ save
-    - adios_db_validate ./data/oil save
+    - adios_db_validate ./data/oil
   only:
     changes:
       - .gitlab-ci.yml
