@@ -5,11 +5,17 @@
         "name": "CANADON SECO",
         "location": "Puerto Rosales, Argentina",
         "reference": {
-            "reference": "From the spreadsheet \"20_Informe Ca\u00f1adon Seco (Final).xlsx\""
+            "year": 2022,
+            "reference": "20_Informe Ca\u00f1adon Seco (Final).xlsx: 2022\nPersonal Communication 2025:\nTOMAS MANUEL LASTRA MILONE, YPF, Argentina"
         },
         "sample_date": "2022-09-20",
+        "product_type": "Crude Oil NOS",
         "API": 24.3,
-        "model_completeness": 44,
+        "labels": [
+            "Crude Oil",
+            "Medium Crude"
+        ],
+        "model_completeness": 60,
         "change_log": [
             {
                 "name": "jlm",
@@ -30,6 +36,16 @@
                 "name": "JLM",
                 "date": "2025-02-13T17:11:38.088-08:00",
                 "comment": "Entered distillation data"
+            },
+            {
+                "name": "RM",
+                "date": "2025-07-25T13:32:02.357-07:00",
+                "comment": "Changes"
+            },
+            {
+                "name": "Chris",
+                "date": "2025-08-07T13:26:13.474-07:00",
+                "comment": "Product type, labels, etc"
             }
         ]
     },
@@ -102,6 +118,11 @@
             },
             "distillation_data": {
                 "type": "volume fraction",
+                "fraction_recovered": {
+                    "value": 100.0,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                },
                 "cuts": [
                     {
                         "fraction": {
