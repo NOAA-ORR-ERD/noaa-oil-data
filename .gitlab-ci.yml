@@ -1,6 +1,6 @@
 variables:
 #   CS_MAJOR_VERSION: 3
-  PYTHON_VER: "3.10"
+  PYTHON_VER: "3.12"
 
 stages:
   - validate
@@ -8,7 +8,7 @@ stages:
 
 validate:
   stage: validate
-  image: registry.orr.noaa.gov/erd/centos-conda/centos7-python$PYTHON_VER
+  image: registry.orr.noaa.gov/erd/environments/ubuntu/ubuntuforge-python:$PYTHON_VER
   tags:
     - docker
     - linux
