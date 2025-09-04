@@ -14,7 +14,8 @@
         },
         "product_type": "Lube Oil",
         "comments": "Data from PetroCan 97 are for 'Gearlube TOS'.",
-        "model_completeness": 12
+        "model_completeness": 12,
+        "gnome_suitable": false
     },
     "sub_samples": [
         {
@@ -361,6 +362,14 @@
                 }
             ]
         }
+    ],
+    "status": [
+        "E030: Oils must have an API",
+        "E044: Measurement value: -125000.0 is not a valid number for the viscosity field of a measurement",
+        "E051: Duplicate sub_sample short name(s): ['Fresh Oil', 'Fresh Oil', 'Fresh Oil'] Sub_sample short names must be unique",
+        "E052: Duplicate sub_sample name(s): ['Fresh Oil Sample', 'Fresh Oil Sample', 'Fresh Oil Sample'] names must be unique",
+        "W006: No density values provided",
+        "W100: Not GNOME compatible: Cannot initialize a Density object with no data"
     ],
     "review_status": {
         "status": "Not Reviewed"
