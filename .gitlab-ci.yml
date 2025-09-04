@@ -75,7 +75,7 @@ update_validation_report:
   script:
     - git config --global user.email "adios-validation-script@noaa.gov"
     - git config --global user.name "Adios Validation Script"
-    - git clone https://oil-db:${WRITABLE_TOKEN}/${CI_PROJECT_PATH}.wiki.git
+    - git clone https://oil-db:${WRITABLE_TOKEN}@gitlab.orr.noaa.gov/${CI_PROJECT_PATH}.wiki.git
     - mkdir -p ${CI_PROJECT_NAME}.wiki/validation_reports/${CI_COMMIT_BRANCH} && cp validation_by_* $_
     - ls -la ${CI_PROJECT_NAME}.wiki/validation_reports/${CI_COMMIT_BRANCH}
     - cd ${CI_PROJECT_NAME}.wiki
