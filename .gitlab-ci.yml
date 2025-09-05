@@ -83,10 +83,10 @@ normalize json formatting:
     - |-
       if [[ `git stash list` ]];then
         git stash pop
+        git add data
+        git commit -m "normalize json formatting"
+        git push
       fi
-    - git add data
-    - git commit -m "normalize json formatting"
-    - git push
 
   only:
     changes:
