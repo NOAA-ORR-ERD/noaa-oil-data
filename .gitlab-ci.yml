@@ -1,14 +1,14 @@
 variables:
-#   CS_MAJOR_VERSION: 3
-  PYTHON_VER: "3.10"
+  #   CS_MAJOR_VERSION: 3
+  PYTHON_VER: '3.12'
 
 stages:
   - validate
-  - update_wiki
+  - update
 
 validate:
   stage: validate
-  image: registry.orr.noaa.gov/erd/centos-conda/centos7-python$PYTHON_VER
+  image: registry.orr.noaa.gov/erd/environments/ubuntu/ubuntuforge-python$PYTHON_VER
   tags:
     - docker
     - linux
@@ -25,6 +25,7 @@ validate:
 
   before_script:
     - echo "ip_resolve=4" >> /etc/yum.conf
+    - apt install git -y
     # - |-
     #     if [[ $CI_COMMIT_BRANCH = "production" ]]; then
     #       BRANCH="production"
@@ -37,14 +38,14 @@ validate:
     # - BRANCH="develop"
     - BRANCH="production"
 
-
   script:
     - echo "Starting conda listing"
     - conda list
     - echo "running the scripts"
     - pwd
     - echo "cloning ${BRANCH}"
-    - git clone --depth 1 -b ${BRANCH} https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.orr.noaa.gov/gnome/oil_database/oil_database.git
+    - git clone --depth 1 -b ${BRANCH}
+      https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.orr.noaa.gov/gnome/oil_database/oil_database.git
     - pwd
     - ls
     - cd oil_database
@@ -57,40 +58,64 @@ validate:
     - cd ../../
     # we are saving the status list inside the records.
     - adios_db_process_json ./data/oil/ save
-    - adios_db_validate ./data/oil save
+    - adios_db_validate ./data/oil
+  only:
+    changes:
+      - .gitlab-ci.yml
+      - data/**/*
+
+normalize json formatting:
+  stage: update
+  image: registry.orr.noaa.gov/erd/environments/ubuntu/ubuntuforge-python$PYTHON_VER
+  tags:
+    - docker
+    - linux
+  before_script:
+    - apt install git -y
+  script:
+    - git config --global user.email "adios-validation-script@noaa.gov"
+    - git config --global user.name "Adios Validation Script"
+    - git remote set-url origin
+      https://oil-db:${WRITABLE_TOKEN}@gitlab.orr.noaa.gov/${CI_PROJECT_PATH}.git
+    - git stash
+    - git checkout ${CI_COMMIT_BRANCH}
+    - git pull
+    - |-
+      if [[ `git stash list` ]];then
+        git stash pop
+        git add data
+        git commit -m "normalize json formatting"
+        git push
+      fi
+
   only:
     changes:
       - .gitlab-ci.yml
       - data/**/*
 
 update_validation_report:
-  stage: update_wiki
+  variables:
+    GIT_STRATEGY: clone
+  stage: update
+  image: registry.orr.noaa.gov/erd/environments/ubuntu/ubuntuforge-python$PYTHON_VER
+  before_script:
+    - apt install git -y
   tags:
-    - build
-    - shell
+    - docker
     - linux
   script:
-    - eval $(ssh-agent -s)
-    - echo "$SSH_PRIVATE_KEY_CI_WIKI" | tr -d '\r' | ssh-add - > /dev/null
     - git config --global user.email "adios-validation-script@noaa.gov"
     - git config --global user.name "Adios Validation Script"
-    - git remote set-url origin ssh://git@gitlab.orr.noaa.gov:9933/${CI_PROJECT_PATH}.git
-    - git stash
-    - git checkout ${CI_COMMIT_BRANCH}
-    - git pull
-    - |-
-        if [[ `git stash list` ]];then
-          git stash pop
-        fi
-    - git clone ssh://git@gitlab.orr.noaa.gov:9933/${CI_PROJECT_PATH}.wiki.git
-    - mkdir -p ${CI_PROJECT_NAME}.wiki/validation_reports/${CI_COMMIT_BRANCH} && cp validation_by_* $_
+    - git clone
+      https://oil-db:${WRITABLE_TOKEN}@gitlab.orr.noaa.gov/${CI_PROJECT_PATH}.wiki.git
+    - mkdir -p ${CI_PROJECT_NAME}.wiki/validation_reports/${CI_COMMIT_BRANCH} &&
+      cp validation_by_* $_
     - ls -la ${CI_PROJECT_NAME}.wiki/validation_reports/${CI_COMMIT_BRANCH}
     - cd ${CI_PROJECT_NAME}.wiki
     - git add -A
-    - git diff-index --quiet HEAD || git commit -m 'updating validation reports on wiki'
+    - git diff-index --quiet HEAD || git commit -m 'updating validation reports
+      on wiki'
     - git push
-    - cd -
-    - eval $(ssh-agent -k)
 
   except:
     - server_working_copy
