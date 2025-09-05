@@ -66,9 +66,12 @@ validate:
 
 normalize json formatting:
   stage: update
+  image: registry.orr.noaa.gov/erd/environments/ubuntu/ubuntuforge-python$PYTHON_VER
   tags:
-    - shell
+    - docker
     - linux
+  before_script:
+    - apt install git -y
   script:
     - git config --global user.email "adios-validation-script@noaa.gov"
     - git config --global user.name "Adios Validation Script"
@@ -94,9 +97,11 @@ update_validation_report:
   variables:
     GIT_STRATEGY: clone
   stage: update
+  image: registry.orr.noaa.gov/erd/environments/ubuntu/ubuntuforge-python$PYTHON_VER
+  before_script:
+    - apt install git -y
   tags:
-    - build
-    - shell
+    - docker
     - linux
   script:
     - git config --global user.email "adios-validation-script@noaa.gov"
