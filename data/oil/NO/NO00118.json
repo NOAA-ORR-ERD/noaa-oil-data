@@ -12,11 +12,12 @@
         "sample_date": "2017",
         "product_type": "Crude Oil NOS",
         "API": 32.7,
+        "comments": "AD02455 Was a duplicate. That one was deleted.",
         "labels": [
             "Crude Oil",
             "Medium Crude"
         ],
-        "model_completeness": 58,
+        "model_completeness": 76,
         "change_log": [
             {
                 "name": "Rin",
@@ -37,6 +38,11 @@
                 "name": "Knut-Frode Dagestad",
                 "date": "2023-12-11T18:51:33.400429",
                 "comment": "Changed *max_value* to *value* for fraction_recovered."
+            },
+            {
+                "name": "RM",
+                "date": "2025-09-30T15:52:34.606-07:00",
+                "comment": "AD02455 was deleted as a duplicate."
             }
         ]
     },
@@ -70,6 +76,32 @@
                         "ref_temp": {
                             "value": 278.15,
                             "unit": "K",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
+                "kinematic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 5.92e-06,
+                            "unit": "cSt",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 20.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "viscosity": {
+                            "value": 4.59e-06,
+                            "unit": "cSt",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 50.0,
+                            "unit": "C",
                             "unit_type": "temperature"
                         }
                     }
