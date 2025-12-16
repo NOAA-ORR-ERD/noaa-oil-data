@@ -13,10 +13,10 @@
         "product_type": "Residual Fuel Oil",
         "API": 12.75,
         "labels": [
+            "VLSFO",
             "Fuel oil",
             "LSFO",
-            "Refined product",
-            "VLSFO"
+            "Refined product"
         ],
         "gnome_suitable": true
     },
@@ -73,7 +73,7 @@
                             "unit_type": "temperature"
                         },
                         "shear_rate": {
-                            "value": 10.0,
+                            "value": 10,
                             "unit": "1/s",
                             "unit_type": "angularvelocity"
                         }
@@ -90,7 +90,7 @@
                             "unit_type": "temperature"
                         },
                         "shear_rate": {
-                            "value": 100.0,
+                            "value": 100,
                             "unit": "1/s",
                             "unit_type": "angularvelocity"
                         }
@@ -105,6 +105,7 @@
                 }
             },
             "distillation_data": {
+                "type": "volume fraction",
                 "cuts": [
                     {
                         "fraction": {
@@ -126,42 +127,6 @@
                         },
                         "vapor_temp": {
                             "value": 19.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
-                    },
-                    {
-                        "fraction": {
-                            "value": 0.0199442102979524,
-                            "unit": "%",
-                            "unit_type": "volumefraction"
-                        },
-                        "vapor_temp": {
-                            "value": 23.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
-                    },
-                    {
-                        "fraction": {
-                            "value": 0.0199442102979524,
-                            "unit": "%",
-                            "unit_type": "volumefraction"
-                        },
-                        "vapor_temp": {
-                            "value": 28.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
-                    },
-                    {
-                        "fraction": {
-                            "value": 0.0199442102979524,
-                            "unit": "%",
-                            "unit_type": "volumefraction"
-                        },
-                        "vapor_temp": {
-                            "value": 30.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -1901,7 +1866,6 @@
         {
             "metadata": {
                 "name": "250\u00b0C residues",
-                "short_name": "250\u00b0C residu...",
                 "fraction_evaporated": {
                     "value": 4.4789679294994,
                     "unit": "%",
@@ -1950,7 +1914,7 @@
                             "unit_type": "temperature"
                         },
                         "shear_rate": {
-                            "value": 10.0,
+                            "value": 10,
                             "unit": "1/s",
                             "unit_type": "angularvelocity"
                         }
