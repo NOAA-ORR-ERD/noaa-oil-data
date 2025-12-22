@@ -10,8 +10,19 @@
             "reference": "NOAA Technical Report on Generic Oils"
         },
         "product_type": "Residual Fuel Oil",
-        "API": 12.54,
-        "comments": "This is a generic oil record generated from data in the ADIOS database. See the NOAA Technical Report on Generic Oils for methodology."
+        "API": 12.7,
+        "comments": "This is a generic oil record generated from data in the ADIOS database. See the NOAA Technical Report on Generic Oils for methodology.",
+        "labels": [
+            "Bunker C",
+            "Fuel Oil",
+            "Generic Oil",
+            "HFO",
+            "Heavy Fuel Oil",
+            "No. 6 Fuel Oil",
+            "Refined Product",
+            "Residual Fuel"
+        ],
+        "gnome_suitable": true
     },
     "sub_samples": [
         {
@@ -21,10 +32,24 @@
                 "description": "This is the Simulated Fresh Oil Sample for Generic Heavy Fuel Oil."
             },
             "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": -5.28,
+                        "unit": "C",
+                        "unit_type": "temperature"
+                    }
+                },
+                "flash_point": {
+                    "measurement": {
+                        "value": 85.1,
+                        "unit": "C",
+                        "unit_type": "temperature"
+                    }
+                },
                 "densities": [
                     {
                         "density": {
-                            "value": 980.440982857143,
+                            "value": 980.0,
                             "unit": "kg/m^3",
                             "unit_type": "density"
                         },
@@ -36,7 +61,7 @@
                     },
                     {
                         "density": {
-                            "value": 980.4289828571428,
+                            "value": 980.0,
                             "unit": "kg/m^3",
                             "unit_type": "density"
                         },
@@ -48,7 +73,7 @@
                     },
                     {
                         "density": {
-                            "value": 980.4209828571428,
+                            "value": 980.0,
                             "unit": "kg/m^3",
                             "unit_type": "density"
                         },
@@ -62,8 +87,8 @@
                 "kinematic_viscosities": [
                     {
                         "viscosity": {
-                            "value": 0.626310503443749,
-                            "unit": "m^2/s",
+                            "value": 626000.0,
+                            "unit": "cSt",
                             "unit_type": "kinematicviscosity"
                         },
                         "ref_temp": {
@@ -74,8 +99,8 @@
                     },
                     {
                         "viscosity": {
-                            "value": 0.04582798594109012,
-                            "unit": "m^2/s",
+                            "value": 45800.0,
+                            "unit": "cSt",
                             "unit_type": "kinematicviscosity"
                         },
                         "ref_temp": {
@@ -86,8 +111,8 @@
                     },
                     {
                         "viscosity": {
-                            "value": 0.009279203409031442,
-                            "unit": "m^2/s",
+                            "value": 9280.0,
+                            "unit": "cSt",
                             "unit_type": "kinematicviscosity"
                         },
                         "ref_temp": {

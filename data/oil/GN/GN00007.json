@@ -10,8 +10,14 @@
             "reference": "NOAA Technical Report on Generic Oils"
         },
         "product_type": "Crude Oil NOS",
-        "API": 29.4,
-        "comments": "This is a generic oil record generated from data in the ADIOS database. See the NOAA Technical Report on Generic Oils for methodology."
+        "API": 29.3,
+        "comments": "This is a generic oil record generated from data in the ADIOS database. See the NOAA Technical Report on Generic Oils for methodology.",
+        "labels": [
+            "Crude Oil",
+            "Generic Oil",
+            "Medium Crude"
+        ],
+        "gnome_suitable": true
     },
     "sub_samples": [
         {
@@ -21,10 +27,24 @@
                 "description": "This is the Simulated Fresh Oil Sample for Generic Medium Crude."
             },
             "physical_properties": {
+                "pour_point": {
+                    "measurement": {
+                        "value": -14.4,
+                        "unit": "C",
+                        "unit_type": "temperature"
+                    }
+                },
+                "flash_point": {
+                    "measurement": {
+                        "value": 1.6,
+                        "unit": "C",
+                        "unit_type": "temperature"
+                    }
+                },
                 "densities": [
                     {
                         "density": {
-                            "value": 881.864147334934,
+                            "value": 882.0,
                             "unit": "kg/m^3",
                             "unit_type": "density"
                         },
@@ -36,7 +56,7 @@
                     },
                     {
                         "density": {
-                            "value": 879.1342144117648,
+                            "value": 879.0,
                             "unit": "kg/m^3",
                             "unit_type": "density"
                         },
@@ -48,7 +68,7 @@
                     },
                     {
                         "density": {
-                            "value": 877.4055741171853,
+                            "value": 877.0,
                             "unit": "kg/m^3",
                             "unit_type": "density"
                         },
@@ -62,8 +82,8 @@
                 "kinematic_viscosities": [
                     {
                         "viscosity": {
-                            "value": 0.00011832719547112696,
-                            "unit": "m^2/s",
+                            "value": 114.0,
+                            "unit": "cSt",
                             "unit_type": "kinematicviscosity"
                         },
                         "ref_temp": {
@@ -74,8 +94,8 @@
                     },
                     {
                         "viscosity": {
-                            "value": 4.0084113500128795e-05,
-                            "unit": "m^2/s",
+                            "value": 40.4,
+                            "unit": "cSt",
                             "unit_type": "kinematicviscosity"
                         },
                         "ref_temp": {
@@ -86,8 +106,8 @@
                     },
                     {
                         "viscosity": {
-                            "value": 2.176242922742164e-05,
-                            "unit": "m^2/s",
+                            "value": 22.6,
+                            "unit": "cSt",
                             "unit_type": "kinematicviscosity"
                         },
                         "ref_temp": {
@@ -545,11 +565,11 @@
         },
         {
             "metadata": {
-                "name": "Emulsion Pseudo Record 47.2% Evaporated",
-                "short_name": "47.2% Evaporated",
-                "description": "Pseudo-record to capture evaporated  in order for emulsion to form.",
+                "name": "Emulsion Pseudo Record 11.7% Evaporated",
+                "short_name": "11.7% Evaporated",
+                "description": "Pseudo-record to capture evaporated in order for emulsion to form.",
                 "fraction_evaporated": {
-                    "value": 0.4721428571428572,
+                    "value": 0.117,
                     "unit": "fraction",
                     "unit_type": "massfraction"
                 }
@@ -558,11 +578,11 @@
                 "emulsions": [
                     {
                         "water_content": {
-                            "value": 0.6689411764705883,
+                            "value": 0.734,
                             "unit": "fraction",
                             "unit_type": "massfraction"
                         },
-                        "visual_stability": "Unknown Stability"
+                        "visual_stability": "Unknown stability"
                     }
                 ]
             }
