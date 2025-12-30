@@ -18,7 +18,8 @@
             "LSFO",
             "Refined Product",
             "VLSFO"
-        ]
+        ],
+        "gnome_suitable": true
     },
     "sub_samples": [
         {
@@ -97,7 +98,7 @@
                             "unit_type": "temperature"
                         },
                         "shear_rate": {
-                            "value": 10.0,
+                            "value": 10,
                             "unit": "1/s",
                             "unit_type": "angularvelocity"
                         }
@@ -114,7 +115,7 @@
                             "unit_type": "temperature"
                         },
                         "shear_rate": {
-                            "value": 100.0,
+                            "value": 100,
                             "unit": "1/s",
                             "unit_type": "angularvelocity"
                         }
@@ -131,7 +132,7 @@
                             "unit_type": "temperature"
                         },
                         "shear_rate": {
-                            "value": 10.0,
+                            "value": 10,
                             "unit": "1/s",
                             "unit_type": "angularvelocity"
                         }
@@ -148,7 +149,7 @@
                             "unit_type": "temperature"
                         },
                         "shear_rate": {
-                            "value": 100.0,
+                            "value": 100,
                             "unit": "1/s",
                             "unit_type": "angularvelocity"
                         }
@@ -163,6 +164,12 @@
                 }
             },
             "distillation_data": {
+                "type": "volume fraction",
+                "fraction_recovered": {
+                    "value": 100.0,
+                    "unit": "%",
+                    "unit_type": "volumefraction"
+                },
                 "cuts": [
                     {
                         "fraction": {
@@ -184,66 +191,6 @@
                         },
                         "vapor_temp": {
                             "value": 24.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
-                    },
-                    {
-                        "fraction": {
-                            "value": 0.172256652876604,
-                            "unit": "%",
-                            "unit_type": "volumefraction"
-                        },
-                        "vapor_temp": {
-                            "value": 26.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
-                    },
-                    {
-                        "fraction": {
-                            "value": 0.172256652876604,
-                            "unit": "%",
-                            "unit_type": "volumefraction"
-                        },
-                        "vapor_temp": {
-                            "value": 30.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
-                    },
-                    {
-                        "fraction": {
-                            "value": 0.172256652876604,
-                            "unit": "%",
-                            "unit_type": "volumefraction"
-                        },
-                        "vapor_temp": {
-                            "value": 32.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
-                    },
-                    {
-                        "fraction": {
-                            "value": 0.172256652876604,
-                            "unit": "%",
-                            "unit_type": "volumefraction"
-                        },
-                        "vapor_temp": {
-                            "value": 35.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
-                    },
-                    {
-                        "fraction": {
-                            "value": 0.172256652876604,
-                            "unit": "%",
-                            "unit_type": "volumefraction"
-                        },
-                        "vapor_temp": {
-                            "value": 40.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -286,30 +233,6 @@
                     },
                     {
                         "fraction": {
-                            "value": 0.513635023892676,
-                            "unit": "%",
-                            "unit_type": "volumefraction"
-                        },
-                        "vapor_temp": {
-                            "value": 105.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
-                    },
-                    {
-                        "fraction": {
-                            "value": 0.513635023892676,
-                            "unit": "%",
-                            "unit_type": "volumefraction"
-                        },
-                        "vapor_temp": {
-                            "value": 110.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
-                    },
-                    {
-                        "fraction": {
                             "value": 0.598979616646694,
                             "unit": "%",
                             "unit_type": "volumefraction"
@@ -322,48 +245,12 @@
                     },
                     {
                         "fraction": {
-                            "value": 0.598979616646694,
-                            "unit": "%",
-                            "unit_type": "volumefraction"
-                        },
-                        "vapor_temp": {
-                            "value": 125.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
-                    },
-                    {
-                        "fraction": {
                             "value": 0.684324209400712,
                             "unit": "%",
                             "unit_type": "volumefraction"
                         },
                         "vapor_temp": {
                             "value": 130.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
-                    },
-                    {
-                        "fraction": {
-                            "value": 0.684324209400712,
-                            "unit": "%",
-                            "unit_type": "volumefraction"
-                        },
-                        "vapor_temp": {
-                            "value": 135.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
-                    },
-                    {
-                        "fraction": {
-                            "value": 0.684324209400712,
-                            "unit": "%",
-                            "unit_type": "volumefraction"
-                        },
-                        "vapor_temp": {
-                            "value": 145.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -400,18 +287,6 @@
                         },
                         "vapor_temp": {
                             "value": 185.0,
-                            "unit": "C",
-                            "unit_type": "temperature"
-                        }
-                    },
-                    {
-                        "fraction": {
-                            "value": 1.19639176592482,
-                            "unit": "%",
-                            "unit_type": "volumefraction"
-                        },
-                        "vapor_temp": {
-                            "value": 190.0,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -825,7 +700,7 @@
                         }
                     }
                 ],
-                "comment": "The values under 200.0 \u00b0C are coming from laboratory data, the value above 250.0 \u00b0C are coming from the true boiling point data. Each value between the two (included) are average of the laboratory and the TBP, when only one is present, the point is not added."
+                "comment": "The values under 200.0 \u00b0C are coming from laboratory data, the value above 250.0 \u00b0C are coming from the true boiling point data. Each value between the two (included) are average of the laboratory and the TBP, when only one is present, the point is not added. Points with a fraction equal or smaller than the previous one is not added either. Recovered fraction is put at 100%."
             },
             "compounds": [
                 {
@@ -2020,7 +1895,6 @@
         {
             "metadata": {
                 "name": "250\u00b0C residues",
-                "short_name": "250\u00b0C residu...",
                 "fraction_evaporated": {
                     "value": 6.2,
                     "unit": "%",
@@ -2086,7 +1960,7 @@
                             "unit_type": "temperature"
                         },
                         "shear_rate": {
-                            "value": 10.0,
+                            "value": 10,
                             "unit": "1/s",
                             "unit_type": "angularvelocity"
                         }
@@ -2103,7 +1977,7 @@
                             "unit_type": "temperature"
                         },
                         "shear_rate": {
-                            "value": 100.0,
+                            "value": 100,
                             "unit": "1/s",
                             "unit_type": "angularvelocity"
                         }
@@ -2120,7 +1994,7 @@
                             "unit_type": "temperature"
                         },
                         "shear_rate": {
-                            "value": 10.0,
+                            "value": 10,
                             "unit": "1/s",
                             "unit_type": "angularvelocity"
                         }
@@ -2137,7 +2011,7 @@
                             "unit_type": "temperature"
                         },
                         "shear_rate": {
-                            "value": 100.0,
+                            "value": 100,
                             "unit": "1/s",
                             "unit_type": "angularvelocity"
                         }
