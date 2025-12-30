@@ -3,13 +3,15 @@
     "adios_data_model_version": "0.12.0",
     "metadata": {
         "name": "Generic Jet Fuel",
-        "source_id": "2024-10-30jf",
+        "source_id": "GN00005",
+        "location": "N/A",
         "reference": {
-            "year": 2024,
+            "year": 2025,
             "reference": "NOAA Technical Report on Generic Oils"
         },
+        "sample_date": "2025-12-22",
         "product_type": "Distillate Fuel Oil",
-        "API": 44.95,
+        "API": 44.7,
         "comments": "This is a generic oil record generated from data in the ADIOS database. See the NOAA Technical Report on Generic Oils for methodology.",
         "labels": [
             "Distillate Fuel",
@@ -18,41 +20,34 @@
             "Jet Fuel",
             "Kerosene",
             "Refined Product"
-        ],
-        "model_completeness": 64,
-        "change_log": [
-            {
-                "name": "Chris",
-                "date": "2025-02-19T14:52:01.275-08:00",
-                "comment": "Added Generic Label"
-            }
         ]
     },
     "sub_samples": [
         {
             "metadata": {
-                "name": "Fresh Oil",
-                "short_name": "Fresh Oil"
+                "name": "Fresh Oil Sample",
+                "short_name": "Fresh",
+                "description": "This is the Simulated Fresh Oil Sample for Generic Jet Fuel."
             },
             "physical_properties": {
                 "pour_point": {
                     "measurement": {
-                        "value": -40.7778,
-                        "unit": "deg C",
+                        "value": -45.1,
+                        "unit": "C",
                         "unit_type": "temperature"
                     }
                 },
                 "flash_point": {
                     "measurement": {
-                        "value": 51.7946,
-                        "unit": "deg C",
+                        "value": 47.5,
+                        "unit": "C",
                         "unit_type": "temperature"
                     }
                 },
                 "densities": [
                     {
                         "density": {
-                            "value": 802.532,
+                            "value": 802.84,
                             "unit": "kg/m^3",
                             "unit_type": "density"
                         },
@@ -64,7 +59,7 @@
                     },
                     {
                         "density": {
-                            "value": 801.204,
+                            "value": 802.41,
                             "unit": "kg/m^3",
                             "unit_type": "density"
                         },
@@ -76,7 +71,7 @@
                     },
                     {
                         "density": {
-                            "value": 799.927,
+                            "value": 801.65,
                             "unit": "kg/m^3",
                             "unit_type": "density"
                         },
@@ -90,8 +85,8 @@
                 "kinematic_viscosities": [
                     {
                         "viscosity": {
-                            "value": 3.17714e-06,
-                            "unit": "m^2/s",
+                            "value": 3.3126,
+                            "unit": "cSt",
                             "unit_type": "kinematicviscosity"
                         },
                         "ref_temp": {
@@ -102,8 +97,8 @@
                     },
                     {
                         "viscosity": {
-                            "value": 2.22252e-06,
-                            "unit": "m^2/s",
+                            "value": 2.1874,
+                            "unit": "cSt",
                             "unit_type": "kinematicviscosity"
                         },
                         "ref_temp": {
@@ -114,8 +109,8 @@
                     },
                     {
                         "viscosity": {
-                            "value": 1.78676e-06,
-                            "unit": "m^2/s",
+                            "value": 1.7253,
+                            "unit": "cSt",
                             "unit_type": "kinematicviscosity"
                         },
                         "ref_temp": {
@@ -124,12 +119,44 @@
                             "unit_type": "temperature"
                         }
                     }
+                ],
+                "interfacial_tension_water": [
+                    {
+                        "tension": {
+                            "value": 0.03,
+                            "unit": "N/m",
+                            "standard_deviation": 0.02,
+                            "replicates": 2,
+                            "unit_type": "interfacialtension"
+                        },
+                        "ref_temp": {
+                            "value": 20.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
+                "interfacial_tension_seawater": [
+                    {
+                        "tension": {
+                            "value": 0.04,
+                            "unit": "N/m",
+                            "standard_deviation": 0.02,
+                            "replicates": 2,
+                            "unit_type": "interfacialtension"
+                        },
+                        "ref_temp": {
+                            "value": 20.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
                 ]
             },
             "SARA": {
                 "aromatics": {
-                    "value": 0.1828,
-                    "unit": "%",
+                    "value": 0.177,
+                    "unit": "fraction",
                     "unit_type": "massfraction"
                 }
             },
@@ -144,11 +171,11 @@
                     {
                         "fraction": {
                             "value": 0.0,
-                            "unit": "Fraction",
+                            "unit": "fraction",
                             "unit_type": "massfraction"
                         },
                         "vapor_temp": {
-                            "value": 156.353,
+                            "value": 17.37255555555555,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -156,11 +183,11 @@
                     {
                         "fraction": {
                             "value": 0.05,
-                            "unit": "Fraction",
+                            "unit": "fraction",
                             "unit_type": "massfraction"
                         },
                         "vapor_temp": {
-                            "value": 164.62099999999998,
+                            "value": 154.8467777777778,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -168,23 +195,23 @@
                     {
                         "fraction": {
                             "value": 0.1,
-                            "unit": "Fraction",
+                            "unit": "fraction",
                             "unit_type": "massfraction"
                         },
                         "vapor_temp": {
-                            "value": 172.889,
+                            "value": 171.98766666666666,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
                     },
                     {
                         "fraction": {
-                            "value": 0.15,
-                            "unit": "Fraction",
+                            "value": 0.15000000000000002,
+                            "unit": "fraction",
                             "unit_type": "massfraction"
                         },
                         "vapor_temp": {
-                            "value": 176.248,
+                            "value": 175.30533333333335,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -192,11 +219,11 @@
                     {
                         "fraction": {
                             "value": 0.2,
-                            "unit": "Fraction",
+                            "unit": "fraction",
                             "unit_type": "massfraction"
                         },
                         "vapor_temp": {
-                            "value": 179.36400000000003,
+                            "value": 178.37377777777778,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -204,35 +231,35 @@
                     {
                         "fraction": {
                             "value": 0.25,
-                            "unit": "Fraction",
+                            "unit": "fraction",
                             "unit_type": "massfraction"
                         },
                         "vapor_temp": {
-                            "value": 182.27800000000002,
+                            "value": 181.2345925925926,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
                     },
                     {
                         "fraction": {
-                            "value": 0.3,
-                            "unit": "Fraction",
+                            "value": 0.30000000000000004,
+                            "unit": "fraction",
                             "unit_type": "massfraction"
                         },
                         "vapor_temp": {
-                            "value": 185.313,
+                            "value": 184.219962962963,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
                     },
                     {
                         "fraction": {
-                            "value": 0.35,
-                            "unit": "Fraction",
+                            "value": 0.35000000000000003,
+                            "unit": "fraction",
                             "unit_type": "massfraction"
                         },
                         "vapor_temp": {
-                            "value": 188.228,
+                            "value": 187.08088888888892,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -240,11 +267,11 @@
                     {
                         "fraction": {
                             "value": 0.4,
-                            "unit": "Fraction",
+                            "unit": "fraction",
                             "unit_type": "massfraction"
                         },
                         "vapor_temp": {
-                            "value": 191.142,
+                            "value": 189.94170370370375,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -252,11 +279,11 @@
                     {
                         "fraction": {
                             "value": 0.45,
-                            "unit": "Fraction",
+                            "unit": "fraction",
                             "unit_type": "massfraction"
                         },
                         "vapor_temp": {
-                            "value": 194.05600000000004,
+                            "value": 192.80251851851847,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -264,11 +291,11 @@
                     {
                         "fraction": {
                             "value": 0.5,
-                            "unit": "Fraction",
+                            "unit": "fraction",
                             "unit_type": "massfraction"
                         },
                         "vapor_temp": {
-                            "value": 196.97000000000003,
+                            "value": 195.6633333333333,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -276,23 +303,23 @@
                     {
                         "fraction": {
                             "value": 0.55,
-                            "unit": "Fraction",
+                            "unit": "fraction",
                             "unit_type": "massfraction"
                         },
                         "vapor_temp": {
-                            "value": 201.526,
+                            "value": 200.2112222222222,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
                     },
                     {
                         "fraction": {
-                            "value": 0.6,
-                            "unit": "Fraction",
+                            "value": 0.6000000000000001,
+                            "unit": "fraction",
                             "unit_type": "massfraction"
                         },
                         "vapor_temp": {
-                            "value": 205.96000000000004,
+                            "value": 204.63444444444445,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -300,23 +327,23 @@
                     {
                         "fraction": {
                             "value": 0.65,
-                            "unit": "Fraction",
+                            "unit": "fraction",
                             "unit_type": "massfraction"
                         },
                         "vapor_temp": {
-                            "value": 210.51599999999996,
+                            "value": 209.1823333333333,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
                     },
                     {
                         "fraction": {
-                            "value": 0.7,
-                            "unit": "Fraction",
+                            "value": 0.7000000000000001,
+                            "unit": "fraction",
                             "unit_type": "massfraction"
                         },
                         "vapor_temp": {
-                            "value": 215.07100000000003,
+                            "value": 213.7301111111111,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -324,11 +351,11 @@
                     {
                         "fraction": {
                             "value": 0.75,
-                            "unit": "Fraction",
+                            "unit": "fraction",
                             "unit_type": "massfraction"
                         },
                         "vapor_temp": {
-                            "value": 219.748,
+                            "value": 218.40255555555552,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -336,23 +363,23 @@
                     {
                         "fraction": {
                             "value": 0.8,
-                            "unit": "Fraction",
+                            "unit": "fraction",
                             "unit_type": "massfraction"
                         },
                         "vapor_temp": {
-                            "value": 224.425,
+                            "value": 223.075,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
                     },
                     {
                         "fraction": {
-                            "value": 0.85,
-                            "unit": "Fraction",
+                            "value": 0.8500000000000001,
+                            "unit": "fraction",
                             "unit_type": "massfraction"
                         },
                         "vapor_temp": {
-                            "value": 229.10199999999998,
+                            "value": 227.74744444444445,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -360,23 +387,23 @@
                     {
                         "fraction": {
                             "value": 0.9,
-                            "unit": "Fraction",
+                            "unit": "fraction",
                             "unit_type": "massfraction"
                         },
                         "vapor_temp": {
-                            "value": 233.779,
+                            "value": 232.41988888888886,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
                     },
                     {
                         "fraction": {
-                            "value": 0.95,
-                            "unit": "Fraction",
+                            "value": 0.9500000000000001,
+                            "unit": "fraction",
                             "unit_type": "massfraction"
                         },
                         "vapor_temp": {
-                            "value": 241.90499999999997,
+                            "value": 240.63759259259257,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
@@ -384,11 +411,11 @@
                     {
                         "fraction": {
                             "value": 1.0,
-                            "unit": "Fraction",
+                            "unit": "fraction",
                             "unit_type": "massfraction"
                         },
                         "vapor_temp": {
-                            "value": 250.14199999999994,
+                            "value": 248.86762962962962,
                             "unit": "C",
                             "unit_type": "temperature"
                         }
