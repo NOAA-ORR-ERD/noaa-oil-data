@@ -39,16 +39,16 @@ validate:
     - BRANCH="production"
 
   script:
-    - echo "Starting conda listing"
-    - conda list
+    # - echo "Starting conda listing"
+    # - conda list
     - echo "running the scripts"
-    - pwd
+    # - pwd
     - echo "cloning ${BRANCH}"
     - git clone --depth 1 -b ${BRANCH}
       https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.orr.noaa.gov/gnome/oil_database/oil_database.git
-    - pwd
-    - ls
-    - cd oil_database
+    # - pwd
+    # - ls
+    # - cd oil_database
     - conda install -y --file adios_db/conda_requirements.txt
 
     - conda list > conda_listing.txt
@@ -56,8 +56,8 @@ validate:
     - cd adios_db
     - pip install -e ./
     - cd ../../
-    # we are saving the status list inside the records.
-    - adios_db_process_json ./data/oil/ save
+    # we are not saving the status list inside the records.
+    - adios_db_process_json ./data/oil/ save strip_status
     - adios_db_validate ./data/oil
   only:
     changes:
