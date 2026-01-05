@@ -2,7 +2,7 @@
 
 Data repository for the NOAA oil database records
 
-These are the data NOAA ORR ERD uses in the ADIOS<sup>®</sup> Oil Database web service:
+These are the data NOAA/ORR/ERD uses in the ADIOS<sup>®</sup> Oil Database web service:
 
 http://adios.orr.noaa.gov>
 
@@ -22,7 +22,7 @@ Please use gitHub issues to post requests, questions, etc.
 
 If you have a new JSON record, or suggested changes to a given JSON record, you can submit that via a pull request on this project.
 
-To work with the JSON format, we suggest our `adios_db` package in the adios_oil_database project:
+To work with the JSON format, we suggest our `adios_db` Python package in the adios_oil_database project:
 
 https://github.com/NOAA-ORR-ERD/adios_oil_database
 
