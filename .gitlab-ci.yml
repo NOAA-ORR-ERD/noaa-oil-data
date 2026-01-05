@@ -43,20 +43,22 @@ validate:
     # - conda list
     - echo "running the scripts"
     # - pwd
-    - echo "cloning ${BRANCH}"
-    - git clone --depth 1 -b ${BRANCH}
-      https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.orr.noaa.gov/gnome/oil_database/oil_database.git
+    # - echo "cloning ${BRANCH}"
+    # - git clone --depth 1 -b ${BRANCH}
+    #   https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.orr.noaa.gov/gnome/oil_database/oil_database.git
     # - pwd
     # - ls
     # - cd oil_database
-    - conda install -y --file adios_db/conda_requirements.txt
+    # - conda install -y --file adios_db/conda_requirements.txt
 
-    - conda list > conda_listing.txt
+    # - conda list > conda_listing.txt
     # Install the adios_db package
-    - cd adios_db
-    - pip install -e ./
-    - cd ../../
+    # - cd adios_db
+    # - pip install -e ./
+    # - cd ../../
     # we are not saving the status list inside the records.
+    # install adios_db from conda-forge
+    - conda install adios_db
     - adios_db_process_json ./data/oil/ save strip_status
     - adios_db_validate ./data/oil
   only:
