@@ -7,7 +7,6 @@
         "alternate_names": [
             "Turbo Fuel A-1, Jet A-1 Kerosene; Carburant A de turbo-moteur, Jet A-1 K\u00e9ros\u00e8ne"
         ],
-        "location": "Unknown",
         "reference": {
             "year": 1996,
             "reference": "Environmental Emergencies Technology Division, experimental data, Environment Canada, Ottawa, Ontario, 1983-1989; and Emergencies Science Division, experimental data, Environment Canada, Ottawa, Ontario, 1990- 1996. Presently referred to as the Emergencies Science and Technology Section (ESTS) of Environment and Climate Change Canada (ECCC)"
@@ -15,12 +14,35 @@
         "product_type": "Distillate Fuel Oil",
         "API": 44.43,
         "comments": "A petroleum distillate blended from Kerosene fractions and used in civil aviation. Jet A-1 is similar to Jet A except for a lower freezing point. Operational fuel for all turboprop and turbojet aircraft requiring a low freezing point product.",
+        "labels": [
+            "Distillate Fuel",
+            "Fuel Oil",
+            "Jet Fuel",
+            "Kerosene",
+            "No. 1 Fuel Oil",
+            "Refined Product"
+        ],
         "model_completeness": 55,
         "change_log": [
             {
                 "name": "Dalina",
                 "date": "2025-03-06T13:27:39.314-08:00",
                 "comment": "Set Product Type"
+            },
+            {
+                "name": "Dalina",
+                "date": "2026-01-16T15:22:30.176-08:00",
+                "comment": "Added labels"
+            },
+            {
+                "name": "Dalina",
+                "date": "2026-01-16T15:25:24.511-08:00",
+                "comment": "Merged K Vis from duplicate record AD00413"
+            },
+            {
+                "name": "Dalina",
+                "date": "2026-01-16T15:28:01.680-08:00",
+                "comment": "Merged Bulk Composition data from duplicate record AD00413"
             }
         ]
     },
@@ -63,10 +85,36 @@
                         }
                     }
                 ],
+                "kinematic_viscosities": [
+                    {
+                        "viscosity": {
+                            "value": 1.2,
+                            "unit": "cSt",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 15.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    },
+                    {
+                        "viscosity": {
+                            "value": 1.5,
+                            "unit": "cSt",
+                            "unit_type": "kinematicviscosity"
+                        },
+                        "ref_temp": {
+                            "value": 0.0,
+                            "unit": "C",
+                            "unit_type": "temperature"
+                        }
+                    }
+                ],
                 "dynamic_viscosities": [
                     {
                         "viscosity": {
-                            "value": 2.0,
+                            "value": 2.11,
                             "unit": "mPas",
                             "unit_type": "dynamicviscosity"
                         },
@@ -78,7 +126,7 @@
                     },
                     {
                         "viscosity": {
-                            "value": 1.0,
+                            "value": 1.26,
                             "unit": "mPas",
                             "unit_type": "dynamicviscosity"
                         },
@@ -187,6 +235,13 @@
                         "visual_stability": "Did not form"
                     }
                 ]
+            },
+            "SARA": {
+                "aromatics": {
+                    "value": 22.0,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                }
             },
             "distillation_data": {
                 "type": "mass fraction",
@@ -477,6 +532,7 @@
                         "Metals"
                     ],
                     "measurement": {
+                        "value": 1.0,
                         "unit": "\u00b5g/g",
                         "max_value": 1.0,
                         "unit_type": "massfraction"
@@ -499,6 +555,7 @@
                         "Metals"
                     ],
                     "measurement": {
+                        "value": 0.6,
                         "unit": "\u00b5g/g",
                         "max_value": 0.6,
                         "unit_type": "massfraction"

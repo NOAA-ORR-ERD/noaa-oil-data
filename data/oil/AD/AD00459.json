@@ -9,13 +9,17 @@
             "year": 1993,
             "reference": "Helmuth, A., Tesoro Alaska Petroleum Company, Letter to  Debra Simecek-Beatty,  NOAA, March 3, 1993."
         },
-        "product_type": "Refinery Intermediate",
+        "product_type": "Distillate Fuel Oil",
         "API": 29.0,
         "labels": [
-            "Refined Product",
-            "Refinery Intermediate"
+            "Diesel",
+            "Distillate Fuel",
+            "Fuel Oil",
+            "Gas Oil",
+            "No. 2 Fuel Oil",
+            "Refined Product"
         ],
-        "model_completeness": 40,
+        "model_completeness": 56,
         "change_log": [
             {
                 "name": "R",
@@ -26,6 +30,11 @@
                 "name": "R",
                 "date": "2022-11-28T11:17:39.919-08:00",
                 "comment": "Issue #27 - Normalize Location"
+            },
+            {
+                "name": "Chris & Crew",
+                "date": "2026-01-22T13:46:00.816-08:00",
+                "comment": "updated to be a distilled fuel, not intermediate"
             }
         ]
     },
@@ -80,6 +89,11 @@
             },
             "distillation_data": {
                 "type": "volume fraction",
+                "fraction_recovered": {
+                    "value": 100.0,
+                    "unit": "%",
+                    "unit_type": "massfraction"
+                },
                 "cuts": [
                     {
                         "fraction": {
