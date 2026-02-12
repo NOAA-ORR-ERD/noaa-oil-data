@@ -34,7 +34,7 @@ validate:
     #     fi
     # It was too confusing to have different adios_db code used for different
     # branches
-    # but this should be switeched to production when things settle down
+    # but this should be switched to production when things settle down
     # - BRANCH="develop"
     - BRANCH="production"
 
@@ -66,7 +66,7 @@ validate:
       - .gitlab-ci.yml
       - data/**/*
 
-normalize json formatting:
+save normalized json formatting:
   stage: update
   image: registry.orr.noaa.gov/erd/environments/ubuntu/ubuntuforge-python$PYTHON_VER
   tags:
