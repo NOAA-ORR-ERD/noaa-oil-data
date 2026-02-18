@@ -8,6 +8,10 @@ stages:
 
 validate:
   stage: validate
+  rules:
+    - if: $CI_COMMIT_TAG
+      when: never
+    - when: always
   image: registry.orr.noaa.gov/erd/environments/ubuntu/ubuntuforge-python$PYTHON_VER
   tags:
     - docker
