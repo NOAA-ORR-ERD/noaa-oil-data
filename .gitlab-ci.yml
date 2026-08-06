@@ -1,6 +1,6 @@
 variables:
   #   CS_MAJOR_VERSION: 3
-  PYTHON_VER: '3.12'
+  PYTHON_VER: '3.13'
 
 stages:
   - validate
@@ -9,9 +9,6 @@ stages:
 validate:
   stage: validate
   image: registry.orr.noaa.gov/erd/environments/ubuntu/ubuntuforge-python$PYTHON_VER
-  tags:
-    - docker
-    - linux
 
   except:
     - schedules
@@ -69,9 +66,6 @@ validate:
 save normalized json formatting:
   stage: update
   image: registry.orr.noaa.gov/erd/environments/ubuntu/ubuntuforge-python$PYTHON_VER
-  tags:
-    - docker
-    - linux
   before_script:
     - apt install git -y
   script:
@@ -102,9 +96,6 @@ update_validation_report:
   image: registry.orr.noaa.gov/erd/environments/ubuntu/ubuntuforge-python$PYTHON_VER
   before_script:
     - apt install git -y
-  tags:
-    - docker
-    - linux
   script:
     - git config --global user.email "adios-validation-script@noaa.gov"
     - git config --global user.name "Adios Validation Script"
