@@ -1,13 +1,28 @@
+# pixi workspace for working with noaa-oil-data
+
 [workspace]
 authors = ["Chris Barker <Chris.Barker@noaa.gov>"]
 channels = ["conda-forge"]
 name = "noaa-oil-data"
 platforms = ["osx-64", "linux-64", "win-64", "osx-arm64"]
-version = "0.1.0"
-
-[tasks]
+version = "1.0.0"
 
 [dependencies]
 python = "3.13.*"
+
+[feature.production.dependencies]
 adios_db = ">=1.2.7,<2"
+
+[feature.dev.dependencies]
 ipython = "*"
+
+[feature.dev.pypi-dependencies]
+adios_db = { path = "../oil_database/adios_db/", editable = true }
+
+[environments]
+default = ["production"]
+dev = ["dev"]
+
+[tasks]
+process_json = { cmd = "adios_db_process_json ./data/oil/ save strip_status"}
+validate = { cmd = "adios_db_validate ./data/oil"}

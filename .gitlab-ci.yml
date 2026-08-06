@@ -1,6 +1,10 @@
 variables:
-  #   CS_MAJOR_VERSION: 3
-  PYTHON_VER: '3.13'
+  IMAGE_NAME: 'registry.orr.noaa.gov/erd/environments/ubuntu-pixi:latest'
+  GIT_DEPTH: 2
+
+default:
+  before_script:
+    - pixi global install git
 
 stages:
   - validate
@@ -8,7 +12,7 @@ stages:
 
 validate:
   stage: validate
-  image: registry.orr.noaa.gov/erd/environments/ubuntu/ubuntuforge-python$PYTHON_VER
+  image: $IMAGE_NAME
 
   except:
     - schedules
@@ -18,46 +22,11 @@ validate:
       - validation_by_record.md
       - validation_by_error.md
       - data
-      - conda_listing.txt
-
-  before_script:
-    - echo "ip_resolve=4" >> /etc/yum.conf
-    - apt install git -y
-    # - |-
-    #     if [[ $CI_COMMIT_BRANCH = "production" ]]; then
-    #       BRANCH="production"
-    #     else
-    #       BRANCH="develop"
-    #     fi
-    # It was too confusing to have different adios_db code used for different
-    # branches
-    # but this should be switched to production when things settle down
-    # - BRANCH="develop"
-    - BRANCH="production"
 
   script:
-    # - echo "Starting conda listing"
-    # - conda list
     - echo "running the scripts"
-    # - pwd
-    # - echo "cloning ${BRANCH}"
-    # - git clone --depth 1 -b ${BRANCH}
-    #   https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.orr.noaa.gov/gnome/oil_database/oil_database.git
-    # - pwd
-    # - ls
-    # - cd oil_database
-    # - conda install -y --file adios_db/conda_requirements.txt
-
-    # - conda list > conda_listing.txt
-    # Install the adios_db package
-    # - cd adios_db
-    # - pip install -e ./
-    # - cd ../../
-    # we are not saving the status list inside the records.
-    # install adios_db from conda-forge
-    - conda install adios_db
-    - adios_db_process_json ./data/oil/ save strip_status
-    - adios_db_validate ./data/oil
+    - pixi run process_json
+    - pixi run validate
   only:
     changes:
       - .gitlab-ci.yml
@@ -65,9 +34,8 @@ validate:
 
 save normalized json formatting:
   stage: update
-  image: registry.orr.noaa.gov/erd/environments/ubuntu/ubuntuforge-python$PYTHON_VER
-  before_script:
-    - apt install git -y
+  image: $IMAGE_NAME
+
   script:
     - git config --global user.email "adios-validation-script@noaa.gov"
     - git config --global user.name "Adios Validation Script"
@@ -92,10 +60,11 @@ save normalized json formatting:
 update_validation_report:
   variables:
     GIT_STRATEGY: clone
+
   stage: update
-  image: registry.orr.noaa.gov/erd/environments/ubuntu/ubuntuforge-python$PYTHON_VER
-  before_script:
-    - apt install git -y
+
+  image: $IMAGE_NAME
+
   script:
     - git config --global user.email "adios-validation-script@noaa.gov"
     - git config --global user.name "Adios Validation Script"
