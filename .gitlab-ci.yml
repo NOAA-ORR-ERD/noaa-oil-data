@@ -25,8 +25,9 @@ validate:
 
   script:
     - echo "running the scripts"
-    - pixi run --locked process_json
-    - pixi run --locked production validate
+    # need frozen, so it won't try to update dev environment
+    - pixi run --frozen process_json
+    - pixi run --frozen production validate
   only:
     changes:
       - .gitlab-ci.yml
