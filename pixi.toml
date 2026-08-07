@@ -25,5 +25,5 @@ default = ["production"]
 dev = ["dev"]
 
 [tasks]
-process_json = { cmd = "adios_db_process_json ./data/oil/ save strip_status", default-environment = "default"}
-validate = { cmd = "adios_db_validate ./data/oil", default-environment = "default"}
+process_json = { cmd = "adios_db_process_json ./data/oil/ save strip_status", default-environment = "production"}
+validate = { cmd = "adios_db_validate ./data/oil", default-environment = "production"}
