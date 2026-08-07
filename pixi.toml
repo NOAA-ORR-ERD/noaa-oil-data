@@ -17,6 +17,7 @@ adios_db = ">=1.2.7,<2"
 ipython = "*"
 
 [feature.dev.pypi-dependencies]
+# this points to a local copy -- so it needs to be there
 adios_db = { path = "../oil_database/adios_db/", editable = true }
 
 [environments]
@@ -24,5 +25,5 @@ default = ["production"]
 dev = ["dev"]
 
 [tasks]
-process_json = { cmd = "adios_db_process_json ./data/oil/ save strip_status"}
-validate = { cmd = "adios_db_validate ./data/oil"}
+process_json = { cmd = "adios_db_process_json ./data/oil/ save strip_status", default-environment = "default"}
+validate = { cmd = "adios_db_validate ./data/oil", default-environment = "default"}
