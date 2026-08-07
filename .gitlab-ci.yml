@@ -27,7 +27,7 @@ validate:
     - echo "running the scripts"
     # need frozen, so it won't try to update dev environment
     - pixi run --frozen process_json
-    - pixi run --frozen production validate
+    - pixi run --frozen validate
   only:
     changes:
       - .gitlab-ci.yml
